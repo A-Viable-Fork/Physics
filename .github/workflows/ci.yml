@@ -20,3 +20,13 @@ jobs:
         run: node build/check-substrate.mjs
       - name: check-imports
         run: node build/check-imports.mjs
+      - name: check-gate
+        run: node build/check-gate.mjs
+      - name: check-type-hash
+        run: node build/check-type-hash.mjs
+      - name: check-compute-invariants
+        run: node build/check-compute-invariants.mjs
+      - name: check-dg
+        run: node build/check-dg.mjs
+      - name: check-dg-tier1
+        run: node build/check-dg-tier1.mjs
