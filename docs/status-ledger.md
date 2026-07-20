@@ -308,6 +308,10 @@ The six landed PK-DR reports (`docs/research/`) enter the source table for the f
 
 5 new manifest entries (category `methods-kill`) extend the coverage manifest to 251, verified both directions by `node build/check-dg-coverage.mjs`.
 
+### Track 4: the No-Go Registry emitter
+
+`build/emit-nogo-registry.mjs` (a pure read; no claim, link, or withdrawal record is created by running it) renders every withdrawal Stage 3c Tracks 1-3 entered as `docs/no-go-registry.md`: 112 withdrawal records (107 from Track 1, 5 from Track 3), 21 class-level exclusion blocks in their own section, and 3 hand-authored cascades (F12's retraction chaining to C12a/b/c and C23-dS; F13.2's reservoir chaining to the full C13 contract family; F21's reservoir chaining to C21a/b/c), each rendered as attempted mechanism, mechanism-of-death evidence with its declared grade and checker, and the typed evasion condition in readable form. The cascades are hand-authored, read directly from Track 1's own `parent:` annotations, not inferred by parsing free text: a parsed guess risks silently mis-chaining an entry, exactly the kind of guess this build's discipline refuses. ER-WGC-001's own upstream cascade (from an external Navier-Stokes program's ER-NS-001, never itself a claim in this corpus) is named in its own entry's text but not modeled as a registry chain, since there is no local identity to chain from.
+
 ## Not built at Stage 1 (named, not implied done)
 
 - No `api/` (our own membrane) or `periphery/` client code. Stage 5.
