@@ -145,7 +145,7 @@
     },
     {
       "source_id": "corpus.occam-s-razor-audit",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "Occam's Razor Audit: Is the Membrane Mandatory? (March 2026) -- Category B; 3 pillars; Donnelly-Freidel edge modes",
       "rests_on": []
     },
@@ -323,7 +323,7 @@
     },
     {
       "source_id": "corpus.baryogenesis-kill",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "Baryogenesis Kill: Conjugate Orientation Baryogenesis Stress-Test (March 2026) -- KILLED on 4 axes. Coset connected, BD ghost, rank mismatch, $F_Q \\geq 0$.",
       "rests_on": []
     },
@@ -377,37 +377,37 @@
     },
     {
       "source_id": "corpus.gut-box-report",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "GUT Box Report: Swampland Constraints on GUTs within a State-Dependent ETW Braneworld (March 2026) -- GUT Box: three constraints (K10 sliding unification, K11 trace anomaly/$\\beta$ non-vanishing, K12 Dirichlet confinement). RG flow under dropping $\\Lambda_s$, KK threshold corrections, Appelquist-Carazzone failure. F-theory 7-brane architecture preferred.",
       "rests_on": []
     },
     {
       "source_id": "corpus.luna-feasibility-report",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "LUNA Feasibility Report: Quantitative Evaluation of Radion-Catalyzed Screening (2026) -- Initial feasibility analysis. Radion-phonon vertex calculation, KK dissipation capacity, non-linear TF scaling derivation ($U_e \\sim \\sqrt{m^*}\\,n_e^{1/6}$). Verdict: Marginal. Critical failure: $10^{-15}\\,M_{\\text{Pl}}$ suppression bottleneck.",
       "rests_on": []
     },
     {
       "source_id": "corpus.resonant-localization-report",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "Resonant Localization Report: Resonant Radion Catalysis and the Power Bottleneck (2026) -- Resolution of global power bottleneck via dual-laser standing wave localization. $\\sin^4(kx)$ QFI concentration, Localization Gain Factor $G_{\\text{loc}} \\sim 10^6$ to $10^7$, Non-Linear Squeezer feedback loop, coherent stimulated emission into KK tower. Verdict upgraded: Highly Feasible. $U_e = 417$ to $890",
       "rests_on": []
     },
     {
       "source_id": "corpus.ni-h-li-stress-test",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "Ni-H-Li Stress Test: Quantitative Stress Test of Resonant Radion Catalysis in Ni-H-Li Systems (2026) -- $Z = 28$ stress test on pure Ni. Kinematic detuning via Gruneisen-parameter phonon softening (confirmed). Lithium Coherence Pump (confirmed). Gamma suppression via Mossbauer + 5D exhaust (confirmed). Critical failure: 3d band mass ceiling at 25 $m_e$ yields max $U_e \\sim 1{,}300\\,\\text{eV}$, ins",
       "rests_on": []
     },
     {
       "source_id": "corpus.heavy-fermion-stress-test",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "Heavy Fermion Stress Test: Quantitative Stress Test of Radion-Induced Heavy Fermion Catalysis in Ce-Ni-H Systems (2026) -- CeNi$_5$ metamaterial pivot. Hyper-Kondo state via simultaneous hybridization enhancement and $100\\times$ DOS amplification. $m^* \\sim 500\\,m_e$, $U_e \\sim 5{,}814\\,\\text{eV}$. $T_K$ amplified to $> 10{,}000\\,\\text{K}$. Thermal decoherence race won: $t_s \\sim 0.2\\,\\text{ps} \\l",
       "rests_on": []
     },
     {
       "source_id": "corpus.f-theory-gut-audit",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "F-Theory GUT Audit: Grand Unified Theory Architectures for State-Dependent AdS$_5$ ETW Braneworlds (2026) -- Comprehensive audit of string GUT architectures against K10, K11, K12. F-theory SU(5)/SO(10): excellent on all three constraints (Ray-Singer torsion, chiral $\\beta \\neq 0$, Dirichlet 7-brane confinement). Intersecting D-branes: excellent but top Yukawa friction. Warped D3 quivers: moderate ",
       "rests_on": []
     },
@@ -474,7 +474,7 @@
     },
     {
       "source_id": "corpus.grb-111005a-resolution-paper-v3",
-      "source_class": "testimony",
+      "source_class": "preprint",
       "description": "GRB 111005A Resolution Paper v3: Three-anomaly resolution via 5D Einstein-Cartan framework. Part A: KK thermal exhaust (SN suppression). Part B: Dual-channel Gamow enhancement (geometric torsion phase and ponderomotive electron screening). Part C: Alfven-bounded torsion snapback (radio afterglow). Channel orthogonality decoherence defense. Solar constraint verified for both mechanisms. -- March 20",
       "rests_on": [
         "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
@@ -495,7 +495,7 @@
     },
     {
       "source_id": "corpus.red-team-review-1-grb-paper-without-paper-0",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "Red-Team Review 1 (GRB paper, without Paper 0): Five major concerns: QFI motivation, Gamow enhancement specificity, topological protection analogy underdeveloped, Alfven speed justification, parameter counting. Recommended discussion/limitations section. Verdict: not ready for submission, needs quantitative backing. -- March 2026",
       "rests_on": [
         "corpus.grb-111005a-resolution-paper-v3"
@@ -503,7 +503,7 @@
     },
     {
       "source_id": "corpus.red-team-review-2-grb-paper-with-paper-0",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "Red-Team Review 2 (GRB paper, with Paper 0): Citation chain audit. Identified: Gamow enhancement not derived in Paper 0 (critical gap), misplaced citations in Sections 5.3, 5.4, 5.5, missing coherent exhaust distinction from Paper 0 Section 5.3. Parts A and C well-supported. Part B citation chain broken. Recommended: derive Gamow mechanism or reframe as conjecture. -- March 2026",
       "rests_on": [
         "corpus.grb-111005a-resolution-paper-v3",
@@ -512,13 +512,13 @@
     },
     {
       "source_id": "corpus.white-et-al-2026-phys-rev-research-8-013264",
-      "source_class": "testimony",
+      "source_class": "peer-reviewed",
       "description": "White et al. 2026, Phys. Rev. Research 8, 013264: Dynamic vacuum acoustic model. Quadratic dispersion + Coulombic constitutive profile = exact hydrogenic isospectrality. Angular momentum from $S^2$ geometry. Bound states from reactive stop band. Madelung derivation of dispersion. Zero free parameters after reduced-mass calibration. Structural parallel: vacuum as responsive constitutive medium. Par",
       "rests_on": []
     },
     {
       "source_id": "corpus.braneworld-higgs-coupling-derivation-and-audit",
-      "source_class": "testimony",
+      "source_class": "preprint",
       "description": "Braneworld Higgs Coupling Derivation and Audit: Schwinger-DeWitt heat kernel derivation of the state-dependent coupling $\\gamma(\\phi^A\\phi_A)\\mathcal{f}_Q$. Seeley-DeWitt $a_4(x)$ extraction. Central charge summation for $\\gamma$. Operator uniqueness proof (Gauss-Bonnet, symmetry-breaking, sextic eliminated); **v4.6 annotation:** Lagrangian uniqueness superseded by thermodynamic dominance formulat",
       "rests_on": []
     },
@@ -548,13 +548,13 @@
     },
     {
       "source_id": "corpus.swampland-conjectures-derivation",
-      "source_class": "testimony",
+      "source_class": "preprint",
       "description": "Swampland Conjectures Derivation: A Non-Perturbative Fluid-Gravity Derivation of the Swampland Conjectures (March 2026) -- Strategic mapping of SDC, WGC, and dS conjecture to framework mechanics. Bures metric as moduli-space distance. KK tower descent. Fluid-gravity $\\epsilon$-scaling for WGC. \"Trojan Horse\" paper outline. Superseded by the formal Hydrodynamic Swampland Bounds paper.",
       "rests_on": []
     },
     {
       "source_id": "corpus.hydrodynamic-swampland-bounds-v3",
-      "source_class": "testimony",
+      "source_class": "preprint",
       "description": "Hydrodynamic Swampland Bounds v3: Non-Perturbative Hydrodynamic Bounds on the String Landscape: Deriving the Swampland Conjectures via Fluid-Gravity $\\epsilon$-Scaling (March 2026) -- Formal paper. Complete mathematical chain: Bounding Box $\\to$ Lipschitz $\\to$ curvature bound $\\to$ b-calculus trace $\\to$ $\\epsilon$-scaling $\\to$ synchronized patch $\\to$ BKM regularity $\\to$ Species Scale running ",
       "rests_on": []
     },
@@ -566,13 +566,13 @@
     },
     {
       "source_id": "corpus.nuclear-astrophysics-anomalies",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "Nuclear Astrophysics Anomalies: Systematic Investigation of Nuclear Astrophysics Anomalies: Evaluating Radion Catalysis and State-Dependent Vacuum Geometry (March 2026) -- LUNA data table (Pd: 800 $\\pm$ 90 eV, Pt: 670 $\\pm$ 50 eV, Ta: 340 $\\pm$ 24 eV, Li metal: 1280 $\\pm$ 60 eV). Radion catalysis validated for metallic targets. Cosmological Li-7 deficit: framework structurally cannot resolve. Trip",
       "rests_on": []
     },
     {
       "source_id": "corpus.li-7-red-team",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "Li-7 Red Team: Adversarial Red Team Audit of the Cosmological Lithium Coherence Pump and Radion Catalysis Mechanics (March 2026) -- Detailed triple-axis kill. Criterion 1: alpha particle thermalization ($\\tau_{\\text{th}} \\ll t_s$) saturates KK scrambling. Criterion 2: $^7$Be bottleneck starves $^7$Li fuel during active BBN. Criterion 3: $^7$Be($n,p$) pivot fails (distinguishable fermions, 1:7 mass",
       "rests_on": [
         "corpus.nuclear-astrophysics-anomalies"
@@ -580,13 +580,13 @@
     },
     {
       "source_id": "corpus.physics-literature-recon",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "Physics Literature Recon: Reconnaissance Report: Theoretical Audit of the Bleeding-Edge Physics Literature against the Type-H Framework (March 2026) -- Six new literature references (Raucci et al. warped KK/SDC, Aoufia et al. worldsheet UV/IR, Feng et al. NS Lorentz spaces, Zeng et al. Kondo plasticity, UTe$_2$ KHW, Dong et al. ${}^{14}$N S-factor). Axion cooling competitor analysis. SN 2024afav K",
       "rests_on": []
     },
     {
       "source_id": "corpus.ewpt-baryogenesis-red-team",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "EWPT Baryogenesis Red Team: Red Team Audit: Displacement Geometry and the Electroweak Baryogenesis Hypothesis (March 2026) -- Detailed five-axis kill of EWPT baryogenesis variant. Quantitative timescale comparison: $\\tau_{\\text{th}}(100\\;\\text{GeV}) \\sim 10^{-22}$ s vs. $t_s \\sim 0.2$ ps (ten OoM). T2.8 (Higgs Identity) structural kill. Sphaleron washout argument ($E_{\\text{sph}} \\propto v_{\\text{",
       "rests_on": []
     },
@@ -604,7 +604,7 @@
     },
     {
       "source_id": "corpus.lean-4-phase-2-red-team",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "Lean 4 Phase 2 Red Team: Phase 2 Red Team Audit Report: SDVG Framework Lean 4 Codebase (March 2026) -- Four-vector audit across six modules. Two Principle of Explosion vulnerabilities (DiracConstraints.lean, QFI_Coupling.lean). Missing measurability hypotheses. Vortex stretching lobotomy (spatially homogeneous holographic dictionary). Boolean Swampland linter vacuity. Corrected Lean 4 signatures p",
       "rests_on": [
         "corpus.lean-4-formalization"
@@ -636,7 +636,7 @@
     },
     {
       "source_id": "corpus.dynamical-emergence-report",
-      "source_class": "testimony",
+      "source_class": "preprint",
       "description": "Dynamical Emergence Report: The Pre-Geometric Dynamical Principle for Asymptotically Hyperbolic Emergence (March 2026) -- Proposes entanglement variational principle deriving AdS$_5$ bulk from pre-geometric boundary algebra. Modular flow generates SO(2,4) isometry and radial coordinate z as conjugate dual to modular Hamiltonian K. Metric as tetrad bilinear condensate from QFI-driven SSB. Warp fact",
       "rests_on": []
     },
@@ -650,7 +650,7 @@
     },
     {
       "source_id": "corpus.gut-population-survey-v1-7",
-      "source_class": "testimony",
+      "source_class": "preprint",
       "description": "GUT Population Survey v1.7: Architectural Trellis: GUT Box Population Survey, Child Trellis of Displacement Geometry v3.9, Version 1.7 (March 2026) -- Seven Shore cycles. Ten architectures surveyed. One confirmed viable (Pati-Salam, F-theory X_{F13} on $dP_3$). Three dead (minimal SU(5), SUSY SU(5), orbifold GUTs). Three structural findings (SF-G1, SF-G2, SF-G3). 24 sorry items (4 discharged, 20 o",
       "rests_on": []
     },
@@ -722,7 +722,7 @@
     },
     {
       "source_id": "corpus.f-theory-ps-model-spec",
-      "source_class": "testimony",
+      "source_class": "preprint",
       "description": "F-Theory PS Model Spec: F-Theory Dark Dimension Pati-Salam Model: Complete Specification (March 2026) -- Full geometric and topological data for the confirmed GUT Box occupant. Appendix A.1 of the child trellis.",
       "rests_on": [
         "corpus.cy4-euler-and-flux",
@@ -969,7 +969,7 @@
     },
     {
       "source_id": "corpus.dg-cft-054",
-      "source_class": "testimony",
+      "source_class": "preprint",
       "description": "DG-CFT-054: Paper 0 v9-to-v10 Update Module (April 2026) -- Integration of the explicit $\\gamma$ derivation into Section IV.D, revision of Section III.F, new Section IV.F on species enhancement of brane-localized Wilsonian coefficients, bibliography additions (Georgi-Grant-Hailu, von Gersdorff-Irges-Quiros, Fabinger-Horava, Dvali-Gomez species identity references). Source for the Paper 0 v10 conte",
       "rests_on": [
         "corpus.dg-cft-053"
@@ -1287,13 +1287,13 @@
     },
     {
       "source_id": "corpus.dg-cft-062",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "DG-CFT-062: KT and Hyperuniformity Calculation (June 12, 2026; internal CE-DG-011-b) -- Thermal gates per substrate: PdD (KT window 2 to 11 K vs operating 300 to 900 K); WD ($10^3$ to $10^5$ K vs $10^6$ to $10^7$ K); NS pasta ($T_{\\text{KT}} \\sim 3\\times 10^{10}$ K, above the pairing $T_c$). Vela vortex array $p = 1/2$, shortfall $10^{26}$. Closes the stiffness-protected column of the candidate ta",
       "rests_on": []
     },
     {
       "source_id": "corpus.dg-cft-063",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "DG-CFT-063: Refresh-Duality Consistency Computation (June 12, 2026; internal CE-DG-011-c) -- VEV-depletion identity reproducing the pole form in one line. Queue-capacity $\\Lambda_s^6/M_{\\text{Pl}}^2 = 2.1\\times 10^{12}$ GeV$^4$ vs $F_{Q,\\text{crit}}$, ratio 5.1 at $c_{\\text{KK}} = 1$, exact match at $c_{\\text{KK}} \\sim 5$. Radion mass equality $m_\\rho = \\sqrt{c_{\\text{KK}}}\\,\\Lambda_s^2/(4\\pi M_{\\",
       "rests_on": []
     },
@@ -1323,19 +1323,19 @@
     },
     {
       "source_id": "corpus.dg-cft-067",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "DG-CFT-067: Detector Computation (June 13, 2026; internal CE-DG-013-b) -- Three-anchor weight-forcing: entanglement first law, canonical-energy = QFI, $S_{\\text{dS}} = \\langle K\\rangle$. Forces unit cumulant weights if the coupling has the modular free-energy form $W(\\epsilon) = \\log\\langle e^{-\\epsilon K}\\rangle$. FDT unification at $T_{\\text{dS}} = H/2\\pi$. Feeds SF-DG-013 Part A.1 and S-CUMULAN",
       "rests_on": []
     },
     {
       "source_id": "corpus.dg-cft-068",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "DG-CFT-068: Catastrophe / KK-Tower Codimension Computation (June 13, 2026; internal CE-DG-013-c) -- Quartic potential = cusp catastrophe. The $N$ heavy KK modes integrate out Gaussian ($\\phi^2$ renormalization only, no new fold). An umbilic (codim $\\geq 3$) requires a second light scalar degenerate with the radion plus a mutual quartic coupling. Feeds SF-DG-013 Parts A.3 and B.3 (S-SECOND-LIGHT-SC",
       "rests_on": []
     },
     {
       "source_id": "corpus.dg-cft-069",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "DG-CFT-069: Transient-Exhaust Computation (June 13, 2026; internal CE-DG-013-d) -- $N_{\\text{coh}} = (\\Lambda_s/E)^2$ vs $N_{\\text{eff}}$ match to $31\\times$. Decoherence-in-window factor 0.08. Seesaw coincidence $E \\sim \\Lambda_s^2/M_{\\text{Pl}}$. Establishes the LENR exhaust channel as marginal-and-alive, not a result. Feeds SF-DG-013 Part B.2 (S-EXHAUST-COHERENCE).",
       "rests_on": []
     },
