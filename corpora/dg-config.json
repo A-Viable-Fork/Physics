@@ -1273,6 +1273,30 @@
       ]
     },
     {
+      "source_id": "corpus.f12-reconciliation-scout-may-2026",
+      "source_class": "ai-audit",
+      "description": "F12 Reconciliation Scout (May 12, 2026): the Gemini Deep Research scout report evaluating candidate reconciliations of the F12 dark-energy thawing trajectory against the AM-locked branch (ER-COSM-001 categorical DLRO/ODLRO conflation, ER-COSM-002 SL-AM-1 kinematic dominance, ER-COSM-003 volume-fraction suppression, ER-COSM-004 radion mass-window mismatch), all four killed May 12, 2026.",
+      "rests_on": []
+    },
+    {
+      "source_id": "corpus.framework-scout-1-bh-mechanism-may-2026",
+      "source_class": "ai-audit",
+      "description": "Framework Scout 1: BH Mechanism (May 2026): the Gemini Deep Research scout report evaluating internal evolving-dark-energy candidates within the AM-locked branch (S-DE-001): ER-DE-001 (black-hole bulk-routing evolving-DE, primary finding), ER-DE-002 (vacuum-driven reheating, ancillary candidate within the same scout), ER-DE-003 (trans-Planckian quantum-foam evolving-DE, candidate within the same scout).",
+      "rests_on": []
+    },
+    {
+      "source_id": "corpus.framework-scout-3-nede-thermal-may-2026",
+      "source_class": "ai-audit",
+      "description": "Framework Scout 3: NEDE Thermal (May 2026): the Gemini Deep Research scout report evaluating a New-Early-Dark-Energy-style thermal-pump evolving-DE candidate within the AM-locked branch (S-HT-001), killed by the v3.9 generalized cosmological plasma exclusion (ER-HT-001).",
+      "rests_on": []
+    },
+    {
+      "source_id": "corpus.framework-scout-4-multi-field-destabilization-may-2026",
+      "source_class": "ai-audit",
+      "description": "Framework Scout 4: Multi-Field Destabilization (May 2026): the Gemini Deep Research scout report evaluating multi-field slow-roll and hairon-quintessence evolving-DE candidates within the AM-locked branch (S-DE-002): ER-DE-004 (multi-modulus slow-roll, primary finding), ER-DE-005 (hairon-sourced quintessence, candidate within the same scout), ER-DE-006 (multi-field hairon-quintessence destabilization, candidate within the same scout).",
+      "rests_on": []
+    },
+    {
       "source_id": "corpus.f12-cosmological-dark-energy-thawing-vs-pole-structure-recon",
       "source_class": "ai-audit",
       "description": "F12 Cosmological Dark Energy Thawing vs. Pole Structure Reconciliation Scout (May 12, 2026): F12 Cosmological Dark Energy Thawing vs. Pole Structure Reconciliation Scout (Gemini Deep Research, May 12, 2026) -- Verdict DEAD, F12 retraction. All three reconciliation hypotheses (channel separation via integrated $f$ buildup, cosmological averaging of binary pole activations, intra-sector radion slow-",
