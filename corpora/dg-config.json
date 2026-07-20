@@ -54,6 +54,10 @@
     {
       "kind": "block",
       "ceiling": "corroborated"
+    },
+    {
+      "kind": "departure",
+      "ceiling": "corroborated"
     }
   ],
   "sources": [
@@ -1626,6 +1630,58 @@
       "source_class": "peer-reviewed",
       "description": "Donnelly, Freidel, JHEP 09 (2016) 102, arXiv:1601.04744. Local subsystems in gauge theory and gravity. The edge-mode construction underlying the framework's Donnelly-Freidel edge-mode mechanism for Hilbert-space factorization. Cited by C18a.",
       "rests_on": []
+    },
+    {
+      "source_id": "lit.israel-1966",
+      "source_class": "peer-reviewed",
+      "description": "Israel, Nuovo Cimento B 44, 1 (1966); erratum Nuovo Cimento B 48, 463 (1967). Singular hypersurfaces and thin shells in general relativity: the Israel junction condition, canonical root for the trace-reversed Z2-orbifold form both K3 audit artifacts (PK-AUD-K3-001, PK-AUD-K3-002) rederive from. A canonical literature root per docs/governing-conventions.md Section 10 (landing-1 Track 0.4): peer-reviewed, rests on nothing else.",
+      "rests_on": []
+    },
+    {
+      "source_id": "lit.randall-sundrum-1999",
+      "source_class": "peer-reviewed",
+      "description": "Randall, Sundrum, Phys. Rev. Lett. 83, 3370 (1999), arXiv:hep-ph/9905221 (\"A Large Mass Hierarchy from a Small Extra Dimension\"); companion Phys. Rev. Lett. 83, 4690 (1999), arXiv:hep-th/9906064 (\"An Alternative to Compactification\"). The RS critical brane tension T3 = 6/(kappa5^2 L) for the flat-sliced case. A canonical literature root per docs/governing-conventions.md Section 10: peer-reviewed, rests on nothing else.",
+      "rests_on": []
+    },
+    {
+      "source_id": "lit.karch-randall-2001",
+      "source_class": "peer-reviewed",
+      "description": "Karch, Randall, JHEP 0105, 008 (2001), arXiv:hep-th/0011156 (\"Locally Localized Gravity\"). The AdS4-sliced (Karch-Randall) brane and its detuned tension-position relation, T3 = (6/kappa5^2 L) tanh(z0/L); the dS4-sliced mirror T3 = (6/kappa5^2 L) coth(z0/L) is the same construction continued to the opposite slicing curvature sign, derived independently by both K3 audit artifacts, not itself a separate literature citation. A canonical literature root per docs/governing-conventions.md Section 10: peer-reviewed, rests on nothing else.",
+      "rests_on": []
+    },
+    {
+      "source_id": "lit.goldberger-wise-1999",
+      "source_class": "peer-reviewed",
+      "description": "Goldberger, Wise, Phys. Rev. Lett. 83, 4922 (1999), arXiv:hep-ph/9907447 (\"Modulus stabilization with bulk fields\"). Brane-localized vacuum energy gravitates as tension; root for the effective-tension result T_eff = T3 + V(v). A canonical literature root per docs/governing-conventions.md Section 10: peer-reviewed, rests on nothing else.",
+      "rests_on": []
+    },
+    {
+      "source_id": "lit.dewolfe-et-al-2000",
+      "source_class": "peer-reviewed",
+      "description": "DeWolfe, Freedman, Gubser, Karch, Phys. Rev. D 62, 046008 (2000), arXiv:hep-th/9909134 (\"Modeling the fifth dimension with scalars and gravity\"). Companion root for the effective-tension result T_eff = T3 + V(v), brane-localized scalar backreaction on the junction condition. A canonical literature root per docs/governing-conventions.md Section 10: peer-reviewed, rests on nothing else.",
+      "rests_on": []
+    },
+    {
+      "source_id": "corpus.pk-aud-k3-001",
+      "source_class": "ai-audit",
+      "description": "PK-AUD-K3-001 (docs/audits/PK-AUD-K3-001.md, docs/audits/ATTESTATION.md): adversarial derivation audit of K3, run by DeepSeek expert per operator attestation (the artifact's own header self-describes as GPT-4o and self-labels 002, corrected by ATTESTATION.md, never by editing the artifact). Rederives the Israel junction condition, the RS flat-slice critical tension, and the Karch-Randall AdS4-slice detuned tension relation from first principles; verdict NEEDS REFINEMENT on K3 as stated.",
+      "rests_on": [
+        "lit.israel-1966",
+        "lit.randall-sundrum-1999",
+        "lit.karch-randall-2001"
+      ]
+    },
+    {
+      "source_id": "corpus.pk-aud-k3-002",
+      "source_class": "ai-audit",
+      "description": "PK-AUD-K3-002 (docs/audits/PK-AUD-K3-002.md, docs/audits/ATTESTATION.md): adversarial derivation audit of K3, run by Kimi (Moonshot AI), Kimi K3, per operator attestation (self-labeled correctly). Rederives the Israel junction condition (both flat and AdS4/dS4 slicing from one master warped-product equation), the RS flat-slice critical tension, the Karch-Randall AdS4-slice and dS4-slice tension-position relations, and the effective-tension result T_eff = T3 + V(v) with the position-sensitivity enhancement cosh^2(z0/L); verdict NEEDS REFINEMENT, leaning DEAD for K3 as literally stated in the genuinely-KR regime.",
+      "rests_on": [
+        "lit.israel-1966",
+        "lit.randall-sundrum-1999",
+        "lit.karch-randall-2001",
+        "lit.goldberger-wise-1999",
+        "lit.dewolfe-et-al-2000"
+      ]
     }
   ],
   "time_lock": {

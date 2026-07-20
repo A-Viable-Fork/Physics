@@ -4,12 +4,13 @@
 //   snapshot, never importing corpora or build itself (api may import kernel, api, or other, never
 //   build or corpora, per build/check-imports.mjs's own trust-boundary table). Every kernel-
 //   touching computation an analysis script would otherwise need (footprintClosure over rests_on,
-//   ceilingFor's constitutive-mode check, restatementClosure, collapsedRank, inForce) is resolved
-//   here, once, so a periphery script downstream never needs vendor/kernel directly.
+//   ceilingFor's constitutive-mode check, restatementClosure, collapsedRank, inForce, decay) is
+//   resolved here, once, so a periphery script downstream never needs vendor/kernel directly.
 // Contract: createDgProvider(built) -> { claims, supports, closureOf, withdrawnIdentities,
-//   supersededIdentities, refByIdentity, identityByRef, collapsedRankOf }. `built` is
-//   build/dg-build.mjs's buildKernel() return value, supplied by the caller (a periphery or build
-//   script), never constructed here. Pure function of its input; no read of any file, no mutation.
+//   supersededIdentities, decayedIdentities, refByIdentity, identityByRef, collapsedRankOf }.
+//   `built` is build/dg-build.mjs's buildKernel() return value, supplied by the caller (a periphery
+//   or build script), never constructed here. Pure function of its input; no read of any file, no
+//   mutation.
 // Invariant: this file is the only analysis-facing surface allowed to import vendor/kernel
 //   directly, per build/check-imports.mjs's layer table (api may import kernel). Every field this
 //   factory returns is plain data (identities, refs, strings, arrays, Sets), never a live kernel
@@ -19,6 +20,7 @@ import { footprintClosure, ceilingFor } from "../vendor/kernel/schema/tables.mjs
 import { restatementClosure } from "../vendor/kernel/gate/gate.mjs";
 import { collapsedRank } from "../vendor/kernel/schema/confidence.mjs";
 import { inForce } from "../vendor/kernel/store/apply.mjs";
+import { computeDecay } from "../vendor/kernel/store/decay.mjs";
 
 export function createDgProvider(built) {
   const { claims, links, tables, state } = built;
@@ -59,6 +61,7 @@ export function createDgProvider(built) {
 
   const withdrawnIdentities = new Set((state.withdrawn_records || []).map((w) => w.claim_identity));
   const supersededIdentities = new Set((state.supersession_records || []).map((s) => s.superseded_identity));
+  const decayedIdentities = new Set(computeDecay(state, tables).map((f) => f.entry_identity));
 
   const refByIdentity = new Map(claimsOut.map((c) => [c.identity, c.ref]));
   const identityByRef = new Map(claimsOut.map((c) => [c.ref, c.identity]));
@@ -69,6 +72,7 @@ export function createDgProvider(built) {
     closureOf,
     withdrawnIdentities,
     supersededIdentities,
+    decayedIdentities,
     refByIdentity,
     identityByRef,
     collapsedRankOf: (grade) => collapsedRank(grade),

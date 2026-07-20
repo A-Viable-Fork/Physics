@@ -27,6 +27,11 @@
       "category": "constraint"
     },
     {
+      "trellis_id": "K3-prime (landing-1 supersession of K3, operator ruling R2)",
+      "ref": "k3-prime",
+      "category": "constraint"
+    },
+    {
       "trellis_id": "K4",
       "ref": "k4",
       "category": "constraint"
@@ -595,6 +600,16 @@
       "trellis_id": "Torsional hair (4.5)",
       "ref": "s-torsional-hair",
       "category": "comment"
+    },
+    {
+      "trellis_id": "S-K3-KILL-REARG (landing-1 Track 4, not a trellis identifier)",
+      "ref": "s-k3-kill-rearg",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-K3-BACKREACT (landing-1 Track 4, not a trellis identifier)",
+      "ref": "s-k3-backreact",
+      "category": "sorry"
     },
     {
       "trellis_id": "Muonic atom discrimination test (4.5)",
