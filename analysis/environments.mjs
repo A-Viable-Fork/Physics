@@ -25,6 +25,15 @@
 //   is a base node, exactly as a source row is. A constitutive-kind claim (axiom, theorem) is
 //   always its own single base node: its ceiling's mode makes it foundational by kind, not by
 //   basis or support, so it does not recurse into either.
+// Structure-sense non-monotonicity, by design, not a bug (audit-prep Track 0.2, docs/governing-
+//   conventions.md Section 9): removing a conjunctive support_group member can RAISE a claim's
+//   earned grade (analysis-1's k10 case: severing the link to a weaker member released a
+//   constraint on supportDelivery's weakest-of fold, moving k10 from asserted to corroborated),
+//   and conversely adding a weak conjunctive member can lower it until that member itself
+//   grounds. This is the same monotonic-in-set-size behavior a meet over a growing or shrinking
+//   term collection always has; it is a property of what is being computed changing, never a
+//   defect in the computation. A minimal environment names every member the current structure
+//   genuinely requires, whether or not that member currently helps the numeric grade.
 "use strict";
 
 function isSubsetOf(small, big) {
