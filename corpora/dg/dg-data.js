@@ -1,6 +1,6 @@
 // Role: the dg kernel store: Stage 1 tier commitments plus Stage 2 structure, bare. Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1 with its v4.14-to-v4.16 supersession, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2), atomized one commitment per claim from the trellis. The exclusion reservoir, all grounding supports, and all checking records are Stage 3, not entered here.
 // Contract: exports STORE = { store_id, claims, links, supersessions }. Pure data; imports nothing.
-// Invariant: every claim is declared at or below what it earns with no support links or checking records: everything floors at asserted, including the two branch commitments (their kind ceiling is corroborated, not constitutive; a bare corroborated declaration was planted and confirmed declined by the real gate with GM-ABOVE, per the session notes, so both declare asserted honestly rather than the ceiling the Stage 2 prompt anticipated). Statement text is the trellis own prose, atomized to one commitment per claim; where atomization forced a judgment call the full trellis context is quoted in extensions.trellis_context. depends-on links wire provenance brackets, parent relations, and branch entanglement to already-entered claims only. Contract/mechanism verdicts (Confirmed through Plausible) ride in extensions.verdict, read by periphery, never the gate, per docs/governing-conventions.md.
+// Invariant: every claim is declared at or below what it earns with no support links or checking records: everything floors at asserted, including the two branch commitments (their kind ceiling is corroborated, not constitutive; a bare corroborated declaration was planted and confirmed declined by the real gate with GM-ABOVE, per the session notes, so both declare asserted honestly rather than the ceiling the Stage 2 prompt anticipated), except comment-kind speculation entries which declare ungraded, their kind ceiling. Statement text is the trellis own prose, atomized to one commitment per claim; where atomization forced a judgment call the full trellis context is quoted in extensions.trellis_context. depends-on links wire provenance brackets, parent relations, and branch entanglement to already-entered claims only. Contract/mechanism verdicts (Confirmed through Plausible) ride in extensions.verdict, read by periphery, never the gate, per docs/governing-conventions.md. Sorry status, priority, and gating ride in extensions per the same rule.
 "use strict";
 
 const STORE = {
@@ -1111,6 +1111,522 @@ const STORE = {
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "B-NU-1 (new, v4.13): Neutrino Mass Sector Friction. By rejecting DESI DR2 thawing, the framework commits to the Lambda-CDM upper bound sum(m_nu) < 0.064 eV (95% from DESI DR2 + CMB). Terrestrial oscillation experiments require sum(m_nu) >= 0.059 eV (normal hierarchy). Net friction ~0.005 eV with the terrestrial neutrino sector. Tracking for resolution via inverted hierarchy possibility, future neutrino mass measurements (KATRIN, Project 8, cosmological surveys), or future shifts in the cosmological mass bound. No structural resolution from the framework current axiomatic core; tracking as an external observational tension."
+    },
+    {
+      "ref": "s-cumulant-derive",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-CUMULANT-DERIVE: Derive the Generator Cumulant Expansion from the DG Coupling. Opened June 2026 by SF-DG-013. The detector argument showed the three anchors force unit cumulant weights if the DG coupling has the modular free-energy form W(epsilon) = log<e^(-epsilon K)>. It did not derive W(epsilon) from DG own matter-geometry coupling. This is upstream of everything: it is the gate S-GEN, S-NOISE, and the entire matter/biology/exhaust arc wait behind.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "expand the actual DG coupling in the deformation parameter epsilon and verify: the first cumulant <K> is stress-energy-coupled (closing the generator gate), the second cumulant <delta K^2> is the SLD-Fisher pole (preserving the carve, keeping C-RD-1 intact), and the fluctuation-dissipation theorem relates the first and second cumulants at the de Sitter temperature T_dS = H/2pi",
+        "system": "the DG matter-geometry coupling, modular free energy expansion"
+      },
+      "extensions": {
+        "status": "OPEN",
+        "priority": "HIGHEST in the corpus, Frontier difficulty"
+      }
+    },
+    {
+      "ref": "s-exhaust-coherence",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-EXHAUST-COHERENCE: Coherent Bulk Coupling of a Fusion Product. Opened June 2026 by SF-DG-013. The question: does a fusion product at a high-F_Q lattice site couple to the N_eff species/KK channels coherently (superradiantly) within the ~1e-15 s de-excitation window? If coherent, bulk branching is order-one and the missing-radiation problem of LENR dissolves; if incoherent, the channel is dead.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "determine the phase structure of how a localized nuclear transition couples to the degenerate KK/species tower; computable in the F-theory pipeline / heat-kernel machinery",
+        "system": "a fusion product at a high-F_Q lattice site"
+      },
+      "extensions": {
+        "status": "OPEN, ACTIVE",
+        "priority": "HIGH, gates the LENR-via-DG target; MARGINAL-AND-ALIVE, not a result"
+      }
+    },
+    {
+      "ref": "s-exhaust-colocation",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-EXHAUST-COLOCATION: Co-Location of Screening and Coherence Conditions. Opened June 2026 by SF-DG-013. Even if coherence holds: do the in-channel condition (screening, high electron density and a specific lattice) and the out-channel condition (high local F_Q) co-locate at a single site, or does the susceptibility exclusion (SL-SUSC-1) separate them?",
+      "closing_condition": {
+        "condition_kind": "direct-study",
+        "target": "check after S-EXHAUST-COHERENCE returns whether the in-channel and out-channel conditions co-locate at a single site",
+        "system": "the same lattice site as S-EXHAUST-COHERENCE"
+      },
+      "extensions": {
+        "status": "OPEN, ACTIVE",
+        "priority": "HIGH, second gate behind S-EXHAUST-COHERENCE",
+        "gated_behind": "s-exhaust-coherence"
+      }
+    },
+    {
+      "ref": "s-second-light-scalar",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-SECOND-LIGHT-SCALAR: Symmetry-Protected Second Light Scalar near the Radion. Opened June 2026 by SF-DG-013. The catastrophe count closed the trans-sector fold as a cusp (codimension 2); a trans-sector pleat would require a codimension >= 3 umbilic, requiring a second light scalar degenerate with the radion carrying a mutual quartic coupling. Question: does the dP_3 Pati-Salam construction force such a scalar near the radion (MeV) mass?",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "a light-spectrum calculation in the existing F-theory model determining whether the dP_3 Pati-Salam construction forces a symmetry-protected second light scalar near the radion mass",
+        "system": "the dP_3 Pati-Salam F-theory model light spectrum"
+      },
+      "extensions": {
+        "status": "OPEN, ACTIVE",
+        "priority": "MEDIUM, decides whether the trans-sector fold lives inside DG"
+      }
+    },
+    {
+      "ref": "s-noise",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-NOISE: Parameter-Free Radion-Mediated Decoherence Spectrum. Carried forward and reclassified June 2026 by SF-DG-013. The generator identity the decoherence spectrum relies on is exactly what S-CUMULANT-DERIVE establishes, so S-NOISE now sits behind it. The highest-value item after the cumulant gate, deciding whether DG has a laboratory signature or remains purely cosmological.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "derive the parameter-free radion-mediated decoherence spectrum once S-CUMULANT-DERIVE establishes the generator identity",
+        "system": "radion-mediated decoherence in a laboratory-accessible system"
+      },
+      "extensions": {
+        "status": "OPEN, ACTIVE",
+        "priority": "HIGH, downstream of S-CUMULANT-DERIVE"
+      }
+    },
+    {
+      "ref": "s-frame",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-FRAME: Einstein versus Jordan Frame Assignment under the Refresh Duality. Opened June 2026 by SF-DG-011. The Einstein-versus-Jordan frame assignment of matter and gravity under the Weyl factor is open: the equivalence-principle and force-structure checks were run in one frame only.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "redo the EP and force-structure analysis in the conjugate frame and confirm the refresh-duality dictionary (G_eff = G/(1-u), v_eff to 0 as queue overflow/symmetry restoration) is frame-consistent",
+        "system": "the refresh-duality dictionary under Einstein versus Jordan frame"
+      },
+      "extensions": {
+        "status": "OPEN, ACTIVE",
+        "priority": "MODERATE, resolvable"
+      }
+    },
+    {
+      "ref": "s-e1-audit",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-E1-AUDIT: Audit of Stale 4D Species-Scale Citations. Opened June 2026 by SF-DG-011 erratum E-1. The appendix species-scale line used stale 4D geometric-mean counting, off by five orders in Lambda_s and ten in N. The corrected 5D values are already used by the gamma derivation and all v4.7+ quantitative results; the erratum is confined to the appendix line and its echoes.",
+      "closing_condition": {
+        "condition_kind": "direct-study",
+        "target": "audit any downstream document citing the appendix numbers directly, which is off by 10^10 in gamma; scattered phenomenological passages (F19, F20, GUT-running, C20f-ii) still carry the legacy figure and are flagged but not silently rewritten",
+        "system": "downstream citations of the appendix species-scale line"
+      },
+      "extensions": {
+        "status": "OPEN, ACTIVE",
+        "priority": "LOW"
+      }
+    },
+    {
+      "ref": "s-cc-007",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-CC-007: Hairon-Vacuum Entropic Consistency. Opened May 2026, SF-DG-011 shore. Required: verification that the hairon BEC accounting (Addazi-Meluccio arXiv:2604.26982) reproduces the de Sitter horizon entropy S_dS at the required precision when matched against the AM topological selection k_phys ~ S_dS. Would become moot if Path B activates.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "explicit computation of the entropic contribution from the hairon BEC, comparison against the AM selection criterion, verification the matching is consistent to leading order",
+        "system": "hairon BEC entropic accounting versus AM topological sector selection"
+      },
+      "extensions": {
+        "status": "OPEN, ACTIVE, Path A specific"
+      }
+    },
+    {
+      "ref": "s-dd-001",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-DD-001: Light Modulus Identification for Path B. Opened May 2026, SF-DG-011 shore. Required: identify which modulus parameterizes R(t) in the framework specific F-theory geometry. Candidates: Kahler moduli of the dP_3 base, axion-like fields from complex structure deformations, or a new modulus added phenomenologically.",
+      "closing_condition": {
+        "condition_kind": "direct-study",
+        "target": "survey the moduli of the framework F-theory dP_3 + X_F13 Pati-Salam geometry, identify candidates compatible with Bedroya-Obied-Vafa-Wu arXiv:2507.03090, check whether the candidates support a slow-roll trajectory matching DESI DR2 thawing",
+        "system": "the dP_3 + X_F13 Pati-Salam F-theory moduli space"
+      },
+      "extensions": {
+        "status": "OPEN, DORMANT unless Path B activates",
+        "gating": "triggered by Path A falsification (DESI Y5 / Euclid >= 5-sigma evolving w(z))"
+      }
+    },
+    {
+      "ref": "s-dd-002",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-DD-002: Modulus Mass Derivation for Path B. Opened May 2026, SF-DG-011 shore. Required: derive m_chi ~ H0 ~ 1e-33 eV from first principles, where chi is the modulus identified by S-DD-001. Without a structural reason, the mechanism is phenomenologically tuned, unacceptable as a load-bearing Path B commitment.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "identify the structural origin of the H0 mass scale within the framework F-theory geometry and the Karch-Randall braneworld (candidates: residual symmetry protection, Dark Dimension radius suppression, instanton-generated potential, KKLT-like moduli stabilization)",
+        "system": "the Path B light modulus chi"
+      },
+      "extensions": {
+        "status": "OPEN, DORMANT unless Path B activates",
+        "gating": "triggered by Path B activation; closure of S-DD-001 prerequisite"
+      }
+    },
+    {
+      "ref": "s-dd-003",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-DD-003: DM Mass Evolution Constraints for Path B. Opened May 2026, SF-DG-011 shore. Required: verify that the evolving m_KK(t) ~ 1/R(t) predicted by Path B (F11-prime) is consistent with BBN, CMB, and structure-formation constraints. The DM mass variation is the primary falsifiable structural prediction of Path B; if incompatible with current bounds, Path B is falsified independently of the static-vs-evolving DE question.",
+      "closing_condition": {
+        "condition_kind": "direct-study",
+        "target": "compute the m_KK(t) trajectory implied by the R(t) evolution under candidate V(chi) shapes, cross-check against BBN (m_KK at T ~ MeV), CMB (m_KK at z ~ 1100), and LSS (m_KK at z <~ 1)",
+        "system": "the evolving KK graviton mass m_KK(t) under Path B"
+      },
+      "extensions": {
+        "status": "OPEN, DORMANT unless Path B activates",
+        "gating": "triggered by Path B activation"
+      }
+    },
+    {
+      "ref": "s-dd-004",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-DD-004: Hairon Role Compatibility under Evolving Background. Opened May 2026, SF-DG-011 shore. Required: verify whether the hairon BCS neutrino DM mechanism (verified under static-vacuum identification) survives in the evolving-background context where the static-vacuum identification is dropped.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "trace the hairon condensation dynamics under a slowly evolving R(t) background, check whether the BCS-like neutrino superfluid persists or destabilizes; if it persists, derive the modified T_c and density",
+        "system": "hairon BCS neutrino condensation under evolving R(t)"
+      },
+      "extensions": {
+        "status": "OPEN, DORMANT unless Path B activates",
+        "gating": "triggered by Path B activation"
+      }
+    },
+    {
+      "ref": "s-cc-002prime",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-CC-002prime: z0 Stabilization without AM Instanton Potential. Opened May 2026, SF-DG-011 shore. Required: identify a z0 stabilization mechanism for the Karch-Randall brane that does not rely on the AM instanton potential, since Path B drops the AM topological structure. Candidates: KKLT-style flux stabilization, brane-localized superpotential, Casimir backreaction, generalized Running Coupling Rescue Theorem.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "survey the candidate z0 stabilization mechanisms against the structural constraints of the Path B branch, identify the cleanest mechanism, develop to discharge-ready state",
+        "system": "Karch-Randall brane radial position z0 under Path B"
+      },
+      "extensions": {
+        "status": "OPEN, DORMANT unless Path B activates",
+        "gating": "triggered by Path B activation"
+      }
+    },
+    {
+      "ref": "s-am-008",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-AM-008: Anomaly Cancellation Compatibility. Opened May 2026, v4.14 Addendum A (Baykara-Chen-Vafa repositioning). Required: verify whether the hairon construction S^4/Z_N orbifold (Addazi-Meluccio arXiv:2604.26982) satisfies the duality-covariant anomaly cancellation condition introduced in Baykara-Chen-Vafa arXiv:2605.16484.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "apply the quadratic equations from arXiv:2605.16484 Appendix A.3 to the hairon Z_N phase shift acting on the M-theory charge lattice, determine whether the hairon configuration satisfies the conditions",
+        "system": "the hairon S^4/Z_N orbifold construction versus the Baykara-Chen-Vafa anomaly condition"
+      },
+      "extensions": {
+        "status": "OPEN, ACTIVE, Path A specific",
+        "priority": "MEDIUM, not blocking but informative for Path A credibility"
+      }
+    },
+    {
+      "ref": "s-am-009",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-AM-009: Sign of V at AM Minimum. Opened May 2026, v4.14 Addendum A. Required: document the framework argument for V > 0 at the AM minimum, since Baykara-Chen-Vafa note their critical-point construction cannot determine the sign of V. Path A currently relies on V > 0 to match observation; this should be established structurally rather than left implicit.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "trace through the AM construction (Addazi-Meluccio arXiv:2602.16840) and establish whether the topologically selected sector has V > 0 by structural argument or by additional assumption; if by assumption, flag as a Path-A-specific commitment",
+        "system": "the sign of V at the Addazi-Meluccio topological minimum"
+      },
+      "extensions": {
+        "status": "OPEN, ACTIVE, Path A specific",
+        "priority": "MEDIUM"
+      }
+    },
+    {
+      "ref": "s-am-010",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-AM-010: d=4 Critical Point Comparison. Opened May 2026, v4.14 Addendum A. Required: determine the structural relationship between the Baykara-Chen-Vafa d=4 isolated critical point (A^7_1 lattice point) and the framework d=4 effective theory critical point selected by the AM mechanism: same point in different language, different points, or structurally incompatible setups.",
+      "closing_condition": {
+        "condition_kind": "direct-study",
+        "target": "identify the moduli of the Karch-Randall plus AM construction in M-theory-on-T^7 language, compare to the (A^7_1, v_1) critical point of Baykara-Chen-Vafa",
+        "system": "the framework AM-selected critical point versus the Baykara-Chen-Vafa d=4 critical point"
+      },
+      "extensions": {
+        "status": "OPEN, ACTIVE, comparative analysis task",
+        "priority": "MEDIUM"
+      }
+    },
+    {
+      "ref": "s-hsb-002b",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-HSB-002b: Geometric SDC route via Karch-Randall moduli geometry. Opened May 12, 2026, HSB Karch-Randall Moduli Geometry Scout. The DBI-induced metric on the radial modulus z0 gives geodesic distance d ~ M_Pl ln(z0/L) via Einstein-frame Weyl rescaling, yielding the SDC exponential decay m_KK ~ exp(-d/M_Pl). An external scout claimed alpha = 1/4 but the value failed internal arithmetic check against the sharpened SDC bound alpha >= 1/sqrt(d-2) (alpha >= 1/sqrt(2) in d=4).",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "closure of S-CC-002 (via RCRT, b > 1/(4 pi^2) for X_F13 PS on dP_3) plus explicit alpha-value computation for the sharpened SDC bound, recomputation queued as Priority 2",
+        "system": "the SDC exponent alpha for the Karch-Randall moduli geometry route"
+      },
+      "extensions": {
+        "status": "ACTIVE, conditional",
+        "priority": "BIFURCATED (sibling S-HSB-002a discharged as dead via ER-WGC-001)"
+      }
+    },
+    {
+      "ref": "s-cc-001",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-CC-001: Stable Equilibrium z0 for Karch-Randall Brane. Reformulated v4.8 to: stable equilibrium z0 for the brane radial position from a mechanism beyond the killed gamma(z0) inheritance. The Lambda_initial portion is discharged through F-CC; the brane radial position question is now decoupled from cosmological constant derivation.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "identify a stabilization mechanism that produces a finite z0, given that the coupled saddle-point alone runs to the IR horizon; candidate mechanisms live in S-CC-002 and S-CC-004",
+        "system": "Karch-Randall brane radial position z0"
+      },
+      "extensions": {
+        "status": "REFORMULATED, still open",
+        "priority": "HIGH"
+      }
+    },
+    {
+      "ref": "s-cc-002",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-CC-002: Instanton-Generated z0 Stabilization for the Karch-Randall Brane. Status updated OPEN to ACTIVE at v4.13. If gauge instanton tunneling couples to the radion rho through KK threshold corrections, an exponentially suppressed potential V_inst(rho) could balance the polynomial z0^-2 runaway. Sharpened sub-tag (Running Coupling Rescue Theorem, SL-RC-1): stabilization requires the one-loop beta function coefficient b for the X_F13 Pati-Salam KK tower on the dP_3 Laplacian to satisfy b > 1/(4 pi^2) ~ 0.0253.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "compute b for X_F13 Pati-Salam KK tower on dP_3 Laplacian via ftheory-pipeline / OSCAR / FTheoryTools; if b > 1/(4 pi^2), S-CC-002 closes unconditionally and C23-SDC discharges unconditionally; if b <= 1/(4 pi^2), S-CC-002 closes as DEAD with a number",
+        "system": "the one-loop beta function coefficient b for the X_F13 Pati-Salam KK tower on dP_3"
+      },
+      "extensions": {
+        "status": "ACTIVE, sharpened v4.13",
+        "priority": "HIGH, load-bearing for C23-SDC"
+      }
+    },
+    {
+      "ref": "s-cc-004",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-CC-004: Holographic Casimir Backreaction of KK Graviton Tower on Brane Potential. Gemini CC Derivation Run 2 raised this as the leading rescue candidate after the gamma(z0) kill. Compatible with the topological Chern-Simons bulk requirement (Casimir energy is a quantum vacuum effect, not new propagating bulk DOF).",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "compute holographic Casimir energy of the KK graviton tower as a function of z0, check whether its scaling provides a competing force halting the z0 to infinity runaway; run only if S-CC-002 returns DEAD, otherwise held open at lower priority",
+        "system": "holographic Casimir energy of the KK graviton tower versus z0"
+      },
+      "extensions": {
+        "status": "OPEN, deferred v4.13",
+        "priority": "MEDIUM, Priority 4 deferred per v4.13 next-action queue"
+      }
+    },
+    {
+      "ref": "s-cc-005",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-CC-005: Identification of Bulk Chern-Simons Level k_bulk with Boundary AM Topological Sector k_phys. If the descent equations from the bulk SO(2,4) Chern-Simons theory to the boundary MM action naturally identify k_bulk with the AM topological sector integer k_phys ~ S_dS, the AM topological selection comes free from existing framework structure. Governs inter-sector tunneling protection at the e^(-S_dS) suppression scale, distinct from S-CC-002 radial moduli stabilization.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "explicit computation of the descent map from bulk CS quantization to boundary MM topological winding, using CS-WZW descent equations as in the original boundary induction (Paper 0 Section 2.3)",
+        "system": "bulk SO(2,4) Chern-Simons level versus boundary AM topological sector"
+      },
+      "extensions": {
+        "status": "OPEN, role clarified v4.13",
+        "priority": "HIGH, strategic"
+      }
+    },
+    {
+      "ref": "s-mm-cr",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-MM-CR: Configuration-Robustness Theorem for Multiplier Left Null Space Rank Lift. Spawned from the S-MM-002 chain closure. The framework central architectural prediction (DOF = 3, two graviton plus one radion) is conditional on this theorem. Statement: for all nondegenerate broken-vacuum configurations of the v4.11 MMSW auxiliary-field formulation satisfying standard regularity assumptions, the rank of the frozen-background full multiplier matrix at xi != 0 equals the physical secondary count required for DOF = 3.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "one of three discharge paths: (1) configuration-independent proof via SO(1,4) representation theory of the MMSW constraint algebra with auxiliary scalars; (2) explicit verification on physically relevant configurations with characterized robustness boundary; (3) proof of the redundancy identity through explicit derivation of the missing input F_i from the sign-fixed canonical Hamiltonian",
+        "system": "the MMSW multiplier matrix rank at nondegenerate broken-vacuum configurations"
+      },
+      "extensions": {
+        "status": "NEW, OPEN, v4.12",
+        "priority": "HIGH, load-bearing"
+      }
+    },
+    {
+      "ref": "s-mm-003",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-MM-003: Ghost-Freedom via Symbol-Level Positivity of the Reduced Symplectic Form. Required: ghost-freedom argument upgraded to the pseudo-differential operator framing. The classification of constraints as first-class or second-class is independent of the operator character of the Dirac matrix; the topological protection of the Hamiltonian constraint inside the SO(1,4) Gauss algebra survives unchanged.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "compute the reduced symplectic symbol from the full 44x44 symbol via symbol-level symplectic reduction, verify positive-definite signature on the physical subspace",
+        "system": "the reduced symplectic form at symbol level"
+      },
+      "extensions": {
+        "status": "OPEN, v4.9",
+        "priority": "MEDIUM, contingent on S-MM-002"
+      }
+    },
+    {
+      "ref": "s-ns-018",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-NS-018: Locality of Boundary Composite Observables Under Non-Local Dirac Brackets. Required: verification that non-local Dirac brackets in the reduced MM phase space integrate out at macroscopic scales for hydrodynamic composite observables on the boundary fluid. With v trans-Planckian per K18, the scaling check is almost certainly satisfied but should be confirmed.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "explicit computation of the boundary stress-energy Dirac bracket using the non-local kernel, verify locality emerges at scales much larger than 1/v",
+        "system": "boundary stress-energy Dirac bracket locality at hydrodynamic scales"
+      },
+      "extensions": {
+        "status": "OPEN, v4.9",
+        "priority": "LOW"
+      }
+    },
+    {
+      "ref": "s-mix-006",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-MIX-006: Verify Section VI No-Go Lemma Survives Auxiliary-Field Structure. Required: explicit verification that the Section VI No-Go Lemma (concerning the 30x30 primary-primary block, sourced by the gauge-momentum sector, not the Higgs) survives auxiliary-field structure. Estimated 2 to 3 days.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "compute the relevant brackets in the extended Lagrangian, confirm the principal coefficient C^ijk_ab,cd is unchanged",
+        "system": "the Section VI No-Go Lemma under the auxiliary-field formulation"
+      },
+      "extensions": {
+        "status": "OPEN, v4.10",
+        "priority": "MEDIUM"
+      }
+    },
+    {
+      "ref": "s-mix-007",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-MIX-007: Verify Section VIII BD-Ghost Theorem Survives Auxiliary-Field Structure. Required: explicit verification that the BD-ghost theorem (Theorem 1), resting on Hamiltonian constraint protection in the SO(1,4) Gauss algebra, survives auxiliary-field structure. Auxiliary fields enter the Gauss constraint as phi_[A Pi_B]; the algebra closure should still hold via Bianchi identities. Estimated 3 to 5 days.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "verify the Gauss algebra closure with auxiliary-field momenta included",
+        "system": "the BD-ghost theorem under the auxiliary-field formulation"
+      },
+      "extensions": {
+        "status": "OPEN, v4.10",
+        "priority": "MEDIUM"
+      }
+    },
+    {
+      "ref": "s-mix-008",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-MIX-008: Linear vs Quadratic Non-Minimal Coupling in Bare MM Expansion. Required: determine whether the bare broken MM expansion gives F proportional to (v+rho) (linear) or (v+rho)^2 (quadratic) as the non-minimal Jordan-frame coupling. Three candidate sources for the quadratic form identified. Cosmetic; does not affect framework substance.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "explicit derivation in the broken phase with all candidate mechanisms tested (state-dependent tetrad scaling, Stelle-West compensator term, auxiliary-field reduction); either outcome is acceptable",
+        "system": "the non-minimal Jordan-frame coupling power in the bare MM expansion"
+      },
+      "extensions": {
+        "status": "OPEN, v4.10",
+        "priority": "LOW, cosmetic"
+      }
+    },
+    {
+      "ref": "op-ck",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "OP-CK: Computation of the c_KK Prefactor. The variance coupling coefficient gamma = c_KK/(128 pi^2 Lambda_s^2) carries a dimensionless O(1) prefactor c_KK from the massive Fierz-Pauli trace anomaly in the a_4 Seeley-DeWitt coefficient on a Karch-Randall brane with full 5D gauge fixing and Faddeev-Popov ghost subtractions. F_Q,crit depends inversely on c_KK; all precision predictions carry an overall O(1) uncertainty from c_KK variation. OP-0 resolves unconditionally without this computation; only precision predictions depend on it. v4.15 soft prediction: the refresh-duality queue-capacity identity reproduces the heat-kernel threshold at c_KK ~ 5 with zero fitted parameters.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "(1) identify the gauge-fixed 5D spin-2 operator on AdS_5 with Karch-Randall boundary conditions, (2) compute the Fierz-Pauli fluctuation operator for each KK mode, (3) compute Faddeev-Popov ghost determinants for the chosen gauge, (4) extract the Ricci-squared coefficient in the brane-localized a_4, (5) sum over the KK spectrum with explicit wavefunction overlap factors at the brane",
+        "system": "the c_KK prefactor in the variance coupling coefficient gamma"
+      },
+      "extensions": {
+        "status": "OPEN",
+        "priority": "MEDIUM, can be deferred behind higher-impact computations"
+      }
+    },
+    {
+      "ref": "s-lam-if-up",
+      "kind": "comment",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "ungraded",
+      "statement": "S-LAM-IF-UP (speculation tier, non-citable, SF-DG-012, June 2026): The laminar cognition-interface conjecture, up-reading direction. Whether a quantum-to-classical reading interface can be modeled as a laminar (low-Peclet) layer. Fires the susceptibility exclusion (reading the fast quantum layer decoheres it); dissolvable only by a continuous pleat (fold), available only if S-SECOND-LIGHT-SCALAR returns an umbilic. Carries no structural weight in the parent."
+    },
+    {
+      "ref": "s-lam-if-down",
+      "kind": "comment",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "ungraded",
+      "statement": "S-LAM-IF-DOWN (speculation tier, non-citable, SF-DG-012, June 2026): The laminar cognition-interface conjecture, down-reading direction. Same laminar-layer structure as S-LAM-IF-UP, applied to the down-reading direction. Tractability inherits S-SECOND-LIGHT-SCALAR. Carries no structural weight in the parent."
+    },
+    {
+      "ref": "s-qfi-death",
+      "kind": "comment",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "ungraded",
+      "statement": "S-QFI-DEATH (speculation tier, non-citable, SF-DG-012, June 2026): Conjecture connecting loss of quantum Fisher information (vacuum stiffness collapse) to a death/decoherence transition in a coherent biological substrate. Speculation tier."
+    },
+    {
+      "ref": "s-dna-dfs",
+      "kind": "comment",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "ungraded",
+      "statement": "S-DNA-DFS (speculation tier, non-citable, SF-DG-012, June 2026): Conjecture that a decoherence-free subspace structure could be hosted in a biomolecular (DNA) register coupled to the radion channel. Speculation tier."
+    },
+    {
+      "ref": "s-proton-mag",
+      "kind": "comment",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "ungraded",
+      "statement": "S-PROTON-MAG (speculation tier, non-citable, SF-DG-012, June 2026): Conjecture relating a proton-magnetic-moment anomaly to the species/KK coupling. Speculation tier."
     }
   ],
   "links": [
@@ -1902,6 +2418,134 @@ const STORE = {
       "link_kind": "depends-on",
       "from": "b-nu-1",
       "to": "path-a",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "s-exhaust-colocation",
+      "to": "s-exhaust-coherence",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "s-noise",
+      "to": "s-cumulant-derive",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "s-cc-007",
+      "to": "path-a",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "s-dd-001",
+      "to": "path-b",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "s-dd-002",
+      "to": "path-b",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "s-dd-002",
+      "to": "s-dd-001",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "s-dd-003",
+      "to": "path-b",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "s-dd-004",
+      "to": "path-b",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "s-cc-002prime",
+      "to": "path-b",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "s-am-008",
+      "to": "path-a",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "s-am-009",
+      "to": "path-a",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "s-am-010",
+      "to": "path-a",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "s-hsb-002b",
+      "to": "s-cc-002",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "s-cc-001",
+      "to": "s-cc-002",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "s-cc-001",
+      "to": "s-cc-004",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "op-ck",
+      "to": "k7",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"
