@@ -30,3 +30,5 @@ jobs:
         run: node build/check-dg.mjs
       - name: check-dg-tier1
         run: node build/check-dg-tier1.mjs
+      - name: check-dg-coverage
+        run: node build/check-dg-coverage.mjs
