@@ -2380,7 +2380,23 @@ const STORE = {
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
-      "statement": "K18: Trans-Planckian VEV Suppresses Aperiodic Tilts [v4.8, from T3.6 + Tier 4 Section 4.4 reformulation]. Adoption of the Addazi-Meluccio periodic SSB potential (Section 4.4) forces the bare VEV to be vastly trans-Planckian: v ~ M_P * S_dS / (Y_MM M_P) ~ 10^139 GeV under standard EFT scaling Y_MM ~ M_P^-1. The 4D Planck mass is generated through M_P^2 = 32 Y_MM v m^2 (Addazi-Meluccio eq. 4) rather than identified with the bare VEV. This trans-Planckian hierarchy provides geometric suppression of all aperiodic radiative corrections to the periodic potential: the field-space distance between adjacent topological vacua remains Delta rho ~ 1/(c Y_MM) ~ 10^19 GeV (Planck-scale), and the topological barrier height V_barrier ~ mu_rho^2 Delta rho^2 ~ 10^32 GeV^4 at MeV radion mass overwhelmingly dominates aperiodic Coleman-Weinberg slopes (~10^-3 GeV^3 at the cell boundary) by 16 orders of magnitude. The protection mechanism is kinematic, overwhelming barrier height, rather than symmetric: the discrete shift symmetry is broken by the framework's gamma(phi^2) F_Q coupling and is not protective. Reference: Gemini CC Radiative Stability Report (April 2026), Addazi-Meluccio 2026. Constrains: F20, F-CC, Tier 4 SSB potential structure. Constrained by: T3.6."
+      "statement": "K18: Trans-Planckian VEV Suppresses Aperiodic Tilts [v4.8, from T3.6 + Tier 4 Section 4.4 reformulation]. Adoption of the Addazi-Meluccio periodic SSB potential (Section 4.4) forces the bare VEV to be vastly trans-Planckian: v ~ M_P * S_dS / (Y_MM M_P) ~ 10^139 GeV under standard EFT scaling Y_MM ~ M_P^-1. The 4D Planck mass is generated through M_P^2 = 32 Y_MM v m^2 (Addazi-Meluccio eq. 4) rather than identified with the bare VEV. This trans-Planckian hierarchy provides geometric suppression of all aperiodic radiative corrections to the periodic potential: the field-space distance between adjacent topological vacua remains Delta rho ~ 1/(c Y_MM) ~ 10^19 GeV (Planck-scale), and the topological barrier height V_barrier ~ mu_rho^2 Delta rho^2 ~ 10^32 GeV^4 at MeV radion mass overwhelmingly dominates aperiodic Coleman-Weinberg slopes (~10^-3 GeV^3 at the cell boundary) by 16 orders of magnitude. The protection mechanism is kinematic, overwhelming barrier height, rather than symmetric: the discrete shift symmetry is broken by the framework's gamma(phi^2) F_Q coupling and is not protective. Reference: Gemini CC Radiative Stability Report (April 2026), Addazi-Meluccio 2026. Constrains: F20, F-CC, Tier 4 SSB potential structure. Constrained by: T3.6.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "established the trans-Planckian VEV kinematic suppression mechanism (16 orders of magnitude margin) and the mass window [1 meV, 100 GeV], discharging S-CC-003",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-cc-radiative-stability-april-2026",
+            "corpus.gemini-cc-run-2-april-2026",
+            "corpus.gemini-cc-run-1-april-2026"
+          ],
+          "cited_source": "corpus.gemini-cc-radiative-stability-april-2026"
+        }
+      ]
     },
     {
       "ref": "gut-box-occupant",
@@ -2403,32 +2419,91 @@ const STORE = {
       "kind": "derivation",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "SF-G1: BPS-Chirality Tension on Factorizable Tori in the Dark Dimension. On factorizable T^6/(Z_2 x Z_2') orientifolds with standard N=1 BPS conditions, the requirements of Dark Dimension brane localization (all observable brane stacks trivially wrapped on the large torus), three chiral generations (nonzero per-torus intersection numbers), and supersymmetry (brane angle sum equal to zero with positive-definite complex structure moduli) admit no simultaneous solution. The Pigeonhole argument establishes that three stacks with only two allowed orientations on the large torus force at least one pair into parallel alignment, zeroing their intersection number. Demonstrated on all 33 Sabir et al. (2024) intersecting D6-brane models via exhaustive permutation analysis. Scope: blocks D6-brane factorizable torus constructions for any gauge group in the Dark Dimension. Non-factorizable Calabi-Yau compactifications, magnetized brane constructions, and F-theory 7-brane models remain open. Source: Torus Permutation Check report."
+      "declared_grade": "checked",
+      "statement": "SF-G1: BPS-Chirality Tension on Factorizable Tori in the Dark Dimension. On factorizable T^6/(Z_2 x Z_2') orientifolds with standard N=1 BPS conditions, the requirements of Dark Dimension brane localization (all observable brane stacks trivially wrapped on the large torus), three chiral generations (nonzero per-torus intersection numbers), and supersymmetry (brane angle sum equal to zero with positive-definite complex structure moduli) admit no simultaneous solution. The Pigeonhole argument establishes that three stacks with only two allowed orientations on the large torus force at least one pair into parallel alignment, zeroing their intersection number. Demonstrated on all 33 Sabir et al. (2024) intersecting D6-brane models via exhaustive permutation analysis. Scope: blocks D6-brane factorizable torus constructions for any gauge group in the Dark Dimension. Non-factorizable Calabi-Yau compactifications, magnetized brane constructions, and F-theory 7-brane models remain open. Source: Torus Permutation Check report.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "exhaustive 3x2 permutation matrix over all 33 Sabir et al. intersecting D6-brane models, demonstrating every cell fails, establishing the BPS-Chirality Tension",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.torus-permutation-check"
+          ],
+          "cited_source": "corpus.torus-permutation-check"
+        }
+      ]
     },
     {
       "ref": "sf-g2",
       "kind": "derivation",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "SF-G2: Divisor Transversality Escape from BPS-Chirality Tension. F-theory gauge localization via horizontal divisors on P^1-fibered base threefolds provides a structural escape from SF-G1. The gauge divisor S_GUT is engineered as a horizontal section of the P^1 fibration, transverse to the macroscopic Dark Dimension fiber. The mechanism operates because: holomorphic divisors in F-theory enforce N=1 SUSY via holomorphicity of the divisor, a condition that does not couple fiber and base directions; the gauge KK tower is determined by the Laplacian on S_GUT, independent of the fiber volume; matter curves are geometrically contained within S_GUT; gauge couplings depend only on Vol(S_GUT), decoupled from Vol(P^1 fiber) at tree level with K14-suppressed one-loop corrections. Sen limit check confirms the BPS-Chirality Tension does not reappear in the Type IIB weak-coupling limit. Scope: applies to any F-theory construction where the GUT divisor can be placed on a horizontal section of a fibered base. The finding is independent of fiber type or gauge group. This is the mechanism by which the GUT Box is occupied. Source: F-Theory X_F13 Base Geometry Adaptation report."
+      "declared_grade": "checked",
+      "statement": "SF-G2: Divisor Transversality Escape from BPS-Chirality Tension. F-theory gauge localization via horizontal divisors on P^1-fibered base threefolds provides a structural escape from SF-G1. The gauge divisor S_GUT is engineered as a horizontal section of the P^1 fibration, transverse to the macroscopic Dark Dimension fiber. The mechanism operates because: holomorphic divisors in F-theory enforce N=1 SUSY via holomorphicity of the divisor, a condition that does not couple fiber and base directions; the gauge KK tower is determined by the Laplacian on S_GUT, independent of the fiber volume; matter curves are geometrically contained within S_GUT; gauge couplings depend only on Vol(S_GUT), decoupled from Vol(P^1 fiber) at tree level with K14-suppressed one-loop corrections. Sen limit check confirms the BPS-Chirality Tension does not reappear in the Type IIB weak-coupling limit. Scope: applies to any F-theory construction where the GUT divisor can be placed on a horizontal section of a fibered base. The finding is independent of fiber type or gauge group. This is the mechanism by which the GUT Box is occupied. Source: F-Theory X_F13 Base Geometry Adaptation report.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "verified divisor transversality on the P^1-fibered base (K10/K11/K12 compliance, Sen limit check) as the structural escape from the BPS-Chirality Tension",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.f-theory-base-adaptation",
+            "corpus.torus-permutation-check"
+          ],
+          "cited_source": "corpus.f-theory-base-adaptation"
+        }
+      ]
     },
     {
       "ref": "sf-g3",
       "kind": "derivation",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "SF-G3: Avenue B Parametric Kill (Magnetized Brane Landau Gapping). The magnetized D-brane Landau gapping mechanism is parametrically unable to achieve Dark Dimension gauge localization on T^6/(Z_2 x Z_2') orientifolds. Closed-form bound: m_LL^max = M_s * sqrt(Q_max/(2 pi N_c A M_s^2)) ~ 710 MeV for Dark Dimension parameters, below the required 1 TeV threshold. The obstruction is an irreconcilable conflict between kinematics (mass gap scales linearly with flux N) and topology (induced RR charge scales linearly with N, bounded by the fixed orientifold budget Q_max ~ 32). Required flux N ~ 3.2e7 induces charge Q ~ 6.4e7 against a budget of 32; the deficit factor is ~ 2e6. Scope: parametric, applies to any magnetized D-brane model on any factorizable torus orientifold in the Dark Dimension. This eliminates an entire class of potential GUT realizations. Source: Avenue B Flux/Tadpole Budget report."
+      "declared_grade": "checked",
+      "statement": "SF-G3: Avenue B Parametric Kill (Magnetized Brane Landau Gapping). The magnetized D-brane Landau gapping mechanism is parametrically unable to achieve Dark Dimension gauge localization on T^6/(Z_2 x Z_2') orientifolds. Closed-form bound: m_LL^max = M_s * sqrt(Q_max/(2 pi N_c A M_s^2)) ~ 710 MeV for Dark Dimension parameters, below the required 1 TeV threshold. The obstruction is an irreconcilable conflict between kinematics (mass gap scales linearly with flux N) and topology (induced RR charge scales linearly with N, bounded by the fixed orientifold budget Q_max ~ 32). Required flux N ~ 3.2e7 induces charge Q ~ 6.4e7 against a budget of 32; the deficit factor is ~ 2e6. Scope: parametric, applies to any magnetized D-brane model on any factorizable torus orientifold in the Dark Dimension. This eliminates an entire class of potential GUT realizations. Source: Avenue B Flux/Tadpole Budget report.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "computed the closed-form magnetized-brane Landau gapping bound against the orientifold flux/tadpole budget, showing a ~2e6 deficit factor",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.avenue-b-kill"
+          ],
+          "cited_source": "corpus.avenue-b-kill"
+        }
+      ]
     },
     {
       "ref": "sf-d0",
       "kind": "derivation",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "SF-D0: Species-Enhanced One-Loop Coefficients in Brane Heat Kernels. When a bulk Kaluza-Klein tower of N_species fields runs in a one-loop effective action on a brane worldvolume, the local operator coefficients generated by the a_4 Seeley-DeWitt expansion inherit a polynomial N_species enhancement. This is a UV enhancement of the Wilsonian coefficient through additive spectral summation, distinct from thermodynamic O(N) FDT-constrained enhancement of the matter observable. The enhancement applies specifically to dimension-6 and higher operators whose coefficients are generated locally by the a_4 or higher-order heat kernel terms. The enhancement applies to local Wilsonian coefficients in the effective action, to diagonal spectral traces of the form Tr e^(-s Delta), and to operator coefficients at coincidence limits x -> y. The enhancement does not apply to operator evaluations subject to FDT, which remain O(N), to coherent scattering amplitudes with external KK states, which carry sum rules that can produce cancellations, or to propagators between separated points, governed by Sturm-Liouville orthogonality of the KK wavefunctions. This structural finding generalizes beyond the specific (phi^2) f_Q operator: any framework with bulk KK towers generating brane-localized effective operators should check whether the species enhancement applies to the specific operator coefficient under consideration. The operational test: identify whether the object being summed is a spectral trace, enhanced, or a coherent amplitude, cancellation-prone. This distinction underlies LINT-12. Applied to gamma, SF-D0 yields gamma = c_KK/(128 pi^2 Lambda_s^2), replacing the prior gamma ~ 1/(16 pi^2 M_Pl^2) estimate and resolving OP-0 unconditionally. Scope: applies to any braneworld construction with a bulk KK tower and brane-localized heat kernel effective action. Source: Georgi-Grant-Hailu (2001), von Gersdorff-Irges-Quiros (2002), Fabinger-Horava (2000), Adjudication Document (April 2026), Paper 0 v10 Section IV.D."
+      "declared_grade": "checked",
+      "statement": "SF-D0: Species-Enhanced One-Loop Coefficients in Brane Heat Kernels. When a bulk Kaluza-Klein tower of N_species fields runs in a one-loop effective action on a brane worldvolume, the local operator coefficients generated by the a_4 Seeley-DeWitt expansion inherit a polynomial N_species enhancement. This is a UV enhancement of the Wilsonian coefficient through additive spectral summation, distinct from thermodynamic O(N) FDT-constrained enhancement of the matter observable. The enhancement applies specifically to dimension-6 and higher operators whose coefficients are generated locally by the a_4 or higher-order heat kernel terms. The enhancement applies to local Wilsonian coefficients in the effective action, to diagonal spectral traces of the form Tr e^(-s Delta), and to operator coefficients at coincidence limits x -> y. The enhancement does not apply to operator evaluations subject to FDT, which remain O(N), to coherent scattering amplitudes with external KK states, which carry sum rules that can produce cancellations, or to propagators between separated points, governed by Sturm-Liouville orthogonality of the KK wavefunctions. This structural finding generalizes beyond the specific (phi^2) f_Q operator: any framework with bulk KK towers generating brane-localized effective operators should check whether the species enhancement applies to the specific operator coefficient under consideration. The operational test: identify whether the object being summed is a spectral trace, enhanced, or a coherent amplitude, cancellation-prone. This distinction underlies LINT-12. Applied to gamma, SF-D0 yields gamma = c_KK/(128 pi^2 Lambda_s^2), replacing the prior gamma ~ 1/(16 pi^2 M_Pl^2) estimate and resolving OP-0 unconditionally. Scope: applies to any braneworld construction with a bulk KK tower and brane-localized heat kernel effective action. Source: Georgi-Grant-Hailu (2001), von Gersdorff-Irges-Quiros (2002), Fabinger-Horava (2000), Adjudication Document (April 2026), Paper 0 v10 Section IV.D.",
+      "checking_records": [
+        {
+          "checker_id": "checker:chatgpt-arb",
+          "method_class": "derivation-audit",
+          "method": "adjudicated between two competing candidate formulas for the species-enhanced coupling gamma via heat-kernel spectral trace analysis, resolving to gamma = c_KK/(128 pi^2 Lambda_s^2), the formula SF-D0 states",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.dg-cft-053",
+            "corpus.dg-cft-052",
+            "corpus.dg-cft-051"
+          ],
+          "cited_source": "corpus.dg-cft-053"
+        }
+      ]
     },
     {
       "ref": "sf-d1",
@@ -3774,7 +3849,7 @@ const STORE = {
       "support_group": "k7-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
