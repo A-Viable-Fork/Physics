@@ -864,6 +864,130 @@ const STORE = {
       "statement": "K2: G = G_N Always [from K1 + T2.5]. The radial channel couples to all mass-energy with constant G = G_N = 1/(8 pi v^2). Coherence (F_Q ~ N^2) enters only the angular channel, sourcing torsion. The gravitational constant is never amplified, modified, or state-dependent. Any analysis routing F_Q through G_eff is using the wrong channel."
     },
     {
+      "ref": "im.israel-1966-junction",
+      "kind": "standard-result",
+      "source_id": "lit.israel-1966",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "The Israel junction condition, trace-reversed form, Z2-orbifold-reduced (Israel 1966): across a codimension-one brane with unit normal n^M and induced metric gamma_mu_nu, [K_mu_nu] - [K] gamma_mu_nu = kappa_5^2 S_mu_nu, where [X] = X+ - X- across the brane and S_mu_nu is the brane's own stress tensor. Under a Z2 orbifold symmetry (K-_mu_nu = -K+_mu_nu) this reduces to the one-sided, trace-reversed form K+_mu_nu = -(kappa_5^2/2)(S_mu_nu - (1/3) S gamma_mu_nu). This is the master junction relation both K3 audit artifacts (PK-AUD-K3-001, PK-AUD-K3-002) independently rederive before applying it to a pure-tension brane (S_mu_nu = -T_3 gamma_mu_nu) to obtain every tension-position relation the imports below carry.",
+      "checking_records": [
+        {
+          "checker_id": "checker:deepseek-expert",
+          "method_class": "derivation-audit",
+          "method": "independent rederivation of the Israel junction condition, trace-reversed and Z2-orbifold-reduced, stated in the audit's own Conventions Block before being applied to both the flat and AdS4-sliced cases",
+          "checked_at_state": "dg@landing-1",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": ["corpus.pk-aud-k3-001", "lit.israel-1966", "lit.randall-sundrum-1999", "lit.karch-randall-2001"]
+        },
+        {
+          "checker_id": "checker:kimi-k3",
+          "method_class": "derivation-audit",
+          "method": "independent rederivation of the same trace-reversed, Z2-orbifold-reduced junction condition in the audit's own Conventions block (Section 2), applied identically to the flat, AdS4-sliced, and dS4-sliced cases",
+          "checked_at_state": "dg@landing-1",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": ["corpus.pk-aud-k3-002", "lit.israel-1966", "lit.randall-sundrum-1999", "lit.karch-randall-2001", "lit.goldberger-wise-1999", "lit.dewolfe-et-al-2000"]
+        }
+      ],
+      "extensions": {
+        "locator": "PK-AUD-K3-001: Conventions Block (unlabeled Israel-condition statement) and eq. (C1). PK-AUD-K3-002: Section 2, Conventions block (trace-reversed form given directly, unlabeled)."
+      }
+    },
+    {
+      "ref": "im.rs1999-critical-tension",
+      "kind": "standard-result",
+      "source_id": "lit.randall-sundrum-1999",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "The Randall-Sundrum critical brane tension, flat-sliced case (Randall, Sundrum 1999): for a Z2-orbifold brane at the boundary of a flat-sliced (Poincare/Minkowski-sliced) AdS5 bulk of curvature radius L, the Israel junction condition forces the tension to the critical value T_3 = 6/(kappa_5^2 L), exactly, with no dependence on the brane's own position (a pure gauge freedom in the flat-sliced case, since translating the brane along the warped direction changes nothing). Both K3 audit artifacts independently rederive this as the ε=0 boundary case of their own more general warped-product treatment.",
+      "checking_records": [
+        {
+          "checker_id": "checker:deepseek-expert",
+          "method_class": "derivation-audit",
+          "method": "independent rederivation from the RS flat-brane metric ansatz and the Israel junction condition, Q1(a), reaching the boxed result T_3^(RS) = 6k/kappa_5^2 = 6/(kappa_5^2 L)",
+          "checked_at_state": "dg@landing-1",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": ["corpus.pk-aud-k3-001", "lit.israel-1966", "lit.randall-sundrum-1999", "lit.karch-randall-2001"]
+        },
+        {
+          "checker_id": "checker:kimi-k3",
+          "method_class": "derivation-audit",
+          "method": "independent rederivation from the ε=0 specialization of the audit's own general warped-product master equation, Section 3.1, reaching T_3 = 6/(kappa_5^2 L) and flagging it [RESULT], reproduced with algebra shown",
+          "checked_at_state": "dg@landing-1",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": ["corpus.pk-aud-k3-002", "lit.israel-1966", "lit.randall-sundrum-1999", "lit.karch-randall-2001", "lit.goldberger-wise-1999", "lit.dewolfe-et-al-2000"]
+        }
+      ],
+      "extensions": {
+        "locator": "PK-AUD-K3-001: Q1(a), boxed result. PK-AUD-K3-002: Section 3.1, eq. following specialization of (*) to ε=0."
+      }
+    },
+    {
+      "ref": "im.karch-randall-2001-tension-position",
+      "kind": "standard-result",
+      "source_id": "lit.karch-randall-2001",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "The Karch-Randall AdS4-sliced tension-position relation and its dS4-sliced mirror (Karch, Randall 2001): for a Z2-orbifold brane at position z_0 (equivalently u_b = z_0/L) in an AdS4-sliced AdS5 bulk of curvature radius L, the Israel junction condition gives T_3 = (6/kappa_5^2 L) tanh(z_0/L), strictly below the RS critical value, recovering it only in the flat-slicing limit z_0/L to infinity. Continuing the same construction to a dS4-sliced bulk (supercritical tension, no static AdS4-sliced solution) gives the mirror relation T_3 = (6/kappa_5^2 L) coth(z_0/L). Both relations are one continuous family in the slicing-curvature sign, not two separate literature results; both K3 audit artifacts derive them independently from the Israel junction condition above, applied to the Karch-Randall brane.",
+      "checking_records": [
+        {
+          "checker_id": "checker:deepseek-expert",
+          "method_class": "derivation-audit",
+          "method": "independent rederivation of the AdS4-sliced case from the Karch-Randall warp-factor solution and the Israel junction condition, Q1(b), reaching the boxed result T_3^(KR) = (6/kappa_5^2) sqrt(1/L^2 - 1/L_4^2)",
+          "checked_at_state": "dg@landing-1",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": ["corpus.pk-aud-k3-001", "lit.israel-1966", "lit.randall-sundrum-1999", "lit.karch-randall-2001"]
+        },
+        {
+          "checker_id": "checker:kimi-k3",
+          "method_class": "derivation-audit",
+          "method": "independent rederivation of both the AdS4-sliced (Section 3.2, eq. KR-1/KR-2) and dS4-sliced continuation (Section 3.2, Properties list) from the same master warped-product equation, one-line check for the dS4 case flagged [RESULT, same derivation]",
+          "checked_at_state": "dg@landing-1",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": ["corpus.pk-aud-k3-002", "lit.israel-1966", "lit.randall-sundrum-1999", "lit.karch-randall-2001", "lit.goldberger-wise-1999", "lit.dewolfe-et-al-2000"]
+        }
+      ],
+      "extensions": {
+        "locator": "PK-AUD-K3-001: Q1(b), boxed result (AdS4-sliced case only; the dS4 mirror is not separately derived in this artifact). PK-AUD-K3-002: Section 3.2, eq. (KR-1)/(KR-2) for the AdS4-sliced case, Properties list for the dS4-sliced continuation."
+      }
+    },
+    {
+      "ref": "im.goldberger-wise-effective-tension",
+      "kind": "standard-result",
+      "source_id": "lit.goldberger-wise-1999",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Brane-localized vacuum energy gravitates as tension (Goldberger, Wise 1999; DeWolfe, Freedman, Gubser, Karch 2000): for a brane hosting a scalar field with a homogeneous vacuum expectation value v, the scalar's own potential energy V(v) enters the Israel junction condition indistinguishably from the bare tension T_3, so the junction condition constrains only the effective tension T_eff = T_3 + V(v), never the bare T_3 alone. Any state-dependence of v therefore backreacts on the brane's own position and induced geometry through T_eff, not through T_3 in isolation. Both K3 audit artifacts derive this by adding the scalar's stress tensor to the brane action and re-deriving the junction condition.",
+      "checking_records": [
+        {
+          "checker_id": "checker:deepseek-expert",
+          "method_class": "derivation-audit",
+          "method": "independent rederivation from the total brane stress tensor with a scalar potential added, Q4, reaching T_eff = T3 + V(v) and the self-consistency regime |V(v)| << T3",
+          "checked_at_state": "dg@landing-1",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": ["corpus.pk-aud-k3-001", "lit.israel-1966", "lit.randall-sundrum-1999", "lit.karch-randall-2001"]
+        },
+        {
+          "checker_id": "checker:kimi-k3",
+          "method_class": "derivation-audit",
+          "method": "independent rederivation from the brane-localized scalar stress tensor, Section 6, eq. (EFF), citing Goldberger-Wise 1999 and DeWolfe et al. 2000 directly as the standard root for brane vacuum energy gravitating as tension, and deriving the position-sensitivity enhancement cosh^2(z_0/L) beyond what (EFF) alone states",
+          "checked_at_state": "dg@landing-1",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": ["corpus.pk-aud-k3-002", "lit.israel-1966", "lit.randall-sundrum-1999", "lit.karch-randall-2001", "lit.goldberger-wise-1999", "lit.dewolfe-et-al-2000"]
+        }
+      ],
+      "extensions": {
+        "locator": "PK-AUD-K3-001: Q4, first bullet (T_eff = T3 + V(v), derived without naming Goldberger-Wise/DeWolfe directly). PK-AUD-K3-002: Section 6, eq. (EFF), citing [6] Goldberger-Wise 1999 and [7] DeWolfe et al. 2000 by name."
+      }
+    },
+    {
       "ref": "k3",
       "kind": "derivation",
       "source_id": "trellis.v4-16",
