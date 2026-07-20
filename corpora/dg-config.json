@@ -1419,6 +1419,24 @@
       "source_class": "preprint",
       "description": "van de Heisteeg, Vafa, Wiesner, Wu (2023). The species scale responds dynamically to the matter-sector spectrum. Per trellis T3.4. The trellis names authors and year only, no arXiv id.",
       "rests_on": []
+    },
+    {
+      "source_id": "trellis.v4-16",
+      "source_class": "preprint",
+      "description": "The Displacement Geometry Architectural Trellis v4.16 (trellis/4_16_main.md, trellis/4_16_appendices.md), the authoring source this kernel translates from. The operators own working research document, not yet peer-reviewed.",
+      "rests_on": []
+    },
+    {
+      "source_id": "lit.standard-open-problems-physics",
+      "source_class": "peer-reviewed",
+      "description": "Well-established open problems in physics with no single per-claim citation in the trellis text: black hole singularities, dark matter, the black hole information paradox, the cosmological constant problem, the hierarchy problem, the absence of a complete quantum gravity theory, neutrino mass generation, matter-antimatter asymmetry, the Hubble tension, the sigma8 tension, and failed-supernova candidates (N6946-BH1). Treated broadly in standard cosmology and particle-physics literature; the trellis does not cite one paper per breakdown.",
+      "rests_on": []
+    },
+    {
+      "source_id": "lit.foundational-qg-theory",
+      "source_class": "peer-reviewed",
+      "description": "Foundational quantum-gravity literature the trellis names without a single pinned citation: string/M-theory as a consistent UV completion (T3.1), and the holographic principle (Bekenstein bound, Ryu-Takayanagi formula, AdS/CFT) underlying T3.3.",
+      "rests_on": []
     }
   ],
   "time_lock": {
