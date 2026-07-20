@@ -602,6 +602,16 @@
       "category": "comment"
     },
     {
+      "trellis_id": "S-K3-KILL-REARG (landing-1 Track 4, not a trellis identifier)",
+      "ref": "s-k3-kill-rearg",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-K3-BACKREACT (landing-1 Track 4, not a trellis identifier)",
+      "ref": "s-k3-backreact",
+      "category": "sorry"
+    },
+    {
       "trellis_id": "Muonic atom discrimination test (4.5)",
       "ref": "pred.muonic-atom-discrimination",
       "category": "prediction"

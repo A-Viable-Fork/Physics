@@ -2459,6 +2459,40 @@ const STORE = {
       "statement": "Torsional hair preserves coherence information on horizon. Satisfies F17 (as speculative). The trellis marks this row Speculative; entered as a comment per the quarantine rule, mechanically non-citable. Source: Trellising."
     },
     {
+      "ref": "s-k3-kill-rearg",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-K3-KILL-REARG: re-argue the T3-variation kill (dead.t3-variation-alpha) on the corrected basis. Opened landing-1 Track 4, following the K3-prime supersession. The kill's evidence (ev.dead.t3-variation-alpha) justifies excluding any alpha proportional to T3^-1 mechanism on the premise that T3 cannot vary; both K3 audit artifacts confirm this for the bare action parameter T3 (Q3 reading (a): true, but a property of every Lagrangian parameter, not a consequence specific to the Israel junction conditions) while finding the junction-condition argument does not close a detuning-routed or T_eff-routed version of the same mechanism (PK-AUD-K3-002 Q3 reading (b): 'any mechanism whose functional dependence is alpha proportional to [T3(u_b)]^-1 across [the KR solution space], or alpha routed through l(z0), is not excluded by the junction-condition analysis'). The kill's own stated justification is therefore superseded in its general form; the specific quantitative question the kill needs re-argued on is whether the physical T_eff/detuning variation actually available to this framework's own z0 dynamics is bounded far enough below the alpha proportional to T3^-1 mechanism's own requirement (the original kill's target, F13's radion stabilization) to still exclude it in practice, not merely in principle.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "derive the quantitative bound on physical T_eff variation at this framework's own detuning scale (per K3-prime part (iii), |V(v(F_Q))| against the enhancement cosh^2(z0/L)), compare it against the alpha proportional to T3^-1 mechanism's own required variation scale (originally targeting F13 per dead.t3-variation-alpha), and have the comparison independently audited before entering it as superseding evidence for the withdrawal",
+        "system": "the detuning-routed / T_eff-routed alpha proportional to T3^-1 channel the K3 audits found still open, against dead.t3-variation-alpha's original F13 target"
+      },
+      "extensions": {
+        "status": "OPEN, landing-1",
+        "priority": "conditions the reservoir's own dead.t3-variation-alpha withdrawal record, which stands unchanged pending this closure"
+      }
+    },
+    {
+      "ref": "s-k3-backreact",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-K3-BACKREACT: reconcile the Israel-junction backreaction channel the K3 audits derive (PK-AUD-K3-002 Section 6: delta u_b = (kappa5^2 L/6) cosh^2(u_b) delta V, the position-sensitivity enhancement K3-prime part (iii) carries) with C23-SDC (the operator's own 'gamma-activation moduli mechanism' label for it), the framework's existing SDC-compliance claim built on the same z0 modulus's Karch-Randall geometry (c23-sdc: 'the DBI-induced metric on the radial modulus z0 gives geodesic distance d ~ M_Pl ln(z0/L)'). Opened landing-1 Track 4. Both mechanisms are built on the same underlying object, the z0 modulus's own geometric behavior under the Karch-Randall construction; whether they are the same channel under two different descriptions, two coupled channels, or genuinely independent is not determined by K3-prime alone.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "determine whether the K3-prime backreaction relation (delta u_b in terms of delta V) and C23-SDC's geodesic-distance SDC mechanism (d in terms of z0) describe the same z0-modulus channel under two parameterizations or two distinct channels, and state what the cosh^2(z0/L) position-sensitivity enhancement implies for C23-SDC's own SDC exponential-decay trigger if they are the same channel",
+        "system": "the z0 modulus, K3-prime's junction-condition backreaction relation versus c23-sdc's geodesic-distance SDC mechanism"
+      },
+      "extensions": {
+        "status": "OPEN, landing-1",
+        "priority": "conditions c23-sdc (already conditional on S-CC-002 closure per its own extensions.verdict); a second, independent condition if the channels are shown to be the same"
+      }
+    },
+    {
       "ref": "pred.muonic-atom-discrimination",
       "kind": "prediction",
       "source_id": "trellis.v4-16",
