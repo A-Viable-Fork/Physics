@@ -3,10 +3,15 @@
 //   Stage 2 to carry real structural links (depends-on, contradicts) and supersession records,
 //   neither of which the Stage 1 empty-kernel generator emitted since STORE.links was empty and no
 //   supersession existed yet.
-// Contract: buildKernel() -> { store_id, tables, claims, links, supersessions, refId, state, view,
-//   receipt }. Imports the vendored kernel and corpora/dg; pure over the corpus. `links` and
-//   `supersessions` added to the return at Stage 3a so a check can read the real built link records
-//   (e.g. counting supports links) without recomputing them.
+// Contract: buildKernel() -> { store_id, tables, claims, links, supersessions, withdrawals, refId,
+//   state, view, receipt }. Imports the vendored kernel and corpora/dg; pure over the corpus. `links`
+//   and `supersessions` added to the return at Stage 3a so a check can read the real built link
+//   records (e.g. counting supports links) without recomputing them. `withdrawals` added at Stage 3c:
+//   STORE.withdrawals entries resolve claim_ref and reinstatement_condition.target_ref through the
+//   same refId map as links and supersessions, mirroring how a supersession can only name a real
+//   claim in this corpus; passed to apply() as withdrawn_records, never through decide()'s
+//   contribution (a withdrawal is a structural record pointing at an existing entry, not itself a
+//   graded claim, exactly like a supersession record).
 // Invariant: grades are the kernel's own derivation; this builder adds no rule of its own.
 //   STORE.supersessions entries resolve superseded_ref/successor_ref through the same refId map as
 //   links, so a supersession can only name a real claim in this corpus. at_state on both links'
@@ -16,7 +21,7 @@
 //   gate reads independence and method_class").
 "use strict";
 import { createRequire } from "node:module";
-import { claimRecord, linkRecord, supersessionRecord } from "../vendor/kernel/schema/records.mjs";
+import { claimRecord, linkRecord, supersessionRecord, withdrawnClaimRecord } from "../vendor/kernel/schema/records.mjs";
 import { makeSourceTable, makeKindTable } from "../vendor/kernel/schema/tables.mjs";
 import { genesis } from "../vendor/kernel/store/state.mjs";
 import { apply } from "../vendor/kernel/store/apply.mjs";
@@ -37,9 +42,22 @@ export function buildKernel() {
   });
   const links = (STORE.links || []).map((l) => linkRecord({ link_kind: l.link_kind, from_identity: refId.get(l.from), to_identity: refId.get(l.to), support_group: l.support_group, source_id: l.source_id, contributor_id: l.contributor_id, declared_grade: l.declared_grade }));
   const supersessions = (STORE.supersessions || []).map((s) => supersessionRecord({ superseded_identity: refId.get(s.superseded_ref), successor_identity: refId.get(s.successor_ref), at_state: s.at_state, reason: s.reason }));
+  const withdrawals = (STORE.withdrawals || []).map((w) => withdrawnClaimRecord({
+    claim_identity: refId.get(w.claim_ref),
+    withdrawn_at_state: w.withdrawn_at_state,
+    withdrawn_by: w.withdrawn_by,
+    reason: w.reason,
+    reinstatement_condition: {
+      condition_kind: w.reinstatement_condition.condition_kind,
+      required_kind: w.reinstatement_condition.required_kind,
+      target_identity: w.reinstatement_condition.target_ref ? refId.get(w.reinstatement_condition.target_ref) : undefined,
+      minimum_grade: w.reinstatement_condition.minimum_grade,
+      required_source_class: w.reinstatement_condition.required_source_class,
+    },
+  }));
   const entries = claims.map((c) => c.rec);
-  const state = apply(genesis(), { entries, links, supersession_records: supersessions, applied_contribution_hash: STORE.store_id, receipt_reference: STORE.store_id });
+  const state = apply(genesis(), { entries, links, supersession_records: supersessions, withdrawn_records: withdrawals, applied_contribution_hash: STORE.store_id, receipt_reference: STORE.store_id });
   const view = storeViewOf(state, tables);
   const receipt = decide({ hash: STORE.store_id, entries, links }, storeViewOf(genesis(), tables), {});
-  return { store_id: STORE.store_id, tables, claims, links, supersessions, refId, state, view, receipt };
+  return { store_id: STORE.store_id, tables, claims, links, supersessions, withdrawals, refId, state, view, receipt };
 }

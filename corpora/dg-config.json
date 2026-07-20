@@ -64,6 +64,66 @@
       "rests_on": []
     },
     {
+      "source_id": "corpus.pk-dr-research-session",
+      "source_class": "ai-audit",
+      "description": "PK-DR Research Session: the single prompt-author, single research-tool session that produced all six PK-DR deep-research reports informing docs/synthesis-backlog.md (docs/research/README.md: 'they share one provenance footprint'). A synthetic root, not a document of its own, standing for the shared footprint every PK-DR-00X source row rests on.",
+      "rests_on": []
+    },
+    {
+      "source_id": "corpus.pk-dr-001-shore-pack-evidence",
+      "source_class": "ai-audit",
+      "description": "PK-DR-001: Shore Pack Design Evaluation (docs/research/PK-DR-001-shore-pack-evidence.pdf). Landed docs/research/MANIFEST.md, hash-verified.",
+      "rests_on": [
+        "corpus.pk-dr-research-session"
+      ]
+    },
+    {
+      "source_id": "corpus.pk-dr-002-gate-as-verifier",
+      "source_class": "ai-audit",
+      "description": "PK-DR-002: LLM Epistemic Gate Verification (docs/research/PK-DR-002-gate-as-verifier.pdf). Landed docs/research/MANIFEST.md, hash-verified.",
+      "rests_on": [
+        "corpus.pk-dr-research-session"
+      ]
+    },
+    {
+      "source_id": "corpus.pk-dr-003-grounded-generation",
+      "source_class": "ai-audit",
+      "description": "PK-DR-003: LLM Structured Creativity Research (docs/research/PK-DR-003-grounded-generation.pdf). Landed docs/research/MANIFEST.md, hash-verified.",
+      "rests_on": [
+        "corpus.pk-dr-research-session"
+      ]
+    },
+    {
+      "source_id": "corpus.pk-dr-004-affordance-survey",
+      "source_class": "ai-audit",
+      "description": "PK-DR-004: System Affordances and Precedent Analysis (docs/research/PK-DR-004-affordance-survey.pdf). Landed docs/research/MANIFEST.md, hash-verified.",
+      "rests_on": [
+        "corpus.pk-dr-research-session"
+      ]
+    },
+    {
+      "source_id": "corpus.pk-dr-005-physics-synthesis",
+      "source_class": "ai-audit",
+      "description": "PK-DR-005: Physics Knowledge Synthesis Mechanisms (docs/research/PK-DR-005-physics-synthesis.pdf). Landed docs/research/MANIFEST.md, hash-verified.",
+      "rests_on": [
+        "corpus.pk-dr-research-session"
+      ]
+    },
+    {
+      "source_id": "corpus.pk-dr-006-graph-mathematics",
+      "source_class": "ai-audit",
+      "description": "PK-DR-006: Claim Graph Mathematical Structure (docs/research/PK-DR-006-graph-mathematics.pdf). Landed docs/research/MANIFEST.md, hash-verified.",
+      "rests_on": [
+        "corpus.pk-dr-research-session"
+      ]
+    },
+    {
+      "source_id": "corpus.warp-factor-calc",
+      "source_class": "ai-audit",
+      "description": "Warp-factor Calc: Tree-Level Warp-Factor Alpha(z_0) Cancellation (Gemini, March 2026) -- explicit computation showing the Omega^4 factor from sqrt(-g) exactly cancels the Omega^-4 factor from F_{mu nu}F^{mu nu}, killing the tree-level warp-factor route to F13.",
+      "rests_on": []
+    },
+    {
       "source_id": "corpus.paper-1",
       "source_class": "preprint",
       "description": "Paper 1: Geometric Necessity/No-Go -- Saturation floor, Linter, correlation capacity, $N^2$ scaling",

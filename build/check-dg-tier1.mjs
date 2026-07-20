@@ -23,6 +23,8 @@
 // DEPARTURE at Stage 3b: section [5] drops the "no checking record anywhere" assertion (Stage 3b's
 // whole point is to add them) and asserts at least one exists instead, plus that no withdrawal record
 // exists yet (still true, still Stage 3c's job).
+// DEPARTURE at Stage 3c: section [5] drops the "no withdrawal record" assertion (Stage 3c Track 1's
+// whole point is to add them, one per reservoir entry) and asserts at least one exists instead.
 "use strict";
 import { buildKernel } from "./dg-build.mjs";
 import { earnedGrade } from "../vendor/kernel/grounding/earned-grade.mjs";
@@ -70,12 +72,13 @@ console.log("\n[4] the axiom kind still self-grounds to constitutive");
 const axiomClaims = claims.filter((c) => c.rec.kind === "axiom");
 ok(axiomClaims.length === 4 && axiomClaims.every((c) => c.rec.declared_grade === "constitutive"), "all 4 axiom claims declare constitutive");
 
-console.log("\n[5] supports links and checking records are now expected (Stage 3a, 3b); withdrawal records are not (Stage 3c scope)");
+console.log("\n[5] supports links, checking records, and withdrawal records are all now expected (Stage 3a, 3b, 3c)");
 const supportsCount = (built.links || []).filter((l) => l.link_kind === "supports").length;
 ok(supportsCount > 0, `at least one supports link exists in the corpus (got ${supportsCount})`);
 const checkingCount = claims.reduce((n, c) => n + (c.rec.checking_records ? c.rec.checking_records.length : 0), 0);
 ok(checkingCount > 0, `at least one checking record exists in the corpus (got ${checkingCount})`);
-ok(!(built.state && built.state.withdrawn_records && built.state.withdrawn_records.length), "no claim carries a withdrawal record yet");
+const withdrawalCount = (built.state && built.state.withdrawn_records) ? built.state.withdrawn_records.length : 0;
+ok(withdrawalCount > 0, `at least one withdrawal record exists in the corpus (got ${withdrawalCount})`);
 
 console.log("\n" + H);
 if (fails === 0) console.log("verified: the Stage 1 tier commitments remain intact and honestly graded as the corpus has grown, and no support link or checking record has been smuggled in ahead of Stage 3.");
