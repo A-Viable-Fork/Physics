@@ -1,0 +1,415 @@
+{
+  "paper": "docs/research/paper0_v414.md",
+  "paper_version": "v4.14",
+  "generated_by": "analysis/paper-manifest.mjs",
+  "sections": [
+    {
+      "section_id": "I",
+      "title": "Introduction",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "I.A",
+      "title": "Geometric Stabilization and the Dark Dimension",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "I.B",
+      "title": "Gauge Gravity from Boundary Induction",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "I.C",
+      "title": "The One-Loop Coupling",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "I.D",
+      "title": "Structure of the Paper",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "II.A",
+      "title": "The AdS5 Chern-Simons Action",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "II.B",
+      "title": "The End-of-the-World Brane",
+      "claim_refs": [
+        "k3",
+        "k3-prime",
+        "im.israel-1966-junction",
+        "im.rs1999-critical-tension",
+        "im.karch-randall-2001-tension-position",
+        "im.goldberger-wise-effective-tension"
+      ],
+      "bound": true,
+      "note": "confirmed by direct read: eq. (2) is the flat-sliced Poincare metric (operator ruling R1's 'stated background'), eq. (4) the Israel junction condition, eq. (5) T3 = 6/(kappa5^2 L) stated 'independent of z0', word for word the claim K3-prime's part (i) reads correctly and K3's own flat text states without the KR/dS distinction. Bound to both K3 (superseded, historical) and K3-prime (successor) plus the four Track 2 imports whose locators cite the audit artifacts that rederive this same eq. (4)/(5) pair."
+    },
+    {
+      "section_id": "II.C",
+      "title": "Boundary Induction of the MacDowell-Mansouri Action",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "II.D",
+      "title": "The Unified Brane Action",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "III.A",
+      "title": "The SO(1,4) Higgs Mechanism",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "III.A-bis",
+      "title": "Topological Quantization of the Vacuum via the Addazi-Meluccio Potential",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "III.B",
+      "title": "The Effective Action in the Broken Phase",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "III.C",
+      "title": "The Two-Channel Decomposition",
+      "claim_refs": [
+        "k1"
+      ],
+      "bound": true,
+      "note": "confirmed by direct read: Theorem III.1 states the trace/traceless-antisymmetric decomposition near-verbatim to K1's own statement."
+    },
+    {
+      "section_id": "III.D",
+      "title": "Constraint Analysis",
+      "claim_refs": [
+        "p3",
+        "p8",
+        "p11"
+      ],
+      "bound": true,
+      "note": "III.D's own text (90-dim phase space, 20 first-class + 44 second-class, DOF = 3) matches p3 exactly; bound to the P-claims as a group per this track's own instruction, though p8 (KSS) and p11 (diffeomorphism) are not individually discussed in III.D's own text (they recur in VI.D and are not independently confirmed here for III.D specifically)."
+    },
+    {
+      "section_id": "IV.A",
+      "title": "One-Loop Effective Action on a Curved Background",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "IV.B",
+      "title": "The a4 Coefficient and the Stress-Energy Contact Term",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "IV.C",
+      "title": "Identification as the Quantum Fisher Information Density",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "IV.D",
+      "title": "Operator Content of the One-Loop Effective Action",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "IV.E",
+      "title": "Thermodynamic Selection of the Variance Coupling",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "IV.F",
+      "title": "Species Enhancement and the Dimensional Structure of gamma",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "IV.G",
+      "title": "The Effective VEV as a Function of F_Q",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "V.A",
+      "title": "The KK Spectrum",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "V.B",
+      "title": "The Species Scale and the Coupling Threshold",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "V.C",
+      "title": "KK Tower as Dark Matter",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "V.D",
+      "title": "KK Tower Load Map",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "VI.A",
+      "title": "General Relativity Recovery",
+      "claim_refs": [],
+      "bound": false,
+      "note": "no confident single-claim match found this pass; touches K1/K2 content thematically but not a direct textual match, left unbound rather than guessed"
+    },
+    {
+      "section_id": "VI.B",
+      "title": "Einstein-Cartan-Sciama-Kibble Limit",
+      "claim_refs": [],
+      "bound": false,
+      "note": "no confident match found this pass"
+    },
+    {
+      "section_id": "VI.C",
+      "title": "Boulware-Deser Ghost Freedom",
+      "claim_refs": [
+        "p3"
+      ],
+      "bound": true,
+      "note": "confirmed by direct read: same 90-dim/20-first-class/44-second-class/DOF=3 content as III.D, both citing p3's own result."
+    },
+    {
+      "section_id": "VI.D",
+      "title": "The KSS Viscosity Bound",
+      "claim_refs": [
+        "p8"
+      ],
+      "bound": true,
+      "note": "confirmed by direct read: eta/s = 1/(4 pi), G_eff cancellation, matches p8's statement exactly."
+    },
+    {
+      "section_id": "VI.E",
+      "title": "Weinberg-Witten Consistency",
+      "claim_refs": [],
+      "bound": false,
+      "note": "no confident match found this pass"
+    },
+    {
+      "section_id": "VI.F",
+      "title": "Energy Conditions",
+      "claim_refs": [],
+      "bound": false,
+      "note": "no confident match found this pass"
+    },
+    {
+      "section_id": "VI.G",
+      "title": "Radiative Stability",
+      "claim_refs": [],
+      "bound": false,
+      "note": "no confident match found this pass; k8/k18 touch 'radiative stability' as a keyword but were not confirmed to state this section's own specific content (the two parametric mechanisms) on direct read"
+    },
+    {
+      "section_id": "VI.H",
+      "title": "Semiclassical Causality",
+      "claim_refs": [
+        "t2.9"
+      ],
+      "bound": true,
+      "note": "confirmed by direct read: t2.9's own statement (no-signaling, Gisin-Polchinski, semiclassical backreaction, reduced density matrix) matches this section closely."
+    },
+    {
+      "section_id": "VI.I",
+      "title": "Topological Defect Freedom",
+      "claim_refs": [
+        "c20b"
+      ],
+      "bound": true,
+      "note": "confirmed by direct read: pi_0 = pi_1 = pi_2 = 0, monopoles/strings/domain walls, matches c20b's own statement exactly."
+    },
+    {
+      "section_id": "VII.A",
+      "title": "Cosmological Constant Sector",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "VII.B",
+      "title": "Species Scale Running",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "VII.C",
+      "title": "Key Parameter Identifications",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "VIII.A",
+      "title": "What the Paper Does",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "VIII.B",
+      "title": "What the Paper Does Not Do",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "VIII.C",
+      "title": "Open Problems",
+      "claim_refs": [
+        "gut-box-occupant",
+        "op-ck",
+        "s-am-008",
+        "s-am-009",
+        "s-am-010",
+        "s-cc-001",
+        "s-cc-002",
+        "s-cc-002prime",
+        "s-cc-004",
+        "s-cc-005",
+        "s-cc-007",
+        "s-cumulant-derive",
+        "s-dd-001",
+        "s-dd-002",
+        "s-dd-003",
+        "s-dd-004",
+        "s-e1-audit",
+        "s-exhaust-coherence",
+        "s-exhaust-colocation",
+        "s-frame",
+        "s-hsb-002b",
+        "s-k3-backreact",
+        "s-k3-kill-rearg",
+        "s-mix-006",
+        "s-mix-007",
+        "s-mix-008",
+        "s-mm-003",
+        "s-mm-cr",
+        "s-noise",
+        "s-ns-018",
+        "s-second-light-scalar"
+      ],
+      "bound": true,
+      "note": "bound to the sorry ledger as a class (every derivation-kind claim carrying a closing_condition, per vendor/kernel/analysis/characterized-gaps.mjs), per this track's own instruction; the section's five specific numbered items do not individually name existing s-* refs by title, so the binding is at the class level, not item-by-item."
+    },
+    {
+      "section_id": "VIII.D",
+      "title": "Falsifiability",
+      "claim_refs": [
+        "pred.c-rd-1",
+        "pred.f14-cannex",
+        "pred.lambda-1-4",
+        "pred.muonic-atom-discrimination"
+      ],
+      "bound": true,
+      "note": "bound to the predictions as a class (every prediction-kind claim), per this track's own instruction."
+    },
+    {
+      "section_id": "VIII.E",
+      "title": "Loop-Level Gauge Sector Coupling",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "VIII.F",
+      "title": "Categorical Exclusions",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "IX",
+      "title": "Conclusion",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "Appendix A",
+      "title": "Notation and Conventions",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "Appendix B",
+      "title": "Explicit Effective Action",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "Appendix C",
+      "title": "Heat Kernel Coefficients and Operator Content",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "Appendix D",
+      "title": "KK Tower Load Map",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "Appendix E",
+      "title": "Lean 4 Formalization Status",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    },
+    {
+      "section_id": "Appendix F",
+      "title": "Reference Usage and Verification",
+      "claim_refs": [],
+      "bound": false,
+      "note": "not evaluated this pass"
+    }
+  ]
+}
