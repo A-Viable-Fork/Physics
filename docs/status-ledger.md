@@ -2,7 +2,7 @@
 
 The single source of build truth from this commit forward. A stage is done when its ledger line moves, not before. Graded honestly: `built and verified` (with the check that verified it named), or `specified, not built` (named, never implied done).
 
-Stages 0 and 1. Stages 2 through 6 are specified in `docs/physics-kernel-recon-report.md` Section 6 and are not yet begun.
+Stages 0 through 2. Stages 3 through 6 are specified in `docs/physics-kernel-recon-report.md` Section 6 and are not yet begun.
 
 ## Stage 0: the seat
 
@@ -47,12 +47,60 @@ Standing policy on which of the vendored substrate's own oracles run in this rep
 - **`check-translate.mjs` is not adopted.** It tests the case-graph dialect the vendored `build/translate-trellis.mjs` consumes, not the DG trellis dialect this repository authors from. A DG-dialect translator, if Stage 2 builds one, carries its own acceptance oracle; running the vendored translator's oracle here would verify a pipeline this repository does not use.
 - **Corpus-level checks over the DG graph are this repository's own and arrive with the corpus.** `build/check-dg.mjs` (substrate coherence over whatever `corpora/dg/dg-data.js` currently holds) and `build/check-dg-tier1.mjs` (the Stage 1 tier-commitment content, exactly specified) are the first of these; Stage 2 onward will add more as CC-1, the K-constraints, the functions and contracts, the sorry ledger, and the exclusion reservoir enter the graph.
 
+## Stage 2: DG bare
+
+The DG region entered structurally, bare: faithful statements, structural links only (`depends-on`, `contradicts`), no supports, no checking records. LLM-assisted manual entry under generate-and-verify, no translator built (per the Stage 2 prompt's own pre-made decision).
+
+| Item | Status | Verified by |
+|---|---|---|
+| CC-1 v4.14 form, v4.16 cumulant-form restatement, and the supersession record between them | built and verified | `node build/check-dg.mjs`; the supersession's live effect was exercised (below) |
+| `WF-SUPERSEDED` exercised | built and verified | a draft claim with a `depends-on` link citing the superseded v4.14 identity was planted against the real built state and `decide()` confirmed to return `declined` with `["WF-SUPERSEDED", "WF-DEPENDS"]`, then discarded |
+| K1 through K17 (20 derivation claims: 17 constraints plus P3, P8, P11, the only structural proofs that actually carry a P-number in the trellis) | built and verified | `node build/check-dg-coverage.mjs`; every provenance bracket resolvable to an already-entered claim is a real `depends-on` link (24 links) |
+| 19 live function claims, 30 surviving mechanism claims (contracts), 3 prediction claims with falsification conditions | built and verified | `node build/check-dg-coverage.mjs`; 91 `depends-on` links wire function to constraint, mechanism to parent function, prediction to parent |
+| The branch fork: Path A, Path B, their `contradicts` link, DESI Y5 / Euclid selection criteria as `closing_condition` on each; `B-NU-1` entered depending on Path A | built and verified | `node build/check-dg-coverage.mjs`; the `contradicts` link moves the gate's decision to `accepted-with-disagreement`, verified as the honest non-decline reading, not a failure |
+| Branch-commitment ceiling cap exercised | built and verified | a bare `branch-commitment` claim declared at its ceiling (`corroborated`) with no support was planted and confirmed `declined` with `GM-ABOVE`; both real branch commitments declare `asserted` instead, the grade the gate actually computes, not the ceiling the Stage 2 prompt anticipated (see the divergence note below) |
+| 28 live sorries as `derivation` claims with `closing_condition` and status/priority/gating in `extensions`; 5 speculation-tier entries as `comment` claims | built and verified | `node build/check-dg-coverage.mjs` |
+| Comment non-citability exercised | built and verified | a `supports` link from a comment claim was planted and `rejectCommentSupport()` confirmed to throw `comment-support-barred` naming both identities, then discarded |
+| `build/check-dg-coverage.mjs` and its manifest (110 entries: every K, P, F, live mechanism, prediction, branch, `B-NU-1`, live sorry, and speculation comment Stage 2 claims to have entered) | built and verified | verified non-vacuous: one manifest entry was deleted, the check confirmed to fail and name it, restored, re-confirmed green; joined to CI |
+| `docs/status-ledger.md`, this section, and the grade-distribution table below | built and verified | this file |
+
+### Earned-grade distribution, whole corpus, Stage 2 close
+
+Recomputed live from `kernel/grounding/earned-grade.mjs` via each claim's real `earnedGrade()` call, not asserted by hand. 155 claims total; every `declared_grade` equals its earned grade (0 mismatches). The gate's decision over the whole corpus is `accepted-with-disagreement`, basis `SEC-6-contradiction` (the Path A / Path B `contradicts` link), never a decline.
+
+| Kind | Earned grade | Count |
+|---|---|---|
+| axiom | constitutive | 4 |
+| standard-result | asserted | 15 |
+| observation | asserted | 20 |
+| conjecture-adopted | asserted | 7 |
+| derivation | asserted | 50 |
+| function | asserted | 19 |
+| mechanism | asserted | 30 |
+| prediction | asserted | 3 |
+| branch-commitment | asserted | 2 |
+| comment | ungraded | 5 |
+| **Total** | | **155** |
+
+`derivation` (50) is CC-1 (2 claims) + K1-K17 (17) + P3/P8/P11 (3) + the 28 live sorries. Every non-axiom, non-comment claim in the corpus sits at `asserted`, the honest bare floor: nothing but a constitutive-mode kind can earn above it without a support link or a checking record, and this stage adds neither. The single `constitutive` cluster is the 4 Tier 0 axioms, self-grounding by their kind's ceiling since Stage 1. No claim anywhere in the corpus is `checked`, `independently-rechecked`, or `corroborated`: that lift is Stage 3's job.
+
+### Divergences from the Stage 2 prompt, corrected against the trellis or the kernel
+
+- **"P1 through P3" names structural proofs that do not exist under those labels.** The trellis's own "Structural Proofs" table carries exactly three P-numbered rows: P3 (DOF count), P8 (KSS bound), P11 (diffeomorphism invariance). There is no P1 or P2. Entered the three real labels; the count (three) matches what the prompt asked for even though the labels do not.
+- **The branch commitments do not earn above `asserted` under Stage 2's own constraints.** The prompt names them a structural exception, self-grounding through their entry act. Under the real gate, a `branch-commitment` claim's kind ceiling is `corroborated`, not `constitutive`; without a `constitutive`-mode kind, a support link, or a checking record (all excluded by Stage 2's own "structure, bare" rule), nothing lifts a claim above `asserted`. Verified by planting a bare claim declared at `corroborated` and watching the real gate decline it with `GM-ABOVE`. Declared both branch commitments `asserted`, trusting the decline over the prompt's expectation, the same discipline Stage 1 already established.
+
 ## Not built at Stage 1 (named, not implied done)
 
-- The DG region proper: CC-1, K1-K17, the structural proofs, the live functions, the surviving contracts, both cosmology branch commitments (Path A / Path B) with their `contradicts` link, every live sorry as a claim with its `closing_condition`. Stage 2.
-- `B-NU-1` (the neutrino mass sector friction breakdown named "new, v4.13"), deliberately not entered at Stage 1: it is entangled with the DESI reclassification narrative and the Path A/B branch-commitment structure, both Stage 2 scope. Named here so its absence is not mistaken for an oversight.
-- No `supports`, `depends-on`, `contradicts`, or other links of any kind; zero checking records. Every Stage 1 claim sits at its bare floor. Stage 3 attaches the dependency structure and the derivation-audit checking records per the checker-identity policy.
 - No `api/` (our own membrane) or `periphery/` client code. Stage 5.
 - No transformation entries registered in the `computation` pack against real physics data (the pole-condition arithmetic, the exhaust race, the OoM-deficit calculator); `check-compute-invariants.mjs` exercises the register's rules with synthetic fixtures, not a real transform. Stage 4.
-- The source table's `rests_on` chains are populated only for the small set of corpus-index entries whose lineage is explicit in the Appendix E text itself (13 links); full footprint-closure lineage across all 195 corpus-index rows is unbuilt. This does not affect Stage 1's own claims (none of them cite a corpus-index row whose independence depends on the closure), but Stage 3's derivation-audit checking records will need it for the DG region's `independently-rechecked` lifts, and it should be finished before those are attached.
-- Roughly a third of the 195 Appendix-E-derived source rows (49 of 195) default to `source_class: "testimony"` because the corpus-index text does not explicitly name an AI system, a journal, or an arXiv id for them; a manual pass against the underlying documents (not just the trellis's index-table description of them) would likely reclassify some of these to `ai-audit` or `peer-reviewed`. Not blocking for Stage 1; worth doing before Stage 3 leans on these for independence lifts.
+- The source table's `rests_on` chains are populated only for the small set of corpus-index entries whose lineage is explicit in the Appendix E text itself (13 links); full footprint-closure lineage across all 195 corpus-index rows is unbuilt. Stage 3's derivation-audit checking records will need it for the DG region's `independently-rechecked` lifts, and it should be finished before those are attached.
+- Roughly a third of the 195 Appendix-E-derived source rows (49 of 195) default to `source_class: "testimony"` because the corpus-index text does not explicitly name an AI system, a journal, or an arXiv id for them; a manual pass against the underlying documents would likely reclassify some to `ai-audit` or `peer-reviewed`. Worth doing before Stage 3 leans on these for independence lifts.
+
+## Not built at Stage 2 (named, not implied done)
+
+- **K18** is in the trellis (v4.8, trans-Planckian VEV suppresses aperiodic tilts) but out of scope: the Stage 2 prompt bounds entry to K1 through K17. A handful of already-entered claims (F20, F-CC, S-NS-018) name K18 in their trellis provenance text without a live `depends-on` link, since there is no K18 claim yet to link to.
+- **The GUT Box occupant model** (the F-theory Dark Dimension Pati-Salam specification table, the three structural findings SF-G1/G2/G3, the base-landscape and toric-fiber-exclusion tables) and **the compute-layer structural findings** (SF-D0, SF-D1, SF-D2, SF-MIX-001/002/003, SF-MM-002/003) are real trellis content supporting K10 through K12's occupant instantiation, but are not among K1-K17, P1-P3, functions, contracts, the branch fork, or the sorry ledger as Stage 2's seven build items enumerate them. Not entered. A future stage should decide whether these enter as further `derivation` claims, a new local kind, or stay as prose the K-constraint claims merely cite.
+- **Ten thin one-line stub rows** in the trellis's Suggestive and Plausible contract tables (hemispheric power asymmetry, cusp-core resolution, tear/puncture afterglow decay indices, the GRB energy chain restatement, universality of `E_snap`, pycnonuclear fusion rate underestimate, KK graviton relic density, the stale cosmological-coincidence cross-reference to retracted F12, MOND `a_0` leakage, and the speculative torsional-hair note) are not entered as separate `mechanism` claims: each is a placeholder with no fuller statement anywhere in the trellis, and their content, where not already covered by an entered function or mechanism, is a backlog item, not a defensible atomization.
+- **The exclusion reservoir**: no kills, withdrawal records, or reinstatement conditions. Every dead function (F05, F12, F13, F13.2, F19, F21) and every struck contract that depended on them is named as excluded in the relevant commit, never entered as a claim. Stage 3.
+- **No `supports` links or checking records anywhere in the corpus.** Every Stage 2 claim sits at its bare floor exactly as Stage 1's did; `check-dg-tier1.mjs` section 5 asserts this holds across the whole corpus, not just the Stage 1 claims. Stage 3 attaches the dependency structure (per the trellis provenance brackets already preserved in statement text and `depends-on` links) and the derivation-audit checking records, per the checker-identity policy in `docs/governing-conventions.md`.
+- **The `rests_on` lineage session** the Stage 1 ledger already flagged (full footprint-closure lineage across the 195-row Appendix E corpus index, and the testimony-default reclassification pass) remains unbuilt and is now more clearly a prerequisite: Stage 3's `independently-rechecked` lifts on the DG region's derivations will read the footprint closure directly, so unresolved lineage there will under-count independence rather than merely being an approximation.
