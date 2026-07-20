@@ -21,6 +21,8 @@
 //   need real class-based logic (the canonical-roots exclusion, Section 10) and are added here;
 //   the pre-existing 16-row gap is a real, separate finding, out of this session's scope, named in
 //   docs/status-ledger.md rather than silently fixed alongside an unrelated change.
+// Config revision (shore-k3b): 1 new source row (the shore document itself, corpus.sf-k3b-001)
+//   mirrored here by hand, same discipline.
 "use strict";
 
 const KINDS = [
@@ -1527,6 +1529,12 @@ const SOURCES = [
       "lit.goldberger-wise-1999",
       "lit.dewolfe-et-al-2000"
     ]
+  },
+  {
+    "source_id": "corpus.sf-k3b-001",
+    "source_class": "testimony",
+    "description": "SF-K3B-001 (docs/shores/SF-K3B-001.md): this session's own derivation reconciling the K3 audits' junction-condition backreaction (delta u_b = (kappa5^2 L/6) cosh^2(u_b) delta V) with C23-SDC's geodesic-distance SDC mechanism (d ~ M_Pl ln(z0/L)) by composing them via the chain rule in the shared variable u_b = z0/L. No adversarial audit; self-authored physics, not yet independently checked.",
+    "rests_on": []
   }
 ];
 

@@ -317,6 +317,21 @@
       "category": "mechanism"
     },
     {
+      "trellis_id": "C23-SDC-prime (shore-k3b supersession of C23-SDC, trigger law added)",
+      "ref": "c23-sdc-prime",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "K3B-RECONCILIATION (shore-k3b, not a trellis identifier)",
+      "ref": "k3b-reconciliation",
+      "category": "derivation"
+    },
+    {
+      "trellis_id": "S-K3B-VEV-DOUBLE-COUNT (shore-k3b, not a trellis identifier)",
+      "ref": "s-k3b-vev-double-count",
+      "category": "sorry"
+    },
+    {
       "trellis_id": "C23-WGC",
       "ref": "c23-wgc",
       "category": "mechanism"

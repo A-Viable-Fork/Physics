@@ -1614,6 +1614,47 @@ const STORE = {
       }
     },
     {
+      "ref": "k3b-reconciliation",
+      "kind": "derivation",
+      "source_id": "corpus.sf-k3b-001",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K3B-RECONCILIATION: the Israel-junction backreaction channel and C23-SDC's geodesic-distance channel are the same u_b = z_0/L, composed by the chain rule: delta d = (M_Pl / u_b) (kappa_5^2 L / 6) cosh^2(u_b) delta V, where delta d is C23-SDC's own geodesic distance shift and delta V is the brane-localized vacuum-energy perturbation (Goldberger-Wise) entering T_eff = T_3 + V(v(F_Q)) per K3-prime part (iii). At the framework's own physical dS-sliced working point (K3-prime part (ii), deviation from critical approximately 10^-64), u_b is approximately 74 and cosh^2(u_b) is approximately 5x10^63, order-of-magnitude figures consistent with K3-prime part (iii)'s own independently-stated significance threshold |V| ~ 3L/(kappa_5^2 l^2) = 3/(kappa_5^2 L cosh^2(u_b)). The cosh^2(u_b) enhancement is a rate change on the SDC trigger, not a new activation threshold: it amplifies how much a given delta V converts into a geodesic-distance shift, not when the channel switches on. Cosmological inertness follows from K7's own Fluctuation-Dissipation-Theorem argument (operators (i)-(iii) locked to extensive O(N) scaling; only operator (iv), the variance coupling, accesses the super-extensive ODLRO scaling this channel's delta V requires), read here as V(v(F_Q)) being a structural, background-geometry consequence of operator (iv) rather than a fresh, independent channel; Path A's own static commitment (classical structure formation produces DLRO, not ODLRO) then keeps delta V, and hence this channel, cosmologically negligible for the same reason CC-1's own pole stays dormant cosmologically. Consequence for S-CC-002: sharpened, not restructured; S-CC-002's own beta-function computation is untouched, but C23-SDC's own trigger threshold is now derived rather than merely stated. This reading of V(v(F_Q)) as operator (iv)'s structural consequence, rather than an independently verified fact, is the residual question s-k3b-vev-double-count carries forward. Derived in docs/shores/SF-K3B-001.md; no checking record exists for this derivation.",
+      "closing_condition": {
+        "condition_kind": "direct-study",
+        "target": "an independent adversarial check of the chain-rule composition (section 2 of SF-K3B-001), the near-critical asymptotics, and the operator-(iv) reading of V(v(F_Q)) that grounds the cosmological-inertness argument",
+        "system": "the composed delta d formula and its near-critical asymptotics, against the K3 audit artifacts and K3-prime directly"
+      }
+    },
+    {
+      "ref": "c23-sdc-prime",
+      "kind": "mechanism",
+      "source_id": "corpus.hsb-karch-randall-moduli-geometry-as-l-surrogate-scout-may-1",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C23-SDC-prime: SDC compliance via Karch-Randall moduli geometry, with the trigger law. The DBI-induced metric on the radial modulus z_0 gives geodesic distance d ~ M_Pl ln(z_0/L), yielding the SDC exponential decay m_KK ~ exp(-d/M_Pl) (C23-SDC's own original content, unchanged). The trigger law (shore-k3b, k3b-reconciliation): a brane-localized vacuum-energy perturbation delta V (Goldberger-Wise, entering T_eff = T_3 + V(v(F_Q)) per K3-prime part (iii)) drives z_0 via delta u_b = (kappa_5^2 L/6) cosh^2(u_b) delta V (the K3 audits' own backreaction relation), which composes with the geodesic-distance formula above by the chain rule to give delta d directly in terms of delta V, with the cosh^2(u_b) enhancement acting as a rate change, not a new threshold. Conditional on S-CC-002 closure (b > 1/(4 pi^2) for the X_F13 Pati-Salam KK tower on dP_3); this conditionality is sharpened by the trigger law, not restructured by it. Satisfies F23 (sole, SDC). Evidence: Paper -1; HSB Karch-Randall Moduli Geometry Scout (May 12, 2026); this session's own derivation, docs/shores/SF-K3B-001.md.",
+      "extensions": {
+        "verdict": "Confirmed, conditional; trigger law added, shore-k3b"
+      }
+    },
+    {
+      "ref": "s-k3b-vev-double-count",
+      "kind": "derivation",
+      "source_id": "corpus.sf-k3b-001",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "S-K3B-VEV-DOUBLE-COUNT: whether V(v(F_Q))'s role as a brane-localized vacuum-energy term (Goldberger-Wise, entering T_eff in K3-prime part (iii) and k3b-reconciliation) is genuinely independent of K1's own two-channel matter-stress-energy decomposition, or risks double-counting the same v(F_Q) dependence K1 already attributes to the torsion/angular channel. Opened shore-k3b, surfaced by k3b-reconciliation's own cosmological-inertness argument (section 5 of docs/shores/SF-K3B-001.md), which reads V(v(F_Q)) as a structural consequence of K7's operator (iv) rather than an independently checked fact. A brane-localized scalar potential term in the action (Goldberger-Wise's own construction) is not, on its face, the same object as the matter stress-energy K1 decomposes, but this distinction is asserted here, not proven against K1's own derivation.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "check, against K1's own derivation (the SO(1,4) to SO(1,3) breaking pattern's algebraic stress-energy decomposition), whether a brane-localized scalar potential term V(v(F_Q)) is structurally distinct from the matter stress-energy K1 already decomposes, or whether the two double-count the same v(F_Q) dependence",
+        "system": "V(v(F_Q))'s Goldberger-Wise brane-potential role versus K1's two-channel matter-stress-energy decomposition"
+      },
+      "extensions": {
+        "status": "OPEN, shore-k3b",
+        "priority": "conditions k3b-reconciliation's cosmological-inertness argument beyond order-of-magnitude plausibility"
+      }
+    },
+    {
       "ref": "c23-wgc",
       "kind": "mechanism",
       "source_id": "corpus.gut-population-survey-v1-7",
@@ -7234,7 +7275,7 @@ const STORE = {
     },
     {
       "link_kind": "depends-on",
-      "from": "c23-sdc",
+      "from": "c23-sdc-prime",
       "to": "f23",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
@@ -8401,12 +8442,66 @@ const STORE = {
     },
     {
       "link_kind": "supports",
-      "from": "c23-sdc",
+      "from": "c23-sdc-prime",
       "to": "f23",
       "support_group": "f23-g0",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k3-prime",
+      "to": "k3b-reconciliation",
+      "support_group": "k3b-reconciliation-basis",
+      "source_id": "corpus.sf-k3b-001",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "independently-rechecked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "im.karch-randall-2001-tension-position",
+      "to": "k3b-reconciliation",
+      "support_group": "k3b-reconciliation-basis",
+      "source_id": "corpus.sf-k3b-001",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "im.goldberger-wise-effective-tension",
+      "to": "k3b-reconciliation",
+      "support_group": "k3b-reconciliation-basis",
+      "source_id": "corpus.sf-k3b-001",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k7",
+      "to": "k3b-reconciliation",
+      "support_group": "k3b-reconciliation-basis",
+      "source_id": "corpus.sf-k3b-001",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k3b-reconciliation",
+      "to": "c23-sdc-prime",
+      "support_group": "c23-sdc-prime-basis",
+      "source_id": "corpus.sf-k3b-001",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "im.karch-randall-2001-tension-position",
+      "to": "c23-sdc-prime",
+      "support_group": "c23-sdc-prime-basis",
+      "source_id": "corpus.sf-k3b-001",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -8709,6 +8804,12 @@ const STORE = {
       "successor_ref": "k3-prime",
       "at_state": "dg@landing-1",
       "reason": "K3 superseded by the operator's ruling R2 (landing-1), following two independent adversarial audits (PK-AUD-K3-001, PK-AUD-K3-002; docs/audits/). K3's flat text (T3 = 6/(kappa5^2 L), independent of z0) conflates the RS flat-sliced case (true, exactly) with the framework's actual Karch-Randall-type declared setting (false as a fixed number; the KR junction condition fixes a relation among T3, z0, and the induced AdS4 radius, not a single number) and elides the physical dS-sliced background entirely. K3-prime states all three cases explicitly (flat, KR/AdS4, physical dS), reads the z0-independence claim correctly as moduli-flatness rather than a numerical constant, and carries the state-dependence channel (T_eff = T3 + V(v)) K3's own text foreclosed too broadly. The superseded claim's original text stays in history, not deleted; every link previously citing it is rewired to K3-prime (the k1-basis supports link), per the CC-1 v4.14/v4.16 zero-dangling-links precedent."
+    },
+    {
+      "superseded_ref": "c23-sdc",
+      "successor_ref": "c23-sdc-prime",
+      "at_state": "dg@shore-k3b",
+      "reason": "C23-SDC refined by this shore's reconciliation of the characterized gap s-k3-backreact (docs/shores/SF-K3B-001.md). C23-SDC's own geodesic-distance/SDC-decay content stands unchanged; c23-sdc-prime adds the trigger law this shore derives (a brane-localized vacuum-energy perturbation delta V drives z0 via the K3 audits' own backreaction relation, composing with the geodesic-distance formula by the chain rule to give delta d directly in terms of delta V), sharpening C23-SDC's own S-CC-002 conditionality without restructuring it. The superseded claim's original text stays in history, not deleted; both links previously citing it (the depends-on and supports links into F23) are rewired to c23-sdc-prime, per the K3/K3-prime zero-dangling-links precedent."
     }
   ],
   "withdrawals": [
