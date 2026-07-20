@@ -1,6 +1,6 @@
-// Role: the dg kernel store: Stage 1 tier commitments plus Stage 2 structure, bare. Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1 with its v4.14-to-v4.16 supersession, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2), atomized one commitment per claim from the trellis. The exclusion reservoir, all grounding supports, and all checking records are Stage 3, not entered here.
+// Role: the dg kernel store: Stage 1 tier commitments, Stage 2 DG structure bare, and Stage 2.5 patch and lineage. Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2); the dispositioned stub rows, K18, the GUT Box occupant and structural-findings material, and source-table lineage/reclassification (Stage 2.5). The exclusion reservoir, all grounding supports, and all checking records are Stage 3, not entered here.
 // Contract: exports STORE = { store_id, claims, links, supersessions }. Pure data; imports nothing.
-// Invariant: every claim is declared at or below what it earns with no support links or checking records: everything floors at asserted, including the two branch commitments (their kind ceiling is corroborated, not constitutive; a bare corroborated declaration was planted and confirmed declined by the real gate with GM-ABOVE, per the session notes, so both declare asserted honestly rather than the ceiling the Stage 2 prompt anticipated), except comment-kind speculation entries which declare ungraded, their kind ceiling. Statement text is the trellis own prose, atomized to one commitment per claim; where atomization forced a judgment call the full trellis context is quoted in extensions.trellis_context. depends-on links wire provenance brackets, parent relations, and branch entanglement to already-entered claims only. Contract/mechanism verdicts (Confirmed through Plausible) ride in extensions.verdict, read by periphery, never the gate, per docs/governing-conventions.md. Sorry status, priority, and gating ride in extensions per the same rule.
+// Invariant: every claim is declared at or below what it earns with no support links or checking records: everything floors at asserted, including the two branch commitments (their kind ceiling is corroborated, not constitutive; verified declined at the ceiling in Stage 2), except axioms (constitutive by kind ceiling) and comment-kind claims (ungraded, their kind ceiling). Statement text is the trellis own prose, atomized to one commitment per claim; where atomization forced a judgment call the full trellis context is quoted in extensions.trellis_context or a dedicated extensions note. depends-on links wire provenance brackets and parent relations to already-entered claims only; a stated parent that is itself excluded (reservoired or retracted) stays text-only, never a dangling link. Contract/mechanism verdicts ride in extensions.verdict, read by periphery, never the gate, per docs/governing-conventions.md. Sorry status, priority, and gating ride in extensions per the same rule.
 "use strict";
 
 const STORE = {
@@ -1627,6 +1627,228 @@ const STORE = {
       "contributor_id": "author:dg-trellis",
       "declared_grade": "ungraded",
       "statement": "S-PROTON-MAG (speculation tier, non-citable, SF-DG-012, June 2026): Conjecture relating a proton-magnetic-moment anomaly to the species/KK coupling. Speculation tier."
+    },
+    {
+      "ref": "mech.hemispheric-power-asymmetry",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Hemispherical power asymmetry from frozen SO(1,4) VEV gradient. Parent: (cosmological, no numbered function). Source: Displacement Geometry Report.",
+      "extensions": {
+        "verdict": "Plausible"
+      },
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "calculation needed",
+        "system": "hemispherical CMB power asymmetry from a frozen SO(1,4) VEV gradient"
+      }
+    },
+    {
+      "ref": "mech.cusp-core-resolution",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Cusp-core resolution from rigidity floor (Lambda_min density maximum). Satisfies F11. Source: Displacement Geometry Report.",
+      "extensions": {
+        "verdict": "Plausible"
+      },
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "N-body simulations",
+        "system": "dark matter halo density profile cusp-core transition from the Lambda_min rigidity floor"
+      }
+    },
+    {
+      "ref": "mech.tear-puncture-afterglow",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Tear vs puncture afterglow decay indices. Satisfies F06. Source: Half-Sphere Report.",
+      "extensions": {
+        "verdict": "Plausible"
+      },
+      "closing_condition": {
+        "condition_kind": "direct-study",
+        "target": "GRB catalog analysis",
+        "system": "GRB afterglow decay index catalog, tear versus puncture channel"
+      }
+    },
+    {
+      "ref": "mech.e-snap-chain",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Lambda_cc to R_Dark to m_KK to lambda_KK to Delta r to E_GRB chain. Satisfies F08. Source: DD Shear Zone.",
+      "extensions": {
+        "verdict": "Plausible"
+      },
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "propagation-drainage PDE",
+        "system": "the E_GRB derivation chain from Lambda_cc through the Dark Dimension radius to the KK Compton wavelength"
+      }
+    },
+    {
+      "ref": "mech.e-snap-universality",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Universality of E_snap across progenitors: same energy regardless of mass, rotation, EOS. Satisfies F08. Source: Shear Zone Reports.",
+      "extensions": {
+        "verdict": "Plausible"
+      },
+      "closing_condition": {
+        "condition_kind": "direct-study",
+        "target": "same energy regardless of progenitor mass, rotation, EOS, checked across the GRB catalog",
+        "system": "E_snap universality across supernova progenitors"
+      }
+    },
+    {
+      "ref": "mech.pycnonuclear-fusion-rates",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Pycnonuclear fusion rates underestimated in NS crusts and WD cores. Parent: (std. phys., no DG function; this is a conjecture about standard physics rather than a DG mechanism). Source: LUNA + Vacuum Energy Source.",
+      "extensions": {
+        "verdict": "Plausible",
+        "kind_call": "entered without a function parent since its own parent column reads (std. phys.), not a DG function; flagged per Stage 2.5 Track 1 instruction."
+      },
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "TDDFT computation needed",
+        "system": "pycnonuclear fusion rates in neutron star crusts and white dwarf cores"
+      }
+    },
+    {
+      "ref": "mech.mond-a0-leakage",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "MOND a_0 from 4D to 5D gravitational leakage. Satisfies F11. Low priority. Source: KK Graviton DM.",
+      "extensions": {
+        "verdict": "Plausible"
+      },
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "formal mu(x) derivation, low priority",
+        "system": "the MOND interpolation function a_0 from 4D-to-5D gravitational leakage"
+      }
+    },
+    {
+      "ref": "mech.loop-kk-threshold-alpha",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Loop-level KK threshold corrections to the fine-structure constant alpha. Parent: F13, which is itself reservoired (v4.15 matter-sector exclusion record; see Stage 2). No live depends-on link to F13 since it is not a claim in this graph; the parent relation is stated in text only. ~10^12 KK modes, z0-dependent spectrum. Source: warp-factor calculation.",
+      "extensions": {
+        "verdict": "Plausible",
+        "note": "parent F13 is reservoired and absent from the graph; entered per explicit Stage 2.5 Track 1 disposition despite the dead parent, unlike Stage 2 which excluded F13-parented rows outright"
+      },
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "surviving EM route, calculation not performed",
+        "system": "loop-level KK threshold corrections to the fine-structure constant alpha"
+      }
+    },
+    {
+      "ref": "s-torsional-hair",
+      "kind": "comment",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "ungraded",
+      "statement": "Torsional hair preserves coherence information on horizon. Satisfies F17 (as speculative). The trellis marks this row Speculative; entered as a comment per the quarantine rule, mechanically non-citable. Source: Trellising."
+    },
+    {
+      "ref": "pred.muonic-atom-discrimination",
+      "kind": "prediction",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Muonic atom discrimination test. Parent: F13, itself reservoired (see mech.loop-kk-threshold-alpha); no live depends-on link. Source: DBI Tension Report.",
+      "closing_condition": {
+        "condition_kind": "measurement-on-the-system",
+        "target": "loop-level calculation needed to fix the predicted discrimination signal, then a muonic-atom measurement to test it",
+        "system": "muonic atom spectroscopy discriminating the DG radion coupling"
+      }
+    },
+    {
+      "ref": "mech.bh-area-law-edge-modes",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Bekenstein-Hawking entropy sub-result (4.2). Area law from edge mode counting. Strongly Supported. Multiple independent proofs in first-order gauge gravity literature.",
+      "extensions": {
+        "verdict": "Strongly Supported"
+      }
+    },
+    {
+      "ref": "mech.bh-rt-surface-anchor",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Bekenstein-Hawking entropy sub-result (4.2). RT surface anchors to ETW defect. Confirmed. Defect Extremal Surface prescription.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "mech.bh-so14-phase-space-protected",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Bekenstein-Hawking entropy sub-result (4.2). SO(1,4) phase space protected through SSB. Confirmed. 20 first-class constraints preserved.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "mech.bh-radion-frozen-boundary",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Bekenstein-Hawking entropy sub-result (4.2). Radion frozen out of boundary phase space. Confirmed. 44 second-class constraints.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "mech.bh-quarter-prefactor-invariance",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Bekenstein-Hawking entropy sub-result (4.2). v(F_Q) dynamic invariance of the 1/4 prefactor. Plausible. Scaling analysis: c ~ v^4, L_0 ~ v^4, Cardy square-root gives v^4.",
+      "extensions": {
+        "verdict": "Plausible"
+      }
+    },
+    {
+      "ref": "mech.bh-quarter-prefactor-microcanonical",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Bekenstein-Hawking entropy sub-result (4.2). Exact 1/4 prefactor from microcanonical counting. Open.",
+      "extensions": {
+        "verdict": "Open"
+      },
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "the k-to-c descent cascade (path-integral derivation pushing the SO(2,4) CS level through the SO(1,4) defect to the 2D Virasoro central charge) plus the non-commutative modular bootstrap (extending the Cardy formula to quantum group algebras on the sl(2,R) corner)",
+        "system": "the exact 1/4 Bekenstein-Hawking prefactor from microcanonical edge-mode counting"
+      }
     }
   ],
   "links": [
@@ -2546,6 +2768,94 @@ const STORE = {
       "link_kind": "depends-on",
       "from": "op-ck",
       "to": "k7",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "mech.cusp-core-resolution",
+      "to": "f11",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "mech.tear-puncture-afterglow",
+      "to": "f06",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "mech.e-snap-chain",
+      "to": "f08",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "mech.e-snap-universality",
+      "to": "f08",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "mech.mond-a0-leakage",
+      "to": "f11",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "mech.bh-area-law-edge-modes",
+      "to": "mech.bh-entropy",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "mech.bh-rt-surface-anchor",
+      "to": "mech.bh-entropy",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "mech.bh-so14-phase-space-protected",
+      "to": "mech.bh-entropy",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "mech.bh-radion-frozen-boundary",
+      "to": "mech.bh-entropy",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "mech.bh-quarter-prefactor-invariance",
+      "to": "mech.bh-entropy",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "mech.bh-quarter-prefactor-microcanonical",
+      "to": "mech.bh-entropy",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"
