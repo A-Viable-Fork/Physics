@@ -1849,6 +1849,118 @@ const STORE = {
         "target": "the k-to-c descent cascade (path-integral derivation pushing the SO(2,4) CS level through the SO(1,4) defect to the 2D Virasoro central charge) plus the non-commutative modular bootstrap (extending the Cardy formula to quantum group algebras on the sl(2,R) corner)",
         "system": "the exact 1/4 Bekenstein-Hawking prefactor from microcanonical edge-mode counting"
       }
+    },
+    {
+      "ref": "k18",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K18: Trans-Planckian VEV Suppresses Aperiodic Tilts [v4.8, from T3.6 + Tier 4 Section 4.4 reformulation]. Adoption of the Addazi-Meluccio periodic SSB potential (Section 4.4) forces the bare VEV to be vastly trans-Planckian: v ~ M_P * S_dS / (Y_MM M_P) ~ 10^139 GeV under standard EFT scaling Y_MM ~ M_P^-1. The 4D Planck mass is generated through M_P^2 = 32 Y_MM v m^2 (Addazi-Meluccio eq. 4) rather than identified with the bare VEV. This trans-Planckian hierarchy provides geometric suppression of all aperiodic radiative corrections to the periodic potential: the field-space distance between adjacent topological vacua remains Delta rho ~ 1/(c Y_MM) ~ 10^19 GeV (Planck-scale), and the topological barrier height V_barrier ~ mu_rho^2 Delta rho^2 ~ 10^32 GeV^4 at MeV radion mass overwhelmingly dominates aperiodic Coleman-Weinberg slopes (~10^-3 GeV^3 at the cell boundary) by 16 orders of magnitude. The protection mechanism is kinematic, overwhelming barrier height, rather than symmetric: the discrete shift symmetry is broken by the framework's gamma(phi^2) F_Q coupling and is not protective. Reference: Gemini CC Radiative Stability Report (April 2026), Addazi-Meluccio 2026. Constrains: F20, F-CC, Tier 4 SSB potential structure. Constrained by: T3.6."
+    },
+    {
+      "ref": "gut-box-occupant",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "GUT Box occupant (v4.0): the GUT Box, previously an empty search space bounded by K10, K11, K12, acquires its first confirmed occupant: F-theory X_F13 Pati-Salam on B_3 = P(O_dP3 (+) O(-H)) -> dP_3. A systematic survey (GUT Box Population Survey v1.7, seven adversarial Shore cycles, ten architectures evaluated) identified one confirmed viable resident: three killed (minimal SU(5), SUSY SU(5), orbifold GUTs), three flagged (SO(10), flipped SU(5), semi-simple/quiver), three plausible (trinification, E6, SUSY SO(10)), one confirmed viable (Pati-Salam). Three realization pathways were investigated for Pati-Salam in the Dark Dimension: intersecting D6-branes on factorizable tori (blocked by SF-G1, BPS-Chirality Tension), magnetized D-branes with Landau gapping (killed parametrically by SF-G3), and F-theory 7-branes on fibered bases (successful via SF-G2, Divisor Transversality). F-theory is the sole surviving realization pathway. The confirmed model passes all eight S-G20 constraints: gauge group, three families, Dark Dimension localization, tadpole, SUSY, proton decay, neutrino mass structure, rank-3 Yukawa.",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "compute fiber-specific Euler characteristics chi(Y_4) and matter curve classes for the seven indeterminate toric fibers (X_F5, X_F6, X_F8, X_F9, X_F10, X_F11, X_F16) on each of the three surviving del Pezzo bases, 21 fiber-base pairs total, via FTheoryTools (Julia/OSCAR, arXiv:2506.13849), which implements the Batyrev-Borisov machinery; weeks-scale with software, intractable by hand",
+        "system": "the toric fiber landscape of the F-theory GUT Box construction"
+      },
+      "extensions": {
+        "trellis_context": "Base landscape (GUT Box Base Landscape, v4.1): the confirmed F-theory Pati-Salam model is viable on three del Pezzo base surfaces. dP_3 (N_geom 227, N_D3 95, N_Y 87 Yukawa loci, flux isotropy perfect at 15/3 = 5) is the geometric global optimum, the v4.0 specification and optimal baseline. dP_5 (N_geom 208, N_D3 136, N_Y 81, flux isotropy perfect at 15/5 = 3) is a viable alternative with identical D-flat relation t_H = 5 t_E. dP_7 (N_geom 189, N_D3 141, N_Y 75, flux isotropy broken at 15/7, not an integer) survives marginally with structural disadvantages: forced flux asymmetry breaks the S_n permutation symmetry of exceptional divisors. The gauge group is identical across all three bases (SF-D2); base selection among dP_3, dP_5, dP_7 is a secondary moduli landscape problem. Complete Base Exclusion Table (v4.1): P^2 (dP_0) killed by C3, no exceptional divisors; F_0 and F_2 killed by C3, Diophantine impossibility; dP_1 killed by C2, tadpole catastrophe (N_D3 = -186); dP_2, dP_4, dP_6, dP_8 killed by C2/C4, SF-D1 parity kill, half-integer N_D3; dP_3, dP_5, dP_7 survive. Toric Fiber Exclusion Status (v4.1): of the sixteen Klevers et al. (arXiv:1503.02068) toric hypersurface fibrations evaluated against the pre-filter stack (K10, K11, SM-embedding), eight are killed at the pre-filter (X_F1, X_F2, X_F3, X_F4, X_F7, X_F12, X_F14, X_F15), one is confirmed (X_F13, gauge algebra (SU(4) x SU(2)^2)/Z_2, fully mapped, survives), and seven are indeterminate pending computational resolution (X_F5, X_F6, X_F8, X_F9, X_F10, X_F11, X_F16, all pass the pre-filter but are missing fiber-specific Euler characteristic and matter curve data). If any indeterminate fiber survives its computation, it produces a different gauge group (SU(5), direct SM, or Trinification) and the gauge group selection fractures into a discrete landscape (SF-D2 structural note)."
+      }
+    },
+    {
+      "ref": "sf-g1",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "SF-G1: BPS-Chirality Tension on Factorizable Tori in the Dark Dimension. On factorizable T^6/(Z_2 x Z_2') orientifolds with standard N=1 BPS conditions, the requirements of Dark Dimension brane localization (all observable brane stacks trivially wrapped on the large torus), three chiral generations (nonzero per-torus intersection numbers), and supersymmetry (brane angle sum equal to zero with positive-definite complex structure moduli) admit no simultaneous solution. The Pigeonhole argument establishes that three stacks with only two allowed orientations on the large torus force at least one pair into parallel alignment, zeroing their intersection number. Demonstrated on all 33 Sabir et al. (2024) intersecting D6-brane models via exhaustive permutation analysis. Scope: blocks D6-brane factorizable torus constructions for any gauge group in the Dark Dimension. Non-factorizable Calabi-Yau compactifications, magnetized brane constructions, and F-theory 7-brane models remain open. Source: Torus Permutation Check report."
+    },
+    {
+      "ref": "sf-g2",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "SF-G2: Divisor Transversality Escape from BPS-Chirality Tension. F-theory gauge localization via horizontal divisors on P^1-fibered base threefolds provides a structural escape from SF-G1. The gauge divisor S_GUT is engineered as a horizontal section of the P^1 fibration, transverse to the macroscopic Dark Dimension fiber. The mechanism operates because: holomorphic divisors in F-theory enforce N=1 SUSY via holomorphicity of the divisor, a condition that does not couple fiber and base directions; the gauge KK tower is determined by the Laplacian on S_GUT, independent of the fiber volume; matter curves are geometrically contained within S_GUT; gauge couplings depend only on Vol(S_GUT), decoupled from Vol(P^1 fiber) at tree level with K14-suppressed one-loop corrections. Sen limit check confirms the BPS-Chirality Tension does not reappear in the Type IIB weak-coupling limit. Scope: applies to any F-theory construction where the GUT divisor can be placed on a horizontal section of a fibered base. The finding is independent of fiber type or gauge group. This is the mechanism by which the GUT Box is occupied. Source: F-Theory X_F13 Base Geometry Adaptation report."
+    },
+    {
+      "ref": "sf-g3",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "SF-G3: Avenue B Parametric Kill (Magnetized Brane Landau Gapping). The magnetized D-brane Landau gapping mechanism is parametrically unable to achieve Dark Dimension gauge localization on T^6/(Z_2 x Z_2') orientifolds. Closed-form bound: m_LL^max = M_s * sqrt(Q_max/(2 pi N_c A M_s^2)) ~ 710 MeV for Dark Dimension parameters, below the required 1 TeV threshold. The obstruction is an irreconcilable conflict between kinematics (mass gap scales linearly with flux N) and topology (induced RR charge scales linearly with N, bounded by the fixed orientifold budget Q_max ~ 32). Required flux N ~ 3.2e7 induces charge Q ~ 6.4e7 against a budget of 32; the deficit factor is ~ 2e6. Scope: parametric, applies to any magnetized D-brane model on any factorizable torus orientifold in the Dark Dimension. This eliminates an entire class of potential GUT realizations. Source: Avenue B Flux/Tadpole Budget report."
+    },
+    {
+      "ref": "sf-d0",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "SF-D0: Species-Enhanced One-Loop Coefficients in Brane Heat Kernels. When a bulk Kaluza-Klein tower of N_species fields runs in a one-loop effective action on a brane worldvolume, the local operator coefficients generated by the a_4 Seeley-DeWitt expansion inherit a polynomial N_species enhancement. This is a UV enhancement of the Wilsonian coefficient through additive spectral summation, distinct from thermodynamic O(N) FDT-constrained enhancement of the matter observable. The enhancement applies specifically to dimension-6 and higher operators whose coefficients are generated locally by the a_4 or higher-order heat kernel terms. The enhancement applies to local Wilsonian coefficients in the effective action, to diagonal spectral traces of the form Tr e^(-s Delta), and to operator coefficients at coincidence limits x -> y. The enhancement does not apply to operator evaluations subject to FDT, which remain O(N), to coherent scattering amplitudes with external KK states, which carry sum rules that can produce cancellations, or to propagators between separated points, governed by Sturm-Liouville orthogonality of the KK wavefunctions. This structural finding generalizes beyond the specific (phi^2) f_Q operator: any framework with bulk KK towers generating brane-localized effective operators should check whether the species enhancement applies to the specific operator coefficient under consideration. The operational test: identify whether the object being summed is a spectral trace, enhanced, or a coherent amplitude, cancellation-prone. This distinction underlies LINT-12. Applied to gamma, SF-D0 yields gamma = c_KK/(128 pi^2 Lambda_s^2), replacing the prior gamma ~ 1/(16 pi^2 M_Pl^2) estimate and resolving OP-0 unconditionally. Scope: applies to any braneworld construction with a bulk KK tower and brane-localized heat kernel effective action. Source: Georgi-Grant-Hailu (2001), von Gersdorff-Irges-Quiros (2002), Fabinger-Horava (2000), Adjudication Document (April 2026), Paper 0 v10 Section IV.D."
+    },
+    {
+      "ref": "sf-d1",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "SF-D1: Even-Degree Parity Kill. The geometric tadpole budget for X_F13 over any dP_n base evaluates to N_geom = (6132 - 228n)/24 = 255.5 - 9.5n. For even blow-up index n = 2k, this expression reduces to 255.5 - 19k, a strict half-integer. The flux penalty (1/2) Integral G_4 wedge G_4 for integer flux satisfying the three-family Diophantine lock (a = 3, sum b_i = 15) evaluates to an even integer (2 |F|^2, with |F|^2 = 9 - sum b_i^2 an integer). The difference between a half-integer budget and an even-integer penalty is inescapably half-integer: N_D3 is not an integer. This absolute algebraic parity contradiction eliminates dP_2, dP_4, dP_6, and dP_8 unconditionally under the X_F13 architecture with L = O(-H) twist. Half-integer flux shifts that could in principle restore parity shatter the a = 3 Diophantine lock required for three chiral families. Scope: applies to X_F13 on all even-degree del Pezzo surfaces under the standard twist; parity behavior under other fibers remains indeterminate. Source: Del Pezzo Exclusion Sweep report."
+    },
+    {
+      "ref": "sf-d2",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "SF-D2: Gauge Group Fiber-Locking. The Pati-Salam gauge symmetry (SU(4) x SU(2)_L x SU(2)_R)/Z_2 is determined entirely by the X_F13 toric fiber and is invariant under variation of the base surface within the surviving family {dP_3, dP_5, dP_7}. The base geometry affects the chiral spectrum details, flux distribution, tadpole margin, Yukawa multiplicity, moduli stabilization landscape, but leaves the gauge group unchanged. The derivation chain for gauge group selection is: framework constraints (K10, K11, K12) leads to Dark Dimension boundary conditions (SF-G2 divisor transversality) leads to X_F13 fiber selection leads to Pati-Salam. The base choice is a secondary vacuum selection problem within a three-element discrete landscape. Source: Del Pezzo Exclusion Sweep report, Fiber Exclusion Sweep report."
+    },
+    {
+      "ref": "sf-mix-001",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "SF-MIX-001: Auxiliary-field structure required for Higgs sector kinetic term in MMSW gravity. Scalar kinetic terms in MacDowell-Mansouri-Stelle-West (MMSW) gravity cannot be written as direct (D phi)^dagger (D phi) constructions because the Hodge dual on the gauge-fiber side of the MMSW action produces an antisymmetric mu-nu structure that vanishes as a Klein-Gordon kinetic term (Langenscheidt 2019, Section 4.2). The principled resolution is a first-order auxiliary action with the scalar promoted to a 5-vector phi^A; the radial mode phi^5 propagates and the four Lorentz components phi^a are auxiliary, eliminated by algebraic equations of motion. This structure is forced by SO(1,4) covariance and is the standard treatment in the MMSW literature (Stelle-West 1980, Langenscheidt 2019). The framework's earlier implicit treatment of -(partial rho)^2 as a directly-displayable Jordan-frame kinetic term was a documentation gap inherited from the terse compensator handling in Stelle-West. Generalization: any pre-geometric gauge-theoretic gravity construction with internal gauge symmetry larger than SO(1,3) and a scalar Higgs sector breaking to SO(1,3) faces the same obstruction; the resolution is universally an auxiliary-field formulation forced by the gauge-fiber Hodge dual structure. Scope: applies to any MMSW or related broken gauge-theoretic gravity construction with propagating scalar mode. Source: Langenscheidt 2019 (arXiv:1907.10440), ChatGPT S-MIX-002 Path B Survey (April 2026), ChatGPT S-MIX-004 Weyl Rescaling Verification (April 2026), Path B Resolution Synthesis (April 2026)."
+    },
+    {
+      "ref": "sf-mix-002",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "SF-MIX-002 (v4.11): First-order matter Lagrangian primary blocks have rank 2 with secondary promotion of null primaries. Primary-primary Dirac sub-blocks for first-order matter Lagrangians, where canonical momenta are linear in fields rather than velocities, generically have rank 2 in a 5-dimensional auxiliary sector, not full rank. The Darboux structure decomposes the primary constraints into one second-class pair plus null combinations orthogonal to the kinetic projection vector f_a. The null primary combinations are not gauge generators; they are promoted to second-class via brackets with the secondary constraints generated by their own preservation under the Hamiltonian. The promotion mechanism depends on the algebraic structure of the auxiliary EOM, specifically the identity coefficient on the auxiliary fields. Operational test: given a first-order Lagrangian for fields (phi^A) = (phi^5, phi^a) with one component propagating and the rest auxiliary, count primary constraints via Pi_A - partial L/partial(dot phi^A) = 0, compute the primary-primary Dirac block, and identify null directions orthogonal to the kinetic projection. The expected rank is 2k where k is the number of velocity-coupling kinematic projections. Promotion of null primaries proceeds through secondary constraints with brackets M_rs = -G_rs delta^3 on the orthogonal subspace. Scope: applies to MMSW gravity with auxiliary scalars (Langenscheidt 2019), BF theory with matter, Stelle-West compensators, Dirac fermions in canonical analysis, and any first-order matter Lagrangian where auxiliary fields are eliminated via algebraic EOMs. Distinct from the standard Dirac-Bergmann pattern for second-order Lagrangians, where primary blocks are typically full rank. Source: ChatGPT S-MIX-005a Report (April 2026), ChatGPT S-MIX-005b Report (April 2026), Langenscheidt 2019 (arXiv:1907.10440)."
+    },
+    {
+      "ref": "sf-mix-003",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "SF-MIX-003 (v4.11): Orthogonal projection of algebraic auxiliary EOM produces primary-secondary bracket rank determined by orthogonal subspace dimension. When secondary constraints from preservation of null primaries take the form S_r = s^(r)a A_a with A_a = eta_ab phi^b + B_a(lower-order), the bracket matrix with the original null primaries is M_rs = -s^(r)a s^(s)b eta_ab delta^3 + Delta_rs, the Gram matrix of basis vectors s^(r) in the internal metric restricted to the orthogonal complement H_f = {u^a : u^a f_a = 0}. Generic rank equals dim H_f. Lower-order covariantization terms shift the inhomogeneous part of A_a but do not affect the identity coefficient on phi^a, hence do not threaten rank generically. Degeneracy conditions: f_a = 0, kinetic projection vanishes; f_a f^a = 0, null kinetic projection in Lorentzian internal metric; or accidental tuning of lower-order background. None of these are generic broken-vacuum configurations. Constant-volume simplifications (D_mu e^mu_a = 0) are convenience for the reduced scalar equation, not structural requirements for rank. Scope: applies wherever first-order matter Lagrangians produce algebraic auxiliary EOMs with identity coefficient on auxiliary fields. Operational test: identify the kinetic projection vector f_a, compute the orthogonal complement, verify the Gram matrix is invertible on a basis of the complement. Source: ChatGPT S-MIX-005b Report (April 2026), Langenscheidt 2019 (arXiv:1907.10440)."
+    },
+    {
+      "ref": "sf-mm-002",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "SF-MM-002 (v4.12): Isolated 30x30 spatial connection symbol has rank 12 with 18-dimensional kernel. In the broken phase <phi^A> = v delta^A_4, the principal symbol of the multiplier preservation operator restricted to the 30 spatial connection primary constraints Z^i_AB has the explicit form sigma_ZZ^(i,ab;l,cd)(xi) = 8i alpha (v+rho) epsilon_abcd epsilon^(0ikl) xi_k with sigma_ZZ^(i,a4;l,CD)(xi) = 0. Factorization: sigma_ZZ = 8i alpha (v+rho) star_int tensor curl_xi. For xi not equal to 0, rank is 12 with 18-dimensional left kernel decomposing as 6 longitudinal Lorentz modes plus 12 broken-sector a4 modes. The 6 longitudinal directions are R^(i,ab)_Lambda = xi^i Lambda^ab for antisymmetric Lambda^ab. The 12 broken-row directions are R^(i,a4)_X = X^ia for arbitrary X^ia. Full ellipticity therefore requires cross-block contributions: torsion cross-block sigma_TZ^(a,jk;b4,l)(xi) = (i/m) delta^a_b (delta^l_k xi_j - delta^l_j xi_k) structurally lifts the 12 broken-row directions; the 6 longitudinal Lorentz directions require the scalar-gradient cross-block whose form depends on the explicit F_i. Source: S-MM-002 Preliminary Report (April 2026), S-MM-002-alpha/beta reports."
+    },
+    {
+      "ref": "sf-mm-003",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "SF-MM-003 (v4.12): Subprincipal entries in MMSW multiplier matrix are lower differential order than the principal curl symbol. The connection-dependent subprincipal contribution U_M from the SO(1,4) covariant derivative D_j in the Frechet variation of Z^i_AB is ultra-local, order zero in spatial derivatives, while the principal curl symbol sigma_M is order one. Therefore U_M does not upgrade the principal-symbol rank used in the ellipticity problem. It can affect frozen-background multiplier solving as an algebraic lower-order term, but the principal rank stays at the curl-driven value, 12 in the 30-component spatial connection block. Tetrad-derivative entries in the Higgs-primary multiplier columns (delta f_a / delta A_i^b4) are similarly ultra-local. The DOF reduction beyond the principal rank therefore requires a configuration-robustness theorem (S-MM-CR) that the standard MM literature does not derive; the rank lift from 18 to the physical secondary count is generically background-sensitive. This is a generic feature of MMSW canonical analyses with auxiliary scalars, not specific to the Langenscheidt formulation. The standard MM literature on Hamiltonian constraint analysis presupposes the configuration-robustness condition without explicit derivation. Source: S-MM-002-gamma Report (April 2026)."
     }
   ],
   "links": [
@@ -2856,6 +2968,70 @@ const STORE = {
       "link_kind": "depends-on",
       "from": "mech.bh-quarter-prefactor-microcanonical",
       "to": "mech.bh-entropy",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "sf-g2",
+      "to": "sf-g1",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k7",
+      "to": "sf-d0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "sf-d1",
+      "to": "gut-box-occupant",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "sf-d2",
+      "to": "gut-box-occupant",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "sf-mix-002",
+      "to": "sf-mix-001",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "sf-mix-003",
+      "to": "sf-mix-002",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "sf-mm-003",
+      "to": "sf-mm-002",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "sf-mm-003",
+      "to": "s-mm-cr",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"

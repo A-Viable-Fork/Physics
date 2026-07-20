@@ -1,5 +1,5 @@
 {
-  "description": "Every trellis identifier Stage 2 claims to have entered, mapped to the claim (or comment) ref that carries it in corpora/dg/dg-data.js. Authored data; build/check-dg-coverage.mjs verifies the graph against it mechanically, both ways: every manifest entry resolves to a real claim, and every Stage-2-introduced claim (derivation, function, mechanism, prediction, branch-commitment, comment kinds, plus B-NU-1) appears in the manifest, so nothing silently drops in either direction.",
+  "description": "Every trellis identifier Stage 2 and Stage 2.5 claim to have entered, mapped to the claim (or comment) ref that carries it in corpora/dg/dg-data.js. Authored data; build/check-dg-coverage.mjs verifies the graph against it mechanically, both ways: every manifest entry resolves to a real claim, and every Stage-2-or-later claim of a covered kind (derivation, function, mechanism, prediction, branch-commitment, comment kinds, plus B-NU-1) appears in the manifest, so nothing silently drops in either direction. Stage 2.5 Track 1 added the dispositioned stub rows and Bekenstein-Hawking sub-results (Section 4.5, 4.2); Track 2 added K18 and the GUT Box occupant and structural-findings material.",
   "entries": [
     { "trellis_id": "CC-1 (v4.14 form)", "ref": "cc1.v4-14", "category": "core-claim" },
     { "trellis_id": "CC-1 (v4.16 cumulant form)", "ref": "cc1.v4-16", "category": "core-claim" },
@@ -117,6 +117,37 @@
     { "trellis_id": "S-LAM-IF-DOWN", "ref": "s-lam-if-down", "category": "speculation-comment" },
     { "trellis_id": "S-QFI-DEATH", "ref": "s-qfi-death", "category": "speculation-comment" },
     { "trellis_id": "S-DNA-DFS", "ref": "s-dna-dfs", "category": "speculation-comment" },
-    { "trellis_id": "S-PROTON-MAG", "ref": "s-proton-mag", "category": "speculation-comment" }
+    { "trellis_id": "S-PROTON-MAG", "ref": "s-proton-mag", "category": "speculation-comment" },
+
+    { "trellis_id": "Hemispherical power asymmetry (4.5)", "ref": "mech.hemispheric-power-asymmetry", "category": "mechanism" },
+    { "trellis_id": "Cusp-core resolution (4.5)", "ref": "mech.cusp-core-resolution", "category": "mechanism" },
+    { "trellis_id": "Tear vs puncture afterglow decay indices (4.5)", "ref": "mech.tear-puncture-afterglow", "category": "mechanism" },
+    { "trellis_id": "E_snap chain (4.5)", "ref": "mech.e-snap-chain", "category": "mechanism" },
+    { "trellis_id": "E_snap universality (4.5)", "ref": "mech.e-snap-universality", "category": "mechanism" },
+    { "trellis_id": "Pycnonuclear fusion rates (4.5)", "ref": "mech.pycnonuclear-fusion-rates", "category": "mechanism" },
+    { "trellis_id": "MOND a_0 (4.5)", "ref": "mech.mond-a0-leakage", "category": "mechanism" },
+    { "trellis_id": "Loop-level KK threshold corrections to alpha (4.5)", "ref": "mech.loop-kk-threshold-alpha", "category": "mechanism" },
+    { "trellis_id": "Torsional hair (4.5)", "ref": "s-torsional-hair", "category": "comment" },
+    { "trellis_id": "Muonic atom discrimination test (4.5)", "ref": "pred.muonic-atom-discrimination", "category": "prediction" },
+    { "trellis_id": "Bekenstein-Hawking sub-result: area law from edge mode counting (4.2)", "ref": "mech.bh-area-law-edge-modes", "category": "mechanism" },
+    { "trellis_id": "Bekenstein-Hawking sub-result: RT surface anchors to ETW brane (4.2)", "ref": "mech.bh-rt-surface-anchor", "category": "mechanism" },
+    { "trellis_id": "Bekenstein-Hawking sub-result: SO(1,4) phase space protected (4.2)", "ref": "mech.bh-so14-phase-space-protected", "category": "mechanism" },
+    { "trellis_id": "Bekenstein-Hawking sub-result: radion frozen out of boundary theory (4.2)", "ref": "mech.bh-radion-frozen-boundary", "category": "mechanism" },
+    { "trellis_id": "Bekenstein-Hawking sub-result: v(F_Q) dynamic invariance (4.2)", "ref": "mech.bh-quarter-prefactor-invariance", "category": "mechanism" },
+    { "trellis_id": "Bekenstein-Hawking sub-result: exact 1/4 prefactor from microcanonical count (4.2)", "ref": "mech.bh-quarter-prefactor-microcanonical", "category": "mechanism" },
+
+    { "trellis_id": "K18", "ref": "k18", "category": "constraint" },
+    { "trellis_id": "GUT Box occupant (v4.0)", "ref": "gut-box-occupant", "category": "gut-box-occupant" },
+    { "trellis_id": "SF-G1", "ref": "sf-g1", "category": "structural-finding" },
+    { "trellis_id": "SF-G2", "ref": "sf-g2", "category": "structural-finding" },
+    { "trellis_id": "SF-G3", "ref": "sf-g3", "category": "structural-finding" },
+    { "trellis_id": "SF-D0", "ref": "sf-d0", "category": "structural-finding" },
+    { "trellis_id": "SF-D1", "ref": "sf-d1", "category": "structural-finding" },
+    { "trellis_id": "SF-D2", "ref": "sf-d2", "category": "structural-finding" },
+    { "trellis_id": "SF-MIX-001", "ref": "sf-mix-001", "category": "structural-finding" },
+    { "trellis_id": "SF-MIX-002", "ref": "sf-mix-002", "category": "structural-finding" },
+    { "trellis_id": "SF-MIX-003", "ref": "sf-mix-003", "category": "structural-finding" },
+    { "trellis_id": "SF-MM-002", "ref": "sf-mm-002", "category": "structural-finding" },
+    { "trellis_id": "SF-MM-003", "ref": "sf-mm-003", "category": "structural-finding" }
   ]
 }
