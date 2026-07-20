@@ -413,7 +413,7 @@
     },
     {
       "source_id": "corpus.peer-review",
-      "source_class": "testimony",
+      "source_class": "ai-audit",
       "description": "Peer Review: Peer Review Report: State-Dependent Vacuum Geometry (March 2026) -- Four vulnerabilities: QFI locality, Gisin-Polchinski causality, radiative stability, SM Higgs coupling. Validated: gauge gravity induction, Dirac-Bergmann, KSS bound. Verdict: Major Revisions.",
       "rests_on": []
     },
@@ -560,7 +560,7 @@
     },
     {
       "source_id": "corpus.lean-4-formalization",
-      "source_class": "testimony",
+      "source_class": "formal-artifact",
       "description": "Lean 4 Formalization: Digitalization of State-Dependent Vacuum Geometry: A Lean 4 Formalization (March 2026) -- Six modules: Geometry (AdS$_5$/ETW brane), GaugeTheory (SO(1,4) MM), QFI_Coupling (state-dependent VEV), DiracConstraints (44 second-class, Dynamic VEV Theorem), NS_Interface (BKM bounds), TrellisConstraints (IsViableGUT linter). N=4 SYM rejection proof compiled. Key theorems carry `sorr",
       "rests_on": []
     },
@@ -612,25 +612,25 @@
     },
     {
       "source_id": "corpus.lean-4-dirac-bergmann-feasibility",
-      "source_class": "testimony",
+      "source_class": "formal-artifact",
       "description": "Lean 4 Dirac-Bergmann Feasibility: Feasibility and Implementation Report: Formalizing Dirac-Bergmann Hamiltonian Constraint Analysis in Lean 4 (March 2026) -- Mathlib4 diagnosis (symplectic geometry, Poisson algebras, matrix rank over $\\mathbb{R}$). Algebraic toy model strategy. MWE with Darboux block determinant proof. Sorry roadmap (Jacobi identity, Dirac matrix rank, weak equality, finite trunc",
       "rests_on": []
     },
     {
       "source_id": "corpus.lean-4-phase-space-architecture",
-      "source_class": "testimony",
+      "source_class": "formal-artifact",
       "description": "Lean 4 Phase Space Architecture: Formal Verification of MacDowell-Mansouri Gauge Gravity: A Strictly Typed Lean 4 Phase Space Architecture (March 2026) -- SO(1,4) antisymmetry via Subtype ($p.1 < p.2$, giving exactly 10 generators). MMPhaseSpace composite structure (45 coordinates + 45 momenta). `Fintype.card PhaseSpaceIndexType = 90 := rfl` verified by kernel. 45 primary constraints as typed func",
       "rests_on": []
     },
     {
       "source_id": "corpus.lean-4-ns-interface",
-      "source_class": "testimony",
+      "source_class": "formal-artifact",
       "description": "Lean 4 NS Interface: Formal Verification of Global NS Regularity via SDVG (March 2026) -- Complete NS_Interface.lean module. Corrected `is_holographic_vorticity_spatial` with mandatory spatial dependence. `bkm_integral_rigorous` using ENNReal lower Lebesgue integral with essSup. AEStronglyMeasurable bulk trajectory hypothesis. Master regularity theorem with two sorry blocks (genuine proof obligati",
       "rests_on": []
     },
     {
       "source_id": "corpus.lean-4-qfi-trellis-modules",
-      "source_class": "testimony",
+      "source_class": "formal-artifact",
       "description": "Lean 4 QFI/Trellis Modules: Formalization of SDVG: Thermodynamic Exhaust and Type-Theoretic Falsification (March 2026) -- Corrected QFI_Coupling.lean (ex falso fixed, KaluzaKleinExhaust structure). Corrected TrellisConstraints.lean (GaugeTheoryRigorous with proof terms, IsViableGUTRigorous typeclass). CAUTION: QFI positivity axiom missing IsPureState hypothesis. Sliding unification over-constraine",
       "rests_on": []
     },

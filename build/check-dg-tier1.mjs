@@ -14,6 +14,12 @@
 // since keeping them would make this check permanently and correctly fail rather than test
 // anything live. The Stage 1 per-kind counts and the universal declared-equals-earned check, both
 // still meaningful regression tests, are kept.
+// DEPARTURE at Stage 3a: section [3] now reads each claim's earned grade from the real gate
+// receipt's grade_table (computed with the corpus's real supports links folded in) instead of
+// reimplementing earnedGrade() with supports forced to []; the old form would now report every
+// supported claim as "dishonest" for the wrong reason (this check's own stale assumption, not the
+// corpus). Section [5] drops the "no supports link anywhere" assertion (Stage 3a's whole point is to
+// add them) but keeps "no checking record anywhere" (still true, still Stage 3b's job).
 "use strict";
 import { buildKernel } from "./dg-build.mjs";
 import { earnedGrade } from "../vendor/kernel/grounding/earned-grade.mjs";
@@ -36,21 +42,24 @@ const byKind = {};
 for (const c of claims) byKind[c.rec.kind] = (byKind[c.rec.kind] || 0) + 1;
 for (const [kind, n] of Object.entries(EXPECTED)) ok((byKind[kind] || 0) >= n, `${kind}: at least ${n} claims (got ${byKind[kind] || 0})`);
 
-console.log("\n[3] every claim in the whole corpus declares at or below what the gate's own earned-grade rule computes, bare (supports and checking records do not exist anywhere in this corpus yet)");
+console.log("\n[3] every claim in the whole corpus declares exactly what the real gate's grade_table computes it earns, real supports links folded in");
+const gradeByIdentity = new Map((receipt.grade_table || []).map((g) => [g.identity, g]));
 for (const { rec } of claims) {
-  const ceil = tables.kindTable.byKind.get(rec.kind);
-  const eg = earnedGrade({ ceiling: ceil.ceiling, constitutive: ceil.ceiling === "constitutive", checkingRecords: rec.checking_records, supports: [] });
-  const honest = rec.declared_grade === eg.earned;
-  ok(honest, `${rec.kind} "${rec.statement.slice(0, 48)}...": declared ${rec.declared_grade}, earned ${eg.earned}`);
+  const g = gradeByIdentity.get(rec.identity);
+  ok(!!g, `${rec.kind} "${rec.statement.slice(0, 48)}...": has a grade_table entry`);
+  if (!g) continue;
+  const honest = rec.declared_grade === g.earned_grade;
+  ok(honest, `${rec.kind} "${rec.statement.slice(0, 48)}...": declared ${rec.declared_grade}, earned ${g.earned_grade}`);
 }
 
 console.log("\n[4] the axiom kind still self-grounds to constitutive");
 const axiomClaims = claims.filter((c) => c.rec.kind === "axiom");
 ok(axiomClaims.length === 4 && axiomClaims.every((c) => c.rec.declared_grade === "constitutive"), "all 4 axiom claims declare constitutive");
 
-console.log("\n[5] no supports link or checking record exists anywhere in the corpus yet (Stage 3 scope)");
-ok((built.links || []).every((l) => l.link_kind !== "supports"), "every link in the corpus is structural (depends-on, contradicts), never supports");
+console.log("\n[5] no checking record exists anywhere in the corpus yet (Stage 3b scope); supports links are now expected (Stage 3a)");
 ok(claims.every((c) => !c.rec.checking_records || c.rec.checking_records.length === 0), "no claim carries a checking record");
+const supportsCount = (built.links || []).filter((l) => l.link_kind === "supports").length;
+ok(supportsCount > 0, `at least one supports link exists in the corpus (got ${supportsCount})`);
 
 console.log("\n" + H);
 if (fails === 0) console.log("verified: the Stage 1 tier commitments remain intact and honestly graded as the corpus has grown, and no support link or checking record has been smuggled in ahead of Stage 3.");

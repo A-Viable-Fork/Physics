@@ -1,6 +1,6 @@
-// Role: the dg kernel store: Stage 1 tier commitments, Stage 2 DG structure bare, and Stage 2.5 patch and lineage. Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2); the dispositioned stub rows, K18, the GUT Box occupant and structural-findings material, and source-table lineage/reclassification (Stage 2.5). The exclusion reservoir, all grounding supports, and all checking records are Stage 3, not entered here.
+// Role: the dg kernel store: Stage 1 tier commitments, Stage 2 DG structure bare, Stage 2.5 patch and lineage, and Stage 3a supports (K/P region, mechanism region, function/prediction region: full Track 1). Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2); the dispositioned stub rows, K18, the GUT Box occupant and structural-findings material, and source-table lineage/reclassification (Stage 2.5); supports links wiring K-constraints and structural proofs to tier commitments and each other, mechanisms to their evidence, and functions/predictions to their producing mechanisms (Stage 3a). Checking records, independence lifts, and the exclusion reservoir are Stage 3b/3c, not entered here.
 // Contract: exports STORE = { store_id, claims, links, supersessions }. Pure data; imports nothing.
-// Invariant: every claim is declared at or below what it earns with no support links or checking records: everything floors at asserted, including the two branch commitments (their kind ceiling is corroborated, not constitutive; verified declined at the ceiling in Stage 2), except axioms (constitutive by kind ceiling) and comment-kind claims (ungraded, their kind ceiling). Statement text is the trellis own prose, atomized to one commitment per claim; where atomization forced a judgment call the full trellis context is quoted in extensions.trellis_context or a dedicated extensions note. depends-on links wire provenance brackets and parent relations to already-entered claims only; a stated parent that is itself excluded (reservoired or retracted) stays text-only, never a dangling link. Contract/mechanism verdicts ride in extensions.verdict, read by periphery, never the gate, per docs/governing-conventions.md. Sorry status, priority, and gating ride in extensions per the same rule.
+// Invariant: every claim is declared at or below what it earns; before Stage 3a this meant every non-axiom, non-comment claim floors at asserted with no support links. Stage 3a wires real supports links per the trellis provenance brackets and declares each claim at what it now earns via the real earnedGrade() computation, never above. A supports link's own declared_grade is the honest snapshot of its source claim's earned grade at the time the link was wired, in topological order within each region, never invented or inflated; meet() (weakest-of within a conjunctive support_group) then floors delivery to the true minimum regardless. depends-on links wire provenance brackets and parent relations to already-entered claims only; a stated parent that is itself excluded (reservoired or retracted) stays text-only, never a dangling link. Contract/mechanism verdicts ride in extensions.verdict, read by periphery, never the gate, per docs/governing-conventions.md. Sorry status, priority, and gating ride in extensions per the same rule.
 "use strict";
 
 const STORE = {
@@ -3032,6 +3032,699 @@ const STORE = {
       "link_kind": "depends-on",
       "from": "sf-mm-003",
       "to": "s-mm-cr",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "t2.7",
+      "to": "k4",
+      "support_group": "k4-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "t2.8",
+      "to": "k4",
+      "support_group": "k4-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "t1.5",
+      "to": "k6",
+      "support_group": "k6-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "t1.3",
+      "to": "k9",
+      "support_group": "k9-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "t3.6",
+      "to": "k18",
+      "support_group": "k18-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k3",
+      "to": "k1",
+      "support_group": "k1-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "p3",
+      "to": "k5",
+      "support_group": "k5-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "t3.4",
+      "to": "k10",
+      "support_group": "k10-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k6",
+      "to": "k10",
+      "support_group": "k10-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k6",
+      "to": "k12",
+      "support_group": "k12-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "t2.2",
+      "to": "k12",
+      "support_group": "k12-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k6",
+      "to": "k13",
+      "support_group": "k13-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "t3.4",
+      "to": "k13",
+      "support_group": "k13-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "t1.1",
+      "to": "k13",
+      "support_group": "k13-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k4",
+      "to": "k14",
+      "support_group": "k14-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "t2.8",
+      "to": "k14",
+      "support_group": "k14-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "t2.7",
+      "to": "k11",
+      "support_group": "k11-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k4",
+      "to": "k11",
+      "support_group": "k11-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "f20",
+      "to": "k15",
+      "support_group": "k15-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k1",
+      "to": "k2",
+      "support_group": "k2-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "t2.5",
+      "to": "k2",
+      "support_group": "k2-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k1",
+      "to": "k7",
+      "support_group": "k7-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "t3.4",
+      "to": "k7",
+      "support_group": "k7-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "sf-d0",
+      "to": "k7",
+      "support_group": "k7-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k2",
+      "to": "k16",
+      "support_group": "k16-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k7",
+      "to": "k17",
+      "support_group": "k17-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k4",
+      "to": "k17",
+      "support_group": "k17-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "t2.7",
+      "to": "k17",
+      "support_group": "k17-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "b15",
+      "to": "c06a",
+      "support_group": "c06a-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "b15",
+      "to": "c09",
+      "support_group": "c09-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "b14",
+      "to": "c07b",
+      "support_group": "c07b-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "p3",
+      "to": "c20a",
+      "support_group": "c20a-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "b16",
+      "to": "mech.cold-spot-isw",
+      "support_group": "mech.cold-spot-isw-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "b19",
+      "to": "mech.stellar-cooling-kk",
+      "support_group": "mech.stellar-cooling-kk-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.bh-area-law-edge-modes",
+      "to": "mech.bh-entropy",
+      "support_group": "mech.bh-entropy-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.bh-rt-surface-anchor",
+      "to": "mech.bh-entropy",
+      "support_group": "mech.bh-entropy-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.bh-so14-phase-space-protected",
+      "to": "mech.bh-entropy",
+      "support_group": "mech.bh-entropy-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.bh-radion-frozen-boundary",
+      "to": "mech.bh-entropy",
+      "support_group": "mech.bh-entropy-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.bh-quarter-prefactor-invariance",
+      "to": "mech.bh-entropy",
+      "support_group": "mech.bh-entropy-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.bh-quarter-prefactor-microcanonical",
+      "to": "mech.bh-entropy",
+      "support_group": "mech.bh-entropy-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c01",
+      "to": "f01",
+      "support_group": "f01-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c02",
+      "to": "f02",
+      "support_group": "f02-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c03",
+      "to": "f03",
+      "support_group": "f03-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c04",
+      "to": "f04",
+      "support_group": "f04-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c06a",
+      "to": "f06",
+      "support_group": "f06-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c06b",
+      "to": "f06",
+      "support_group": "f06-g1",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.tear-puncture-afterglow",
+      "to": "f06",
+      "support_group": "f06-g2",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c07a",
+      "to": "f07",
+      "support_group": "f07-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c07b",
+      "to": "f07",
+      "support_group": "f07-g1",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c08",
+      "to": "f08",
+      "support_group": "f08-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.e-snap-chain",
+      "to": "f08",
+      "support_group": "f08-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.e-snap-universality",
+      "to": "f08",
+      "support_group": "f08-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c09",
+      "to": "f09",
+      "support_group": "f09-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c10",
+      "to": "f10",
+      "support_group": "f10-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c11",
+      "to": "f11",
+      "support_group": "f11-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.stellar-cooling-kk",
+      "to": "f11",
+      "support_group": "f11-g1",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.cusp-core-resolution",
+      "to": "f11",
+      "support_group": "f11-g2",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.mond-a0-leakage",
+      "to": "f11",
+      "support_group": "f11-g3",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c15",
+      "to": "f15",
+      "support_group": "f15-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.cold-spot-isw",
+      "to": "f16",
+      "support_group": "f16-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.bh-entropy",
+      "to": "f17",
+      "support_group": "f17-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c18a",
+      "to": "f18",
+      "support_group": "f18-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c18b",
+      "to": "f18",
+      "support_group": "f18-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.bh-entropy",
+      "to": "f18",
+      "support_group": "f18-g1",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c20a",
+      "to": "f20",
+      "support_group": "f20-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c20b",
+      "to": "f20",
+      "support_group": "f20-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c20c",
+      "to": "f20",
+      "support_group": "f20-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c20d",
+      "to": "f20",
+      "support_group": "f20-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c20e",
+      "to": "f20",
+      "support_group": "f20-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c20g",
+      "to": "f20",
+      "support_group": "f20-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c20f-i",
+      "to": "f20",
+      "support_group": "f20-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c20f-ii",
+      "to": "f20",
+      "support_group": "f20-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c20f-iii",
+      "to": "f20",
+      "support_group": "f20-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c23-sdc",
+      "to": "f23",
+      "support_group": "f23-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c23-wgc",
+      "to": "f23",
+      "support_group": "f23-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k7",
+      "to": "pred.c-rd-1",
+      "support_group": "pred.c-rd-1-g0",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "c02",
+      "to": "pred.lambda-1-4",
+      "support_group": "pred.lambda-1-4-g0",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"

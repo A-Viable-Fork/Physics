@@ -13,7 +13,10 @@ import { isPosition, modeOf } from "./confidence.mjs";
 // physics-kernel divergence (upstream/lock.json divergences[0]): "ai-audit" added for adversarial
 // AI research reports, a grounding source distinct in kind from the "testimony" class, per
 // docs/governing-conventions.md and docs/physics-kernel-recon-report.md Section 2.
-const SOURCE_CLASSES = ["primary-measurement", "peer-reviewed", "preprint", "dataset", "institutional-report", "testimony", "ai-audit"];
+// physics-kernel divergence (upstream/lock.json divergences[2]): "formal-artifact" added for
+// machine-checked artifacts (compiled Lean modules and kin), a grounding source distinct in kind
+// from testimony about such an artifact, per docs/status-ledger.md Stage 3a Track 0.
+const SOURCE_CLASSES = ["primary-measurement", "peer-reviewed", "preprint", "dataset", "institutional-report", "testimony", "ai-audit", "formal-artifact"];
 
 export function makeSourceTable(rows) {
   const byId = new Map();

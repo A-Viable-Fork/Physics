@@ -3,8 +3,10 @@
 //   Stage 2 to carry real structural links (depends-on, contradicts) and supersession records,
 //   neither of which the Stage 1 empty-kernel generator emitted since STORE.links was empty and no
 //   supersession existed yet.
-// Contract: buildKernel() -> { store_id, tables, claims, refId, state, view, receipt }. Imports the
-//   vendored kernel and corpora/dg; pure over the corpus.
+// Contract: buildKernel() -> { store_id, tables, claims, links, supersessions, refId, state, view,
+//   receipt }. Imports the vendored kernel and corpora/dg; pure over the corpus. `links` and
+//   `supersessions` added to the return at Stage 3a so a check can read the real built link records
+//   (e.g. counting supports links) without recomputing them.
 // Invariant: grades are the kernel's own derivation; this builder adds no rule of its own.
 //   STORE.supersessions entries resolve superseded_ref/successor_ref through the same refId map as
 //   links, so a supersession can only name a real claim in this corpus. at_state on both links'
@@ -39,5 +41,5 @@ export function buildKernel() {
   const state = apply(genesis(), { entries, links, supersession_records: supersessions, applied_contribution_hash: STORE.store_id, receipt_reference: STORE.store_id });
   const view = storeViewOf(state, tables);
   const receipt = decide({ hash: STORE.store_id, entries, links }, storeViewOf(genesis(), tables), {});
-  return { store_id: STORE.store_id, tables, claims, refId, state, view, receipt };
+  return { store_id: STORE.store_id, tables, claims, links, supersessions, refId, state, view, receipt };
 }
