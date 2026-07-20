@@ -1,0 +1,1 @@
+These are the six PK-DR deep-research reports informing `docs/synthesis-backlog.md`. They share one provenance footprint (one prompt author, one research tool), so convergences between them are correlated, not independently confirming, except where the backlog notes otherwise. They enter the source table only when a later stage first cites them, expected at Stage 3c.

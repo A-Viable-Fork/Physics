@@ -1518,6 +1518,30 @@
       "source_class": "peer-reviewed",
       "description": "Foundational quantum-gravity literature the trellis names without a single pinned citation: string/M-theory as a consistent UV completion (T3.1), and the holographic principle (Bekenstein bound, Ryu-Takayanagi formula, AdS/CFT) underlying T3.3.",
       "rests_on": []
+    },
+    {
+      "source_id": "lit.grb-060614",
+      "source_class": "dataset",
+      "description": "GRB 060614 (2006). A long-duration gamma-ray burst with no associated supernova despite its long duration and proximity, an anomaly for the standard collapsar model. Cited by C06b as evidence for the puncture (no envelope recruitment) failure mode.",
+      "rests_on": []
+    },
+    {
+      "source_id": "lit.sukhbold-et-al-2016",
+      "source_class": "peer-reviewed",
+      "description": "Sukhbold, Ertl, Woosley, Brown, Janka, Astrophysical Journal 821, 38 (2016). Core-collapse supernova outcomes (explosion versus failed explosion, remnant compactness) from neutrino-powered explosion models across a 9 to 120 solar mass progenitor grid. Cited by C07a (compactness-mass-gap correlation) and C10 (progenitor compactness profiles).",
+      "rests_on": []
+    },
+    {
+      "source_id": "lit.rhic-lhc-kss-bound",
+      "source_class": "dataset",
+      "description": "RHIC and LHC heavy-ion collision elliptic-flow measurements, consistent with the Kovtun-Son-Starinets shear-viscosity-to-entropy-density bound eta/s = 1/(4 pi). Cited by C15 as the experimental correspondence for the fluid-gravity dictionary result.",
+      "rests_on": []
+    },
+    {
+      "source_id": "lit.donnelly-freidel-2016",
+      "source_class": "peer-reviewed",
+      "description": "Donnelly, Freidel, JHEP 09 (2016) 102, arXiv:1601.04744. Local subsystems in gauge theory and gravity. The edge-mode construction underlying the framework's Donnelly-Freidel edge-mode mechanism for Hilbert-space factorization. Cited by C18a.",
+      "rests_on": []
     }
   ],
   "time_lock": {

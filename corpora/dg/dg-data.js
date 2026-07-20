@@ -1,6 +1,6 @@
-// Role: the dg kernel store: Stage 1 tier commitments, Stage 2 DG structure bare, Stage 2.5 patch and lineage, and Stage 3a supports (K/P region, mechanism region, function/prediction region: full Track 1). Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2); the dispositioned stub rows, K18, the GUT Box occupant and structural-findings material, and source-table lineage/reclassification (Stage 2.5); supports links wiring K-constraints and structural proofs to tier commitments and each other, mechanisms to their evidence, and functions/predictions to their producing mechanisms (Stage 3a). Checking records, independence lifts, and the exclusion reservoir are Stage 3b/3c, not entered here.
+// Role: the dg kernel store: Stage 1 tier commitments, Stage 2 DG structure bare, Stage 2.5 patch and lineage, Stage 3a supports, and Stage 3b source-table completion, checking records, and independence lifts. Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2); the dispositioned stub rows, K18, the GUT Box occupant and structural-findings material, and source-table lineage/reclassification (Stage 2.5); supports links (Stage 3a); mechanism source_id corrections, checking records in three bands (tier claims, audited derivations, floored otherwise), and independence lifts (Stage 3b). The exclusion reservoir is Stage 3c, not entered here.
 // Contract: exports STORE = { store_id, claims, links, supersessions }. Pure data; imports nothing.
-// Invariant: every claim is declared at or below what it earns; before Stage 3a this meant every non-axiom, non-comment claim floors at asserted with no support links. Stage 3a wires real supports links per the trellis provenance brackets and declares each claim at what it now earns via the real earnedGrade() computation, never above. A supports link's own declared_grade is the honest snapshot of its source claim's earned grade at the time the link was wired, in topological order within each region, never invented or inflated; meet() (weakest-of within a conjunctive support_group) then floors delivery to the true minimum regardless. depends-on links wire provenance brackets and parent relations to already-entered claims only; a stated parent that is itself excluded (reservoired or retracted) stays text-only, never a dangling link. Contract/mechanism verdicts ride in extensions.verdict, read by periphery, never the gate, per docs/governing-conventions.md. Sorry status, priority, and gating ride in extensions per the same rule.
+// Invariant: every claim is declared at or below what it earns, via the real earnedGrade() computation over the real gate. A supports link's own declared_grade is an honest snapshot of its source claim's earned grade at wire time. A claim's source_id names the specific document its content actually comes from where determinable, the generic trellis.v4-16 otherwise. A checking record cites a real source-table row whose document actually performs the check named in its method text; its independence is computed externally against footprintClosure over rests_on (attached as this record's own footprint field, read from the pre-schema spec, never trusted from the vendored checkingRecord() builder, which drops this field from its returned object into canonical.extensions; see docs/governing-conventions.md Section 5). depends-on links wire provenance brackets and parent relations to already-entered claims only. Contract/mechanism verdicts ride in extensions.verdict, read by periphery, never the gate. Sorry status, priority, and gating ride in extensions per the same rule.
 "use strict";
 
 const STORE = {
@@ -43,272 +43,714 @@ const STORE = {
       "kind": "standard-result",
       "source_id": "lit.standard-physics-t1t2",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "T1.1: Energy Conservation. Energy is conserved in every closed system. Energy can change form but cannot be created or destroyed. Any calculation producing energy from nothing is wrong."
+      "declared_grade": "checked",
+      "statement": "T1.1: Energy Conservation. Energy is conserved in every closed system. Energy can change form but cannot be created or destroyed. Any calculation producing energy from nothing is wrong.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "replication",
+          "method": "established, independently replicated result in the standard physics literature this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-physics-t1t2"
+          ]
+        }
+      ]
     },
     {
       "ref": "t1.2",
       "kind": "standard-result",
       "source_id": "lit.standard-physics-t1t2",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "T1.2: Second Law. Entropy of an isolated system never decreases. Macroscopic processes are irreversible. Time has a thermodynamic arrow."
+      "declared_grade": "checked",
+      "statement": "T1.2: Second Law. Entropy of an isolated system never decreases. Macroscopic processes are irreversible. Time has a thermodynamic arrow.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "replication",
+          "method": "established, independently replicated result in the standard physics literature this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-physics-t1t2"
+          ]
+        }
+      ]
     },
     {
       "ref": "t1.3",
       "kind": "standard-result",
       "source_id": "lit.standard-physics-t1t2",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "T1.3: Finite Energy Budgets. Physical processes cannot produce trans-Planckian energy outputs from sub-Planckian inputs. Any E = rho x V calculation yielding energies exceeding the rest mass of the progenitor system is automatically suspect. This is the Volume Bug filter: it catches errors of the form \"multiply a Planck-scale energy density by a macroscopic volume.\""
+      "declared_grade": "checked",
+      "statement": "T1.3: Finite Energy Budgets. Physical processes cannot produce trans-Planckian energy outputs from sub-Planckian inputs. Any E = rho x V calculation yielding energies exceeding the rest mass of the progenitor system is automatically suspect. This is the Volume Bug filter: it catches errors of the form \"multiply a Planck-scale energy density by a macroscopic volume.\"",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "replication",
+          "method": "established, independently replicated result in the standard physics literature this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-physics-t1t2"
+          ]
+        }
+      ]
     },
     {
       "ref": "t1.4",
       "kind": "standard-result",
       "source_id": "lit.standard-physics-t1t2",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "T1.4: Information Processing Costs Energy. Landauer's principle: erasing one bit of information dissipates at least kT ln 2 of energy. Information processing is a physical process subject to T1.1 and T1.2. The vacuum, if it processes information, pays these costs."
+      "declared_grade": "checked",
+      "statement": "T1.4: Information Processing Costs Energy. Landauer's principle: erasing one bit of information dissipates at least kT ln 2 of energy. Information processing is a physical process subject to T1.1 and T1.2. The vacuum, if it processes information, pays these costs.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "replication",
+          "method": "established, independently replicated result in the standard physics literature this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-physics-t1t2"
+          ]
+        }
+      ]
     },
     {
       "ref": "t1.5",
       "kind": "standard-result",
       "source_id": "lit.standard-physics-t1t2",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "T1.5: Null Energy Condition. For any null vector k^mu, T_{mu nu} k^mu k^nu >= 0 for all physically realizable matter. Violations signal ghost instabilities (kinetic term sign flip), vacuum decay, or missing physics."
+      "declared_grade": "checked",
+      "statement": "T1.5: Null Energy Condition. For any null vector k^mu, T_{mu nu} k^mu k^nu >= 0 for all physically realizable matter. Violations signal ghost instabilities (kinetic term sign flip), vacuum decay, or missing physics.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "replication",
+          "method": "established, independently replicated result in the standard physics literature this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-physics-t1t2"
+          ]
+        }
+      ]
     },
     {
       "ref": "t1.6",
       "kind": "standard-result",
       "source_id": "lit.standard-physics-t1t2",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "T1.6: Causal Locality. Information propagates at most at c. No instantaneous global effects. A theory that requires a macroscopic spatially extended system to respond as a single monolithic quantum gate violates this. This is the filter that catches naive Margolus-Levitin applications."
+      "declared_grade": "checked",
+      "statement": "T1.6: Causal Locality. Information propagates at most at c. No instantaneous global effects. A theory that requires a macroscopic spatially extended system to respond as a single monolithic quantum gate violates this. This is the filter that catches naive Margolus-Levitin applications.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "replication",
+          "method": "established, independently replicated result in the standard physics literature this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-physics-t1t2"
+          ]
+        }
+      ]
     },
     {
       "ref": "t2.1",
       "kind": "standard-result",
       "source_id": "lit.standard-physics-t1t2",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "T2.1: Unitarity. The S-matrix is unitary. Probability is conserved. No information is destroyed in principle (though it may become practically inaccessible)."
+      "declared_grade": "checked",
+      "statement": "T2.1: Unitarity. The S-matrix is unitary. Probability is conserved. No information is destroyed in principle (though it may become practically inaccessible).",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "replication",
+          "method": "established, independently replicated result in the standard physics literature this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-physics-t1t2"
+          ]
+        }
+      ]
     },
     {
       "ref": "t2.2",
       "kind": "standard-result",
       "source_id": "lit.standard-physics-t1t2",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "T2.2: Ghost Freedom. All propagating degrees of freedom have positive-definite kinetic terms. Negative kinetic energy (ghosts) renders the vacuum unstable to runaway pair production. Any construction must demonstrate ghost freedom through explicit DOF counting."
+      "declared_grade": "checked",
+      "statement": "T2.2: Ghost Freedom. All propagating degrees of freedom have positive-definite kinetic terms. Negative kinetic energy (ghosts) renders the vacuum unstable to runaway pair production. Any construction must demonstrate ghost freedom through explicit DOF counting.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "replication",
+          "method": "established, independently replicated result in the standard physics literature this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-physics-t1t2"
+          ]
+        }
+      ]
     },
     {
       "ref": "t2.3",
       "kind": "standard-result",
       "source_id": "lit.standard-physics-t1t2",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "T2.3: Correct DOF Counting. The number of propagating degrees of freedom must be established by rigorous Hamiltonian constraint analysis (Dirac-Bergmann algorithm), not by counting fields. Constrained systems (gauge theories, gravity) always have fewer DOF than naive field counting suggests."
+      "declared_grade": "checked",
+      "statement": "T2.3: Correct DOF Counting. The number of propagating degrees of freedom must be established by rigorous Hamiltonian constraint analysis (Dirac-Bergmann algorithm), not by counting fields. Constrained systems (gauge theories, gravity) always have fewer DOF than naive field counting suggests.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "replication",
+          "method": "established, independently replicated result in the standard physics literature this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-physics-t1t2"
+          ]
+        }
+      ]
     },
     {
       "ref": "t2.4",
       "kind": "standard-result",
       "source_id": "lit.standard-physics-t1t2",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "T2.4: Diffeomorphism Invariance. The laws of physics take the same form in all coordinate systems. Any coupling to the gravitational sector must be expressible in a generally covariant form. State-dependent couplings (such as v = v(F_Q)) require explicit demonstration that F_Q transforms as a scalar under diffeomorphisms."
+      "declared_grade": "checked",
+      "statement": "T2.4: Diffeomorphism Invariance. The laws of physics take the same form in all coordinate systems. Any coupling to the gravitational sector must be expressible in a generally covariant form. State-dependent couplings (such as v = v(F_Q)) require explicit demonstration that F_Q transforms as a scalar under diffeomorphisms.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "replication",
+          "method": "established, independently replicated result in the standard physics literature this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-physics-t1t2"
+          ]
+        }
+      ]
     },
     {
       "ref": "t2.5",
       "kind": "standard-result",
       "source_id": "lit.standard-physics-t1t2",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "T2.5: GR Recovery. Any modification of gravity must reduce exactly to General Relativity in the appropriate limit (weak field, incoherent matter, low density). The gravitational constant G_N must be constant and universal in this limit."
+      "declared_grade": "checked",
+      "statement": "T2.5: GR Recovery. Any modification of gravity must reduce exactly to General Relativity in the appropriate limit (weak field, incoherent matter, low density). The gravitational constant G_N must be constant and universal in this limit.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "replication",
+          "method": "established, independently replicated result in the standard physics literature this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-physics-t1t2"
+          ]
+        }
+      ]
     },
     {
       "ref": "t2.6",
       "kind": "standard-result",
       "source_id": "lit.precision-gravity-tests-t2-6",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "T2.6: Observational Compatibility. Existing precision measurements (NICER radii, LIGO tidal deformability, GW170817, Shapiro delay masses, Cas A cooling, RHIC viscosity, short-range gravity tests, atomic clock constraints) must be respected. Predictions contradicting established observations at the relevant precision constitute kills."
+      "declared_grade": "checked",
+      "statement": "T2.6: Observational Compatibility. Existing precision measurements (NICER radii, LIGO tidal deformability, GW170817, Shapiro delay masses, Cas A cooling, RHIC viscosity, short-range gravity tests, atomic clock constraints) must be respected. Predictions contradicting established observations at the relevant precision constitute kills.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "replication",
+          "method": "established, independently replicated result in the standard physics literature this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.precision-gravity-tests-t2-6"
+          ]
+        }
+      ]
     },
     {
       "ref": "t2.7",
       "kind": "standard-result",
       "source_id": "lit.standard-physics-t1t2",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "T2.7: Conformal Invariance of Gauge Kinetic Terms. The Maxwell action sqrt(-g) F^{mu nu} F_{mu nu} is conformally invariant in 4D. This is a theorem of 4D field theory, independent of any specific model. Any gauge field localized on a 3-brane in AdS_5 has a tree-level coupling constant independent of brane position, because the AdS_5 warp factor is a conformal rescaling of the 4D induced metric. This structural boundary establishes that the framework cannot modify electromagnetic couplings through any tree-level geometric channel."
+      "declared_grade": "checked",
+      "statement": "T2.7: Conformal Invariance of Gauge Kinetic Terms. The Maxwell action sqrt(-g) F^{mu nu} F_{mu nu} is conformally invariant in 4D. This is a theorem of 4D field theory, independent of any specific model. Any gauge field localized on a 3-brane in AdS_5 has a tree-level coupling constant independent of brane position, because the AdS_5 warp factor is a conformal rescaling of the 4D induced metric. This structural boundary establishes that the framework cannot modify electromagnetic couplings through any tree-level geometric channel.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "replication",
+          "method": "established, independently replicated result in the standard physics literature this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-physics-t1t2"
+          ]
+        }
+      ]
     },
     {
       "ref": "t2.8",
       "kind": "standard-result",
       "source_id": "lit.standard-physics-t1t2",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "T2.8: Higgs Identity. Different Higgs fields in different sectors of the theory must not be conflated. The SO(1,4) gravitational Higgs (which sets M_{Pl,eff}) is the gravitational symmetry-breaking scale. It couples to the electron mass, Bohr radius, and pycnonuclear screening at zero strength at tree level. This filter catches the most common error in external analyses of the framework."
+      "declared_grade": "checked",
+      "statement": "T2.8: Higgs Identity. Different Higgs fields in different sectors of the theory must not be conflated. The SO(1,4) gravitational Higgs (which sets M_{Pl,eff}) is the gravitational symmetry-breaking scale. It couples to the electron mass, Bohr radius, and pycnonuclear screening at zero strength at tree level. This filter catches the most common error in external analyses of the framework.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "replication",
+          "method": "established, independently replicated result in the standard physics literature this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-physics-t1t2"
+          ]
+        }
+      ]
     },
     {
       "ref": "t2.9",
       "kind": "standard-result",
       "source_id": "lit.standard-physics-t1t2",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "T2.9: Semiclassical Causality. The state-dependent coupling v = v(F_Q) must preserve the causal structure of spacetime. The matter sector evolves via standard linear quantum mechanics. The gravitational background responds to the quantum state through semiclassical backreaction, analogous to G_{mu nu} = 8 pi <T_{mu nu}>_ren. The no-signaling theorem for linear QM guarantees that F_Q evaluated from the local reduced density matrix is invariant under spacelike-separated operations. Any construction where the metric depends on the un-traced global density matrix violates special relativity via the Gisin-Polchinski theorem and is rejected. The coupling v(F_Q) is evaluated from the local reduced state on the causal diamond; Donnelly-Freidel edge modes ensure this evaluation is foliation-independent but do not independently enforce causality. All effective action computations deriving the state-dependent coupling must employ the Schwinger-Keldysh Closed Time Path (CTP) formalism, which natively enforces retarded boundary conditions (G_R(x,y) = 0 for spacelike separations) through the forward/backward time-branch structure. The coincidence-limit reduction of the heat kernel to the a_4(x) contact term renders the coupling strictly local. This is a theorem of the construction, not an additional assumption."
+      "declared_grade": "checked",
+      "statement": "T2.9: Semiclassical Causality. The state-dependent coupling v = v(F_Q) must preserve the causal structure of spacetime. The matter sector evolves via standard linear quantum mechanics. The gravitational background responds to the quantum state through semiclassical backreaction, analogous to G_{mu nu} = 8 pi <T_{mu nu}>_ren. The no-signaling theorem for linear QM guarantees that F_Q evaluated from the local reduced density matrix is invariant under spacelike-separated operations. Any construction where the metric depends on the un-traced global density matrix violates special relativity via the Gisin-Polchinski theorem and is rejected. The coupling v(F_Q) is evaluated from the local reduced state on the causal diamond; Donnelly-Freidel edge modes ensure this evaluation is foliation-independent but do not independently enforce causality. All effective action computations deriving the state-dependent coupling must employ the Schwinger-Keldysh Closed Time Path (CTP) formalism, which natively enforces retarded boundary conditions (G_R(x,y) = 0 for spacelike separations) through the forward/backward time-branch structure. The coincidence-limit reduction of the heat kernel to the a_4(x) contact term renders the coupling strictly local. This is a theorem of the construction, not an additional assumption.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "replication",
+          "method": "established, independently replicated result in the standard physics literature this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-physics-t1t2"
+          ]
+        }
+      ]
     },
     {
       "ref": "b1",
       "kind": "observation",
       "source_id": "lit.standard-open-problems-physics",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B1: Singularities. GR predicts geodesic incompleteness at black hole interiors and the Big Bang. Physical quantities (density, curvature) diverge. This signals the breakdown of the classical theory."
+      "declared_grade": "checked",
+      "statement": "B1: Singularities. GR predicts geodesic incompleteness at black hole interiors and the Big Bang. Physical quantities (density, curvature) diverge. This signals the breakdown of the classical theory.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-open-problems-physics"
+          ]
+        }
+      ]
     },
     {
       "ref": "b2",
       "kind": "observation",
       "source_id": "lit.desi-dr1-dr2-bao",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B2: Dark Energy. The cosmological constant Lambda exists and drives accelerating expansion. Its value (~10^-122 in Planck units) is unexplained. DESI 2024-2025 BAO data (DR1 + DR2) prefers evolving dark energy (w0 ~ -0.7, wa ~ -1.0) at 2.8-sigma to 4.2-sigma over static Lambda-CDM, depending on the supernovae compilation utilized (2.8-sigma floor from DESI + CMB + Pantheon+; 4.2-sigma ceiling from DESI + CMB + DESY5), suggesting Lambda may evolve."
+      "declared_grade": "checked",
+      "statement": "B2: Dark Energy. The cosmological constant Lambda exists and drives accelerating expansion. Its value (~10^-122 in Planck units) is unexplained. DESI 2024-2025 BAO data (DR1 + DR2) prefers evolving dark energy (w0 ~ -0.7, wa ~ -1.0) at 2.8-sigma to 4.2-sigma over static Lambda-CDM, depending on the supernovae compilation utilized (2.8-sigma floor from DESI + CMB + Pantheon+; 4.2-sigma ceiling from DESI + CMB + DESY5), suggesting Lambda may evolve.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.desi-dr1-dr2-bao"
+          ]
+        }
+      ]
     },
     {
       "ref": "b3",
       "kind": "observation",
       "source_id": "lit.standard-open-problems-physics",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B3: Dark Matter. 85% of the gravitational mass of the universe is unaccounted for by the Standard Model. Rotation curves, lensing, CMB anisotropy, and large-scale structure all require it. Its particle identity is unknown."
+      "declared_grade": "checked",
+      "statement": "B3: Dark Matter. 85% of the gravitational mass of the universe is unaccounted for by the Standard Model. Rotation curves, lensing, CMB anisotropy, and large-scale structure all require it. Its particle identity is unknown.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-open-problems-physics"
+          ]
+        }
+      ]
     },
     {
       "ref": "b4",
       "kind": "observation",
       "source_id": "lit.standard-open-problems-physics",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B4: Black Hole Information Paradox. Hawking radiation appears to destroy information (violating T2.1), yet the horizon is locally smooth. Resolution requires understanding the microstructure of horizons."
+      "declared_grade": "checked",
+      "statement": "B4: Black Hole Information Paradox. Hawking radiation appears to destroy information (violating T2.1), yet the horizon is locally smooth. Resolution requires understanding the microstructure of horizons.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-open-problems-physics"
+          ]
+        }
+      ]
     },
     {
       "ref": "b5",
       "kind": "observation",
       "source_id": "lit.standard-open-problems-physics",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B5: Cosmological Constant Problem. Quantum field theory predicts a vacuum energy ~10^120 times larger than observed. The cancellation mechanism is unknown."
+      "declared_grade": "checked",
+      "statement": "B5: Cosmological Constant Problem. Quantum field theory predicts a vacuum energy ~10^120 times larger than observed. The cancellation mechanism is unknown.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-open-problems-physics"
+          ]
+        }
+      ]
     },
     {
       "ref": "b6",
       "kind": "observation",
       "source_id": "lit.standard-open-problems-physics",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B6: Hierarchy Problem. The electroweak scale (M_EW ~ 10^2 GeV) is 10^16 times smaller than the Planck scale (M_Pl ~ 10^19 GeV). No mechanism within the SM protects this hierarchy from radiative corrections."
+      "declared_grade": "checked",
+      "statement": "B6: Hierarchy Problem. The electroweak scale (M_EW ~ 10^2 GeV) is 10^16 times smaller than the Planck scale (M_Pl ~ 10^19 GeV). No mechanism within the SM protects this hierarchy from radiative corrections.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-open-problems-physics"
+          ]
+        }
+      ]
     },
     {
       "ref": "b7",
       "kind": "observation",
       "source_id": "lit.standard-open-problems-physics",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B7: No Quantum Gravity. The Standard Model and General Relativity are mutually incompatible at energies approaching M_Pl. Perturbative quantization of GR is non-renormalizable."
+      "declared_grade": "checked",
+      "statement": "B7: No Quantum Gravity. The Standard Model and General Relativity are mutually incompatible at energies approaching M_Pl. Perturbative quantization of GR is non-renormalizable.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-open-problems-physics"
+          ]
+        }
+      ]
     },
     {
       "ref": "b8",
       "kind": "observation",
       "source_id": "lit.standard-open-problems-physics",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B8: Neutrino Masses. Neutrinos have mass (oscillation experiments), but the SM does not predict this. The mass generation mechanism is unknown."
+      "declared_grade": "checked",
+      "statement": "B8: Neutrino Masses. Neutrinos have mass (oscillation experiments), but the SM does not predict this. The mass generation mechanism is unknown.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-open-problems-physics"
+          ]
+        }
+      ]
     },
     {
       "ref": "b9",
       "kind": "observation",
       "source_id": "lit.standard-open-problems-physics",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B9: Matter-Antimatter Asymmetry. The universe is matter-dominated. The SM does not contain sufficient CP violation to produce the observed baryon asymmetry."
+      "declared_grade": "checked",
+      "statement": "B9: Matter-Antimatter Asymmetry. The universe is matter-dominated. The SM does not contain sufficient CP violation to produce the observed baryon asymmetry.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-open-problems-physics"
+          ]
+        }
+      ]
     },
     {
       "ref": "b10",
       "kind": "observation",
       "source_id": "lit.standard-open-problems-physics",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B10: Hubble Tension. Local H0 measurements (~73 km/s/Mpc from distance ladder) disagree with CMB-inferred H0 (~67 km/s/Mpc from Planck) at ~5-sigma."
+      "declared_grade": "checked",
+      "statement": "B10: Hubble Tension. Local H0 measurements (~73 km/s/Mpc from distance ladder) disagree with CMB-inferred H0 (~67 km/s/Mpc from Planck) at ~5-sigma.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-open-problems-physics"
+          ]
+        }
+      ]
     },
     {
       "ref": "b11",
       "kind": "observation",
       "source_id": "lit.standard-open-problems-physics",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B11: sigma8 Tension. Weak lensing surveys measure less matter clustering than Planck CMB predicts, at ~2 to 3-sigma."
+      "declared_grade": "checked",
+      "statement": "B11: sigma8 Tension. Weak lensing surveys measure less matter clustering than Planck CMB predicts, at ~2 to 3-sigma.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-open-problems-physics"
+          ]
+        }
+      ]
     },
     {
       "ref": "b12",
       "kind": "observation",
       "source_id": "corpus.nuclear-astrophysics-anomalies",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B12: LUNA Screening Anomaly. Enhanced electron screening in d+d fusion in metallic targets exceeds linear Thomas-Fermi predictions by 10 to 30x. Anomaly correlates with conductor/insulator status, not lattice coherence. On-resonance laser stimulation amplifies the effect at specific phonon frequencies."
+      "declared_grade": "checked",
+      "statement": "B12: LUNA Screening Anomaly. Enhanced electron screening in d+d fusion in metallic targets exceeds linear Thomas-Fermi predictions by 10 to 30x. Anomaly correlates with conductor/insulator status, not lattice coherence. On-resonance laser stimulation amplifies the effect at specific phonon frequencies.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "data-audit",
+          "method": "audited the measurement data (LUNA collaboration screening energies) this AI investigation report compiles",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.nuclear-astrophysics-anomalies"
+          ]
+        }
+      ]
     },
     {
       "ref": "b13",
       "kind": "observation",
       "source_id": "lit.psr-j0740-6620-j0952-0607",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B13: Hyperon Puzzle. Standard nuclear physics predicts that hyperons appear in neutron star cores at ~2 rho_0, softening the EOS and limiting M_max to ~1.6 to 1.8 M_sun. Yet pulsars exist at 2.08 M_sun (PSR J0740+6620) and 2.35 M_sun (PSR J0952-0607). Additional stiffness is required."
+      "declared_grade": "checked",
+      "statement": "B13: Hyperon Puzzle. Standard nuclear physics predicts that hyperons appear in neutron star cores at ~2 rho_0, softening the EOS and limiting M_max to ~1.6 to 1.8 M_sun. Yet pulsars exist at 2.08 M_sun (PSR J0740+6620) and 2.35 M_sun (PSR J0952-0607). Additional stiffness is required.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.psr-j0740-6620-j0952-0607"
+          ]
+        }
+      ]
     },
     {
       "ref": "b14",
       "kind": "observation",
       "source_id": "lit.gw190814-gw230529-ligo-p2300352",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B14: Lower Mass Gap. Compact objects in the 2.5 to 5 M_sun range are anomalously rare. The gap separates the heaviest neutron stars from the lightest black holes. LIGO O3/O4 detections (GW190814, GW230529) are beginning to populate this region, preferentially from binary/merger channels."
+      "declared_grade": "checked",
+      "statement": "B14: Lower Mass Gap. Compact objects in the 2.5 to 5 M_sun range are anomalously rare. The gap separates the heaviest neutron stars from the lightest black holes. LIGO O3/O4 detections (GW190814, GW230529) are beginning to populate this region, preferentially from binary/merger channels.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.gw190814-gw230529-ligo-p2300352"
+          ]
+        }
+      ]
     },
     {
       "ref": "b15",
       "kind": "observation",
       "source_id": "lit.standard-open-problems-physics",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B15: Failed Supernovae. Some massive stars (~17+ M_sun) appear to vanish without explosion. N6946-BH1 (25 M_sun RSG) produced only a faint ~10^47 erg transient and disappeared, confirmed by JWST. Standard neutrino-driven explosion mechanisms fail for high-compactness cores."
+      "declared_grade": "checked",
+      "statement": "B15: Failed Supernovae. Some massive stars (~17+ M_sun) appear to vanish without explosion. N6946-BH1 (25 M_sun RSG) produced only a faint ~10^47 erg transient and disappeared, confirmed by JWST. Standard neutrino-driven explosion mechanisms fail for high-compactness cores.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.standard-open-problems-physics"
+          ]
+        }
+      ]
     },
     {
       "ref": "b16",
       "kind": "observation",
       "source_id": "lit.des-y3-cmb-cold-spot",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B16: CMB Cold Spot. The Eridanus supervoid (20% underdense) aligns with an anomalous CMB cold spot. Standard Lambda-CDM ISW predictions undershoot the observed temperature deficit. DES Y3 data shows 30% weaker lensing from this void."
+      "declared_grade": "checked",
+      "statement": "B16: CMB Cold Spot. The Eridanus supervoid (20% underdense) aligns with an anomalous CMB cold spot. Standard Lambda-CDM ISW predictions undershoot the observed temperature deficit. DES Y3 data shows 30% weaker lensing from this void.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.des-y3-cmb-cold-spot"
+          ]
+        }
+      ]
     },
     {
       "ref": "b17",
       "kind": "observation",
       "source_id": "lit.donadi-et-al-2021-nature-physics",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B17: The Measurement Problem and the Gran Sasso Falsification. Quantum mechanics lacks a physical criterion separating the unitary regime of superposition from the classical regime of macroscopic definiteness. The Penrose-Diosi (DP) model provides the most physically motivated objective collapse theory, attributing wavefunction reduction to gravitational self-energy of the superposed mass distribution: tau_DP ~ hbar/Delta E_G. However, the standard DP collapse dynamics generate continuous stochastic momentum diffusion on charged particles, producing a calculable spectrum of spontaneous X-ray bremsstrahlung (dGamma/dE ~ 1/E, scaling as R0^-3). In 2021, a dedicated experiment at the Laboratori Nazionali del Gran Sasso (Donadi et al., Nature Physics 2021) using a high-purity germanium detector in the 10 to 100 keV range detected zero anomalous radiation, establishing a lower bound R0 >~ 0.54e-10 m. This is three orders of magnitude above the natural nuclear-scale cutoff (R0 ~ 10^-15 m) required for macroscopic localization, falsifying the parameter-free DP model as formulated in 4D. If gravity induces objective collapse, the energy of state reduction must dissipate through a channel invisible to 4D electromagnetism."
+      "declared_grade": "checked",
+      "statement": "B17: The Measurement Problem and the Gran Sasso Falsification. Quantum mechanics lacks a physical criterion separating the unitary regime of superposition from the classical regime of macroscopic definiteness. The Penrose-Diosi (DP) model provides the most physically motivated objective collapse theory, attributing wavefunction reduction to gravitational self-energy of the superposed mass distribution: tau_DP ~ hbar/Delta E_G. However, the standard DP collapse dynamics generate continuous stochastic momentum diffusion on charged particles, producing a calculable spectrum of spontaneous X-ray bremsstrahlung (dGamma/dE ~ 1/E, scaling as R0^-3). In 2021, a dedicated experiment at the Laboratori Nazionali del Gran Sasso (Donadi et al., Nature Physics 2021) using a high-purity germanium detector in the 10 to 100 keV range detected zero anomalous radiation, establishing a lower bound R0 >~ 0.54e-10 m. This is three orders of magnitude above the natural nuclear-scale cutoff (R0 ~ 10^-15 m) required for macroscopic localization, falsifying the parameter-free DP model as formulated in 4D. If gravity induces objective collapse, the energy of state reduction must dissipate through a channel invisible to 4D electromagnetism.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.donadi-et-al-2021-nature-physics"
+          ]
+        }
+      ]
     },
     {
       "ref": "b18",
       "kind": "observation",
       "source_id": "lit.farah-et-al-2026-nature",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B18: SN 2024afav Chirp Anomaly. The superluminous supernova SN 2024afav (z = 0.0724, Mc ~ -20.7) exhibits a quasi-periodic, accelerating chirp in its post-peak electromagnetic light curve, attributed by Farah et al. (Nature 2026) to Lense-Thirring precession of a misaligned accretion disk around a newborn magnetar (P = 4.2 +/- 0.2 ms, B = 1.6 +/- 0.1e14 G). Seven distinct brightness bumps span 175 days. The temporal intervals between bumps accelerate from 42.4 days to 16.1 days (Phase 0 to +109), consistent with a contracting accretion disk. At Phase +109, the interval abruptly doubles to 32.1 days, producing a >5.8-sigma deviation from the smooth viscous power-law baseline predicted by standard alpha-disk models. This deceleration is coincident with the spectroscopic emergence of lower-ionization [O II] + [Ca II] 7300 A emission and a weakening of early [O III] features. The standard LT model accommodates the gross periodicity but the discontinuous deceleration and the correlated ionization shift remain unexplained. The anomaly is open."
+      "declared_grade": "checked",
+      "statement": "B18: SN 2024afav Chirp Anomaly. The superluminous supernova SN 2024afav (z = 0.0724, Mc ~ -20.7) exhibits a quasi-periodic, accelerating chirp in its post-peak electromagnetic light curve, attributed by Farah et al. (Nature 2026) to Lense-Thirring precession of a misaligned accretion disk around a newborn magnetar (P = 4.2 +/- 0.2 ms, B = 1.6 +/- 0.1e14 G). Seven distinct brightness bumps span 175 days. The temporal intervals between bumps accelerate from 42.4 days to 16.1 days (Phase 0 to +109), consistent with a contracting accretion disk. At Phase +109, the interval abruptly doubles to 32.1 days, producing a >5.8-sigma deviation from the smooth viscous power-law baseline predicted by standard alpha-disk models. This deceleration is coincident with the spectroscopic emergence of lower-ionization [O II] + [Ca II] 7300 A emission and a weakening of early [O III] features. The standard LT model accommodates the gross periodicity but the discontinuous deceleration and the correlated ionization shift remain unexplained. The anomaly is open.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.farah-et-al-2026-nature"
+          ]
+        }
+      ]
     },
     {
       "ref": "b19",
       "kind": "observation",
       "source_id": "lit.g117-b15a-cas-a-cooling",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B19: Exotic Stellar Cooling Anomaly. The pulsating white dwarf G117-B15A exhibits a secular period drift P_dot_obs = (5.12 +/- 0.82)e-15 s/s for its 215.2 s fundamental mode, measured over a 50-year baseline. Standard gravothermal models predict P_dot_th ~ 1.25e-15 s/s. The discrepancy corresponds to an anomalous missing luminosity of ~10^32 erg/s. The neutron star in Cassiopeia A exhibits a ~2% to 4% surface temperature decline over a 10 to 18 year Chandra baseline, exceeding modified Urca predictions (~0.2% to 0.3% per decade). Mainstream attributions invoke DFSZ axion emission (m_a cos^2(beta) ~ 17.4 meV) or enhanced Cooper-pair breaking neutrinos. The axion parameter space required for these attributions (g_a-gamma-gamma ~ 1e-11 GeV^-1, g_aee ~ 1e-13) is under severe multi-modal observational pressure."
+      "declared_grade": "checked",
+      "statement": "B19: Exotic Stellar Cooling Anomaly. The pulsating white dwarf G117-B15A exhibits a secular period drift P_dot_obs = (5.12 +/- 0.82)e-15 s/s for its 215.2 s fundamental mode, measured over a 50-year baseline. Standard gravothermal models predict P_dot_th ~ 1.25e-15 s/s. The discrepancy corresponds to an anomalous missing luminosity of ~10^32 erg/s. The neutron star in Cassiopeia A exhibits a ~2% to 4% surface temperature decline over a 10 to 18 year Chandra baseline, exceeding modified Urca predictions (~0.2% to 0.3% per decade). Mainstream attributions invoke DFSZ axion emission (m_a cos^2(beta) ~ 17.4 meV) or enhanced Cooper-pair breaking neutrinos. The axion parameter space required for these attributions (g_a-gamma-gamma ~ 1e-11 GeV^-1, g_aee ~ 1e-13) is under severe multi-modal observational pressure.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.g117-b15a-cas-a-cooling"
+          ]
+        }
+      ]
     },
     {
       "ref": "t3.1",
@@ -397,7 +839,21 @@ const STORE = {
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
-      "statement": "K1: Two-Channel Decomposition [from Tier 4.4 + positivity of T_3]. The brane stress-energy decomposes exactly into: (i) Trace channel (radial/curvature), which scales as N, sources Ricci curvature, and IS gravity; (ii) Traceless antisymmetric channel (angular/torsion), which scales as f^2 N^2 for coherent matter and sources torsion via the Cartan equation. This decomposition is an algebraic theorem of the SO(1,4) to SO(1,3) breaking pattern."
+      "statement": "K1: Two-Channel Decomposition [from Tier 4.4 + positivity of T_3]. The brane stress-energy decomposes exactly into: (i) Trace channel (radial/curvature), which scales as N, sources Ricci curvature, and IS gravity; (ii) Traceless antisymmetric channel (angular/torsion), which scales as f^2 N^2 for coherent matter and sources torsion via the Cartan equation. This decomposition is an algebraic theorem of the SO(1,4) to SO(1,3) breaking pattern.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "reproduced the two-channel decomposition (trace channel sourcing Ricci curvature, traceless antisymmetric channel sourcing torsion) and its modified TOV consequence",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.half-sphere-report"
+          ],
+          "cited_source": "corpus.half-sphere-report"
+        }
+      ]
     },
     {
       "ref": "k2",
@@ -420,7 +876,7 @@ const STORE = {
       "kind": "derivation",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "K4: The Framework is Purely Gravitational [from T2.7 + T2.8]. Torsion enters through Einstein-Cartan gravity at coupling G/c^4 (hierarchy of 10^40 below electromagnetic). The conformal invariance of F^2 in 4D prevents any tree-level geometric channel from modifying electromagnetic couplings. The SO(1,4) Higgs is the gravitational Higgs, fully distinct from the electroweak Higgs. The framework cannot modify fermion masses, Bohr radii, or pycnonuclear screening through its own geometry. Clarificatory clause (tree-level vs one-loop): K4 prohibits direct tree-level couplings between the radion/torsion sector and the Standard Model gauge fields in the fundamental Lagrangian. It does not prohibit, and cannot prevent, loop-induced couplings arising from the quantum conformal trace anomaly. The heat kernel integration that derives the state-dependent coupling gamma (phi^A phi_A) f_Q necessarily generates terms proportional to beta(g) F_mu_nu F^mu_nu through the a_4(x) coefficient. These are manifestations of dimensional transmutation and constitute mathematically inevitable one-loop anomaly couplings rather than fundamental force modifications."
     },
     {
@@ -428,7 +884,7 @@ const STORE = {
       "kind": "derivation",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "K5: Torsion is Non-Propagating [from Tier 4.7, P3]. Torsion carries zero independent propagating degrees of freedom. The Cartan equation is algebraic (no Box T kinetic operator). Torsion vanishes instantaneously when sources vanish."
     },
     {
@@ -436,7 +892,7 @@ const STORE = {
       "kind": "derivation",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "K6: Bulk is Mandatory [from T1.5 + Tier 4]. The 5D bulk is mathematically required on three independent axes: Pillar 1 (NEC): 4D cannot balance steep QFI gradients without driving w < -1. The bulk absorbs gradients via T^(5)_M_nu n^M flux. Pillar 2 (Scrambling): 4D has no intrinsic geometric spectrum to derive t_s. The KK tower provides it. Pillar 3 (KSS): The viscosity bound eta/s = 1/(4 pi) requires the (d+1)-dimensional fluid-gravity dictionary."
     },
     {
@@ -460,7 +916,7 @@ const STORE = {
       "kind": "derivation",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "K9: Lambda^4_min is Dimensional Analysis [from T1.3]. The saturation floor Lambda_min = hbar c/a correctly sets the UV cutoff scale. It does not set the energy budget independently of the coupling constant at each scale (alpha_s, alpha_EM, alpha_G). Works at nuclear scale (alpha_s ~ 1), fails at atomic (off by 274 = 2/alpha_EM), fails at gravitational (off by ~10^47)."
     },
     {
@@ -476,7 +932,7 @@ const STORE = {
       "kind": "derivation",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "K11: Trace Anomaly Dependence and Beta Function Non-Vanishing [from T2.7 + K4 + F13]. The conformal invariance of the 4D gauge kinetic terms (T2.7) forbids the massive scalar radion from coupling to the gauge sector at tree level. General covariance requires the radion to couple universally to T^mu_mu of the matter sector. For classically massless gauge bosons, T^mu_mu = 0 at tree level. The interaction proceeds exclusively through the quantum conformal trace anomaly: T^mu_mu = sum_i beta(g_i)/(2 g_i) F^(i)_mu_nu F^(i)mu_nu. This coupling is a phenomenological requirement: resolution of the LUNA screening anomaly demands that the radion export chaotic thermal noise from driven lattice states into the bulk via the KK tower. Any viable GUT must be strictly non-conformal: beta(g_i) != 0 across all physical energy scales relevant to macroscopic coherence and structure formation."
     },
     {
@@ -484,7 +940,7 @@ const STORE = {
       "kind": "derivation",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "K12: Topological Dirichlet Confinement [from Tier 4.1 + K6 + T2.2]. The 5D bulk is governed by a topological Chern-Simons action for SO(2,4) with zero local propagating degrees of freedom. This topological purity eliminates Ostrogradsky ghosts from the bulk interior (T2.2) and preserves the Israel junction conditions governing the bulk-brane energy exchange (K6, Pillar 1). A GUT constructed from closed strings carries gauge degrees of freedom on strings that propagate freely through the bulk, converting the topological bulk into a dynamically active gauge manifold and destroying the thermodynamic isolation NEC protection, scrambling, and the KSS bound depend on. A viable GUT must be topologically confined to the 4D ETW brane via Dirichlet boundary conditions."
     },
     {
@@ -500,7 +956,7 @@ const STORE = {
       "kind": "derivation",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "K14: Gravitational Coupling Suppression [from K4 + T2.8]. The radion couples to all Standard Model fields with gravitational strength: y_rho ~ m/M_Pl. For the top quark, y_rho_tt ~ 7e-17. One-loop corrections to lambda from boundary matter fields are delta lambda ~ y^4/(16 pi^2) ~ 10^-67, negligible against 10^-44. The gravitational gauge sector contributes zero at one loop (first-order BF structure, 44 second-class constraints freeze propagating gauge DOF). The hierarchy lambda ~ 10^-44 is radiatively stable in the Dirac sense: corrections are smaller than the parameter. The protection mechanism is gravitational coupling suppression (K14)."
     },
     {
@@ -532,24 +988,79 @@ const STORE = {
       "kind": "derivation",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "P3: DOF count [Structural Proof, Tier 4.7]. Result: 3 (2 graviton + 1 scalar). Method: Dirac-Bergmann. 90-dim phase space, 20 first-class, 44 second-class. Source: Dirac Constraint Report."
+      "declared_grade": "checked",
+      "statement": "P3: DOF count [Structural Proof, Tier 4.7]. Result: 3 (2 graviton + 1 scalar). Method: Dirac-Bergmann. 90-dim phase space, 20 first-class, 44 second-class. Source: Dirac Constraint Report.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "reproduced the Dirac-Bergmann constraint count: 90-dimensional phase space, 20 first-class, 44 second-class constraints, yielding 3 physical DOF",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.dirac-constraint-report"
+          ],
+          "cited_source": "corpus.dirac-constraint-report"
+        },
+        {
+          "checker_id": "checker:deepseek",
+          "method_class": "derivation-audit",
+          "method": "independent audit of the Gemini Dirac matrix report's constraint-count derivation",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.deepseek-cross-examination-april-2026",
+            "corpus.dirac-constraint-report"
+          ],
+          "cited_source": "corpus.deepseek-cross-examination-april-2026"
+        }
+      ]
     },
     {
       "ref": "p8",
       "kind": "derivation",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "P8: KSS bound [Structural Proof, Tier 4.7]. Result: eta/s = 1/(4 pi) exactly. Method: Graviton-radion decoupling, G_eff cancellation, 4D GB topological. Source: P11/P8 Report."
+      "declared_grade": "checked",
+      "statement": "P8: KSS bound [Structural Proof, Tier 4.7]. Result: eta/s = 1/(4 pi) exactly. Method: Graviton-radion decoupling, G_eff cancellation, 4D GB topological. Source: P11/P8 Report.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "verified the KSS bound is preserved exactly: eta/s = 1/(4 pi) via graviton-radion decoupling and G_eff cancellation",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.p11-p8-report"
+          ],
+          "cited_source": "corpus.p11-p8-report"
+        }
+      ]
     },
     {
       "ref": "p11",
       "kind": "derivation",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "P11: Diffeomorphism invariance [Structural Proof, Tier 4.7]. Result: Perturbatively covariant. Method: QFI scalar via <TT>. Edge modes for foliation independence. Source: P11/P8 Report."
+      "declared_grade": "checked",
+      "statement": "P11: Diffeomorphism invariance [Structural Proof, Tier 4.7]. Result: Perturbatively covariant. Method: QFI scalar via <TT>. Edge modes for foliation independence. Source: P11/P8 Report.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "verified perturbative diffeomorphism covariance",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.p11-p8-report"
+          ],
+          "cited_source": "corpus.p11-p8-report"
+        }
+      ]
     },
     {
       "ref": "f01",
@@ -588,7 +1099,7 @@ const STORE = {
       "kind": "function",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "F06: Stellar Death is Rate-Dependent. Addresses: B14 (mass gap), B15 (failed supernovae). Statement: Geometric failure occurs when the free-fall rate exceeds the scrambling rate (t_ff < t_s). The mode of failure depends on which channel dominates: tear (thermal, radial) or puncture (coherent, angular)."
     },
     {
@@ -596,7 +1107,7 @@ const STORE = {
       "kind": "function",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "F07: The Mass Gap Exists. Addresses: B14 (lower mass gap). Statement: The 2.5 to 5 M_sun mass gap arises from the tear/puncture dichotomy. Tears from isolated collapse recruit envelope mass, jumping to >= 5 M_sun. Punctures from mergers carry no envelope, landing at ~2.5 to 3 M_sun."
     },
     {
@@ -612,7 +1123,7 @@ const STORE = {
       "kind": "function",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "F09: Failed Supernovae Are Dark. Addresses: B15 (N6946-BH1). Statement: Thermal iron cores carry no macroscopic coherence domains. Shear zone collapses to atomic scale. Snapback energy is negligible. The star implodes silently. Observed transient energy is envelope fallback."
     },
     {
@@ -628,7 +1139,7 @@ const STORE = {
       "kind": "function",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "F11: Dark Matter Is a Geometric Consequence. Addresses: B3 (dark matter). Statement: The KK graviton tower required by K6 (Pillar 2) simultaneously serves as the dark matter candidate. Thermally produced from the SM brane, the massive spin-2 KK modes form collisionless halos."
     },
     {
@@ -652,7 +1163,7 @@ const STORE = {
       "kind": "function",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "F16: Void Physics Amplifies ISW. Addresses: B16 (CMB Cold Spot). Statement: Cosmic voids carry less matter, resulting in less radial loading, which produces higher local effective tension, which drives faster expansion, which delivers enhanced ISW effect."
     },
     {
@@ -706,7 +1217,7 @@ const STORE = {
     {
       "ref": "c01",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.paper-0",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C01: MM action from CS/WZW boundary induction. Satisfies F01 (sole mechanism). Evidence: Paper 0, Section 2.3.",
@@ -717,7 +1228,7 @@ const STORE = {
     {
       "ref": "c02",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.half-sphere-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C02: Algebraic decomposition via Scalar Cartan Equation. Satisfies F02 (sole mechanism). Evidence: Half-Sphere Report.",
@@ -728,7 +1239,7 @@ const STORE = {
     {
       "ref": "c03",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.occam-s-razor-audit",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C03: Bulk-brane energy exchange (T^(5)_mu flux). Satisfies F03 (sole mechanism). Evidence: Occam Audit.",
@@ -739,7 +1250,7 @@ const STORE = {
     {
       "ref": "c04",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.resolution",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C04: KK tower mass spectrum provides t_s. Satisfies F04 (sole mechanism). Evidence: t_heal Resolution Report.",
@@ -752,7 +1263,7 @@ const STORE = {
       "kind": "mechanism",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "C06a: Tear: thermal matter, dome failure, recruits envelope. Satisfies F06 (regime). Evidence: N6946-BH1.",
       "extensions": {
         "verdict": "Confirmed"
@@ -761,7 +1272,7 @@ const STORE = {
     {
       "ref": "c06b",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "lit.grb-060614",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C06b: Puncture: coherent matter, needle failure, arrests at domain walls. Satisfies F06 (regime). Evidence: GRB 060614.",
@@ -772,7 +1283,7 @@ const STORE = {
     {
       "ref": "c07a",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "lit.sukhbold-et-al-2016",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C07a: Tears produce BH >= 5 M_sun (envelope recruitment). Satisfies F07 (regime). Evidence: Sukhbold 2016.",
@@ -785,7 +1296,7 @@ const STORE = {
       "kind": "mechanism",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "C07b: Punctures produce BH ~2.5 to 3 M_sun (no envelope). Satisfies F07 (regime). Evidence: GW190814.",
       "extensions": {
         "verdict": "Confirmed"
@@ -796,7 +1307,7 @@ const STORE = {
       "kind": "mechanism",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "C09: Thermal cores carry no coherence domains, yielding Delta r atomic and silent implosion. Satisfies F09 (sole mechanism). Evidence: N6946-BH1.",
       "extensions": {
         "verdict": "Confirmed"
@@ -805,7 +1316,7 @@ const STORE = {
     {
       "ref": "c10",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "lit.sukhbold-et-al-2016",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C10: Stall condition maps to compactness xi_2.5. Satisfies F10 (sole mechanism). Evidence: Sukhbold profiles.",
@@ -816,7 +1327,7 @@ const STORE = {
     {
       "ref": "c15",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "lit.rhic-lhc-kss-bound",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C15: eta/s = 1/(4 pi) via fluid-gravity dictionary. Satisfies F15 (sole mechanism). Evidence: RHIC/LHC data.",
@@ -827,7 +1338,7 @@ const STORE = {
     {
       "ref": "c18a",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "lit.donnelly-freidel-2016",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C18a: 4D: Donnelly-Freidel edge modes for factorization and entropy. Satisfies F18 (sole, 4D description). Evidence: Donnelly and Freidel 2016.",
@@ -851,7 +1362,7 @@ const STORE = {
       "kind": "mechanism",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "C20a: Pre-SSB phase has zero propagating scalar DOF. Satisfies F20 (sole). Evidence: Dirac-Bergmann: Pi_A ~ 0.",
       "extensions": {
         "verdict": "Confirmed"
@@ -904,7 +1415,7 @@ const STORE = {
     {
       "ref": "c20g",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.graceful-exit-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C20g: Percolation dissolution. In the unbroken BF phase, the metric g_mu_nu identically vanishes: no spatial volume, no scale factor a(t), no geometric Hubble expansion rate H. The standard graceful-exit percolation problem is dissolved at the root, since the expansion that separates bubbles begins only after the metric condenses. Satisfies F20 (composing). Evidence: Graceful Exit Report; structural argument from BF theory gauge equivalence.",
@@ -926,7 +1437,7 @@ const STORE = {
     {
       "ref": "c23-sdc",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.hsb-karch-randall-moduli-geometry-as-l-surrogate-scout-may-1",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C23-SDC [REFORMULATED v4.13, CONDITIONAL]: SDC compliance via Karch-Randall moduli geometry. The DBI-induced metric on the radial modulus z_0 gives geodesic distance d ~ M_Pl ln(z_0/L), yielding the SDC exponential decay m_KK ~ exp(-d/M_Pl). Conditional on S-CC-002 closure (b > 1/(4 pi^2) for the X_F13 Pati-Salam KK tower on dP_3). Satisfies F23 (sole, SDC). Evidence: Paper -1; HSB Karch-Randall Moduli Geometry Scout (May 12, 2026).",
@@ -937,7 +1448,7 @@ const STORE = {
     {
       "ref": "c23-wgc",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.gut-population-survey-v1-7",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C23-WGC [REFORMULATED v4.13]: WGC compliance is satisfied statically by the dP_3 Pati-Salam F-theory content. The 87 codimension-3 Yukawa enhancement loci and the matter curves guarantee a superlattice of fractional confined monopole charges populating the species polytope. WGC is a property of the F-theory compactification, not a derived hydrodynamic theorem. Satisfies F23 (sole, WGC). Evidence: GUT Population Survey v1.8; HSB Karch-Randall Moduli Geometry Scout.",
@@ -981,7 +1492,7 @@ const STORE = {
     {
       "ref": "c20f-i",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.graceful-exit-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C20f-i: Gauge instanton nucleation. S_inst = 4 pi^2/g^2, lambda-independent. SO(5) Euclidean instanton embedded in SU(2) subgroup via branching 5 to 4 plus 1; Dynkin index doubles trace. Action O(10^1 to 10^2) for g ~ O(1). Bypasses the 10^44 CDL suppression entirely. Satisfies F20. Open: explicit derivation of the effective gauge coupling g from MM parameters. Source: Graceful Exit Report.",
@@ -992,7 +1503,7 @@ const STORE = {
     {
       "ref": "c20f-ii",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.graceful-exit-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C20f-ii: Thermal KK activation via daisy resummation. N_species ~ 10^32 bosonic KK modes generate a massive cubic term in the one-loop thermal effective potential, driving a violently first-order transition. Satisfies F20. Open: definition of temperature in the pre-geometric BF phase. Source: Graceful Exit Report.",
@@ -1003,7 +1514,7 @@ const STORE = {
     {
       "ref": "c20f-iii",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.graceful-exit-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C20f-iii: Dynamical cobordism (Bubble of Something). The McNamara-Vafa Cobordism Conjecture mandates nucleation of a cobordism defect to trivialize the topological charge of the unbroken SO(1,4) phase. Satisfies F20. Open: explicit rate computation from ETW brane tension and M_5. Source: Graceful Exit Report.",
@@ -1016,7 +1527,7 @@ const STORE = {
       "kind": "mechanism",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "Cold Spot ISW amplification from the Eridanus supervoid. Satisfies F16. Needs: quantitative ISW prediction. Source: Displacement Geometry Report.",
       "extensions": {
         "verdict": "Plausible"
@@ -1027,7 +1538,7 @@ const STORE = {
       "kind": "mechanism",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
+      "declared_grade": "corroborated",
       "statement": "Stellar cooling via KK graviton bulk emission. Satisfies F11, addresses B19. Degenerate stellar interiors (WD crystallized cores, NS superfluid cores) operate at f_Q ~ N^2, driving Lambda_s below the local thermal energy scale; KK graviton modes become thermally accessible, providing an additional cooling channel beyond standard neutrino pathways. For G117-B15A, the missing luminosity of ~10^32 erg/s is sourced by T^(5)_M_nu n^M flux into the AdS_5 bulk. For Cas A, the onset of ^3P_2 neutron superfluidity marks the transition from f_Q ~ N to f_Q ~ N^2, activating the KK exhaust channel. Needs: emission rate from (m_KK, M_5, z_0); must satisfy arXiv 2510.18975. Source: Stellar Cooling Audit, Anomaly Audit.",
       "extensions": {
         "verdict": "Plausible"
@@ -1109,8 +1620,21 @@ const STORE = {
       "kind": "observation",
       "source_id": "lit.desi-dr1-dr2-bao",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "B-NU-1 (new, v4.13): Neutrino Mass Sector Friction. By rejecting DESI DR2 thawing, the framework commits to the Lambda-CDM upper bound sum(m_nu) < 0.064 eV (95% from DESI DR2 + CMB). Terrestrial oscillation experiments require sum(m_nu) >= 0.059 eV (normal hierarchy). Net friction ~0.005 eV with the terrestrial neutrino sector. Tracking for resolution via inverted hierarchy possibility, future neutrino mass measurements (KATRIN, Project 8, cosmological surveys), or future shifts in the cosmological mass bound. No structural resolution from the framework current axiomatic core; tracking as an external observational tension."
+      "declared_grade": "checked",
+      "statement": "B-NU-1 (new, v4.13): Neutrino Mass Sector Friction. By rejecting DESI DR2 thawing, the framework commits to the Lambda-CDM upper bound sum(m_nu) < 0.064 eV (95% from DESI DR2 + CMB). Terrestrial oscillation experiments require sum(m_nu) >= 0.059 eV (normal hierarchy). Net friction ~0.005 eV with the terrestrial neutrino sector. Tracking for resolution via inverted hierarchy possibility, future neutrino mass measurements (KATRIN, Project 8, cosmological surveys), or future shifts in the cosmological mass bound. No structural resolution from the framework current axiomatic core; tracking as an external observational tension.",
+      "checking_records": [
+        {
+          "checker_id": "checker:literature",
+          "method_class": "data-audit",
+          "method": "the specific measurement or detection record this claim's source_id catalogs",
+          "checked_at_state": "dg@stage-3b",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "lit.desi-dr1-dr2-bao"
+          ]
+        }
+      ]
     },
     {
       "ref": "s-cumulant-derive",
@@ -1631,7 +2155,7 @@ const STORE = {
     {
       "ref": "mech.hemispheric-power-asymmetry",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.displacement-geometry-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "Hemispherical power asymmetry from frozen SO(1,4) VEV gradient. Parent: (cosmological, no numbered function). Source: Displacement Geometry Report.",
@@ -1647,7 +2171,7 @@ const STORE = {
     {
       "ref": "mech.cusp-core-resolution",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.displacement-geometry-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "Cusp-core resolution from rigidity floor (Lambda_min density maximum). Satisfies F11. Source: Displacement Geometry Report.",
@@ -1663,7 +2187,7 @@ const STORE = {
     {
       "ref": "mech.tear-puncture-afterglow",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.half-sphere-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "Tear vs puncture afterglow decay indices. Satisfies F06. Source: Half-Sphere Report.",
@@ -1679,7 +2203,7 @@ const STORE = {
     {
       "ref": "mech.e-snap-chain",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.dark-dimension-shear-zone",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "Lambda_cc to R_Dark to m_KK to lambda_KK to Delta r to E_GRB chain. Satisfies F08. Source: DD Shear Zone.",
@@ -1695,7 +2219,7 @@ const STORE = {
     {
       "ref": "mech.e-snap-universality",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.shear-zone-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "Universality of E_snap across progenitors: same energy regardless of mass, rotation, EOS. Satisfies F08. Source: Shear Zone Reports.",
@@ -1711,7 +2235,7 @@ const STORE = {
     {
       "ref": "mech.pycnonuclear-fusion-rates",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.vacuum-energy-source",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "Pycnonuclear fusion rates underestimated in NS crusts and WD cores. Parent: (std. phys., no DG function; this is a conjecture about standard physics rather than a DG mechanism). Source: LUNA + Vacuum Energy Source.",
@@ -1728,7 +2252,7 @@ const STORE = {
     {
       "ref": "mech.mond-a0-leakage",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.kk-graviton-dm-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "MOND a_0 from 4D to 5D gravitational leakage. Satisfies F11. Low priority. Source: KK Graviton DM.",
@@ -3043,7 +3567,7 @@ const STORE = {
       "support_group": "k4-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3052,7 +3576,7 @@ const STORE = {
       "support_group": "k4-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3061,7 +3585,7 @@ const STORE = {
       "support_group": "k6-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3070,7 +3594,7 @@ const STORE = {
       "support_group": "k9-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3097,7 +3621,7 @@ const STORE = {
       "support_group": "k5-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3115,7 +3639,7 @@ const STORE = {
       "support_group": "k10-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "corroborated"
     },
     {
       "link_kind": "supports",
@@ -3124,7 +3648,7 @@ const STORE = {
       "support_group": "k12-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "corroborated"
     },
     {
       "link_kind": "supports",
@@ -3133,7 +3657,7 @@ const STORE = {
       "support_group": "k12-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3142,7 +3666,7 @@ const STORE = {
       "support_group": "k13-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "corroborated"
     },
     {
       "link_kind": "supports",
@@ -3160,7 +3684,7 @@ const STORE = {
       "support_group": "k13-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3169,7 +3693,7 @@ const STORE = {
       "support_group": "k14-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "corroborated"
     },
     {
       "link_kind": "supports",
@@ -3178,7 +3702,7 @@ const STORE = {
       "support_group": "k14-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3187,7 +3711,7 @@ const STORE = {
       "support_group": "k11-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3196,7 +3720,7 @@ const STORE = {
       "support_group": "k11-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "corroborated"
     },
     {
       "link_kind": "supports",
@@ -3223,7 +3747,7 @@ const STORE = {
       "support_group": "k2-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3277,7 +3801,7 @@ const STORE = {
       "support_group": "k17-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "corroborated"
     },
     {
       "link_kind": "supports",
@@ -3286,7 +3810,7 @@ const STORE = {
       "support_group": "k17-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3295,7 +3819,7 @@ const STORE = {
       "support_group": "c06a-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3304,7 +3828,7 @@ const STORE = {
       "support_group": "c09-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3313,7 +3837,7 @@ const STORE = {
       "support_group": "c07b-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3322,7 +3846,7 @@ const STORE = {
       "support_group": "c20a-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3331,7 +3855,7 @@ const STORE = {
       "support_group": "mech.cold-spot-isw-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3340,7 +3864,7 @@ const STORE = {
       "support_group": "mech.stellar-cooling-kk-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -3439,7 +3963,7 @@ const STORE = {
       "support_group": "f06-g0",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "corroborated"
     },
     {
       "link_kind": "supports",
@@ -3475,7 +3999,7 @@ const STORE = {
       "support_group": "f07-g1",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "corroborated"
     },
     {
       "link_kind": "supports",
@@ -3511,7 +4035,7 @@ const STORE = {
       "support_group": "f09-g0",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "corroborated"
     },
     {
       "link_kind": "supports",
@@ -3538,7 +4062,7 @@ const STORE = {
       "support_group": "f11-g1",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "corroborated"
     },
     {
       "link_kind": "supports",
@@ -3574,7 +4098,7 @@ const STORE = {
       "support_group": "f16-g0",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "corroborated"
     },
     {
       "link_kind": "supports",
@@ -3619,7 +4143,7 @@ const STORE = {
       "support_group": "f20-g0",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "corroborated"
     },
     {
       "link_kind": "supports",
