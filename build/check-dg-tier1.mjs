@@ -20,9 +20,13 @@
 // supported claim as "dishonest" for the wrong reason (this check's own stale assumption, not the
 // corpus). Section [5] drops the "no supports link anywhere" assertion (Stage 3a's whole point is to
 // add them) but keeps "no checking record anywhere" (still true, still Stage 3b's job).
+// DEPARTURE at Stage 3b: section [5] drops the "no checking record anywhere" assertion (Stage 3b's
+// whole point is to add them) and asserts at least one exists instead, plus that no withdrawal record
+// exists yet (still true, still Stage 3c's job).
 "use strict";
 import { buildKernel } from "./dg-build.mjs";
 import { earnedGrade } from "../vendor/kernel/grounding/earned-grade.mjs";
+import { leqWithinMode } from "../vendor/kernel/schema/confidence.mjs";
 
 let fails = 0;
 const ok = (c, m) => { console.log(`${c ? "  ok  " : " FAIL "} ${m}`); if (!c) fails++; };
@@ -42,13 +46,23 @@ const byKind = {};
 for (const c of claims) byKind[c.rec.kind] = (byKind[c.rec.kind] || 0) + 1;
 for (const [kind, n] of Object.entries(EXPECTED)) ok((byKind[kind] || 0) >= n, `${kind}: at least ${n} claims (got ${byKind[kind] || 0})`);
 
-console.log("\n[3] every claim in the whole corpus declares exactly what the real gate's grade_table computes it earns, real supports links folded in");
+console.log("\n[3] every claim in the whole corpus declares at or below what the real gate's grade_table computes it earns, real supports links folded in");
+// DEPARTURE at Stage 3b: this was an exact-equality check through Stage 3a, when nothing had a
+// reason to under-declare. Stage 3b's independence lifts introduce one: the vendored
+// checkingRecord() builder drops a hand-authored footprint field before the real gate ever sees it
+// (docs/governing-conventions.md Section 5), so the gate's own grade_table over-grants
+// independently-rechecked to any claim with 2+ distinct-party records, footprint overlap or not.
+// This corpus deliberately declares such a claim (P3) at the correct, lower value (checked) instead
+// of the gate's inflated one; declared <= earned (leqWithinMode) is the real invariant the gate
+// itself enforces (GM-ABOVE only blocks an over-claim), and build/check-independence.mjs is the
+// exact-match authority for what "correct" means on the affected claims specifically.
 const gradeByIdentity = new Map((receipt.grade_table || []).map((g) => [g.identity, g]));
 for (const { rec } of claims) {
   const g = gradeByIdentity.get(rec.identity);
   ok(!!g, `${rec.kind} "${rec.statement.slice(0, 48)}...": has a grade_table entry`);
   if (!g) continue;
-  const honest = rec.declared_grade === g.earned_grade;
+  const cmp = leqWithinMode(rec.declared_grade, g.earned_grade);
+  const honest = cmp.comparable && cmp.leq;
   ok(honest, `${rec.kind} "${rec.statement.slice(0, 48)}...": declared ${rec.declared_grade}, earned ${g.earned_grade}`);
 }
 
@@ -56,10 +70,12 @@ console.log("\n[4] the axiom kind still self-grounds to constitutive");
 const axiomClaims = claims.filter((c) => c.rec.kind === "axiom");
 ok(axiomClaims.length === 4 && axiomClaims.every((c) => c.rec.declared_grade === "constitutive"), "all 4 axiom claims declare constitutive");
 
-console.log("\n[5] no checking record exists anywhere in the corpus yet (Stage 3b scope); supports links are now expected (Stage 3a)");
-ok(claims.every((c) => !c.rec.checking_records || c.rec.checking_records.length === 0), "no claim carries a checking record");
+console.log("\n[5] supports links and checking records are now expected (Stage 3a, 3b); withdrawal records are not (Stage 3c scope)");
 const supportsCount = (built.links || []).filter((l) => l.link_kind === "supports").length;
 ok(supportsCount > 0, `at least one supports link exists in the corpus (got ${supportsCount})`);
+const checkingCount = claims.reduce((n, c) => n + (c.rec.checking_records ? c.rec.checking_records.length : 0), 0);
+ok(checkingCount > 0, `at least one checking record exists in the corpus (got ${checkingCount})`);
+ok(!(built.state && built.state.withdrawn_records && built.state.withdrawn_records.length), "no claim carries a withdrawal record yet");
 
 console.log("\n" + H);
 if (fails === 0) console.log("verified: the Stage 1 tier commitments remain intact and honestly graded as the corpus has grown, and no support link or checking record has been smuggled in ahead of Stage 3.");
