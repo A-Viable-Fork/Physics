@@ -1,6 +1,6 @@
 // Role: the dg kernel store: Stage 1 tier commitments plus Stage 2 structure, bare. Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1 with its v4.14-to-v4.16 supersession, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2), atomized one commitment per claim from the trellis. The exclusion reservoir, all grounding supports, and all checking records are Stage 3, not entered here.
 // Contract: exports STORE = { store_id, claims, links, supersessions }. Pure data; imports nothing.
-// Invariant: every claim is declared at or below what it earns with no support links or checking records: everything floors at asserted except axioms (self-grounding constitutive by kind ceiling) and the two branch commitments (self-grounding corroborated, see their own claim comment). Statement text is the trellis own prose, atomized to one commitment per claim; where atomization forced a judgment call the full trellis context is quoted in extensions.trellis_context. depends-on links wire provenance brackets to already-entered claims only; brackets naming un-entered material (Tier 4 construction sections, un-entered functions, un-entered contracts) stay as text in the statement, for Stage 3 to wire when those claims exist.
+// Invariant: every claim is declared at or below what it earns with no support links or checking records: everything floors at asserted except axioms (self-grounding constitutive by kind ceiling) and the two branch commitments (self-grounding corroborated, see their own claim comment). Statement text is the trellis own prose, atomized to one commitment per claim; where atomization forced a judgment call the full trellis context is quoted in extensions.trellis_context. depends-on links wire provenance brackets and parent-function/parent-mechanism relations to already-entered claims only; brackets naming un-entered material stay as text, for Stage 3 to wire when those claims exist. Contract/mechanism verdicts (Confirmed through Plausible) ride in extensions.verdict, read by periphery, never by the gate, per docs/governing-conventions.md.
 "use strict";
 
 const STORE = {
@@ -550,6 +550,527 @@ const STORE = {
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "P11: Diffeomorphism invariance [Structural Proof, Tier 4.7]. Result: Perturbatively covariant. Method: QFI scalar via <TT>. Edge modes for foliation independence. Source: P11/P8 Report."
+    },
+    {
+      "ref": "f01",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F01: Gravity Emerges from Symmetry Breaking. Addresses: B7 (no quantum gravity). Statement: SO(1,4) to SO(1,3) SSB produces Einstein-Cartan gravity with a massive scalar radion and algebraically determined torsion. Three propagating DOF: two graviton polarizations plus one scalar."
+    },
+    {
+      "ref": "f02",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F02: Coherent Matter Couples to Geometry. Addresses: B13 (hyperon puzzle), B15 (failed supernovae). Statement: Phase-locked matter generates additional angular stress proportional to f^2 N^2 through the hypermomentum tensor. This stress sources torsion via the Cartan equation, suppresses the local effective Planck mass, and provides structural support beyond nuclear degeneracy pressure. G remains G_N. OP-0 conditionality (v4.4, updated v4.5): the quantitative torsion amplitude depends on f_Q achieving super-extensive scaling via the modular Hamiltonian formulation."
+    },
+    {
+      "ref": "f03",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F03: The Geometry Stays Thermodynamically Stable. Addresses: B1 (singularities, partial), B4 (information paradox, partial). Statement: Under steep QFI gradients, the geometry maintains NEC compliance on the brane. The bulk provides the thermodynamic reservoir."
+    },
+    {
+      "ref": "f04",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F04: Scrambling Has a Timescale. Addresses: B15 (failed supernovae), B14 (mass gap). Statement: The vacuum processes dumped O(N^2) correlations over a finite scrambling time t_s, derived from the KK tower mass spectrum. t_s = (R_s/c) ln(S_BH) for macroscopic systems. The naive Margolus-Levitin application is a category error (T1.6)."
+    },
+    {
+      "ref": "f06",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F06: Stellar Death is Rate-Dependent. Addresses: B14 (mass gap), B15 (failed supernovae). Statement: Geometric failure occurs when the free-fall rate exceeds the scrambling rate (t_ff < t_s). The mode of failure depends on which channel dominates: tear (thermal, radial) or puncture (coherent, angular)."
+    },
+    {
+      "ref": "f07",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F07: The Mass Gap Exists. Addresses: B14 (lower mass gap). Statement: The 2.5 to 5 M_sun mass gap arises from the tear/puncture dichotomy. Tears from isolated collapse recruit envelope mass, jumping to >= 5 M_sun. Punctures from mergers carry no envelope, landing at ~2.5 to 3 M_sun."
+    },
+    {
+      "ref": "f08",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F08: GRB Energetics Are Set by the Bulk. Addresses: GRB energy scale (~10^50 erg). Statement: Puncture snapback energy is E_snap = u x 4 pi R^2 x Delta r, where Delta r is set by the KK Compton wavelength lambda_KK ~ 0.02 cm. Open: exact prefactor (factor ~8 between lambda_KK-bar and required 0.16 cm). Potential chain: Lambda_cc to R_Dark to m_KK to lambda_KK to Delta r to E_GRB. Zero free parameters."
+    },
+    {
+      "ref": "f09",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F09: Failed Supernovae Are Dark. Addresses: B15 (N6946-BH1). Statement: Thermal iron cores carry no macroscopic coherence domains. Shear zone collapses to atomic scale. Snapback energy is negligible. The star implodes silently. Observed transient energy is envelope fallback."
+    },
+    {
+      "ref": "f10",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F10: The Smartt Limit. Addresses: B15 (failed supernovae). Statement: Stars above ~17 M_sun develop cores where the tear condition (t_ff < t_s) is sustained across the entire inner envelope. The tear propagates without stalling. Supernova fails."
+    },
+    {
+      "ref": "f11",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F11: Dark Matter Is a Geometric Consequence. Addresses: B3 (dark matter). Statement: The KK graviton tower required by K6 (Pillar 2) simultaneously serves as the dark matter candidate. Thermally produced from the SM brane, the massive spin-2 KK modes form collisionless halos."
+    },
+    {
+      "ref": "f14",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F14: Short-Range Gravity Is Modified. Addresses: B6 (hierarchy problem, partial), Dark Dimension phenomenology. Statement: The radion mediates a Yukawa fifth force at 1 to 10 micron, the Dark Dimension compactification scale. Testable by CANNEX and similar experiments."
+    },
+    {
+      "ref": "f15",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F15: The Viscosity Bound Is Universal. Addresses: QGP phenomenology (RHIC/LHC). Statement: eta/s = 1/(4 pi) is preserved exactly under the state-dependent VEV. The bound requires the (d+1)-dimensional fluid-gravity dictionary."
+    },
+    {
+      "ref": "f16",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F16: Void Physics Amplifies ISW. Addresses: B16 (CMB Cold Spot). Statement: Cosmic voids carry less matter, resulting in less radial loading, which produces higher local effective tension, which drives faster expansion, which delivers enhanced ISW effect."
+    },
+    {
+      "ref": "f17",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F17: Horizons Are Zero-Resolution Surfaces. Addresses: B1 (singularities), B4 (information paradox). Statement: At R_s, radial suppression drives Lambda_s to 0. The geometry carries zero resolution. Gravitational time dilation = Lambda_s(r)/Lambda_s(infinity). Clocks stop at the horizon because the vacuum has zero processing bandwidth. The excision creates a codimension-2 termination surface whose area is a Casimir invariant of the corner symmetry algebra. The 4D description (Donnelly-Freidel edge modes) and 5D description (ETW defect) are dual representations of the same boundary."
+    },
+    {
+      "ref": "f18",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F18: The Linter Censors Insolvent Geometry. Addresses: B1 (singularities), B4 (information paradox). Statement: When a system information-theoretic maintenance cost exceeds its available energy flux, the local geometry is excised from the causal manifold. The 4D mechanism operates via Donnelly-Freidel edge modes (local Hilbert space factorization). The 5D dual is the Karch-Randall ETW defect. F17 provides the LOCATION of the termination surface, F18 provides the MECHANISM that creates it."
+    },
+    {
+      "ref": "f20",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F20: Geometry Condenses from a Topological Phase With Quantized Lambda Selection [revised v4.8]. Addresses: Stochastic radion destabilization, monopole problem, initial conditions for F12, cosmological constant initialization, MM intrinsic Lambda catastrophe (formerly OP-CC, now discharged). Statement: The SO(1,4) to SO(1,3) symmetry breaking replaces standard slow-roll inflation with instantaneous geometric condensation, simultaneously selecting a topological sector k from the Addazi-Meluccio tower of degenerate vacua. Prior to SSB, the theory is a topological BF gauge theory with zero local propagating degrees of freedom. The vacuum manifold SO(1,4)/SO(1,3) is congruent to S^3, with pi_0 = pi_1 = pi_2 = 0: no domain walls, cosmic strings, or magnetic monopoles are produced. The latent heat thermalizes at T_RH ~ 4e7 GeV."
+    },
+    {
+      "ref": "f22",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F22: Channel Orthogonality Decoherence Protection. Addresses: Coherence survival at T ~ 10 MeV in collapsar cores and MAD disks. Statement: The macroscopic quantum coherent state (F_Q ~ N^2) receives protection against thermal decoherence and MRI turbulence through a parity selection rule. Torsion couples to the parity-odd axial vector current J_5^mu. Thermal and hydrodynamic perturbations are parity-even and couple to the trace of T_mu_nu (Ricci channel). The two channels are algebraically orthogonal representations of the SO(1,4) to SO(1,3) breaking. Caveat: higher-loop mixing angle epsilon between trace and traceless sectors requires bounding from above (open problem)."
+    },
+    {
+      "ref": "f23",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F23: Swampland Conjectures as Hydrodynamic Theorems. Addresses: T3.2 (Swampland constraints), providing non-perturbative proofs conditional on the construction. Statement: The Swampland Distance Conjecture and the Weak Gravity Conjecture are derivable as theorems of the hydrodynamic limit of continuous conformal fluids on the ETW brane, under three explicit assumptions (A1: Karch-Randall braneworld with constant DBI tension; A2: the heat kernel coupling gamma (phi^A phi_A) f_Q with gamma > 0; A3: BKM regularity of the boundary fluid). Scope: conditional on A1, A2, A3."
+    },
+    {
+      "ref": "f-cc",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F-CC: Cosmological Constant Quantization and Initial Sector Selection [v4.8]. Addresses: B2 (dark energy initial value), B5 (cosmological constant problem, formerly OP-CC). Statement: The cosmological constant Lambda is not a continuous parameter but is quantized into the discrete tower Lambda^(k) via the Addazi-Meluccio topological mechanism (T3.6). The bulk SO(2,4) Chern-Simons construction descending to the boundary MM action mandates this quantization through the gravitational theta-angle. The dynamical SSB process selects the sector k_phys ~ S_dS matching the de Sitter entropy, providing the initial condition for F12 evolution."
+    },
+    {
+      "ref": "c01",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C01: MM action from CS/WZW boundary induction. Satisfies F01 (sole mechanism). Evidence: Paper 0, Section 2.3.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c02",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C02: Algebraic decomposition via Scalar Cartan Equation. Satisfies F02 (sole mechanism). Evidence: Half-Sphere Report.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c03",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C03: Bulk-brane energy exchange (T^(5)_mu flux). Satisfies F03 (sole mechanism). Evidence: Occam Audit.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c04",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C04: KK tower mass spectrum provides t_s. Satisfies F04 (sole mechanism). Evidence: t_heal Resolution Report.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c06a",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C06a: Tear: thermal matter, dome failure, recruits envelope. Satisfies F06 (regime). Evidence: N6946-BH1.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c06b",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C06b: Puncture: coherent matter, needle failure, arrests at domain walls. Satisfies F06 (regime). Evidence: GRB 060614.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c07a",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C07a: Tears produce BH >= 5 M_sun (envelope recruitment). Satisfies F07 (regime). Evidence: Sukhbold 2016.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c07b",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C07b: Punctures produce BH ~2.5 to 3 M_sun (no envelope). Satisfies F07 (regime). Evidence: GW190814.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c09",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C09: Thermal cores carry no coherence domains, yielding Delta r atomic and silent implosion. Satisfies F09 (sole mechanism). Evidence: N6946-BH1.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c10",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C10: Stall condition maps to compactness xi_2.5. Satisfies F10 (sole mechanism). Evidence: Sukhbold profiles.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c15",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C15: eta/s = 1/(4 pi) via fluid-gravity dictionary. Satisfies F15 (sole mechanism). Evidence: RHIC/LHC data.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c18a",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C18a: 4D: Donnelly-Freidel edge modes for factorization and entropy. Satisfies F18 (sole, 4D description). Evidence: Donnelly and Freidel 2016.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c18b",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C18b: 5D dual: Karch-Randall ETW defect, RT surface anchoring. Satisfies F18 (dual description). Evidence: Defect Extremal Surface prescription.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c20a",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C20a: Pre-SSB phase has zero propagating scalar DOF. Satisfies F20 (sole). Evidence: Dirac-Bergmann: Pi_A ~ 0.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c20b",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C20b: SO(1,4)/SO(1,3) congruent to S^3 forbids monopoles, strings, domain walls. Satisfies F20 (composing). Evidence: homotopy pi_0 = pi_1 = pi_2 = 0.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c20c",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C20c: Reheating: T_RH ~ 4e7 GeV from latent heat lambda v^4. Satisfies F20 (composing). Evidence: standard radiation density relation.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c20d",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C20d: Stochastic dissolution: H_RH ~ 160 keV, far below m_rho ~ MeV. Satisfies F20 (composing). Evidence: post-SSB Hubble from T_RH.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c20e",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C20e: Smooth handoff: f ~ 0 post-SSB gives v(F_Q) ~ M_Pl. Satisfies F20 (composing). Evidence: two-fluid reading, thermal plasma is incoherent.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c20g",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C20g: Percolation dissolution. In the unbroken BF phase, the metric g_mu_nu identically vanishes: no spatial volume, no scale factor a(t), no geometric Hubble expansion rate H. The standard graceful-exit percolation problem is dissolved at the root, since the expansion that separates bubbles begins only after the metric condenses. Satisfies F20 (composing). Evidence: Graceful Exit Report; structural argument from BF theory gauge equivalence.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c23",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C23: Pure-state non-degeneracy of the QFI coupling. For any pure state, the QFI density reduces to the Fubini-Study metric on the state manifold, strictly positive for any state that is not an eigenstate of T_mu_nu. The von Neumann entropy vanishes but the QFI remains finite and positive, because the QFI measures parameter estimation sensitivity, not thermodynamic entropy. Structural (sole). Evidence: Braunstein-Caves (1994), Paper 0 Appendix 14, Braneworld Higgs Coupling Derivation and Audit.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "c23-sdc",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C23-SDC [REFORMULATED v4.13, CONDITIONAL]: SDC compliance via Karch-Randall moduli geometry. The DBI-induced metric on the radial modulus z_0 gives geodesic distance d ~ M_Pl ln(z_0/L), yielding the SDC exponential decay m_KK ~ exp(-d/M_Pl). Conditional on S-CC-002 closure (b > 1/(4 pi^2) for the X_F13 Pati-Salam KK tower on dP_3). Satisfies F23 (sole, SDC). Evidence: Paper -1; HSB Karch-Randall Moduli Geometry Scout (May 12, 2026).",
+      "extensions": {
+        "verdict": "Confirmed, conditional"
+      }
+    },
+    {
+      "ref": "c23-wgc",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C23-WGC [REFORMULATED v4.13]: WGC compliance is satisfied statically by the dP_3 Pati-Salam F-theory content. The 87 codimension-3 Yukawa enhancement loci and the matter curves guarantee a superlattice of fractional confined monopole charges populating the species polytope. WGC is a property of the F-theory compactification, not a derived hydrodynamic theorem. Satisfies F23 (sole, WGC). Evidence: GUT Population Survey v1.8; HSB Karch-Randall Moduli Geometry Scout.",
+      "extensions": {
+        "verdict": "Confirmed"
+      }
+    },
+    {
+      "ref": "mech.bh-entropy",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Bekenstein-Hawking Entropy from Edge Mode Counting (F17, F18). The termination surface created by Linter excision (F18) at the zero-resolution horizon (F17) carries Donnelly-Freidel edge modes whose quantization reproduces the Bekenstein-Hawking area law. Sub-results: area law from edge mode counting (Strongly Supported, multiple independent proofs in first-order gauge gravity literature); RT surface anchors to ETW defect (Confirmed, Defect Extremal Surface prescription); SO(1,4) phase space protected through SSB (Confirmed, 20 first-class constraints preserved); radion frozen out of boundary phase space (Confirmed, 44 second-class constraints); v(F_Q) dynamic invariance of 1/4 prefactor (Plausible, scaling analysis); exact 1/4 prefactor from microcanonical counting (Open, requires the 5D-to-2D central charge descent cascade plus non-commutative modular bootstrap).",
+      "extensions": {
+        "verdict": "Strongly Supported"
+      }
+    },
+    {
+      "ref": "c08",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C08: E_snap = u x 4 pi R^2 x lambda_KK ~ 10^50 erg. Satisfies F08. Evidence: within 1 to 2 OoM of GRBs. Open issue: prefactor, factor ~8.",
+      "extensions": {
+        "verdict": "Suggestive"
+      }
+    },
+    {
+      "ref": "c11",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C11: KK graviton thermal emission (Vafa et al. 2022). Satisfies F11. Evidence: Omega_DM h^2 ~ 0.12 from T_i ~ 1 GeV. Open issue: depends on Swampland conjectures.",
+      "extensions": {
+        "verdict": "Suggestive"
+      }
+    },
+    {
+      "ref": "c20f-i",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C20f-i: Gauge instanton nucleation. S_inst = 4 pi^2/g^2, lambda-independent. SO(5) Euclidean instanton embedded in SU(2) subgroup via branching 5 to 4 plus 1; Dynkin index doubles trace. Action O(10^1 to 10^2) for g ~ O(1). Bypasses the 10^44 CDL suppression entirely. Satisfies F20. Open: explicit derivation of the effective gauge coupling g from MM parameters. Source: Graceful Exit Report.",
+      "extensions": {
+        "verdict": "Plausible"
+      }
+    },
+    {
+      "ref": "c20f-ii",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C20f-ii: Thermal KK activation via daisy resummation. N_species ~ 10^32 bosonic KK modes generate a massive cubic term in the one-loop thermal effective potential, driving a violently first-order transition. Satisfies F20. Open: definition of temperature in the pre-geometric BF phase. Source: Graceful Exit Report.",
+      "extensions": {
+        "verdict": "Plausible"
+      }
+    },
+    {
+      "ref": "c20f-iii",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C20f-iii: Dynamical cobordism (Bubble of Something). The McNamara-Vafa Cobordism Conjecture mandates nucleation of a cobordism defect to trivialize the topological charge of the unbroken SO(1,4) phase. Satisfies F20. Open: explicit rate computation from ETW brane tension and M_5. Source: Graceful Exit Report.",
+      "extensions": {
+        "verdict": "Plausible"
+      }
+    },
+    {
+      "ref": "mech.cold-spot-isw",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Cold Spot ISW amplification from the Eridanus supervoid. Satisfies F16. Needs: quantitative ISW prediction. Source: Displacement Geometry Report.",
+      "extensions": {
+        "verdict": "Plausible"
+      }
+    },
+    {
+      "ref": "mech.stellar-cooling-kk",
+      "kind": "mechanism",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Stellar cooling via KK graviton bulk emission. Satisfies F11, addresses B19. Degenerate stellar interiors (WD crystallized cores, NS superfluid cores) operate at f_Q ~ N^2, driving Lambda_s below the local thermal energy scale; KK graviton modes become thermally accessible, providing an additional cooling channel beyond standard neutrino pathways. For G117-B15A, the missing luminosity of ~10^32 erg/s is sourced by T^(5)_M_nu n^M flux into the AdS_5 bulk. For Cas A, the onset of ^3P_2 neutron superfluidity marks the transition from f_Q ~ N to f_Q ~ N^2, activating the KK exhaust channel. Needs: emission rate from (m_KK, M_5, z_0); must satisfy arXiv 2510.18975. Source: Stellar Cooling Audit, Anomaly Audit.",
+      "extensions": {
+        "verdict": "Plausible"
+      }
+    },
+    {
+      "ref": "pred.c-rd-1",
+      "kind": "prediction",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C-RD-1: Radion mass equality (conditional on refresh duality, SF-DG-012). m_rho = sqrt(c_KK) Lambda_s^2 / (4 pi M_Pl), evaluating to 0.44 to 1.4 MeV across c_KK in [1,10], landing at the bottom edge of the v4.8 adiabaticity window where the framework already sits. Derived by equating the refresh-duality queue-capacity threshold Lambda_s^4/N_eff = Lambda_s^6/M_Pl^2 = 2.1e12 GeV^4 to F_Q,crit (match at c_KK ~ 5). Parent: F-CC / T3.5. Source: Refresh-duality consistency computation (SF-DG-012, CE-DG-011-c).",
+      "closing_condition": {
+        "condition_kind": "measurement-on-the-system",
+        "target": "any independent pin of m_rho outside [0.3, 3] MeV kills the dual reading only, leaving CC-1 intact; a pin inside the band is corroboration",
+        "system": "the radion mass m_rho"
+      }
+    },
+    {
+      "ref": "pred.lambda-1-4",
+      "kind": "prediction",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Lambda_1.4 (tidal deformability), Marginal Pass. Predicted 534 (SLy + rho_sf = 2 rho_0). Constraint: < 580 (90% upper), > 70 (90% lower). Source: TOV Solver.",
+      "closing_condition": {
+        "condition_kind": "measurement-on-the-system",
+        "target": "the measured tidal deformability Lambda_1.4 must fall inside (70, 580) at 90% confidence",
+        "system": "binary neutron star inspiral tidal deformability, GW170817-class measurement"
+      }
+    },
+    {
+      "ref": "pred.f14-cannex",
+      "kind": "prediction",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F14 CANNEX prediction: a radion-mediated fifth force at 1 to 10 micron, set by R_Dark ~ 1 micron. The exact Yukawa coupling strength alpha from the state-dependent VEV is an open calculation; CANNEX projections should be overlaid with the framework predicted alpha range once computed. Reference: Fischer, Kading, and Pitschmann (arXiv:2603.22413, March 2026). Parent: F14.",
+      "closing_condition": {
+        "condition_kind": "measurement-on-the-system",
+        "target": "CANNEX (or a similar short-range gravity experiment) detects or excludes a Yukawa deviation from Newtonian gravity at 1 to 10 micron at the framework predicted alpha, once alpha is computed",
+        "system": "CANNEX short-range gravity experiment"
+      }
     }
   ],
   "links": [
@@ -741,6 +1262,542 @@ const STORE = {
       "link_kind": "depends-on",
       "from": "k17",
       "to": "t2.7",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f01",
+      "to": "k1",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f01",
+      "to": "k2",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f01",
+      "to": "k5",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f02",
+      "to": "k1",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f02",
+      "to": "k2",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f02",
+      "to": "k7",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f03",
+      "to": "k6",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f04",
+      "to": "k6",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f04",
+      "to": "t1.6",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f06",
+      "to": "k1",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f06",
+      "to": "f04",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f07",
+      "to": "f06",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f08",
+      "to": "k6",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f08",
+      "to": "k9",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f09",
+      "to": "f06",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f10",
+      "to": "f06",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f11",
+      "to": "k6",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f11",
+      "to": "t3.2",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f11",
+      "to": "t3.5",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f14",
+      "to": "t3.5",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f15",
+      "to": "k6",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f16",
+      "to": "k1",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f18",
+      "to": "k6",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f18",
+      "to": "f17",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f20",
+      "to": "k5",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f20",
+      "to": "k6",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f20",
+      "to": "t3.6",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f22",
+      "to": "k1",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f23",
+      "to": "k1",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f23",
+      "to": "k2",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f23",
+      "to": "k6",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f23",
+      "to": "t3.2",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f-cc",
+      "to": "t3.6",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f-cc",
+      "to": "f20",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c01",
+      "to": "f01",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c02",
+      "to": "f02",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c03",
+      "to": "f03",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c04",
+      "to": "f04",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c06a",
+      "to": "f06",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c06b",
+      "to": "f06",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c07a",
+      "to": "f07",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c07b",
+      "to": "f07",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c09",
+      "to": "f09",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c10",
+      "to": "f10",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c15",
+      "to": "f15",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c18a",
+      "to": "f18",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c18b",
+      "to": "f18",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c20a",
+      "to": "f20",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c20b",
+      "to": "f20",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c20c",
+      "to": "f20",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c20d",
+      "to": "f20",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c20e",
+      "to": "f20",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c20g",
+      "to": "f20",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c23-sdc",
+      "to": "f23",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c23-wgc",
+      "to": "f23",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "mech.bh-entropy",
+      "to": "f17",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "mech.bh-entropy",
+      "to": "f18",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c08",
+      "to": "f08",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c11",
+      "to": "f11",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c20f-i",
+      "to": "f20",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c20f-ii",
+      "to": "f20",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "c20f-iii",
+      "to": "f20",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "mech.cold-spot-isw",
+      "to": "f16",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "mech.stellar-cooling-kk",
+      "to": "f11",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "pred.c-rd-1",
+      "to": "f-cc",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "pred.lambda-1-4",
+      "to": "f02",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "pred.f14-cannex",
+      "to": "f14",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"
