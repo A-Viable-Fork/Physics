@@ -2,7 +2,7 @@
 
 The single source of build truth from this commit forward. A stage is done when its ledger line moves, not before. Graded honestly: `built and verified` (with the check that verified it named), or `specified, not built` (named, never implied done).
 
-Stages 0 through 2.5. Stages 3 through 6 are specified in `docs/physics-kernel-recon-report.md` Section 6 and are not yet begun.
+Stages 0 through 3a. Stage 3 is split into three sessions (3a supports, 3b checking records and independence lifts, 3c the reservoir), each with one cause of grade movement so the distribution reviews stay legible. Stages 3b onward, and Stages 4 through 6, are specified in `docs/physics-kernel-recon-report.md` Section 6 and are not yet begun.
 
 ## Stage 0: the seat
 
@@ -141,6 +141,57 @@ Matches the stop condition's expectation exactly: new entries land at `asserted`
 ### Divergences from the Stage 2.5 prompt
 
 None. Track 1 through Track 4 were executed as specified; the only judgment calls (the reclassification evidence per row, the lineage-link evidence per row, the exact statement text for the GUT Box occupant and structural findings) are documented inline in the Track 2, 3, and 4 commit messages rather than as divergences from the prompt's own instructions.
+
+## Stage 3a: supports
+
+The first of three Stage 3 sessions. Wires the dependency structure the trellis already encodes as `supports` links: K-constraints and structural proofs from tier commitments and each other, mechanisms from the derivations/observations/tier claims their Evidence columns cite, functions from the mechanisms that satisfy them, predictions from the mechanisms that produce them. No checking records, no independence lifts, no withdrawal records: those are Stage 3b and 3c.
+
+| Item | Status | Verified by |
+|---|---|---|
+| Track 0: third substrate divergence (`formal-artifact` source class), the 5 Lean rows and `corpus.peer-review` reclassified, `corpus.white-et-al-2026-phys-rev-research-8-013264` audited and confirmed external literature, `docs/governing-conventions.md` Sections 4 (peer-reviewed is external literature only) and 5 (the independence-lift lineage-group policy) | built and verified | `node build/check-substrate.mjs` |
+| Track 1a: 28 supports links across K1-K18, P3, P8, P11, topologically ordered | built and verified | `node build/check-dg-tier1.mjs` section 3 (declared equals earned via the real gate `grade_table`, 0 mismatches) |
+| Track 1b: 12 supports links across 7 mechanisms | built and verified | same |
+| Track 1c: 37 supports links across 16 functions and 2 predictions | built and verified | same |
+| `build/dg-build.mjs` extended to return `links` and `supersessions` (previously computed but not exposed) | built and verified | `node build/check-dg-tier1.mjs` section 5 (supports-link count read from the real build) |
+| `build/check-dg-tier1.mjs` updated: section 3 reads the real gate `grade_table` instead of reimplementing `earnedGrade()` with supports forced to `[]`; section 5 drops the "no supports anywhere" assertion (retired by this stage) and keeps "no checking record anywhere" | built and verified | this file, run green |
+| `docs/status-ledger.md`, this section, the attributed distribution table, the unwireable-provenance gap list | built and verified | this file |
+
+### Earned-grade distribution, whole corpus, Stage 3a close
+
+77 new `supports` links (28 + 12 + 37), 0 new claims (Track 1 adds edges, never nodes, per its own scope). 184 claims total, unchanged from Stage 2.5 close.
+
+| Kind grade | Before Stage 3a | After Stage 3a | Change |
+|---|---|---|---|
+| constitutive | 4 | 4 | unchanged |
+| asserted | 174 | 174 | unchanged |
+| ungraded | 6 | 6 | unchanged |
+
+**No claim moved.** This is the honest middle the stage prompt itself anticipates, not a wiring failure. Every real supports link this stage wired resolves, directly or through a chain, into a Tier 1-3 claim (a standard-result, observation, or conjecture) that is itself still bare `asserted`: no checking record exists anywhere in the corpus until Stage 3b. `supportDelivery`'s weakest-of-within-group, strongest-of-across-groups fold cannot lift a claim past what its weakest co-necessary premise delivers, and every premise available to cite in this corpus currently delivers `asserted`. The two verification exercises below confirm this mechanically rather than by assertion: real edges now carry real weight, and that weight is honestly `asserted` today, `asserted` tomorrow until Stage 3b changes what the tier claims themselves earn.
+
+### Verification exercises, planted and observed
+
+**Contamination.** K7's real conjunctive group is `{K1, T3.4, SF-D0}`. In a scratch, in-memory scenario (the real corpus untouched), T3.4 and SF-D0 were hypothetically lifted to `checked`, K1 left at its real `asserted` value: K7's earned grade, recomputed via the real `earnedGrade()`, stayed `asserted`, confirming the weakest member (K1, itself bottoming out at K3, which has no supports) caps the whole conjunctive group regardless of how strong the other two members are. For contrast, lifting all three (including K1) let the group deliver `corroborated`, confirming the cap is real and not a permanent ceiling.
+
+**Conjunctive-group member removal.** K9's real support is a singleton group, `{T1.3}`. In the same scratch scenario, T1.3 was hypothetically lifted to `checked` (K9 would earn `corroborated`), then that one member was removed (K9's supports list emptied): K9's earned grade dropped back to `asserted` (support from nothing is nothing), exactly reversing the elevation.
+
+Both exercises ran entirely in a standalone script's memory against the real vendored `earnedGrade()`; no corpus file was read for writing or modified.
+
+### Unwireable provenance: the gap list
+
+Named per the hard constraint that a bracket citing something not in the graph and not in the source table is a gap, never a guessed edge. Full detail and reasoning live in the Track 1a/1b/1c commit messages; summarized here.
+
+**K-constraints and structural proofs (Track 1a):** 13 of 21 K/P claims cite at least one "Tier 4.X" trellis construction section (K1, K3, K5, K6, K8, K10, K12, K15, K18, P3, P8, P11 all cite one; K6 also cites a bare "Tier 4" with no section number), which is trellis prose describing the physical construction, not a claim or a source-table row, and does not resolve. K11 additionally cites the dead function F13; K17 the dead contract sub-item C13e; K16 the source-table document "Hydrodynamic Swampland Bounds v3" (out of scope for K-constraint supports, which draw only from tier commitments and each other per the Track 1 instruction). K3, K8, P3, P8, and P11 have no resolvable citation at all and so get no supports link.
+
+**Mechanisms (Track 1b):** 37 of 44 mechanisms get no new supports link. This is not the same kind of gap: each one's Evidence or Source column names a source-table document (Paper 0, Half-Sphere Report, Occam Audit, Graceful Exit Report, and others), an external citation never cataloged as a source row (Sukhbold 2016, GRB 060614, Donnelly and Freidel 2016), or a generic technique or derived quantity with no standalone claim (homotopy computations, the Defect Extremal Surface prescription). None of these is a bracket citing something unresolvable; each is evidence that was never atomized into a graph claim, which a `supports` link, requiring two real claim identities, mechanically cannot represent. Two tempting but declined matches, on the record: `mech.pycnonuclear-fusion-rates`'s "LUNA" citation is laboratory d+d screening (B12), a different physical context from crust pycnonuclear rates despite the shared word; `mech.cusp-core-resolution` and `mech.mond-a0-leakage`'s topical proximity to B3 (Dark Matter) was judged too generic to cite without guessing.
+
+**Functions and predictions (Track 1c):** F14, F22, and F-CC have no mechanism in this graph to draw from; their content lives inside a K-constraint's own text (K14, K18/T3.6) or was never atomized into a separate C-numbered contract. The F14 CANNEX prediction and the muonic atom discrimination test get no support for the same reason (F14 has no mechanism; F13, the muonic atom test's parent, is dead).
+
+### Divergences from the Stage 3a prompt
+
+None in substance. Two interpretive choices, documented as judgment calls rather than divergences since the prompt explicitly invites them ("where a genuine judgment call arises... the call and its trellis evidence go in the session notes"):
+
+- **A supports link's own `declared_grade`.** The substrate does not police a link's declared grade against anything (only a claim's `declared_grade` is checked against its earned grade, via `GM-MODE`/`GM-ABOVE`); nothing stops a link from being declared arbitrarily high. This build declares every supports link at an honest snapshot of its source claim's real earned grade at the moment the link is wired (computed via the real `earnedGrade()`, in topological order within each region), never invented or inflated. Mechanically this is equivalent to declaring every link at a uniform high ceiling and letting `meet()` floor it to the truth regardless, but the chosen convention keeps the raw data self-explanatory without requiring a reader to trust that the floor operation saves an overclaim.
+- **Two predictions' producing claims are K-constraints, not C-numbered mechanisms.** C-RD-1 and Lambda_1.4 name no mechanism directly; C-RD-1's own text derives its result by equating a threshold to F_Q,crit (K7's own quantity), and Lambda_1.4's parent function F02 has exactly one mechanism, C02, whose two-channel physics the modified TOV solver runs on. Read "the mechanisms that produce them" to include the K-constraint or the parent function's sole mechanism where the prediction's own text names no C-numbered contract directly.
 
 ## Not built at Stage 1 (named, not implied done)
 
