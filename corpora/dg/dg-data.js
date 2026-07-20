@@ -5811,6 +5811,174 @@ const STORE = {
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "F21: Dual-Channel Gamow Enhancement. Proposed that the framework's coherent-matter geometric coupling enhances the nuclear Gamow tunneling factor through a torsion-flux channel (C21a) composed with ponderomotive electron screening (C21b), enhancing fusion/screening rates at nuclear scales."
+    },
+    {
+      "ref": "block.er-cc001",
+      "kind": "block",
+      "source_id": "corpus.gemini-cc-run-1-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "corroborated",
+      "statement": "Class-level exclusion (gamma(z_0)-inheritance-alone stabilization block, from the withdrawal of \"dead.er-cc001-gamma-z0-stabilization\"): any mechanism relying on the gamma(z_0) inheritance alone to stabilize the Karch-Randall radion is dead; combined mechanisms (gamma plus Casimir backreaction, gamma plus instanton, gamma plus flux quantization) remain open as separate sorries."
+    },
+    {
+      "ref": "block.er-cc002",
+      "kind": "block",
+      "source_id": "corpus.gemini-cc-run-1-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "corroborated",
+      "statement": "Class-level exclusion (propagating-bulk-scalar block, from the withdrawal of \"dead.er-cc002-goldberger-wise\"): any mechanism relying on a propagating bulk scalar field with kinetic terms is forbidden by the topological-bulk axiom (the framework's Tier 4 commitment to a topological SO(2,4) Chern-Simons bulk with zero local degrees of freedom)."
+    },
+    {
+      "ref": "block.er-mm001",
+      "kind": "block",
+      "source_id": "corpus.gemini-dr-vi-rewrite-route-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "corroborated",
+      "statement": "Class-level exclusion (MM antisymmetry-cancellation block (point block), from the withdrawal of \"dead.er-mm001-antisymmetry-vanishing\"): the specific antisymmetry-plus-index-symmetry cancellation argument for the MM Dirac matrix's 30x30 primary-primary block is dead; the block structure must be treated as pseudo-differential, not ultra-local, for any future MM Section VI analysis."
+    },
+    {
+      "ref": "block.er-mm002-local-algebraic-ultralocality",
+      "kind": "block",
+      "source_id": "corpus.chatgpt-track-a-no-go-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "corroborated",
+      "statement": "Class-level exclusion (local-algebraic-ultralocality block, from the withdrawal of \"dead.er-mm002-local-algebraic-redefinition\"): any mechanism relying on local algebraic canonical transformations to achieve ultra-locality in the MM Dirac matrix is structurally obstructed (the No-Go Lemma: local conjugation preserves principal-symbol operator order, and the required cancellation forces a contradiction with ER-MM-001's nonvanishing result for any invertible transformation)."
+    },
+    {
+      "ref": "block.er-mm003",
+      "kind": "block",
+      "source_id": "corpus.chatgpt-track-a-no-go-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "corroborated",
+      "statement": "Class-level exclusion (pointwise-Schur-determinant block (point block), from the withdrawal of \"dead.er-mm003-pointwise-schur\"): the pointwise coordinate-space determinant-factorization route for the MM Dirac matrix is obstructed; only the operator-theoretic principal-symbol reformulation survives as a live route."
+    },
+    {
+      "ref": "block.er-mix001",
+      "kind": "block",
+      "source_id": "corpus.chatgpt-s-mix-001-computation-report-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "corroborated",
+      "statement": "Class-level exclusion (DBI-pi-chi tree-level-mixing block, from the withdrawal of \"dead.er-mix001-dbi-pi-chi-mixing\"): any rescue requiring the radion's F_Q coupling to flow through the DBI brane-bending mode without an additional bilinear mixing source (beyond the induced-metric kinematic identification alone) is dead."
+    },
+    {
+      "ref": "block.er-mix002",
+      "kind": "block",
+      "source_id": "corpus.chatgpt-s-mix-003-torsion-elimination-computation-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "corroborated",
+      "statement": "Class-level exclusion (pure-F-R(omega)-torsion-elimination block, from the withdrawal of \"dead.er-mix002-einstein-cartan-torsion\"): any rescue asserting the radion kinetic term in MMSW gravity emerges from torsion-induced Einstein-Cartan reduction of a pure F(rho)R(omega) coupling is dead (the Palatini scalar-tensor ghost); the Weyl-rescaling route to the Einstein frame is the correct mechanism."
+    },
+    {
+      "ref": "block.er-mix003",
+      "kind": "block",
+      "source_id": "corpus.langenscheidt-2019-arxiv-1907-10440",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "corroborated",
+      "statement": "Class-level exclusion (naive-(D-phi)-squared-kinetic-term block, from the withdrawal of \"dead.er-mix003-naive-scalar-kinetic\"): any MMSW or related gauge-theoretic gravity construction asserting a propagating scalar via a direct (D phi)^dagger(D phi) operator, without auxiliary-field structure or an alternative principled mechanism, is dead (the operator vanishes identically by gauge-fiber Hodge antisymmetry)."
+    },
+    {
+      "ref": "block.er-wd001",
+      "kind": "block",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "corroborated",
+      "statement": "Class-level exclusion (sub-Chandrasekhar-detonation-via-framework-catalysis block, from the withdrawal of \"dead.er-wd001-sub-chandra-wd-detonation\"): any sub-Chandrasekhar Type Ia supernova trigger mechanism routing through framework-internal geometric catalysis is dead; sub-Chandra phenomenology remains handled by standard double-detonation astrophysics, outside the framework's explanatory domain."
+    },
+    {
+      "ref": "block.er-cosm001",
+      "kind": "block",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "corroborated",
+      "statement": "Class-level exclusion (DLRO-vs-ODLRO-conflation block (LINT-DLR-1), from the withdrawal of \"dead.er-cosm001-integrated-f-buildup\"): any cosmological mechanism conflating classical clustering (DLRO density gradients, Bragg-peak ordering) with macroscopic ODLRO long-range phase coherence is dead; codified into LINT-DLR-1."
+    },
+    {
+      "ref": "block.er-cosm002",
+      "kind": "block",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "corroborated",
+      "statement": "Class-level exclusion (O(N)-trace-channel-vs-AM-barrier block (SL-AM-1), from the withdrawal of \"dead.er-cosm002-trace-channel-gradient\"): any cosmological mechanism using an extensively-scaling O(N) operator to bridge AM topological barriers is dead; only super-extensive O(N^2) operators sourced by ODLRO can engage the pole structure. Codified into SL-AM-1."
+    },
+    {
+      "ref": "block.er-cosm003",
+      "kind": "block",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "corroborated",
+      "statement": "Class-level exclusion (rare-ODLRO-domain-averaging block, from the withdrawal of \"dead.er-cosm003-cosmological-averaging\"): any cosmological-averaging mechanism aggregating rare ODLRO domains (e.g. neutron-star superfluid cores at ~1e-46 of the Hubble volume) into a cosmological-scale equation-of-state contribution is dead."
+    },
+    {
+      "ref": "block.er-cosm004",
+      "kind": "block",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "corroborated",
+      "statement": "Class-level exclusion (slow-roll-at-m-sim-H0 block, from the withdrawal of \"dead.er-cosm004-intra-sector-slow-roll\"): any cosmological mechanism introducing or repurposing a slow-rolling scalar at m ~ H_0 within the framework's radion mass window ([1 meV, 100 GeV], per F13.2 and K8) is dead, falsified by at least 30 orders of magnitude."
+    },
+    {
+      "ref": "block.er-wgc001-l2-vs-linfinity",
+      "kind": "block",
+      "source_id": "corpus.hsb-karch-randall-moduli-geometry-as-l-surrogate-scout-may-1",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "corroborated",
+      "statement": "Class-level exclusion (L2-vs-Linfinity Sobolev block (LINT-L2-1), from the withdrawal of \"dead.er-wgc001-hydrodynamic-bkm\"): any framework-internal mechanism proposing to recover a killed pointwise L^infinity amplitude-bound derivation by substituting an L2 variance bound is dead (the Sobolev embedding H^1 does not embed in L^infinity in 3D; L2 bounds cannot constrain pointwise suprema). Codified into LINT-L2-1, SL-VC-1."
+    },
+    {
+      "ref": "block.er-de001",
+      "kind": "block",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Class-level exclusion (BH-bulk-exhaust-as-DE-source block (SL-BR-1), from the withdrawal of \"dead.er-de001-bh-mechanism-evolving-de\"): any cosmological-evolution mechanism aggregating framework-internal degenerate-object bulk-exhaust channels (black holes, failed supernovae, geometric collapse) into an effective Lambda(t) is dead; bulk-routing is structurally cooling and stabilizing, not an energy-injection source. Codified into SL-BR-1."
+    },
+    {
+      "ref": "block.er-ht001",
+      "kind": "block",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Class-level exclusion (coherent-thermal-pumping-above-MeV block, from the withdrawal of \"dead.er-ht001-nede-thermal-de\"): any cosmological-evolution mechanism requiring coherent thermal pumping of a hot sector at T >= MeV is dead; the v3.9 generalized cosmological plasma-exclusion structural lesson pins the coherence fraction at f approximately zero in every unbound relativistic plasma environment."
+    },
+    {
+      "ref": "block.er-de002",
+      "kind": "block",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Class-level exclusion (reversed-bulk-routing-direction block, from the withdrawal of \"dead.er-de002-vacuum-driven-reheating\"): any cosmological mechanism operating by reversing the framework's mandatory brane-to-bulk exhaust direction is dead; bulk-routing is exhaust, never injection (SL-BR-1), and reversal violates the mandatory topological-bulk K1/K6 structure."
+    },
+    {
+      "ref": "block.er-de003",
+      "kind": "block",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Class-level exclusion (trans-Planckian-vacuum-mode-energy-extraction block, from the withdrawal of \"dead.er-de003-quantum-foam-de\"): any cosmological evolving-dark-energy mechanism deriving energy from trans-Planckian vacuum-mode dynamics is dead; trans-Planckian modes are kinematically protected per K18, and the proposal separately violates T1.3."
+    },
+    {
+      "ref": "block.er-de004",
+      "kind": "block",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Class-level exclusion (multi-modulus-slow-roll-in-AM-locked-branch block (LINT-DE-2), from the withdrawal of \"dead.er-de004-multi-modulus-slow-roll\"): any multi-field slow-roll proposal within the AM-locked branch, on moduli spaces with N much greater than 1 light scalars, is dead by Distance-Conjecture confinement. Codified into LINT-DE-2. Does not apply on Path B, where the active modulus is a single light scalar parametrically separated from the hairon condensate."
+    },
+    {
+      "ref": "block.er-de005",
+      "kind": "block",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Class-level exclusion (hairon-dual-role block (LINT-DE-3), from the withdrawal of \"dead.er-de005-hairon-quintessence\"): any mechanism promoting the microscopic constituents of a topological vacuum substrate (hairons) to additive dynamical matter, while retaining the same static vacuum identification, is dead. Codified into LINT-DE-3."
+    },
+    {
+      "ref": "block.er-de006",
+      "kind": "block",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Class-level exclusion (multi-field-hairon-quintessence block, from the withdrawal of \"dead.er-de006-hairon-multi-field\"): any multi-field framework-internal hairon-quintessence proposal is dead for the same categorical reason as the single-field case (LINT-DE-3), sharpened by cross-coupling destabilization of the topological substrate itself."
     }
   ],
   "links": [
@@ -7576,6 +7744,195 @@ const STORE = {
       "to": "pred.lambda-1-4",
       "support_group": "pred.lambda-1-4-g0",
       "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-cc001-gamma-z0-stabilization",
+      "to": "block.er-cc001",
+      "support_group": "block.er-cc001-g0",
+      "source_id": "corpus.gemini-cc-run-1-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-cc002-goldberger-wise",
+      "to": "block.er-cc002",
+      "support_group": "block.er-cc002-g0",
+      "source_id": "corpus.gemini-cc-run-1-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-mm001-antisymmetry-vanishing",
+      "to": "block.er-mm001",
+      "support_group": "block.er-mm001-g0",
+      "source_id": "corpus.gemini-dr-vi-rewrite-route-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-mm002-local-algebraic-redefinition",
+      "to": "block.er-mm002-local-algebraic-ultralocality",
+      "support_group": "block.er-mm002-local-algebraic-ultralocality-g0",
+      "source_id": "corpus.chatgpt-track-a-no-go-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-mm003-pointwise-schur",
+      "to": "block.er-mm003",
+      "support_group": "block.er-mm003-g0",
+      "source_id": "corpus.chatgpt-track-a-no-go-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-mix001-dbi-pi-chi-mixing",
+      "to": "block.er-mix001",
+      "support_group": "block.er-mix001-g0",
+      "source_id": "corpus.chatgpt-s-mix-001-computation-report-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-mix002-einstein-cartan-torsion",
+      "to": "block.er-mix002",
+      "support_group": "block.er-mix002-g0",
+      "source_id": "corpus.chatgpt-s-mix-003-torsion-elimination-computation-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-mix003-naive-scalar-kinetic",
+      "to": "block.er-mix003",
+      "support_group": "block.er-mix003-g0",
+      "source_id": "corpus.langenscheidt-2019-arxiv-1907-10440",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-wd001-sub-chandra-wd-detonation",
+      "to": "block.er-wd001",
+      "support_group": "block.er-wd001-g0",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-cosm001-integrated-f-buildup",
+      "to": "block.er-cosm001",
+      "support_group": "block.er-cosm001-g0",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-cosm002-trace-channel-gradient",
+      "to": "block.er-cosm002",
+      "support_group": "block.er-cosm002-g0",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-cosm003-cosmological-averaging",
+      "to": "block.er-cosm003",
+      "support_group": "block.er-cosm003-g0",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-cosm004-intra-sector-slow-roll",
+      "to": "block.er-cosm004",
+      "support_group": "block.er-cosm004-g0",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-wgc001-hydrodynamic-bkm",
+      "to": "block.er-wgc001-l2-vs-linfinity",
+      "support_group": "block.er-wgc001-l2-vs-linfinity-g0",
+      "source_id": "corpus.hsb-karch-randall-moduli-geometry-as-l-surrogate-scout-may-1",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-de001-bh-mechanism-evolving-de",
+      "to": "block.er-de001",
+      "support_group": "block.er-de001-g0",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-ht001-nede-thermal-de",
+      "to": "block.er-ht001",
+      "support_group": "block.er-ht001-g0",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-de002-vacuum-driven-reheating",
+      "to": "block.er-de002",
+      "support_group": "block.er-de002-g0",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-de003-quantum-foam-de",
+      "to": "block.er-de003",
+      "support_group": "block.er-de003-g0",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-de004-multi-modulus-slow-roll",
+      "to": "block.er-de004",
+      "support_group": "block.er-de004-g0",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-de005-hairon-quintessence",
+      "to": "block.er-de005",
+      "support_group": "block.er-de005-g0",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "ev.dead.er-de006-hairon-multi-field",
+      "to": "block.er-de006",
+      "support_group": "block.er-de006-g0",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"
     }

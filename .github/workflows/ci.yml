@@ -34,3 +34,5 @@ jobs:
         run: node build/check-dg-coverage.mjs
       - name: check-independence
         run: node build/check-independence.mjs
+      - name: check-reservoir
+        run: node build/check-reservoir.mjs
