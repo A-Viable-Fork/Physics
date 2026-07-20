@@ -1682,6 +1682,12 @@
         "lit.goldberger-wise-1999",
         "lit.dewolfe-et-al-2000"
       ]
+    },
+    {
+      "source_id": "corpus.sf-k3b-001",
+      "source_class": "testimony",
+      "description": "SF-K3B-001 (docs/shores/SF-K3B-001.md): this session's own derivation reconciling the K3 audits' junction-condition backreaction (delta u_b = (kappa5^2 L/6) cosh^2(u_b) delta V) with C23-SDC's geodesic-distance SDC mechanism (d ~ M_Pl ln(z0/L)) by composing them via the chain rule in the shared variable u_b = z0/L. No adversarial audit; self-authored physics, not yet independently checked.",
+      "rests_on": []
     }
   ],
   "time_lock": {
