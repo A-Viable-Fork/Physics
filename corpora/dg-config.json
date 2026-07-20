@@ -54,6 +54,10 @@
     {
       "kind": "block",
       "ceiling": "corroborated"
+    },
+    {
+      "kind": "departure",
+      "ceiling": "corroborated"
     }
   ],
   "sources": [

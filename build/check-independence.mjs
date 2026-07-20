@@ -24,7 +24,7 @@
 //   of the grading rule itself.
 "use strict";
 import { buildKernel } from "./dg-build.mjs";
-import { footprintClosure } from "../vendor/kernel/schema/tables.mjs";
+import { footprintClosure, sourceClass } from "../vendor/kernel/schema/tables.mjs";
 import { earnedGrade } from "../vendor/kernel/grounding/earned-grade.mjs";
 import { collapsedRank } from "../vendor/kernel/schema/confidence.mjs";
 
@@ -34,7 +34,7 @@ const H = "=".repeat(80);
 console.log(H); console.log("CHECK-INDEPENDENCE: correct footprint-based independence, recomputed from first principles"); console.log(H);
 
 const built = buildKernel();
-const CEILING = { axiom: "constitutive", "standard-result": "checked", observation: "checked", "conjecture-adopted": "corroborated", derivation: "independently-rechecked", theorem: "constitutive", computation: "checked", function: "corroborated", mechanism: "corroborated", prediction: "corroborated", "branch-commitment": "corroborated", block: "corroborated", comment: "ungraded" };
+const CEILING = { axiom: "constitutive", "standard-result": "checked", observation: "checked", "conjecture-adopted": "corroborated", derivation: "independently-rechecked", theorem: "constitutive", computation: "checked", function: "corroborated", mechanism: "corroborated", prediction: "corroborated", "branch-commitment": "corroborated", block: "corroborated", departure: "corroborated", comment: "ungraded" };
 
 const specByRef = new Map(built.claims.map((c) => [c.spec.ref, c.spec]));
 const identityByRef = new Map(built.claims.map((c) => [c.spec.ref, c.rec.identity]));
@@ -46,8 +46,37 @@ function disjoint(a, b) {
   return true;
 }
 
+// Canonical roots (landing-1 Track 0.4, R3): a source is a canonical root, and does not
+// contaminate audit independence, iff it is itself class peer-reviewed and its entire rests_on
+// lineage (its own closure, including itself) is peer-reviewed throughout: a genuine external-
+// literature citation, never resting on a pipeline document. A peer-reviewed row that itself rests
+// on a non-peer-reviewed ancestor (not expected in practice, but not assumed away) is NOT a
+// canonical root, since its lineage is not purely external. Two checking records sharing only a
+// canonical root (both cite Israel 1966, say) are legitimately independent: two people reading the
+// same textbook theorem is not the correlated-errors failure mode Section 1 exists to catch.
+// Two records sharing an ai-audit, preprint, or testimony ancestor still block, unchanged.
+const canonicalRootCache = new Map();
+function isCanonicalRoot(table, id) {
+  if (canonicalRootCache.has(id)) return canonicalRootCache.get(id);
+  let result = false;
+  if (sourceClass(table, id) === "peer-reviewed") {
+    result = true;
+    for (const anc of footprintClosure(table, [id])) {
+      if (sourceClass(table, anc) !== "peer-reviewed") { result = false; break; }
+    }
+  }
+  canonicalRootCache.set(id, result);
+  return result;
+}
+function excludingCanonicalRoots(table, footprintSet) {
+  const out = new Set();
+  for (const id of footprintSet) if (!isCanonicalRoot(table, id)) out.add(id);
+  return out;
+}
+
 // correct own basis: checking records read from spec (real footprint intact), disjointness tested
-// with the real footprintClosure over each record's own cited source.
+// with the real footprintClosure over each record's own cited source, with canonical literature
+// roots excluded from the ancestry intersection per the rule above.
 function correctOwnBasis(spec) {
   const ceiling = CEILING[spec.kind];
   if (ceiling === "constitutive") return { basis: "constitutive", sharedAncestor: null, pair: null };
@@ -55,14 +84,15 @@ function correctOwnBasis(spec) {
   if (distinct.length >= 2) {
     for (let i = 0; i < distinct.length; i++) {
       for (let j = i + 1; j < distinct.length; j++) {
-        const fi = new Set(distinct[i].footprint || []);
-        const fj = new Set(distinct[j].footprint || []);
+        const fi = excludingCanonicalRoots(built.tables.sourceTable, new Set(distinct[i].footprint || []));
+        const fj = excludingCanonicalRoots(built.tables.sourceTable, new Set(distinct[j].footprint || []));
         if (disjoint(fi, fj)) return { basis: "independently-rechecked", sharedAncestor: null, pair: [distinct[i].checker_id, distinct[j].checker_id] };
       }
     }
     // no disjoint pair found among >= 2 distinct-party records: name the shared ancestor blocking it
-    const fi = new Set(distinct[0].footprint || []);
-    const fj = new Set(distinct[1].footprint || []);
+    // (canonical roots excluded here too, so a genuinely blocking pipeline ancestor is what is named).
+    const fi = excludingCanonicalRoots(built.tables.sourceTable, new Set(distinct[0].footprint || []));
+    const fj = excludingCanonicalRoots(built.tables.sourceTable, new Set(distinct[1].footprint || []));
     const shared = [...fi].filter((s) => fj.has(s));
     return { basis: distinct.length >= 1 ? "checked" : "none", sharedAncestor: shared, pair: [distinct[0].checker_id, distinct[1].checker_id] };
   }
