@@ -1,6 +1,6 @@
 // Role: the dg kernel store: Stage 1 tier commitments plus Stage 2 structure, bare. Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1 with its v4.14-to-v4.16 supersession, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2), atomized one commitment per claim from the trellis. The exclusion reservoir, all grounding supports, and all checking records are Stage 3, not entered here.
 // Contract: exports STORE = { store_id, claims, links, supersessions }. Pure data; imports nothing.
-// Invariant: every claim is declared at or below what it earns with no support links or checking records: everything floors at asserted except axioms (self-grounding constitutive by kind ceiling) and the two branch commitments (self-grounding corroborated, see their own claim comment). Statement text is the trellis own prose, atomized to one commitment per claim; where atomization forced a judgment call the full trellis context is quoted in extensions.trellis_context. depends-on links wire provenance brackets and parent-function/parent-mechanism relations to already-entered claims only; brackets naming un-entered material stay as text, for Stage 3 to wire when those claims exist. Contract/mechanism verdicts (Confirmed through Plausible) ride in extensions.verdict, read by periphery, never by the gate, per docs/governing-conventions.md.
+// Invariant: every claim is declared at or below what it earns with no support links or checking records: everything floors at asserted, including the two branch commitments (their kind ceiling is corroborated, not constitutive; a bare corroborated declaration was planted and confirmed declined by the real gate with GM-ABOVE, per the session notes, so both declare asserted honestly rather than the ceiling the Stage 2 prompt anticipated). Statement text is the trellis own prose, atomized to one commitment per claim; where atomization forced a judgment call the full trellis context is quoted in extensions.trellis_context. depends-on links wire provenance brackets, parent relations, and branch entanglement to already-entered claims only. Contract/mechanism verdicts (Confirmed through Plausible) ride in extensions.verdict, read by periphery, never the gate, per docs/governing-conventions.md.
 "use strict";
 
 const STORE = {
@@ -1071,6 +1071,46 @@ const STORE = {
         "target": "CANNEX (or a similar short-range gravity experiment) detects or excludes a Yukawa deviation from Newtonian gravity at 1 to 10 micron at the framework predicted alpha, once alpha is computed",
         "system": "CANNEX short-range gravity experiment"
       }
+    },
+    {
+      "ref": "path-a",
+      "kind": "branch-commitment",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Path A: Static-Lambda (AM-Locked) Cosmology Branch [v4.14]. Status as of v4.14: current working hypothesis, selected as long as DESI thawing remains below 5-sigma and the Addazi-Meluccio program continues to develop. Commitments: T3.6 (AM topological quantization, Lambda quantized into a discrete tower Lambda^(k)); F-CC (entropic SSB selection, k_phys ~ S_dS ~ 10^122); S-CC-005 (inter-sector tunneling protection, suppressed by e^(-S_dS)); hairon-as-vacuum-substrate (the de Sitter vacuum identified with a BEC of N ~ 10^120 hairon moduli). Cosmological prediction: static Lambda^(k_phys) within the current cosmic epoch, w = -1 to within experimental precision. Default posture: in the absence of decisive triggers, Path A is the current working hypothesis.",
+      "closing_condition": {
+        "condition_kind": "measurement-on-the-system",
+        "target": "DESI Y5 confirms evolving w(z) at >= 5-sigma with CPL parameters inconsistent with w ~ -1, or Euclid confirms time-evolving w(z) at independent significance, or independent gravitational-wave or large-scale-structure analyses confirm a dynamical dark sector at high significance. Any trigger transitions to Path B.",
+        "system": "DESI Y5 final w(z) analysis; Euclid dark energy constraints"
+      },
+      "extensions": {
+        "bayesian_credence_per_addendum_a": "roughly 25-40%"
+      }
+    },
+    {
+      "ref": "path-b",
+      "kind": "branch-commitment",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Path B: Variable-Lambda (Bedroya-Vafa-Aligned) Cosmology Branch [v4.14]. Status as of v4.14: prepared contingency, activated if Path A falsification criteria trigger. Commitments: T3.6prime (replacement for T3.6, Lambda set geometrically by the Dark Dimension radius, Lambda ~ R^-4 with R ~ micron); F-DD-Evolve (replacement for F-CC, R evolves cosmologically driven by slow-roll of a light modulus chi with m_chi ~ H0 ~ 1e-33 eV); drops S-CC-005 (no inter-sector tunneling protection needed, R is continuous). Cosmological prediction: evolving Lambda(t) ~ R(t)^-4, w(z) != -1 with thawing or freezing behavior matching DESI DR2 thawing within the Bedroya-Vafa class.",
+      "closing_condition": {
+        "condition_kind": "measurement-on-the-system",
+        "target": "DESI Y5 confirms static Lambda within experimental precision (reverts to Path A), or specific Bedroya-Vafa predictions (DM mass evolution at percent level, R-evolution rate) are inconsistent with structure-formation observations, or failure to identify a structurally natural m_chi ~ H0 modulus (S-DD-002).",
+        "system": "DESI Y5 final w(z) analysis; structure-formation observations; S-DD-001/S-DD-002 discharge"
+      },
+      "extensions": {
+        "bayesian_credence_per_addendum_a": "roughly 25-40%"
+      }
+    },
+    {
+      "ref": "b-nu-1",
+      "kind": "observation",
+      "source_id": "lit.desi-dr1-dr2-bao",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "B-NU-1 (new, v4.13): Neutrino Mass Sector Friction. By rejecting DESI DR2 thawing, the framework commits to the Lambda-CDM upper bound sum(m_nu) < 0.064 eV (95% from DESI DR2 + CMB). Terrestrial oscillation experiments require sum(m_nu) >= 0.059 eV (normal hierarchy). Net friction ~0.005 eV with the terrestrial neutrino sector. Tracking for resolution via inverted hierarchy possibility, future neutrino mass measurements (KATRIN, Project 8, cosmological surveys), or future shifts in the cosmological mass bound. No structural resolution from the framework current axiomatic core; tracking as an external observational tension."
     }
   ],
   "links": [
@@ -1798,6 +1838,70 @@ const STORE = {
       "link_kind": "depends-on",
       "from": "pred.f14-cannex",
       "to": "f14",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "contradicts",
+      "from": "path-a",
+      "to": "path-b",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "path-a",
+      "to": "t3.6",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "path-a",
+      "to": "cc1.v4-16",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "path-a",
+      "to": "f-cc",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "path-b",
+      "to": "t3.6prime",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "path-b",
+      "to": "cc1.v4-16",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "f-cc",
+      "to": "path-a",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "b-nu-1",
+      "to": "path-a",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"

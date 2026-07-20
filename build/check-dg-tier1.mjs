@@ -30,11 +30,11 @@ console.log("\n[1] the gate accepts the whole current contribution");
 ok(receipt.decision === "accepted" || receipt.decision === "accepted-with-disagreement",
   `decide() does not decline (got ${receipt.decision}${receipt.decision_basis ? ", basis: " + receipt.decision_basis.join(",") : ""})`);
 
-console.log("\n[2] the Stage 1 per-kind counts still hold (Stage 2 adds other kinds, not these)");
+console.log("\n[2] the Stage 1 per-kind counts are still present (observation grows: Stage 2 adds B-NU-1 to the same kind)");
 const EXPECTED = { axiom: 4, "standard-result": 15, observation: 19, "conjecture-adopted": 7 };
 const byKind = {};
 for (const c of claims) byKind[c.rec.kind] = (byKind[c.rec.kind] || 0) + 1;
-for (const [kind, n] of Object.entries(EXPECTED)) ok(byKind[kind] === n, `${kind}: ${n} claims (got ${byKind[kind] || 0})`);
+for (const [kind, n] of Object.entries(EXPECTED)) ok((byKind[kind] || 0) >= n, `${kind}: at least ${n} claims (got ${byKind[kind] || 0})`);
 
 console.log("\n[3] every claim in the whole corpus declares at or below what the gate's own earned-grade rule computes, bare (supports and checking records do not exist anywhere in this corpus yet)");
 for (const { rec } of claims) {
