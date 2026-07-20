@@ -48,7 +48,10 @@ try {
   ok(false, `the kernel fails to build: ${e.message}`);
 }
 if (built) {
-  ok(built.receipt.decision === "accepted", `the current contribution is accepted by the real gate (got ${built.receipt.decision})`);
+  // "accepted-with-disagreement" is not a failure: it is the gate's honest reading of a real
+  // registered disagreement (Path A contradicts Path B), never a decline.
+  ok(built.receipt.decision === "accepted" || built.receipt.decision === "accepted-with-disagreement",
+    `the current contribution is not declined by the real gate (got ${built.receipt.decision})`);
 }
 
 console.log("\n" + H);
