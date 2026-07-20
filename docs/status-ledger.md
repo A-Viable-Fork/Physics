@@ -441,3 +441,41 @@ Four new source rows entered (F12 Reconciliation Scout, Framework Scout 1 BH Mec
 ### Track 2: the external audit queue, prepared
 
 `docs/analysis/audit-queue.md`: 18 entries (Read 5's materiality-queue top fifteen plus Track 1's three residual documents), K3 leading per Read 5's own K3 check (auditing K3 clears K1's stuck grade as a side effect, not just its own). No audit run, no checking record entered anywhere in this document: the fabrication rule forbids entering one without a real artifact, and none exists yet for any target. Each entry states the claim or document, its current grade and ceiling, its downstream mass, what an audit artifact must actually contain to be enterable (a reproduction or adversarial check of the specific derivation named, never a discussion of it or a blanket review of a shared source), and the `checker_id`/`footprint` fields a future landing session will need to fill in.
+
+## Landing-1: the K3 supersession
+
+The program's first external audit cycle: two independent adversarial audits of K3 (`docs/analysis/audit-queue.md`'s own top entry), the operator's rulings on their findings, the citation discipline they necessitated, and the first staleness read over Paper 0. Both audit artifacts (`PK-AUD-K3-001` from DeepSeek expert, `PK-AUD-K3-002` from Kimi K3) are this session's fulfillment of the audit queue's own K3 entry, the queue's first two fulfilled targets.
+
+| Track | Item | Status |
+|---|---|---|
+| 0 | Import discipline, `departure` kind, identity-collision hazard documented, canonical roots (R3) | built and verified |
+| 1 | Both audit artifacts landed with attestation | built |
+| 2 | Four imported claims (Israel 1966, RS 1999, Karch-Randall 2001, Goldberger-Wise/DeWolfe) | built and verified |
+| 3 | K3-prime supersedes K3; K1 propagation; first departure claim | built and verified |
+| 4 | Two characterized-gap sorries (S-K3-KILL-REARG, S-K3-BACKREACT) | built and verified |
+| 5 | Paper 0 staleness read | built and verified |
+
+**8 new claims this session** (441 at audit-prep close plus 8: four `im.*` imports, `k3-prime`, `departure.k3-prime-idealization`, `s-k3-kill-rearg`, `s-k3-backreact`), plus one existing claim's grade lifted (`k1`, asserted to checked) and one superseded (`k3`, staying in history, no longer in force).
+
+**Distribution, attributed, headline rows first:**
+
+| Claim | Before | After | Why |
+|---|---|---|---|
+| `k3-prime` | (did not exist) | **independently-rechecked** | own basis: two distinct-party audit checking records, disjoint under the canonical-roots convention (Track 0.4); the first claim in this corpus ever to reach this grade |
+| `k1` | asserted | **checked** | K3-prime's independently-rechecked support clears the two-row rule's corroborated threshold, letting K1's own Stage 3b audit record (`checker:gemini-dr`) stand on its own basis instead of being capped by its conjunctive co-premise |
+| `k3` | asserted | (superseded, out of force) | operator ruling R2; text stays in history; the one link that cited it rewired to `k3-prime` |
+| `im.israel-1966-junction`, `im.rs1999-critical-tension`, `im.karch-randall-2001-tension-position`, `im.goldberger-wise-effective-tension` | (did not exist) | checked (each) | two distinct-party audit checking records, disjoint under Track 0.4, capped from independently-rechecked to checked by the `standard-result` kind ceiling |
+| `departure.k3-prime-idealization` | (did not exist) | corroborated | supported by K3-prime and the Karch-Randall import, own kind ceiling |
+| `s-k3-kill-rearg`, `s-k3-backreact` | (did not exist) | asserted (floored) | characterized gaps, closing conditions named, verified against the real `characterizedGaps()` read (29 to 31) |
+
+Whole-corpus distribution after landing-1 (449 claims): 4 constitutive, 134 checked, 271 asserted, 33 corroborated, 6 ungraded, **1 independently-rechecked** (`k3-prime`, the corpus's first). Downstream cone beyond K1 confirmed isolated (K2, K7, which K1 itself supports, unaffected: their own supports-links' `declared_grade` fields, not K1's earned value, remain their binding constraint), verified by the full `check-independence.mjs` re-run passing clean, not assumed.
+
+**Gaps named, not fixed, per this session's own scope:**
+
+- `corpora/dg/tables.js` (the file `build/dg-build.mjs` actually imports) had already drifted 16 source rows behind `corpora/dg-config.json` before this session touched either, discovered while wiring this session's own 7 new source rows through correctly. Silently harmless so far, since none of the 16 pre-existing gap rows carry a `rests_on` chain or need class-based logic (`corpus.pk-dr-*` reports, the four audit-prep Framework Scout rows, a handful of literature/dataset rows). Not fixed alongside this session's unrelated change; named in `corpora/dg/tables.js`'s own header comment and here.
+- The paper manifest (`docs/paper0-manifest.json`) binds 9 of Paper 0's 50 sections; the remaining 41 are explicitly listed unbound (`"not evaluated this pass"`), per this track's own prescribed scope (II.B, III.C, III.D, VI's checks, VIII.C, VIII.D), not a claim that the other 41 have no possible binding.
+- `s-k3-kill-rearg` and `s-k3-backreact` are open; `dead.t3-variation-alpha`'s own withdrawal record stands unchanged, and `c23-sdc` stays conditional on both its own pre-existing S-CC-002 dependency and, if the two channels turn out to be the same, a second condition from `s-k3-backreact`.
+
+### Divergences from the landing-1 prompt
+
+None. Both external check-independence.mjs directions (canonical root shared, ai-audit ancestor shared) were exercised in scratch before landing per Track 0.4's own instruction; K3-prime's independence lift was exercised against the real gate via the same check, not merely declared; the K1 propagation was verified by the full checker re-run, not assumed from the two-row rule's algebra alone.
