@@ -1,6 +1,6 @@
-// Role: the dg kernel store: Stage 1 tier commitments, Stage 2 DG structure bare, Stage 2.5 patch and lineage, and Stage 3a supports (K/P region, mechanism region, function/prediction region: full Track 1). Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2); the dispositioned stub rows, K18, the GUT Box occupant and structural-findings material, and source-table lineage/reclassification (Stage 2.5); supports links wiring K-constraints and structural proofs to tier commitments and each other, mechanisms to their evidence, and functions/predictions to their producing mechanisms (Stage 3a). Checking records, independence lifts, and the exclusion reservoir are Stage 3b/3c, not entered here.
+// Role: the dg kernel store: Stage 1 tier commitments, Stage 2 DG structure bare, Stage 2.5 patch and lineage, Stage 3a supports (K/P region, mechanism region, function/prediction region), and Stage 3b source-table completion, checking records, and independence lifts. Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2); the dispositioned stub rows, K18, the GUT Box occupant and structural-findings material, and source-table lineage/reclassification (Stage 2.5); supports links (Stage 3a); mechanism source_id corrections to the specific document each cites rather than the generic trellis.v4-16, checking records, and independence lifts (Stage 3b). The exclusion reservoir is Stage 3c, not entered here.
 // Contract: exports STORE = { store_id, claims, links, supersessions }. Pure data; imports nothing.
-// Invariant: every claim is declared at or below what it earns; before Stage 3a this meant every non-axiom, non-comment claim floors at asserted with no support links. Stage 3a wires real supports links per the trellis provenance brackets and declares each claim at what it now earns via the real earnedGrade() computation, never above. A supports link's own declared_grade is the honest snapshot of its source claim's earned grade at the time the link was wired, in topological order within each region, never invented or inflated; meet() (weakest-of within a conjunctive support_group) then floors delivery to the true minimum regardless. depends-on links wire provenance brackets and parent relations to already-entered claims only; a stated parent that is itself excluded (reservoired or retracted) stays text-only, never a dangling link. Contract/mechanism verdicts ride in extensions.verdict, read by periphery, never the gate, per docs/governing-conventions.md. Sorry status, priority, and gating ride in extensions per the same rule.
+// Invariant: every claim is declared at or below what it earns; before Stage 3a this meant every non-axiom, non-comment claim floors at asserted with no support links. Stage 3a wires real supports links per the trellis provenance brackets and declares each claim at what it now earns via the real earnedGrade() computation, never above. A supports link's own declared_grade is the honest snapshot of its source claim's earned grade at the time the link was wired, in topological order within each region, never invented or inflated; meet() (weakest-of within a conjunctive support_group) then floors delivery to the true minimum regardless. Stage 3b corrects a claim's source_id from the generic trellis.v4-16 to the specific corpus document its Evidence column names, where that citation is unambiguous, so footprintClosure over that claim's own source correctly traces its real evidentiary lineage. Checking records cite a real artifact (a source-table row whose document actually performs the check) or do not exist; a checking record's own independence is computed externally against footprintClosure over rests_on, never trusted from the vendored checkingRecord() builder's own footprint handling (see docs/governing-conventions.md Section 5). depends-on links wire provenance brackets and parent relations to already-entered claims only; a stated parent that is itself excluded (reservoired or retracted) stays text-only, never a dangling link. Contract/mechanism verdicts ride in extensions.verdict, read by periphery, never the gate, per docs/governing-conventions.md. Sorry status, priority, and gating ride in extensions per the same rule.
 "use strict";
 
 const STORE = {
@@ -706,7 +706,7 @@ const STORE = {
     {
       "ref": "c01",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.paper-0",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C01: MM action from CS/WZW boundary induction. Satisfies F01 (sole mechanism). Evidence: Paper 0, Section 2.3.",
@@ -717,7 +717,7 @@ const STORE = {
     {
       "ref": "c02",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.half-sphere-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C02: Algebraic decomposition via Scalar Cartan Equation. Satisfies F02 (sole mechanism). Evidence: Half-Sphere Report.",
@@ -728,7 +728,7 @@ const STORE = {
     {
       "ref": "c03",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.occam-s-razor-audit",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C03: Bulk-brane energy exchange (T^(5)_mu flux). Satisfies F03 (sole mechanism). Evidence: Occam Audit.",
@@ -739,7 +739,7 @@ const STORE = {
     {
       "ref": "c04",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.resolution",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C04: KK tower mass spectrum provides t_s. Satisfies F04 (sole mechanism). Evidence: t_heal Resolution Report.",
@@ -761,7 +761,7 @@ const STORE = {
     {
       "ref": "c06b",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "lit.grb-060614",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C06b: Puncture: coherent matter, needle failure, arrests at domain walls. Satisfies F06 (regime). Evidence: GRB 060614.",
@@ -772,7 +772,7 @@ const STORE = {
     {
       "ref": "c07a",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "lit.sukhbold-et-al-2016",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C07a: Tears produce BH >= 5 M_sun (envelope recruitment). Satisfies F07 (regime). Evidence: Sukhbold 2016.",
@@ -805,7 +805,7 @@ const STORE = {
     {
       "ref": "c10",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "lit.sukhbold-et-al-2016",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C10: Stall condition maps to compactness xi_2.5. Satisfies F10 (sole mechanism). Evidence: Sukhbold profiles.",
@@ -816,7 +816,7 @@ const STORE = {
     {
       "ref": "c15",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "lit.rhic-lhc-kss-bound",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C15: eta/s = 1/(4 pi) via fluid-gravity dictionary. Satisfies F15 (sole mechanism). Evidence: RHIC/LHC data.",
@@ -827,7 +827,7 @@ const STORE = {
     {
       "ref": "c18a",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "lit.donnelly-freidel-2016",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C18a: 4D: Donnelly-Freidel edge modes for factorization and entropy. Satisfies F18 (sole, 4D description). Evidence: Donnelly and Freidel 2016.",
@@ -904,7 +904,7 @@ const STORE = {
     {
       "ref": "c20g",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.graceful-exit-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C20g: Percolation dissolution. In the unbroken BF phase, the metric g_mu_nu identically vanishes: no spatial volume, no scale factor a(t), no geometric Hubble expansion rate H. The standard graceful-exit percolation problem is dissolved at the root, since the expansion that separates bubbles begins only after the metric condenses. Satisfies F20 (composing). Evidence: Graceful Exit Report; structural argument from BF theory gauge equivalence.",
@@ -926,7 +926,7 @@ const STORE = {
     {
       "ref": "c23-sdc",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.hsb-karch-randall-moduli-geometry-as-l-surrogate-scout-may-1",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C23-SDC [REFORMULATED v4.13, CONDITIONAL]: SDC compliance via Karch-Randall moduli geometry. The DBI-induced metric on the radial modulus z_0 gives geodesic distance d ~ M_Pl ln(z_0/L), yielding the SDC exponential decay m_KK ~ exp(-d/M_Pl). Conditional on S-CC-002 closure (b > 1/(4 pi^2) for the X_F13 Pati-Salam KK tower on dP_3). Satisfies F23 (sole, SDC). Evidence: Paper -1; HSB Karch-Randall Moduli Geometry Scout (May 12, 2026).",
@@ -937,7 +937,7 @@ const STORE = {
     {
       "ref": "c23-wgc",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.gut-population-survey-v1-7",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C23-WGC [REFORMULATED v4.13]: WGC compliance is satisfied statically by the dP_3 Pati-Salam F-theory content. The 87 codimension-3 Yukawa enhancement loci and the matter curves guarantee a superlattice of fractional confined monopole charges populating the species polytope. WGC is a property of the F-theory compactification, not a derived hydrodynamic theorem. Satisfies F23 (sole, WGC). Evidence: GUT Population Survey v1.8; HSB Karch-Randall Moduli Geometry Scout.",
@@ -981,7 +981,7 @@ const STORE = {
     {
       "ref": "c20f-i",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.graceful-exit-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C20f-i: Gauge instanton nucleation. S_inst = 4 pi^2/g^2, lambda-independent. SO(5) Euclidean instanton embedded in SU(2) subgroup via branching 5 to 4 plus 1; Dynkin index doubles trace. Action O(10^1 to 10^2) for g ~ O(1). Bypasses the 10^44 CDL suppression entirely. Satisfies F20. Open: explicit derivation of the effective gauge coupling g from MM parameters. Source: Graceful Exit Report.",
@@ -992,7 +992,7 @@ const STORE = {
     {
       "ref": "c20f-ii",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.graceful-exit-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C20f-ii: Thermal KK activation via daisy resummation. N_species ~ 10^32 bosonic KK modes generate a massive cubic term in the one-loop thermal effective potential, driving a violently first-order transition. Satisfies F20. Open: definition of temperature in the pre-geometric BF phase. Source: Graceful Exit Report.",
@@ -1003,7 +1003,7 @@ const STORE = {
     {
       "ref": "c20f-iii",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.graceful-exit-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "C20f-iii: Dynamical cobordism (Bubble of Something). The McNamara-Vafa Cobordism Conjecture mandates nucleation of a cobordism defect to trivialize the topological charge of the unbroken SO(1,4) phase. Satisfies F20. Open: explicit rate computation from ETW brane tension and M_5. Source: Graceful Exit Report.",
@@ -1631,7 +1631,7 @@ const STORE = {
     {
       "ref": "mech.hemispheric-power-asymmetry",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.displacement-geometry-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "Hemispherical power asymmetry from frozen SO(1,4) VEV gradient. Parent: (cosmological, no numbered function). Source: Displacement Geometry Report.",
@@ -1647,7 +1647,7 @@ const STORE = {
     {
       "ref": "mech.cusp-core-resolution",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.displacement-geometry-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "Cusp-core resolution from rigidity floor (Lambda_min density maximum). Satisfies F11. Source: Displacement Geometry Report.",
@@ -1663,7 +1663,7 @@ const STORE = {
     {
       "ref": "mech.tear-puncture-afterglow",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.half-sphere-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "Tear vs puncture afterglow decay indices. Satisfies F06. Source: Half-Sphere Report.",
@@ -1679,7 +1679,7 @@ const STORE = {
     {
       "ref": "mech.e-snap-chain",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.dark-dimension-shear-zone",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "Lambda_cc to R_Dark to m_KK to lambda_KK to Delta r to E_GRB chain. Satisfies F08. Source: DD Shear Zone.",
@@ -1695,7 +1695,7 @@ const STORE = {
     {
       "ref": "mech.e-snap-universality",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.shear-zone-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "Universality of E_snap across progenitors: same energy regardless of mass, rotation, EOS. Satisfies F08. Source: Shear Zone Reports.",
@@ -1711,7 +1711,7 @@ const STORE = {
     {
       "ref": "mech.pycnonuclear-fusion-rates",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.vacuum-energy-source",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "Pycnonuclear fusion rates underestimated in NS crusts and WD cores. Parent: (std. phys., no DG function; this is a conjecture about standard physics rather than a DG mechanism). Source: LUNA + Vacuum Energy Source.",
@@ -1728,7 +1728,7 @@ const STORE = {
     {
       "ref": "mech.mond-a0-leakage",
       "kind": "mechanism",
-      "source_id": "trellis.v4-16",
+      "source_id": "corpus.kk-graviton-dm-report",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "MOND a_0 from 4D to 5D gravitational leakage. Satisfies F11. Low priority. Source: KK Graviton DM.",
