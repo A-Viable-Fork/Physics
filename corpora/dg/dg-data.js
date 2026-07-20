@@ -838,8 +838,8 @@ const STORE = {
       "kind": "derivation",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted",
-      "statement": "K1: Two-Channel Decomposition [from Tier 4.4 + positivity of T_3]. The brane stress-energy decomposes exactly into: (i) Trace channel (radial/curvature), which scales as N, sources Ricci curvature, and IS gravity; (ii) Traceless antisymmetric channel (angular/torsion), which scales as f^2 N^2 for coherent matter and sources torsion via the Cartan equation. This decomposition is an algebraic theorem of the SO(1,4) to SO(1,3) breaking pattern.",
+      "declared_grade": "checked",
+      "statement": "K1: Two-Channel Decomposition [from Tier 4.4 + positivity of T_3]. The brane stress-energy decomposes exactly into: (i) Trace channel (radial/curvature), which scales as N, sources Ricci curvature, and IS gravity; (ii) Traceless antisymmetric channel (angular/torsion), which scales as f^2 N^2 for coherent matter and sources torsion via the Cartan equation. This decomposition is an algebraic theorem of the SO(1,4) to SO(1,3) breaking pattern. Lifted to checked (landing-1 Track 3): its own conjunctive co-premise K3 (now K3-prime, independently-rechecked) no longer caps this claim's support delivery below the corroborated threshold the two-row rule needs to let K1's own Stage 3b checking record (checker:gemini-dr) stand on its own.",
       "checking_records": [
         {
           "checker_id": "checker:gemini-dr",
@@ -994,6 +994,50 @@ const STORE = {
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "K3: T_3 is Constant [from Tier 4.2]. The DBI brane tension T_3 = 6/(kappa_5^2 L) is fixed by the Israel junction conditions, independent of brane position z_0. State-dependence lives in the Higgs VEV v(F_Q), not in T_3."
+    },
+    {
+      "ref": "k3-prime",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "independently-rechecked",
+      "statement": "K3-prime: brane tension, criticality, and the modulus. (i) In the flat-sliced Poincare background of Paper 0 eq. 2, the Israel junction conditions pin the tension to the critical value T3 = 6/(kappa5^2 L), independent of z0; the content of that independence is that z0 is a modulus, a flat direction the junction conditions do not lift, which is why the radion exists and is stabilized by other sectors of the framework. (ii) In the physical dS-sliced background (static positive Lambda^(k)), the effective tension is locked to the position as T_eff = (6/kappa5^2 L) coth(z0/L), supercritical, with relative deviation from critical of order (L/l_dS)^2, approximately 10^-64; z0's flat direction is tilted at that scale. (iii) The bare T3 is a fixed parameter of the brane action and no dynamical field varies it; state-dependence enters the embedding only through T_eff = T3 + V(v(F_Q)), with position sensitivity enhanced by cosh^2(z0/L), significant at the vacuum-energy scale |V| ~ 3L/(kappa5^2 l^2). Supersedes K3 (landing-1 Track 3): K3's own text elided the flat-versus-KR-versus-dS distinction (i)-(iii) now makes explicit, and elided the state-dependence channel (iii) that (i) alone does not foreclose.",
+      "checking_records": [
+        {
+          "checker_id": "checker:deepseek-expert",
+          "method_class": "derivation-audit",
+          "method": "adversarial audit of K3 as stated (PK-AUD-K3-001): rederives the flat-sliced (Q1a) and Karch-Randall (Q1b) junction-condition tension relations, the position-independence assessment (Q2), the corollary-kill assessment (Q3), and the state-dependence partition (Q4); verdict NEEDS REFINEMENT, surviving reformulation supplied",
+          "checked_at_state": "dg@landing-1",
+          "outcome": "confirms-with-noted-limits: K3 as stated NEEDS REFINEMENT (verdict), K3-prime is the audit's own surviving reformulation, not K3 unchanged",
+          "independence": "distinct-party",
+          "footprint": ["corpus.pk-aud-k3-001", "lit.israel-1966", "lit.randall-sundrum-1999", "lit.karch-randall-2001"]
+        },
+        {
+          "checker_id": "checker:kimi-k3",
+          "method_class": "derivation-audit",
+          "method": "adversarial audit of K3 as stated (PK-AUD-K3-002): rederives the flat, AdS4-sliced, and dS4-sliced junction-condition tension relations from one master warped-product equation (Q1), the position-independence assessment (Q2), the corollary-kill assessment (Q3), and the state-dependence partition with the cosh^2(z0/L) enhancement (Q4); verdict NEEDS REFINEMENT leaning DEAD for K3 as literally stated, surviving reformulation supplied",
+          "checked_at_state": "dg@landing-1",
+          "outcome": "confirms-with-noted-limits: K3 as stated NEEDS REFINEMENT leaning DEAD in the genuinely-KR regime (verdict), K3-prime is the audit's own surviving reformulation, not K3 unchanged",
+          "independence": "distinct-party",
+          "footprint": ["corpus.pk-aud-k3-002", "lit.israel-1966", "lit.randall-sundrum-1999", "lit.karch-randall-2001", "lit.goldberger-wise-1999", "lit.dewolfe-et-al-2000"]
+        }
+      ],
+      "extensions": {
+        "locator": "PK-AUD-K3-001 Sections Q1-Q4 and the surviving reformulation; PK-AUD-K3-002 Sections 3-7 and the surviving reformulation (K3')."
+      }
+    },
+    {
+      "ref": "departure.k3-prime-idealization",
+      "kind": "departure",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "corroborated",
+      "statement": "The framework's working idealization uses the flat-sliced Poincare background (Paper 0 eq. 2, K3-prime part (i)) throughout its derivations, exactly critical brane tension, an exact modulus z0. The physical background is dS-sliced (K3-prime part (ii)): supercritical effective tension locked to z0 via T_eff = (6/kappa5^2 L) coth(z0/L), the modulus tilted rather than exactly flat. The departure is quantitative and small at the framework's working point: relative deviation from critical of order (L/l_dS)^2, approximately 10^-64, per K3-prime part (ii). Residue: whether this tilt is negligible everywhere the framework relies on z0's flat-direction behavior, or whether it matters for a specific downstream mechanism, is not settled by K3-prime alone; carried by S-K3-KILL-REARG and S-K3-BACKREACT (landing-1 Track 4).",
+      "closing_condition": {
+        "condition_kind": "proof",
+        "target": "quantify whether the O((L/l_dS)^2) tilt of z0's flat direction propagates to any framework mechanism that assumes an exactly flat modulus, and if so at what scale it first matters; the two Track 4 sorries are the specific instances already identified",
+        "system": "the z0 modulus direction under the dS-sliced physical background, K3-prime part (ii)"
+      }
     },
     {
       "ref": "k4",
@@ -7657,12 +7701,66 @@ const STORE = {
     },
     {
       "link_kind": "supports",
-      "from": "k3",
+      "from": "k3-prime",
       "to": "k1",
       "support_group": "k1-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
-      "declared_grade": "asserted"
+      "declared_grade": "independently-rechecked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "im.israel-1966-junction",
+      "to": "k3-prime",
+      "support_group": "k3-prime-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "im.rs1999-critical-tension",
+      "to": "k3-prime",
+      "support_group": "k3-prime-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "im.karch-randall-2001-tension-position",
+      "to": "k3-prime",
+      "support_group": "k3-prime-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "im.goldberger-wise-effective-tension",
+      "to": "k3-prime",
+      "support_group": "k3-prime-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "k3-prime",
+      "to": "departure.k3-prime-idealization",
+      "support_group": "departure-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "independently-rechecked"
+    },
+    {
+      "link_kind": "supports",
+      "from": "im.karch-randall-2001-tension-position",
+      "to": "departure.k3-prime-idealization",
+      "support_group": "departure-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
@@ -8571,6 +8669,12 @@ const STORE = {
       "successor_ref": "ev.dead.er-de006-hairon-multi-field.recited",
       "at_state": "dg@audit-prep",
       "reason": "Citation granularity correction (audit-prep Track 1, following analysis-1 Read 2's contamination finding): the trellis's own \"Source\" column names a specific Framework Scout report (corpus.framework-scout-4-multi-field-destabilization-may-2026), not the generic sub-Chandrasekhar Type Ia scout this claim was originally mapped to at Stage 3c Track 1 for lack of a catalogued source row. Re-cited to the honest, specific artifact; the superseded claim's mis-citation stays in history, not deleted."
+    },
+    {
+      "superseded_ref": "k3",
+      "successor_ref": "k3-prime",
+      "at_state": "dg@landing-1",
+      "reason": "K3 superseded by the operator's ruling R2 (landing-1), following two independent adversarial audits (PK-AUD-K3-001, PK-AUD-K3-002; docs/audits/). K3's flat text (T3 = 6/(kappa5^2 L), independent of z0) conflates the RS flat-sliced case (true, exactly) with the framework's actual Karch-Randall-type declared setting (false as a fixed number; the KR junction condition fixes a relation among T3, z0, and the induced AdS4 radius, not a single number) and elides the physical dS-sliced background entirely. K3-prime states all three cases explicitly (flat, KR/AdS4, physical dS), reads the z0-independence claim correctly as moduli-flatness rather than a numerical constant, and carries the state-dependence channel (T_eff = T3 + V(v)) K3's own text foreclosed too broadly. The superseded claim's original text stays in history, not deleted; every link previously citing it is rewired to K3-prime (the k1-basis supports link), per the CC-1 v4.14/v4.16 zero-dangling-links precedent."
     }
   ],
   "withdrawals": [

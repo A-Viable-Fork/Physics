@@ -27,6 +27,11 @@
       "category": "constraint"
     },
     {
+      "trellis_id": "K3-prime (landing-1 supersession of K3, operator ruling R2)",
+      "ref": "k3-prime",
+      "category": "constraint"
+    },
+    {
       "trellis_id": "K4",
       "ref": "k4",
       "category": "constraint"
