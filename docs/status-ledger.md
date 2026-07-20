@@ -4,6 +4,8 @@ The single source of build truth from this commit forward. A stage is done when 
 
 Stages 0 through 3a. Stage 3 is split into three sessions (3a supports, 3b checking records and independence lifts, 3c the reservoir), each with one cause of grade movement so the distribution reviews stay legible. Stages 3b onward, and Stages 4 through 6, are specified in `docs/physics-kernel-recon-report.md` Section 6 and are not yet begun.
 
+**Documentation landing (between Stage 3a and Stage 3b):** `docs/synthesis-backlog.md` (the operator-approved synthesis of six deep-research reports) and the six PK-DR report PDFs under `docs/research/` landed byte-identical, hash-verified against the operator's uploads (`docs/research/MANIFEST.md`). No kernel act: no claims, no source-table rows, no new checks. The reports enter the source table only when a later stage first cites them, expected at Stage 3c.
+
 ## Stage 0: the seat
 
 | Item | Status | Verified by |
