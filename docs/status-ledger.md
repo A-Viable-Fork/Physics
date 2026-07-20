@@ -2,7 +2,7 @@
 
 The single source of build truth from this commit forward. A stage is done when its ledger line moves, not before. Graded honestly: `built and verified` (with the check that verified it named), or `specified, not built` (named, never implied done).
 
-Stages 0 through 2. Stages 3 through 6 are specified in `docs/physics-kernel-recon-report.md` Section 6 and are not yet begun.
+Stages 0 through 2.5. Stages 3 through 6 are specified in `docs/physics-kernel-recon-report.md` Section 6 and are not yet begun.
 
 ## Stage 0: the seat
 
@@ -89,18 +89,71 @@ Recomputed live from `kernel/grounding/earned-grade.mjs` via each claim's real `
 - **"P1 through P3" names structural proofs that do not exist under those labels.** The trellis's own "Structural Proofs" table carries exactly three P-numbered rows: P3 (DOF count), P8 (KSS bound), P11 (diffeomorphism invariance). There is no P1 or P2. Entered the three real labels; the count (three) matches what the prompt asked for even though the labels do not.
 - **The branch commitments do not earn above `asserted` under Stage 2's own constraints.** The prompt names them a structural exception, self-grounding through their entry act. Under the real gate, a `branch-commitment` claim's kind ceiling is `corroborated`, not `constitutive`; without a `constitutive`-mode kind, a support link, or a checking record (all excluded by Stage 2's own "structure, bare" rule), nothing lifts a claim above `asserted`. Verified by planting a bare claim declared at `corroborated` and watching the real gate decline it with `GM-ABOVE`. Declared both branch commitments `asserted`, trusting the decline over the prompt's expectation, the same discipline Stage 1 already established.
 
+## Stage 2.5: patch and lineage
+
+An interstitial session, four tracks, no grounding work (no supports, no checking records, no withdrawal records, no reservoir entries; those stay Stage 3). Same bare discipline as Stage 2 throughout.
+
+| Item | Status | Verified by |
+|---|---|---|
+| Track 1: 16 dispositioned stub rows entered (8 default-shaped `mechanism` claims, torsional hair as `comment`, pycnonuclear fusion rates as a parentless `mechanism`, the muonic atom test as `prediction`, 6 Bekenstein-Hawking (4.2) sub-result `mechanism` claims) | built and verified | `node build/check-dg-tier1.mjs` (each earns exactly its declared `asserted`, or `ungraded` for the comment); a `supports` link from the torsional-hair comment was planted and `rejectCommentSupport()` confirmed to throw `comment-support-barred`, then discarded |
+| Track 2: K18 and 12 GUT Box occupant/structural-finding `derivation` claims (`gut-box-occupant`, SF-G1/G2/G3, SF-D0/D1/D2, SF-MIX-001/002/003, SF-MM-002/003); base-landscape and toric-fiber-exclusion tables folded into `gut-box-occupant`'s `extensions.trellis_context`; the 7 indeterminate toric fibers carried as an explicit `closing_condition` | built and verified | `node build/check-dg.mjs`, `node build/check-dg-tier1.mjs` |
+| Coverage manifest extended to 139 entries (110 at Stage 2 close, plus the 16 Track 1 and 13 Track 2 refs) | built and verified | `node build/check-dg-coverage.mjs`; a manifest entry (`sf-mm-003`) was deleted, the check confirmed to fail and name exactly that ref, restored, re-confirmed green |
+| Track 3: `rests_on` populated for 37 of the 182 previously-unlinked Appendix E source rows (50 of 195 total, up from 13) | built and verified | `node build/check-dg.mjs` (source table still builds); `footprintClosure()` computed over two now-linked documents (`cy4-euler-and-flux`, `yukawa-rank-analysis`) that both trace to the same Torus Permutation Check / F-Theory Base Adaptation ancestry, confirmed to share a non-disjoint footprint (3 common ancestors) where each was previously a disjoint singleton |
+| Track 4: 29 of the 49 testimony-default source rows reclassified (18 to `ai-audit`, 10 to `preprint`, 1 to `peer-reviewed`); 8 confirmed as genuinely `testimony`; 12 left undetermined, retained `testimony` | built and verified | `node build/check-dg.mjs` (source table still builds under the revised classes); evidence per row in the Track 4 commit message |
+| `docs/status-ledger.md`, this section, the grade-distribution table below, the lineage gap list, and the reclassification summary | built and verified | this file |
+
+### Earned-grade distribution, whole corpus, Stage 2.5 close
+
+Recomputed live from `kernel/grounding/earned-grade.mjs` via each claim's real `earnedGrade()` call. 184 claims total (155 at Stage 2 close, plus 16 Track 1 and 13 Track 2); every `declared_grade` equals its earned grade (0 mismatches). The gate's decision over the whole corpus is still `accepted-with-disagreement`, same basis as Stage 2 (the Path A / Path B `contradicts` link); nothing in Stage 2.5 changed the gate's basis for that reading.
+
+| Kind | Earned grade | Count | Change from Stage 2 |
+|---|---|---|---|
+| axiom | constitutive | 4 | unchanged |
+| standard-result | asserted | 15 | unchanged |
+| observation | asserted | 20 | unchanged |
+| conjecture-adopted | asserted | 7 | unchanged |
+| derivation | asserted | 63 | +13 (Track 2: K18 + 12 structural findings) |
+| function | asserted | 19 | unchanged |
+| mechanism | asserted | 44 | +14 (Track 1: 8 stub rows + 6 Bekenstein-Hawking sub-results) |
+| prediction | asserted | 4 | +1 (Track 1: muonic atom discrimination test) |
+| branch-commitment | asserted | 2 | unchanged |
+| comment | ungraded | 6 | +1 (Track 1: torsional hair) |
+| **Total** | | **184** | +29 |
+
+Matches the stop condition's expectation exactly: new entries land at `asserted`, one new `comment` (`ungraded`), nothing else moves. No claim anywhere in the corpus is `checked`, `independently-rechecked`, or `corroborated`: still Stage 3's job.
+
+### Track 3: the lineage gap list
+
+145 of the 195 Appendix E source rows have no determinable `rests_on` lineage from the corpus index text or the main trellis body. Listed here, not defaulted, per the hard constraint that a visible gap beats a guessed link. Grouped by why the gap exists:
+
+**Root documents** (no earlier corpus document to rest on; the start of an investigation chain): `corpus.paper-0`, `corpus.paper-1`, `corpus.torsion-steps-1-5`, `corpus.stellar-death-paper`, `corpus.trellising`, `corpus.dirac-constraint-report`, `corpus.p11-p8-report`, `corpus.qfi-scaling-derivation`, `corpus.torus-permutation-check`, `corpus.chat-dirac-rescue-pdf-april-2026`, `corpus.chatgpt-s-mm-002-preliminary-report-april-2026`, `corpus.gemini-cc-run-1-april-2026`, `corpus.dg-cft-055`, `corpus.dg-cft-056`, `corpus.dg-cft-057`, `corpus.bedroya-obied-vafa-wu-2025-arxiv-2507-03090`, `corpus.paper-0-extraction-march-2026`, `corpus.dg-cft-050`, `corpus.dg-cft-058`, `corpus.gemini-coupling-uniqueness-audit-april-2026`, and the standalone external literature rows (`corpus.elvang-et-al-2026-arxiv-2601-11705`, `corpus.montero-et-al-2026-arxiv-2512-09052`, `corpus.soker-2026-arxiv-2601-05774`, `corpus.romani-et-al-2026-arxiv-2512-05099`, `corpus.vip-collaboration-2026-arxiv-2601-00651`, `corpus.beasor-et-al-2026-arxiv-2601-05317`, `corpus.sakamura-2025-arxiv-2510-26367`, `corpus.antonini-et-al-2026-arxiv-2602-02670`, `corpus.meluccio-2025`).
+
+**Parallel/independent investigations, not sequential** (same topic, different pathway, no citation of each other): the five LUNA mechanism-test reports (`corpus.luna-geometric-dimple`, `corpus.luna-torsion-screening`, `corpus.luna-debye-coherence`, `corpus.luna-laser-stimulation`, `corpus.luna-nonlinear-electron`) and their two synthesis reports (`corpus.luna-screening-v1`, `corpus.luna-screening-v2`); the GUT Box survey family (`corpus.gut-architectures-survey`, `corpus.gut-structural-audit`, `corpus.ps-red-team`, `corpus.gut-bottleneck-investigation`); the three Framework Scout evolving-DE kills (`corpus.dg-cft-055`, `corpus.dg-cft-056`, `corpus.dg-cft-057`); `corpus.fiber-exclusion-sweep` relative to `corpus.del-pezzo-exclusion-sweep` (companion analyses in the same survey, not one built on the other's output).
+
+**Broad syntheses touching most of the corpus** (linking to a single predecessor would be an arbitrary selection among dozens): `corpus.research-roadmap-synthesis`, `corpus.literature-reconnaissance-march-2026`, `corpus.empirical-anomaly-survey-march-2026`, `corpus.qg-funnel-analysis`, `corpus.gauge-sector-derivation-report`.
+
+**No named predecessor in the available text** (the remaining rows; content reads as new investigation or independent analysis with no explicit citation of another cataloged document): the full remaining list is reproducible by running `node -e "const cfg=require('./corpora/dg-config.json'); cfg.sources.forEach((s,i)=>{if(i<195 && !(s.rests_on||[]).length) console.log(s.source_id)})"` against this commit; 145 rows total across all three categories above plus this one. Stage 3 should not assume any of these are independent for footprint-closure purposes; it should treat the absence of a link as "unknown," not "zero."
+
+### Track 4: undetermined source classes
+
+12 rows read closely but left `testimony` because no evidence either way was found in the available text (the corpus index; no fuller underlying document is accessible from this repository): `corpus.qfi-scaling-derivation`, `corpus.objective-collapse-report`, `corpus.peer-review` (explicitly considered for `peer-reviewed`; no journal or venue named anywhere in the text, so not reclassified rather than risk mistaking a simulated or internal review for an actual submission), `corpus.sn-2024afav-chirp-audit`, `corpus.sn-2024afav-empirical-falsification`, `corpus.stellar-cooling-audit`, `corpus.axion-hypothesis-review`, `corpus.lean-4-formalization`, `corpus.lean-4-dirac-bergmann-feasibility`, `corpus.lean-4-phase-space-architecture`, `corpus.lean-4-ns-interface`, `corpus.lean-4-qfi-trellis-modules`. The five Lean rows share one recurring problem: formal-verification code artifacts do not clean-match any of the four positive classes (`ai-audit`, `preprint`, `peer-reviewed`, `dataset`) and have no explicitly-tagged twin elsewhere in the corpus to reason from by analogy. Worth a dedicated look if Stage 3 needs their independence status.
+
+### Divergences from the Stage 2.5 prompt
+
+None. Track 1 through Track 4 were executed as specified; the only judgment calls (the reclassification evidence per row, the lineage-link evidence per row, the exact statement text for the GUT Box occupant and structural findings) are documented inline in the Track 2, 3, and 4 commit messages rather than as divergences from the prompt's own instructions.
+
 ## Not built at Stage 1 (named, not implied done)
 
 - No `api/` (our own membrane) or `periphery/` client code. Stage 5.
 - No transformation entries registered in the `computation` pack against real physics data (the pole-condition arithmetic, the exhaust race, the OoM-deficit calculator); `check-compute-invariants.mjs` exercises the register's rules with synthetic fixtures, not a real transform. Stage 4.
-- The source table's `rests_on` chains are populated only for the small set of corpus-index entries whose lineage is explicit in the Appendix E text itself (13 links); full footprint-closure lineage across all 195 corpus-index rows is unbuilt. Stage 3's derivation-audit checking records will need it for the DG region's `independently-rechecked` lifts, and it should be finished before those are attached.
-- Roughly a third of the 195 Appendix-E-derived source rows (49 of 195) default to `source_class: "testimony"` because the corpus-index text does not explicitly name an AI system, a journal, or an arXiv id for them; a manual pass against the underlying documents would likely reclassify some to `ai-audit` or `peer-reviewed`. Worth doing before Stage 3 leans on these for independence lifts.
+- The source table's `rests_on` chains were populated only for 13 corpus-index entries at Stage 1 close. **Partially closed at Stage 2.5**: Track 3 brought this to 50 of 195; 145 rows remain an explicit gap, listed in the Stage 2.5 section above, not defaulted.
+- 49 of the 195 Appendix-E-derived source rows defaulted to `source_class: "testimony"` at Stage 1 close. **Partially closed at Stage 2.5**: Track 4 reclassified 29, confirmed 8 as genuinely testimony, and left 12 undetermined (listed in the Stage 2.5 section above).
 
 ## Not built at Stage 2 (named, not implied done)
 
-- **K18** is in the trellis (v4.8, trans-Planckian VEV suppresses aperiodic tilts) but out of scope: the Stage 2 prompt bounds entry to K1 through K17. A handful of already-entered claims (F20, F-CC, S-NS-018) name K18 in their trellis provenance text without a live `depends-on` link, since there is no K18 claim yet to link to.
-- **The GUT Box occupant model** (the F-theory Dark Dimension Pati-Salam specification table, the three structural findings SF-G1/G2/G3, the base-landscape and toric-fiber-exclusion tables) and **the compute-layer structural findings** (SF-D0, SF-D1, SF-D2, SF-MIX-001/002/003, SF-MM-002/003) are real trellis content supporting K10 through K12's occupant instantiation, but are not among K1-K17, P1-P3, functions, contracts, the branch fork, or the sorry ledger as Stage 2's seven build items enumerate them. Not entered. A future stage should decide whether these enter as further `derivation` claims, a new local kind, or stay as prose the K-constraint claims merely cite.
-- **Ten thin one-line stub rows** in the trellis's Suggestive and Plausible contract tables (hemispheric power asymmetry, cusp-core resolution, tear/puncture afterglow decay indices, the GRB energy chain restatement, universality of `E_snap`, pycnonuclear fusion rate underestimate, KK graviton relic density, the stale cosmological-coincidence cross-reference to retracted F12, MOND `a_0` leakage, and the speculative torsional-hair note) are not entered as separate `mechanism` claims: each is a placeholder with no fuller statement anywhere in the trellis, and their content, where not already covered by an entered function or mechanism, is a backlog item, not a defensible atomization.
-- **The exclusion reservoir**: no kills, withdrawal records, or reinstatement conditions. Every dead function (F05, F12, F13, F13.2, F19, F21) and every struck contract that depended on them is named as excluded in the relevant commit, never entered as a claim. Stage 3.
-- **No `supports` links or checking records anywhere in the corpus.** Every Stage 2 claim sits at its bare floor exactly as Stage 1's did; `check-dg-tier1.mjs` section 5 asserts this holds across the whole corpus, not just the Stage 1 claims. Stage 3 attaches the dependency structure (per the trellis provenance brackets already preserved in statement text and `depends-on` links) and the derivation-audit checking records, per the checker-identity policy in `docs/governing-conventions.md`.
-- **The `rests_on` lineage session** the Stage 1 ledger already flagged (full footprint-closure lineage across the 195-row Appendix E corpus index, and the testimony-default reclassification pass) remains unbuilt and is now more clearly a prerequisite: Stage 3's `independently-rechecked` lifts on the DG region's derivations will read the footprint closure directly, so unresolved lineage there will under-count independence rather than merely being an approximation.
+- ~~**K18** is in the trellis... but out of scope~~. **Entered at Stage 2.5** (Track 2).
+- ~~**The GUT Box occupant model**... and **the compute-layer structural findings**... Not entered.~~ **Entered at Stage 2.5** (Track 2), as `derivation` claims.
+- ~~**Ten thin one-line stub rows**... are not entered as separate `mechanism` claims~~. **Entered at Stage 2.5** (Track 1), per the operator's stub-row disposition.
+- **The exclusion reservoir**: no kills, withdrawal records, or reinstatement conditions. Every dead function (F05, F12, F13, F13.2, F19, F21) and every struck contract that depended on them is named as excluded in the relevant commit, never entered as a claim. Still Stage 3; Stage 2.5 explicitly did not touch this (the KBC-void row and every STRUCK row stayed out, per the Stage 2.5 prompt).
+- **No `supports` links or checking records anywhere in the corpus.** Every Stage 2 and Stage 2.5 claim sits at its bare floor; `check-dg-tier1.mjs` section 5 asserts this holds across the whole corpus. Stage 3 attaches the dependency structure and the derivation-audit checking records, per the checker-identity policy in `docs/governing-conventions.md`.
+- ~~**The `rests_on` lineage session**... remains unbuilt~~. **Partially built at Stage 2.5** (Track 3: 50 of 195 rows now linked; 145 remain an explicit gap) and **partially built** (Track 4: 29 of 49 testimony rows reclassified; 12 remain undetermined). See the Stage 2.5 section above for both gap lists. Stage 3's `independently-rechecked` lifts should read the footprint closure as it now stands, treating the 145 unlinked rows as unknown, not independent.
