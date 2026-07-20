@@ -2,7 +2,7 @@
 
 The single source of build truth from this commit forward. A stage is done when its ledger line moves, not before. Graded honestly: `built and verified` (with the check that verified it named), or `specified, not built` (named, never implied done).
 
-Stages 0 through 3b. Stage 3 is split into three sessions (3a supports, 3b checking records and independence lifts, 3c the reservoir), each with one cause of grade movement so the distribution reviews stay legible. Stage 3c, and Stages 4 through 6, are specified in `docs/physics-kernel-recon-report.md` Section 6 and are not yet begun.
+Stages 0 through 3c Tracks 0-1. Stage 3 is split into three sessions (3a supports, 3b checking records and independence lifts, 3c the reservoir), each with one cause of grade movement so the distribution reviews stay legible. Stage 3c Tracks 2-4 (class blocks, the methods kills, the No-Go Registry emitter) and Stages 4 through 6 are specified in `docs/physics-kernel-recon-report.md` Section 6 and `docs/synthesis-backlog.md`, not yet begun.
 
 **Documentation landing (between Stage 3a and Stage 3b):** `docs/synthesis-backlog.md` (the operator-approved synthesis of six deep-research reports) and the six PK-DR report PDFs under `docs/research/` landed byte-identical, hash-verified against the operator's uploads (`docs/research/MANIFEST.md`). No kernel act: no claims, no source-table rows, no new checks. The reports enter the source table only when a later stage first cites them, expected at Stage 3c.
 
@@ -256,6 +256,41 @@ Per the stage's own instruction: the honest gap between the trellis's confidence
 ### Divergences from the Stage 3b prompt
 
 None in substance. The independence-computation correction (declaring below what the real gate's own `grade_table` would permit, per the `checkingRecord()` footprint-drop finding) is documented as a substrate finding in `docs/governing-conventions.md` Section 5 and the Track 2/3 commit messages, not treated as a divergence from the prompt's own instructions, since the prompt's own discipline ("when in doubt, floor and ledger") is exactly what this correction applies.
+
+## Stage 3c: the reservoir
+
+The third of three Stage 3 sessions. Where 3a wired the dependency structure and 3b earned real grades, 3c enters the trellis's negative knowledge, every killed mechanism, struck contract, and dead function, as first-class graph content: real withdrawal records with typed reinstatement conditions, not silent omission.
+
+| Item | Status | Verified by |
+|---|---|---|
+| Track 0: checking records entered for the five under-claim-ledger artifacts named at Stage 3b close (SF-D0, K18, SF-G1, SF-G2, SF-G3), one real audit each | built and verified | `node build/check-independence.mjs` |
+| Track 1: every reservoir entry (87 THE DEAD table rows including all 22 ER-numbered entries, 13 STRUCK contracts, 6 dead functions, the Section 4.6 KBC-void row) entered as three typed acts: an evidence claim (`computation` kind, one real checking record citing the artifact its own "Killed By"/"Source" column names), the killed claim itself (bare floor, `mechanism` or `function` kind matching the original), and a withdrawal record with a typed reinstatement condition | built and verified | `node build/check-dg-tier1.mjs`, `node build/check-dg-coverage.mjs` (manifest extended by 107 entries), `node build/check-independence.mjs` |
+| `build/dg-build.mjs` extended: `STORE.withdrawals` resolves `claim_ref` and `reinstatement_condition.target_ref` through the same `refId` map as links and supersessions, passed to `apply()` as `withdrawn_records`, never through `decide()`'s contribution (a withdrawal is a structural record, like a supersession, not itself a graded claim) | built and verified | `node build/check-gate.mjs`, the three gate exercises below |
+| `check-independence.mjs`'s `CEILING` map extended for the `computation`, `theorem`, and `block` kinds (the first two now populated, `block` reserved for Track 2) | built and verified | `node build/check-independence.mjs` |
+| One new source row, `corpus.warp-factor-calc` (the only reservoir citation with no existing source-table row; every other citation, all ~100 of them, resolved to a source row Appendix E lineage work had already populated) | built and verified | `node build/check-dg.mjs` |
+| `docs/status-ledger.md`, this section | built and verified | this file |
+
+### Earned-grade distribution, whole corpus, Stage 3c Track 0-1 close
+
+398 claims total (184 before Stage 3c, +214: 107 evidence claims and 107 killed claims). Distribution: 4 constitutive, 120 checked (+82: the reservoir's distinct-party-audited evidence claims), 250 asserted (+132: the reservoir's killed claims, all bare floor, plus the self-checked-only evidence claims), 18 corroborated, 6 ungraded. 107 withdrawal records, one per reservoir entry, none present before this stage.
+
+**Reinstatement condition typing, by policy (`docs/governing-conventions.md` Section 8):** 74 entries carry `entry-at-grade` against the withdrawn claim's own identity requiring `minimum_grade: "checked"`, a real, mechanically permanent decline (a `mechanism`/`function` claim's kind ceiling, `corroborated`, structurally cannot reach the settled-tier `checked`), used wherever the trellis states no reactivation path, "structurally none," "not contemplated," or names no candidate. 33 entries carry `entry-of-kind` requiring a `derivation`-kind entry, the nearest typed approximation available in `CONDITION_KINDS`, used wherever the trellis names a concrete future discovery or demonstration that would lift the kill. The schema has no clause for "and it must show X"; the specific content every `entry-of-kind` condition elides is named verbatim in each withdrawal's `reason` field and is the honest gap this track ledgers rather than smooths over. Two entries (ER-CC-003, ER-MIX-003) sit close to permanent in the trellis's own language ("appears... mutually exclusive," "highly speculative; no such structure exists") but are typed `entry-of-kind` rather than forced to `permanent`, since the trellis does not foreclose them categorically the way it does the 74; the nuance is named in their own `reason` text rather than erased by the typing choice.
+
+**A structural nuance surfaced by the gate exercises, not by this build's own claims:** `WD-UNSATISFIED` and `WF-SUPERSEDED` are two independent checks. A restatement link pointed at a withdrawn identity trips `WF-SUPERSEDED` (Boundary 1: any reference to an out-of-force identity default-declines, naming the successor) regardless of whether the reinstatement condition it also triggers is satisfied. Genuine reinstatement therefore does not restatement-link back to the dead claim's own identity; it stands as a fresh, unlinked entry of the required kind or grade, verified in Exercise 2 below. This is the gate's own design (Section 7's reinstatement machinery and Section 5's binding rule are deliberately orthogonal), not a workaround.
+
+### Verification exercises, planted and observed
+
+**Exercise 1 (WD-UNSATISFIED on plain re-entry).** A synthetic `mechanism` claim restating `dead.geff-amplification` (a `permanent`-typed withdrawal), restatement-linked to it, is submitted against the built store's real view. `decide()` declines with `WD-UNSATISFIED` in its basis (alongside `WF-SUPERSEDED`, from the same restatement link); `withdrawn_matches` reports `satisfaction: "unsatisfied"`, `failing_condition_field: "minimum_grade"`, exactly the permanent condition's own unmeetable clause.
+
+**Exercise 2 (admitted reinstatement).** A fresh `derivation`-kind claim, not restatement-linked to anything, satisfying the `entry-of-kind` condition on `dead.er-mix001-dbi-pi-chi-mixing`'s withdrawal, is submitted alone. `decide()` returns `accepted`, basis `all-checks-clean`. Submitted instead with a restatement link back to the withdrawn identity (a second run), `satisfiesReinstatement` reports `"satisfied"` in `withdrawn_matches`, but the overall receipt still declines on the unrelated `WF-SUPERSEDED` check, the structural nuance above.
+
+**Exercise 3 (restatement closure catches a rephrasing).** A reworded restatement of `dead.thooft-naturalness-lambda` (no new reinstating content, just different words for the same mechanism), restatement-linked to it, is submitted. The restatement closure correctly unions the new identity with the withdrawn one (`restatement_closures` contains both); `decide()` declines with `WD-UNSATISFIED`, confirming the closure catches a rephrasing, not merely an exact byte-identical resubmission.
+
+No corpus file was touched by any exercise; all three exist only in their own script's memory, discarded on exit.
+
+### The missing-artifact list
+
+None. Every one of the 107 reservoir entries' cited sources (the DEAD table's "Source" column, the STRUCK contracts' and dead functions' cited reports) resolved to a source-table row Appendix E lineage work (Stage 2.5 Track 3, Stage 3b Track 1) had already populated, with one exception: "Warp-factor calc" (the tree-level warp-factor alpha(z_0) cancellation row), entered as the one new source row this stage adds, `corpus.warp-factor-calc`.
 
 ## Not built at Stage 1 (named, not implied done)
 

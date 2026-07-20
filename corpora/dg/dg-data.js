@@ -2560,6 +2560,3257 @@ const STORE = {
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "SF-MM-003 (v4.12): Subprincipal entries in MMSW multiplier matrix are lower differential order than the principal curl symbol. The connection-dependent subprincipal contribution U_M from the SO(1,4) covariant derivative D_j in the Frechet variation of Z^i_AB is ultra-local, order zero in spatial derivatives, while the principal curl symbol sigma_M is order one. Therefore U_M does not upgrade the principal-symbol rank used in the ellipticity problem. It can affect frozen-background multiplier solving as an algebraic lower-order term, but the principal rank stays at the curl-driven value, 12 in the 30-component spatial connection block. Tetrad-derivative entries in the Higgs-primary multiplier columns (delta f_a / delta A_i^b4) are similarly ultra-local. The DOF reduction beyond the principal rank therefore requires a configuration-robustness theorem (S-MM-CR) that the standard MM literature does not derive; the rank lift from 18 to the physical secondary count is generically background-sensitive. This is a generic feature of MMSW canonical analyses with auxiliary scalars, not specific to the Langenscheidt formulation. The standard MM literature on Hamiltonian constraint analysis presupposes the configuration-robustness condition without explicit derivation. Source: S-MM-002-gamma Report (April 2026)."
+    },
+    {
+      "ref": "ev.dead.geff-amplification",
+      "kind": "computation",
+      "source_id": "corpus.half-sphere-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.geff-amplification\": G_eff amplification is absurd at ~10^40 G_N. The coherent-matter coupling enters the angular (torsion) channel, not the radial channel that sources G_eff; K2 forbids any channel from amplifying, modifying, or state-dependently varying the gravitational constant itself.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.geff-amplification\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.half-sphere-report"
+          ],
+          "cited_source": "corpus.half-sphere-report"
+        }
+      ]
+    },
+    {
+      "ref": "dead.geff-amplification",
+      "kind": "mechanism",
+      "source_id": "corpus.half-sphere-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: state-dependent VEV suppression amplifies the effective gravitational coupling G_eff, producing an observable local-gravity enhancement (targeting F02, F05)."
+    },
+    {
+      "ref": "ev.dead.higgs-conflation",
+      "kind": "computation",
+      "source_id": "corpus.physics-literature-recon",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.higgs-conflation\": The SO(1,4) Higgs is distinct from the electroweak Higgs (K4, T2.8). Conflating them produces white-dwarf mass-radius cliffs, spurious G_eff spikes, and premature pycnonuclear detonation not seen in any real degenerate star.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.higgs-conflation\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.physics-literature-recon"
+          ],
+          "cited_source": "corpus.physics-literature-recon"
+        }
+      ]
+    },
+    {
+      "ref": "dead.higgs-conflation",
+      "kind": "mechanism",
+      "source_id": "corpus.physics-literature-recon",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed identification: m_e = y_e v_eff, treating the framework's SO(1,4) symmetry-breaking Higgs as the same field as the electroweak Higgs (targeting F13)."
+    },
+    {
+      "ref": "ev.dead.warp-factor-alpha",
+      "kind": "computation",
+      "source_id": "corpus.warp-factor-calc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.warp-factor-alpha\": The Omega^4 factor from sqrt(-g) exactly cancels the Omega^-4 factor from F^{mu nu}F_{mu nu}; the tree-level warp-factor dependence vanishes identically, leaving no physical z_0-dependent coupling at this order.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.warp-factor-alpha\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.warp-factor-calc"
+          ],
+          "cited_source": "corpus.warp-factor-calc"
+        }
+      ]
+    },
+    {
+      "ref": "dead.warp-factor-alpha",
+      "kind": "mechanism",
+      "source_id": "corpus.warp-factor-calc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a tree-level warp-factor alpha(z_0) dependence provides a physical z_0-dependent coupling for radion stabilization (targeting F13)."
+    },
+    {
+      "ref": "ev.dead.dbi-radius-inflation",
+      "kind": "computation",
+      "source_id": "corpus.dbi-tension-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.dbi-radius-inflation\": r_BI is proportional to T_3^{-1/4}; inflating r_BI from 10^-33 to 10^-11 cm would require a T_3 suppression of 10^88, which is not physically available from any mechanism in the construction.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.dbi-radius-inflation\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.dbi-tension-report"
+          ],
+          "cited_source": "corpus.dbi-tension-report"
+        }
+      ]
+    },
+    {
+      "ref": "dead.dbi-radius-inflation",
+      "kind": "mechanism",
+      "source_id": "corpus.dbi-tension-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: Born-Infeld radius inflation from a small brane tension shift provides the geometric scale needed for radion stabilization (targeting F13)."
+    },
+    {
+      "ref": "ev.dead.t3-variation-alpha",
+      "kind": "computation",
+      "source_id": "corpus.dbi-tension-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.t3-variation-alpha\": T_3 is held constant by the Israel junction conditions at the brane; there is no dynamical T_3 variation available to drive alpha proportional to T_3^{-1}.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.t3-variation-alpha\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.dbi-tension-report"
+          ],
+          "cited_source": "corpus.dbi-tension-report"
+        }
+      ]
+    },
+    {
+      "ref": "dead.t3-variation-alpha",
+      "kind": "mechanism",
+      "source_id": "corpus.dbi-tension-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: T_3 variation produces alpha proportional to T_3^{-1}, giving a dynamical channel for the warp factor (targeting F13)."
+    },
+    {
+      "ref": "ev.dead.luna-geometric-truncation",
+      "kind": "computation",
+      "source_id": "corpus.luna-geometric-dimple",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.luna-geometric-truncation\": The geometric-truncation model overshoots the observed LUNA screening enhancement by a factor of 10^9, a Volume Bug class failure (a volumetric rather than surface/angular scaling was used where the mechanism requires the latter).",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.luna-geometric-truncation\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.luna-geometric-dimple"
+          ],
+          "cited_source": "corpus.luna-geometric-dimple"
+        }
+      ]
+    },
+    {
+      "ref": "dead.luna-geometric-truncation",
+      "kind": "mechanism",
+      "source_id": "corpus.luna-geometric-dimple",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: geometric truncation of the LUNA screening potential reproduces the observed electron screening enhancement (targeting F13)."
+    },
+    {
+      "ref": "ev.dead.luna-perturbative-torsion",
+      "kind": "computation",
+      "source_id": "corpus.luna-torsion-screening",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.luna-perturbative-torsion\": The perturbative torsion channel is G/c^4 suppressed, 10^40 times too weak to reproduce the observed LUNA screening enhancement.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.luna-perturbative-torsion\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.luna-torsion-screening"
+          ],
+          "cited_source": "corpus.luna-torsion-screening"
+        }
+      ]
+    },
+    {
+      "ref": "dead.luna-perturbative-torsion",
+      "kind": "mechanism",
+      "source_id": "corpus.luna-torsion-screening",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: perturbative torsion screening at tree level reproduces the LUNA electron-screening anomaly (targeting F13)."
+    },
+    {
+      "ref": "ev.dead.luna-debye-coherence",
+      "kind": "computation",
+      "source_id": "corpus.luna-debye-coherence",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.luna-debye-coherence\": No correlation between the Debye temperature and the screening enhancement U_e is found in the data; diamond, which the mechanism predicts should show strong coherence, gives zero enhancement.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.luna-debye-coherence\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.luna-debye-coherence"
+          ],
+          "cited_source": "corpus.luna-debye-coherence"
+        }
+      ]
+    },
+    {
+      "ref": "dead.luna-debye-coherence",
+      "kind": "mechanism",
+      "source_id": "corpus.luna-debye-coherence",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a Debye-temperature-correlated coherence channel explains the target-material dependence of the LUNA screening anomaly (targeting F13)."
+    },
+    {
+      "ref": "ev.dead.torsion-dark-matter",
+      "kind": "computation",
+      "source_id": "corpus.torsion-dm-diagnostic",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.torsion-dark-matter\": The torsion-as-dark-matter hypothesis is killed on five separate axes documented in the Torsion DM Diagnostic report (galactic rotation curve normalization, cluster lensing profile, structure-formation timing, torsion-sign consistency, and CMB power-spectrum compatibility all independently fail).",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.torsion-dark-matter\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.torsion-dm-diagnostic"
+          ],
+          "cited_source": "corpus.torsion-dm-diagnostic"
+        }
+      ]
+    },
+    {
+      "ref": "dead.torsion-dark-matter",
+      "kind": "mechanism",
+      "source_id": "corpus.torsion-dm-diagnostic",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: framework-generated torsion sources the dark-matter phenomenology directly, without a separate dark-matter particle (targeting F11)."
+    },
+    {
+      "ref": "ev.dead.torsion-mond-a0",
+      "kind": "computation",
+      "source_id": "corpus.torsion-dm-diagnostic",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.torsion-mond-a0\": The torsion-derived acceleration scale comes out at ~7e-23 cm/s^2, 14 orders of magnitude below the empirical MOND a_0 ~ 1.2e-8 cm/s^2.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.torsion-mond-a0\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.torsion-dm-diagnostic"
+          ],
+          "cited_source": "corpus.torsion-dm-diagnostic"
+        }
+      ]
+    },
+    {
+      "ref": "dead.torsion-mond-a0",
+      "kind": "mechanism",
+      "source_id": "corpus.torsion-dm-diagnostic",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: torsion generated by the framework derives the MOND acceleration scale a_0 from first principles (targeting F11)."
+    },
+    {
+      "ref": "ev.dead.zero-point-cancellation",
+      "kind": "computation",
+      "source_id": "corpus.displacement-geometry-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.zero-point-cancellation\": The proposed pairwise cancellation violates the Reeh-Schlieder theorem's cluster/entanglement structure and would additionally require unbroken supersymmetry, which the framework does not have.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.zero-point-cancellation\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.displacement-geometry-report"
+          ],
+          "cited_source": "corpus.displacement-geometry-report"
+        }
+      ]
+    },
+    {
+      "ref": "dead.zero-point-cancellation",
+      "kind": "mechanism",
+      "source_id": "corpus.displacement-geometry-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: zero-point mode pairs cancel across the brane membrane, providing a natural cosmological-constant cancellation without invoking a separate CC mechanism (targeting F16/CC)."
+    },
+    {
+      "ref": "ev.dead.dbi-mond",
+      "kind": "computation",
+      "source_id": "corpus.displacement-geometry-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.dbi-mond\": The DBI action is linear precisely in the low-acceleration-gradient regime where MOND requires nonlinearity; the DBI nonlinear regime activates at high field strength, the exact inverse of the MOND transition's location.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.dbi-mond\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.displacement-geometry-report"
+          ],
+          "cited_source": "corpus.displacement-geometry-report"
+        }
+      ]
+    },
+    {
+      "ref": "dead.dbi-mond",
+      "kind": "mechanism",
+      "source_id": "corpus.displacement-geometry-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: DBI (Born-Infeld) nonlinearity in the brane action reproduces the MOND force-law transition (targeting F11)."
+    },
+    {
+      "ref": "ev.dead.esnap-3d-volume",
+      "kind": "computation",
+      "source_id": "corpus.transient-energetics-failure",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.esnap-3d-volume\": 3D volume scaling gives E_snap ~ 10^57 to 10^63 erg, a trans-Planckian energy scale with no physical referent.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.esnap-3d-volume\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.transient-energetics-failure"
+          ],
+          "cited_source": "corpus.transient-energetics-failure"
+        }
+      ]
+    },
+    {
+      "ref": "dead.esnap-3d-volume",
+      "kind": "mechanism",
+      "source_id": "corpus.transient-energetics-failure",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: the snapback energy E_snap scales with the coherence domain's 3D volume (targeting F08)."
+    },
+    {
+      "ref": "ev.dead.esnap-atomic-area-law",
+      "kind": "computation",
+      "source_id": "corpus.transient-energetics-failure",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.esnap-atomic-area-law\": Atomic area-law scaling gives E_snap ~ 10^38 erg, undershooting the observed transient energetics by 13 orders of magnitude.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.esnap-atomic-area-law\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.transient-energetics-failure"
+          ],
+          "cited_source": "corpus.transient-energetics-failure"
+        }
+      ]
+    },
+    {
+      "ref": "dead.esnap-atomic-area-law",
+      "kind": "mechanism",
+      "source_id": "corpus.transient-energetics-failure",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: the snapback energy E_snap follows an atomic-scale area-law scaling (targeting F08)."
+    },
+    {
+      "ref": "ev.dead.theal-naive-ml",
+      "kind": "computation",
+      "source_id": "corpus.resolution",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.theal-naive-ml\": The naive M-L scaling is a category error, giving t_heal ~ 10^-81 s, many orders removed from any physically meaningful timescale.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.theal-naive-ml\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.resolution",
+            "corpus.task-2-3-results"
+          ],
+          "cited_source": "corpus.resolution"
+        }
+      ]
+    },
+    {
+      "ref": "dead.theal-naive-ml",
+      "kind": "mechanism",
+      "source_id": "corpus.resolution",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: t_heal follows a naive mass-luminosity scaling relation (targeting F04)."
+    },
+    {
+      "ref": "ev.dead.theal-pixel-counting",
+      "kind": "computation",
+      "source_id": "corpus.resolution",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.theal-pixel-counting\": The pixel-counting estimate gives t_heal ~ 10^4 s, both numerically wrong and running in the wrong direction relative to the resolved t_heal = t_scrambling identification.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.theal-pixel-counting\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.resolution",
+            "corpus.task-2-3-results"
+          ],
+          "cited_source": "corpus.resolution"
+        }
+      ]
+    },
+    {
+      "ref": "dead.theal-pixel-counting",
+      "kind": "mechanism",
+      "source_id": "corpus.resolution",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: t_heal is set by a pixel-counting (areal-resolution) estimate of the healing front (targeting F04)."
+    },
+    {
+      "ref": "ev.dead.transient-scrambling-identity",
+      "kind": "computation",
+      "source_id": "corpus.transient-energetics-failure",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.transient-scrambling-identity\": The KK scrambling time (~4 ms) is distinct by many orders of magnitude from the observed transient timescales (seconds to months); the two cannot be identified.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.transient-scrambling-identity\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.transient-energetics-failure"
+          ],
+          "cited_source": "corpus.transient-energetics-failure"
+        }
+      ]
+    },
+    {
+      "ref": "dead.transient-scrambling-identity",
+      "kind": "mechanism",
+      "source_id": "corpus.transient-energetics-failure",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed identification: the observed astrophysical transient timescale equals the KK scrambling time t_scrambling directly (targeting F06)."
+    },
+    {
+      "ref": "ev.dead.lambda4min-universal",
+      "kind": "computation",
+      "source_id": "corpus.vacuum-energy-source",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.lambda4min-universal\": A universal scaling requires an independent coupling-constant input at each physical scale; no such universal law is available from dimensional analysis alone.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.lambda4min-universal\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.vacuum-energy-source"
+          ],
+          "cited_source": "corpus.vacuum-energy-source"
+        }
+      ]
+    },
+    {
+      "ref": "dead.lambda4min-universal",
+      "kind": "mechanism",
+      "source_id": "corpus.vacuum-energy-source",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a single universal scaling law for Lambda^4_min applies across all coherent-matter substrates without a per-substrate coupling constant (targeting F08)."
+    },
+    {
+      "ref": "ev.dead.bosenova-all-variants",
+      "kind": "computation",
+      "source_id": "corpus.bosenova-falsification",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.bosenova-all-variants\": Every examined bosenova variant gives F_Q = 2.56e8 against the required activation threshold of 10^32, a Volume Bug class deficit of 24 orders of magnitude.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.bosenova-all-variants\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.bosenova-falsification"
+          ],
+          "cited_source": "corpus.bosenova-falsification"
+        }
+      ]
+    },
+    {
+      "ref": "dead.bosenova-all-variants",
+      "kind": "mechanism",
+      "source_id": "corpus.bosenova-falsification",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: coherent-matter bosenova collapse (in any of its examined variants) provides an observable tabletop or astrophysical signature (targeting F14)."
+    },
+    {
+      "ref": "ev.dead.missing-bec-bulk-escape",
+      "kind": "computation",
+      "source_id": "corpus.bosenova-density-spike",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.missing-bec-bulk-escape\": The proposed bulk-escape channel requires baryon-number violation, which is not available anywhere in the construction.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.missing-bec-bulk-escape\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.bosenova-density-spike",
+            "corpus.bosenova-falsification"
+          ],
+          "cited_source": "corpus.bosenova-density-spike"
+        }
+      ]
+    },
+    {
+      "ref": "dead.missing-bec-bulk-escape",
+      "kind": "mechanism",
+      "source_id": "corpus.bosenova-density-spike",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a missing-BEC signature escapes detection by radiating into the 5D bulk (an auxiliary bosenova-family escape route)."
+    },
+    {
+      "ref": "ev.dead.kr-brane-reeh-schlieder",
+      "kind": "computation",
+      "source_id": "corpus.occam-s-razor-audit",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.kr-brane-reeh-schlieder\": Donnelly-Freidel 4D edge modes replicate the same Reeh-Schlieder-preserving structure without requiring the KR brane; Occam's razor rules the brane not mandatory for this purpose.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.kr-brane-reeh-schlieder\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.occam-s-razor-audit"
+          ],
+          "cited_source": "corpus.occam-s-razor-audit"
+        }
+      ]
+    },
+    {
+      "ref": "dead.kr-brane-reeh-schlieder",
+      "kind": "mechanism",
+      "source_id": "corpus.occam-s-razor-audit",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed necessity: the Karch-Randall brane itself is mandatory to preserve the Reeh-Schlieder property of the boundary theory (targeting F18)."
+    },
+    {
+      "ref": "ev.dead.route3-fixed-brane",
+      "kind": "computation",
+      "source_id": "corpus.route-1-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.route3-fixed-brane\": Fixing the brane position severs the T^(5)_mu flux channel that the construction otherwise requires, an unacceptable structural cost.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.route3-fixed-brane\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.route-1-report",
+            "corpus.kk-propagator-report"
+          ],
+          "cited_source": "corpus.route-1-report"
+        }
+      ]
+    },
+    {
+      "ref": "dead.route3-fixed-brane",
+      "kind": "mechanism",
+      "source_id": "corpus.route-1-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: fixing the brane position by hand (Route 3) provides a stable resolution route for brane stability, avoiding the running-coupling analysis (targeting radion/brane stability)."
+    },
+    {
+      "ref": "ev.dead.conjugate-baryogenesis-all",
+      "kind": "computation",
+      "source_id": "corpus.baryogenesis-kill",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.conjugate-baryogenesis-all\": Five-axis kill. (1) Coset connectivity: pi_0 = pi_1 = pi_2 = 0 for the S^3 vacuum manifold, so no stable topological defect exists for the needed spatial isolation. (2) BD ghost resurrection: forcing CP-violating couplings degrades the Hamiltonian constraint to second-class, reviving the Boulware-Deser ghost. (3) Rank mismatch: SO(1,4) and SU(2)_L x U(1)_Y act on different internal spaces with no anomaly-free translation of torsion into electroweak Chern-Simons diffusion. (4) The QFI (Bures metric) is strictly positive-definite and cannot serve as a CP-odd source. (5) EWPT variant: a 100 GeV plasma thermalizes at ~1e-22 s, ten orders faster than the KK scrambling time, pinning the coherence fraction at f~0 so the VEV coupling never activates, and T2.8 forbids the gravitational VEV from modifying the electroweak sphaleron barrier in any case; even granting the conflation, VEV suppression drives E_sph toward zero, causing total baryon washout. B9 remains outside the framework's explanatory domain.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.conjugate-baryogenesis-all\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.baryogenesis-kill"
+          ],
+          "cited_source": "corpus.baryogenesis-kill"
+        }
+      ]
+    },
+    {
+      "ref": "dead.conjugate-baryogenesis-all",
+      "kind": "mechanism",
+      "source_id": "corpus.baryogenesis-kill",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a conjugate-orientation baryogenesis channel (including the electroweak-phase-transition bubble-wall variant) sources the observed matter-antimatter asymmetry via the framework's SO(1,4) torsion sector (targeting B9)."
+    },
+    {
+      "ref": "ev.dead.wkb-metric-deformation",
+      "kind": "computation",
+      "source_id": "corpus.luna-screening-v1",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.wkb-metric-deformation\": The conformal factor in the proposed WKB deformation cancels identically, leaving no stable intermediate state.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.wkb-metric-deformation\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.luna-screening-v1"
+          ],
+          "cited_source": "corpus.luna-screening-v1"
+        }
+      ]
+    },
+    {
+      "ref": "dead.wkb-metric-deformation",
+      "kind": "mechanism",
+      "source_id": "corpus.luna-screening-v1",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a WKB-computed metric deformation supplies a stable intermediate screening state for LUNA phenomenology (targeting F13)."
+    },
+    {
+      "ref": "ev.dead.quintessence-scalar-de",
+      "kind": "computation",
+      "source_id": "corpus.braneworld-cosmology",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.quintessence-scalar-de\": A genuine fourth propagating scalar DOF violates the Dirac-Bergmann constraint counting the construction establishes (P3); the quintessence-scalar route is structurally redundant with the framework's existing content.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.quintessence-scalar-de\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.braneworld-cosmology"
+          ],
+          "cited_source": "corpus.braneworld-cosmology"
+        }
+      ]
+    },
+    {
+      "ref": "dead.quintessence-scalar-de",
+      "kind": "mechanism",
+      "source_id": "corpus.braneworld-cosmology",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: an explicit quintessence scalar field is added to source the framework's dark-energy evolution (targeting F12)."
+    },
+    {
+      "ref": "ev.dead.so14-higgs-inflaton",
+      "kind": "computation",
+      "source_id": "corpus.pre-geometric-inflation",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.so14-higgs-inflaton\": The slow-roll parameters come out at eta ~ -4 and n_s ~ -7; v ~ M_Pl forces catastrophic fast-roll, incompatible with any viable inflationary trajectory.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.so14-higgs-inflaton\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.pre-geometric-inflation"
+          ],
+          "cited_source": "corpus.pre-geometric-inflation"
+        }
+      ]
+    },
+    {
+      "ref": "dead.so14-higgs-inflaton",
+      "kind": "mechanism",
+      "source_id": "corpus.pre-geometric-inflation",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: the SO(1,4) symmetry-breaking Higgs itself serves as the slow-roll inflaton for primordial inflation (targeting F20)."
+    },
+    {
+      "ref": "ev.dead.cdl-bubble-nucleation",
+      "kind": "computation",
+      "source_id": "corpus.pre-geometric-inflation",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.cdl-bubble-nucleation\": The CDL bounce action comes out at ~10^44 (infinite suppression); CDL assumes a canonical kinetic term that is absent in the BF (topological) phase the framework actually uses.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.cdl-bubble-nucleation\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.pre-geometric-inflation"
+          ],
+          "cited_source": "corpus.pre-geometric-inflation"
+        }
+      ]
+    },
+    {
+      "ref": "dead.cdl-bubble-nucleation",
+      "kind": "mechanism",
+      "source_id": "corpus.pre-geometric-inflation",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: Coleman-De Luccia bubble nucleation drives the geometric phase transition at the start of inflation (targeting F20)."
+    },
+    {
+      "ref": "ev.dead.thooft-naturalness-lambda",
+      "kind": "computation",
+      "source_id": "corpus.peer-review-cross-exam",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.thooft-naturalness-lambda\": The shift symmetry rho -> rho + c is explicitly broken by the trace-anomaly coupling that K11 requires; the actual protection mechanism is gravitational-coupling suppression (K14), not 't Hooft naturalness via shift symmetry.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.thooft-naturalness-lambda\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.peer-review-cross-exam",
+            "corpus.radion-stability-audit",
+            "corpus.peer-review"
+          ],
+          "cited_source": "corpus.peer-review-cross-exam"
+        }
+      ]
+    },
+    {
+      "ref": "dead.thooft-naturalness-lambda",
+      "kind": "mechanism",
+      "source_id": "corpus.peer-review-cross-exam",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed protection: 't Hooft technical naturalness for the tiny coupling lambda ~ 10^-44 via an approximate shift symmetry rho -> rho + c protects the radion mass against the trace-anomaly coupling."
+    },
+    {
+      "ref": "ev.dead.gisin-polchinski-signaling",
+      "kind": "computation",
+      "source_id": "corpus.peer-review-cross-exam",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.gisin-polchinski-signaling\": Gisin-Polchinski applies to nonlinear modifications of the Schrodinger evolution itself; matter in the framework evolves under standard linear quantum mechanics, so the no-signaling theorem guarantees the locally-defined F_Q is invariant under distant operations. No causality violation arises.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.gisin-polchinski-signaling\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.peer-review-cross-exam",
+            "corpus.radion-stability-audit",
+            "corpus.peer-review"
+          ],
+          "cited_source": "corpus.peer-review-cross-exam"
+        }
+      ]
+    },
+    {
+      "ref": "dead.gisin-polchinski-signaling",
+      "kind": "mechanism",
+      "source_id": "corpus.peer-review-cross-exam",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed failure mode: the state-dependent coupling v(F_Q) permits Gisin-Polchinski-type superluminal signaling, threatening causality (raised against the construction)."
+    },
+    {
+      "ref": "ev.dead.naive-kk-tower-sum",
+      "kind": "computation",
+      "source_id": "corpus.radion-stability-audit",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.naive-kk-tower-sum\": The rigid-cutoff sum is an artifact of omitting holographic counterterms; the correctly holographically-regularized Casimir computation instead yields delta-lambda ~ 10^-60.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.naive-kk-tower-sum\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.radion-stability-audit"
+          ],
+          "cited_source": "corpus.radion-stability-audit"
+        }
+      ]
+    },
+    {
+      "ref": "dead.naive-kk-tower-sum",
+      "kind": "mechanism",
+      "source_id": "corpus.radion-stability-audit",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed computation: a naive additive sum over the KK tower with a rigid momentum cutoff gives the radiative correction delta-lambda ~ 10^-35 to the radion self-coupling."
+    },
+    {
+      "ref": "ev.dead.gzk-species-scale",
+      "kind": "computation",
+      "source_id": "corpus.anomaly-audit",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.gzk-species-scale\": The Species Scale modifies only the gravitational UV cutoff; photopion production is a Standard Model QCD process. K4 (purely gravitational framework) and T2.7 (conformal invariance) jointly forbid any geometric channel from modifying gauge-sector cross sections. The anomaly is outside the framework's domain.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.gzk-species-scale\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.anomaly-audit"
+          ],
+          "cited_source": "corpus.anomaly-audit"
+        }
+      ]
+    },
+    {
+      "ref": "dead.gzk-species-scale",
+      "kind": "mechanism",
+      "source_id": "corpus.anomaly-audit",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: sliding of the framework's Species Scale explains the observed GZK-violating ultra-high-energy cosmic ray events (e.g. the Amaterasu particle)."
+    },
+    {
+      "ref": "ev.dead.ams02-kk-exhaust",
+      "kind": "computation",
+      "source_id": "corpus.anomaly-audit",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.ams02-kk-exhaust\": The KK exhaust channel exports energy from the brane into the bulk as massive spin-2 dark radiation; the exhaust direction is strictly away from the brane, so no brane-localized positron source is generated.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.ams02-kk-exhaust\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.anomaly-audit"
+          ],
+          "cited_source": "corpus.anomaly-audit"
+        }
+      ]
+    },
+    {
+      "ref": "dead.ams02-kk-exhaust",
+      "kind": "mechanism",
+      "source_id": "corpus.anomaly-audit",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: the framework's KK thermal-exhaust channel sources the AMS-02 cosmic-ray positron excess."
+    },
+    {
+      "ref": "ev.dead.nanograv-geometric-condensation",
+      "kind": "computation",
+      "source_id": "corpus.anomaly-audit",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.nanograv-geometric-condensation\": The peak GW frequency from a first-order transition at T_* ~ 10^7 GeV falls at f_0 ~ 1 Hz (the LIGO/ET band), while the nanohertz band corresponds to transitions at T ~ MeV to GeV; additionally, the framework's own topological-phase percolation is instantaneous, suppressing bubble-collision GW production.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.nanograv-geometric-condensation\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.anomaly-audit"
+          ],
+          "cited_source": "corpus.anomaly-audit"
+        }
+      ]
+    },
+    {
+      "ref": "dead.nanograv-geometric-condensation",
+      "kind": "mechanism",
+      "source_id": "corpus.anomaly-audit",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a first-order geometric condensation phase transition at T_RH ~ 10^7 GeV sources the NANOGrav nanohertz stochastic gravitational-wave background."
+    },
+    {
+      "ref": "ev.dead.fqhe-so14-topology",
+      "kind": "computation",
+      "source_id": "corpus.anomaly-audit",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.fqhe-so14-topology\": No mechanism is specified for the claimed mapping; the assertion contains no derivation connecting FQHE topological invariants to the geometric-condensation construction.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.fqhe-so14-topology\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.anomaly-audit"
+          ],
+          "cited_source": "corpus.anomaly-audit"
+        }
+      ]
+    },
+    {
+      "ref": "dead.fqhe-so14-topology",
+      "kind": "mechanism",
+      "source_id": "corpus.anomaly-audit",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed identification: fractional topological invariants observed in the fractional quantum Hall effect map directly to the framework's SO(1,4) geometric-condensation process."
+    },
+    {
+      "ref": "ev.dead.planckian-dissipation-vev",
+      "kind": "computation",
+      "source_id": "corpus.anomaly-audit",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.planckian-dissipation-vev\": The framework preserves the KSS viscosity bound (F15), which is related to Planckian dissipation, but no derivation connects v(F_Q) to the universal scattering rate 1/tau = k_B T/hbar; the claim is suggestive at most and unwarranted as a contract without a derivation.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.planckian-dissipation-vev\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.anomaly-audit"
+          ],
+          "cited_source": "corpus.anomaly-audit"
+        }
+      ]
+    },
+    {
+      "ref": "dead.planckian-dissipation-vev",
+      "kind": "mechanism",
+      "source_id": "corpus.anomaly-audit",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: the state-dependent VEV v(F_Q) directly sources the universal Planckian-dissipation scattering rate observed in strange metals."
+    },
+    {
+      "ref": "ev.dead.hehl-datta-nuclear",
+      "kind": "computation",
+      "source_id": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.hehl-datta-nuclear\": G_N^2 ~ 10^-76 GeV^-4 suppression is too brutal; even with M_Pl,eff = 10^14 GeV and N^2 coherent amplification at nuclear density, U_T ~ 10^-3 eV, 8 orders of magnitude below the 100 keV target.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.hehl-datta-nuclear\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc"
+          ],
+          "cited_source": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc"
+        }
+      ]
+    },
+    {
+      "ref": "dead.hehl-datta-nuclear",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a Hehl-Datta four-fermion contact interaction, amplified by the framework's coherent-matter coupling, produces the nuclear-scale Gamow screening enhancement needed for F21."
+    },
+    {
+      "ref": "ev.dead.radion-yukawa-nuclear",
+      "kind": "computation",
+      "source_id": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.radion-yukawa-nuclear\": Tree-level scalar exchange gives V(1 fm) ~ 10^-8 MeV at M_Pl,eff = 10^14 GeV; reaching the 100 keV target would require M_Pl,eff ~ 12.6 GeV (electroweak scale), 13 orders of magnitude from the physical value.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.radion-yukawa-nuclear\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc"
+          ],
+          "cited_source": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc"
+        }
+      ]
+    },
+    {
+      "ref": "dead.radion-yukawa-nuclear",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: tree-level radion-mediated Yukawa exchange produces the nuclear-scale Gamow screening enhancement needed for F21."
+    },
+    {
+      "ref": "ev.dead.add-kk-graviton-coulomb",
+      "kind": "computation",
+      "source_id": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.add-kk-graviton-coulomb\": Summed KK-tower exchange at r = 1 fm with R_Dark = 10 micron gives V_KK ~ 2e-16 MeV, 15 orders of magnitude below the 100 keV target.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.add-kk-graviton-coulomb\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc"
+          ],
+          "cited_source": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc"
+        }
+      ]
+    },
+    {
+      "ref": "dead.add-kk-graviton-coulomb",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: an ADD-style summed extra-dimensional KK-graviton Coulomb modification produces the nuclear-scale Gamow screening enhancement needed for F21."
+    },
+    {
+      "ref": "ev.dead.torsion-dirac-axial",
+      "kind": "computation",
+      "source_id": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.torsion-dirac-axial\": The mechanism is mathematically homologous to the Hehl-Datta channel with the same G_N scaling, and comes out 8 orders of magnitude below the target.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.torsion-dirac-axial\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc"
+          ],
+          "cited_source": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc"
+        }
+      ]
+    },
+    {
+      "ref": "dead.torsion-dirac-axial",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a torsion-induced axial potential in the Dirac equation produces the nuclear-scale Gamow screening enhancement needed for F21."
+    },
+    {
+      "ref": "ev.dead.radion-bcs-pairing",
+      "kind": "computation",
+      "source_id": "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.radion-bcs-pairing\": N(E_F) V_pair ~ 10^-38; the resulting gap is proportional to exp(-10^38), indistinguishable from zero, a 38-order-of-magnitude failure in the exponent.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.radion-bcs-pairing\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive"
+          ],
+          "cited_source": "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive"
+        }
+      ]
+    },
+    {
+      "ref": "dead.radion-bcs-pairing",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a radion-mediated BCS-style pairing gap produces the nuclear-scale Gamow screening enhancement needed for F21."
+    },
+    {
+      "ref": "ev.dead.dicke-superradiant-gap",
+      "kind": "computation",
+      "source_id": "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.dicke-superradiant-gap\": The single-mode Dicke condition requires all N particles to couple symmetrically to one bosonic mode; the radion Compton wavelength (~197 fm) gives a coherence volume containing only N_lambda ~ 10^6 nucleons, and the gap at that physical N_lambda is ~1e-20 eV, violating the single-mode condition by 51 orders of magnitude.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.dicke-superradiant-gap\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive"
+          ],
+          "cited_source": "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive"
+        }
+      ]
+    },
+    {
+      "ref": "dead.dicke-superradiant-gap",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a Dicke superradiant enhancement across N ~ 10^57 nucleons produces the nuclear-scale Gamow screening enhancement needed for F21."
+    },
+    {
+      "ref": "ev.dead.species-scale-qcd",
+      "kind": "computation",
+      "source_id": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.species-scale-qcd\": The radion couples to the trace anomaly via <T^mu_mu> proportional to beta(alpha_s) G^a_{mu nu}G^{a mu nu}, requiring 0.2% precision tuning of alpha_s; a uniform modification at that precision would unbind nuclear matter via photodisintegration, and no mathematical protection against this runaway exists.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.species-scale-qcd\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc"
+          ],
+          "cited_source": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc"
+        }
+      ]
+    },
+    {
+      "ref": "dead.species-scale-qcd",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: Species-Scale modification of the running QCD coupling produces the nuclear-scale Gamow screening enhancement needed for F21."
+    },
+    {
+      "ref": "ev.dead.li7-coherence-pump",
+      "kind": "computation",
+      "source_id": "corpus.li-7-red-team",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.li7-coherence-pump\": Triple-axis kill. (1) Thermal incoherence: the BBN plasma at T ~ 50 keV is maximally mixed (f~0); 8.65 MeV alpha particles undergo immediate broadband Coulomb scattering, saturating the ~0.2 ps KK scrambling time and pinning the QFI at the standard quantum limit. (2) Abundance starvation: during the active BBN window, ~97% of mass-7 is locked as undecayed ^7Be (half-life ~53 days), leaving in-situ ^7Li fuel too scarce for the required reaction density. (3) The primordial plasma has no crystalline lattice, no acoustic deformation potential, and no interstitial sublattice; the radion catalysis mechanism has no mechanical substrate.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.li7-coherence-pump\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.li-7-red-team",
+            "corpus.nuclear-astrophysics-anomalies"
+          ],
+          "cited_source": "corpus.li-7-red-team"
+        }
+      ]
+    },
+    {
+      "ref": "dead.li7-coherence-pump",
+      "kind": "mechanism",
+      "source_id": "corpus.li-7-red-team",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a cosmological lithium coherence pump via ^7Li(p,alpha)^4He resolves the primordial Li-7 abundance anomaly (targeting the Li-7 deficit)."
+    },
+    {
+      "ref": "ev.dead.be7-coherence-pump",
+      "kind": "computation",
+      "source_id": "corpus.li-7-red-team",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.be7-coherence-pump\": The (n,p) reaction produces a two-body final state of distinguishable fermions (spin-1/2 proton, spin-3/2 ^7Li) with extreme mass asymmetry; Bose enhancement, required for a coherent standing wave, is forbidden for fermions, and the mismatched kinetic-energy partition (~1.43 MeV proton vs ~0.21 MeV ^7Li) produces drastically mismatched de Broglie wavelengths, so chaotic thermalization saturates the KK scrambling time and the QFI remains at the standard quantum limit.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.be7-coherence-pump\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.li-7-red-team",
+            "corpus.nuclear-astrophysics-anomalies"
+          ],
+          "cited_source": "corpus.li-7-red-team"
+        }
+      ]
+    },
+    {
+      "ref": "dead.be7-coherence-pump",
+      "kind": "mechanism",
+      "source_id": "corpus.li-7-red-team",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a cosmological beryllium coherence pump pivoting on ^7Be(n,p)^7Li resolves the primordial Li-7 abundance anomaly (targeting the Li-7 deficit)."
+    },
+    {
+      "ref": "ev.dead.radion-be7-electron-capture",
+      "kind": "computation",
+      "source_id": "corpus.li-7-red-team",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.radion-be7-electron-capture\": The ^7Be electron-capture rate is governed by the weak interaction and electromagnetic Coulomb attraction; K4 (purely gravitational framework) and T2.7 (conformal invariance of the 4D Maxwell action) structurally forbid the radion from modifying tree-level electroweak cross sections. The trace-anomaly coupling provides thermodynamic exhaust, not a fundamental force modification.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.radion-be7-electron-capture\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.li-7-red-team",
+            "corpus.nuclear-astrophysics-anomalies"
+          ],
+          "cited_source": "corpus.li-7-red-team"
+        }
+      ]
+    },
+    {
+      "ref": "dead.radion-be7-electron-capture",
+      "kind": "mechanism",
+      "source_id": "corpus.li-7-red-team",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: radion-mediated modification of the ^7Be electron-capture rate resolves the primordial Li-7 abundance anomaly (targeting the Li-7 deficit)."
+    },
+    {
+      "ref": "ev.dead.sn2024afav-geff",
+      "kind": "computation",
+      "source_id": "corpus.hydrodynamic-swampland-bounds-v3",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.sn2024afav-geff\": This is the already-killed G_eff amplification mechanism applied to a new observational context; K2 (the gravitational constant is never amplified, modified, or state-dependent) and K16 (G_N is fixed, only Lambda_s runs) both forbid it. The torsion-mediated traceless-channel torque on the accretion disk from coherent nuclear pasta survives as a live mechanism; the trace-channel G_eff runaway feedback loop specifically is dead, and derivative documents describing it must be corrected.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.sn2024afav-geff\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.hydrodynamic-swampland-bounds-v3"
+          ],
+          "cited_source": "corpus.hydrodynamic-swampland-bounds-v3"
+        }
+      ]
+    },
+    {
+      "ref": "dead.sn2024afav-geff",
+      "kind": "mechanism",
+      "source_id": "corpus.hydrodynamic-swampland-bounds-v3",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: dynamically amplified local gravity (a G_eff amplification) in the SN 2024afav accretion disk explains its anomalous chirp signature."
+    },
+    {
+      "ref": "ev.dead.hyper-kondo-superconductivity",
+      "kind": "computation",
+      "source_id": "corpus.heavy-fermion-stress-test",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.hyper-kondo-superconductivity\": Superfluid stiffness collapse: rho_s(0) = hbar^2 n_s/(4 m*); at the effective mass m* ~ 1000 m_e required for radion activation per C13d, the BKT transition temperature approaches zero. Phase stiffness and radion activation are structurally antagonistic in this channel.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.hyper-kondo-superconductivity\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.heavy-fermion-stress-test"
+          ],
+          "cited_source": "corpus.heavy-fermion-stress-test"
+        }
+      ]
+    },
+    {
+      "ref": "dead.hyper-kondo-superconductivity",
+      "kind": "mechanism",
+      "source_id": "corpus.heavy-fermion-stress-test",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a Hyper-Kondo heavy-fermion pathway (via lanthanide doping) enables radion-assisted room-temperature superconductivity."
+    },
+    {
+      "ref": "ev.dead.light-carrier-qfi-superconductivity",
+      "kind": "computation",
+      "source_id": "corpus.gemini-cc-radiative-stability-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.light-carrier-qfi-superconductivity\": The QFI of the BCS ground state with respect to T^mu_mu scales O(N) by Wick factorization across k-modes; for YBCO, f_Q^BCS ~ 3.1e-28 GeV^8, a 57-order-of-magnitude deficit against the K7 activation threshold. The trace-anomaly coupling channel is K4-compliant but numerically negligible.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.light-carrier-qfi-superconductivity\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-cc-radiative-stability-april-2026",
+            "corpus.gemini-cc-run-2-april-2026",
+            "corpus.gemini-cc-run-1-april-2026"
+          ],
+          "cited_source": "corpus.gemini-cc-radiative-stability-april-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.light-carrier-qfi-superconductivity",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-cc-radiative-stability-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a light-carrier QFI pathway enables radion-assisted room-temperature superconductivity."
+    },
+    {
+      "ref": "ev.dead.dynamic-ts-elevation",
+      "kind": "computation",
+      "source_id": "corpus.gemini-cc-radiative-stability-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.dynamic-ts-elevation\": m_KK is a global bulk parameter set by R_Dark (K16); local VEV suppression changes the brane geometry but not R_Dark, so t_s = hbar/m_KK is fixed. If local VEV suppression affected brane geometry at all, it would lengthen t_s (the brane descends to larger z_0, giving smaller m_KK), the opposite of the intended effect.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.dynamic-ts-elevation\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-cc-radiative-stability-april-2026",
+            "corpus.gemini-cc-run-2-april-2026",
+            "corpus.gemini-cc-run-1-april-2026"
+          ],
+          "cited_source": "corpus.gemini-cc-radiative-stability-april-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.dynamic-ts-elevation",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-cc-radiative-stability-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: dynamic elevation of the KK scrambling time t_s via local VEV suppression enables radion-assisted room-temperature superconductivity."
+    },
+    {
+      "ref": "ev.dead.self-bootstrap-superconductivity",
+      "kind": "computation",
+      "source_id": "corpus.gemini-cc-radiative-stability-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.self-bootstrap-superconductivity\": Near T_c the coherent fraction f approaches zero; the two-fluid QFI F_Q = f^2 N^2 + (1-f)N collapses to O(N). A fluctuating condensate cannot satisfy the requirements of a coherent driver or a zero-entropy exhaust pathway.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.self-bootstrap-superconductivity\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-cc-radiative-stability-april-2026",
+            "corpus.gemini-cc-run-2-april-2026",
+            "corpus.gemini-cc-run-1-april-2026"
+          ],
+          "cited_source": "corpus.gemini-cc-radiative-stability-april-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.self-bootstrap-superconductivity",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-cc-radiative-stability-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a self-driven coherence bootstrap enables radion-assisted room-temperature superconductivity near T_c."
+    },
+    {
+      "ref": "ev.dead.radion-superconductivity-summary",
+      "kind": "computation",
+      "source_id": "corpus.heavy-fermion-stress-test",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.radion-superconductivity-summary\": Summary kill across all pathways: (1) Hyper-Kondo kills phase stiffness. (2) Light carriers lack QFI by 57 orders of magnitude. (3) Dynamic t_s elevation runs inverted. (4) Self-bootstrap fails near T_c. (5) At 300 K, Planckian dissipation (~0.025 ps) outpaces the fixed exhaust time (~0.2 ps).",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.radion-superconductivity-summary\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.heavy-fermion-stress-test"
+          ],
+          "cited_source": "corpus.heavy-fermion-stress-test"
+        }
+      ]
+    },
+    {
+      "ref": "dead.radion-superconductivity-summary",
+      "kind": "mechanism",
+      "source_id": "corpus.heavy-fermion-stress-test",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: radion-mediated room-temperature superconductivity, taken across all examined pathways collectively."
+    },
+    {
+      "ref": "ev.dead.vev-amplification-coherence",
+      "kind": "computation",
+      "source_id": "corpus.gemini-cc-radiative-stability-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.vev-amplification-coherence\": F_Q is positive-definite (Bures metric); the VEV shift v^2_eff = v_0^2 - (gamma/lambda) F_Q is strictly subtractive. No physical state amplifies the VEV above v_0.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.vev-amplification-coherence\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-cc-radiative-stability-april-2026",
+            "corpus.gemini-cc-run-2-april-2026",
+            "corpus.gemini-cc-run-1-april-2026"
+          ],
+          "cited_source": "corpus.gemini-cc-radiative-stability-april-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.vev-amplification-coherence",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-cc-radiative-stability-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: quantum coherence amplifies the vacuum expectation value above its bare value v_0 via the F_Q coupling."
+    },
+    {
+      "ref": "ev.dead.cdw-bosonic-gateway",
+      "kind": "computation",
+      "source_id": "corpus.cdw-qfi-audit-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.cdw-bosonic-gateway\": The CDW ground state is an equilibrium symmetry-broken state with Poissonian/binomial number statistics; Var(T^mu_mu) scales O(N) by the fluctuation-dissipation theorem and area-law entanglement. CDW QFI density ~3.25e-40 GeV^8, a 69-order-of-magnitude deficit against K7. This kill applies to all equilibrium bosonic orders (CDW, SDW, structural distortion) proposed as gateways; the barrier is thermodynamic extensivity itself.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.cdw-bosonic-gateway\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.cdw-qfi-audit-march-2026"
+          ],
+          "cited_source": "corpus.cdw-qfi-audit-march-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.cdw-bosonic-gateway",
+      "kind": "mechanism",
+      "source_id": "corpus.cdw-qfi-audit-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a charge-density-wave bosonic gateway provides sufficient VEV suppression to enable coherent-matter geometric effects."
+    },
+    {
+      "ref": "ev.dead.f24-kagome-athe",
+      "kind": "computation",
+      "source_id": "corpus.bosonic-gateway-audit-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.f24-kagome-athe\": Two-stage kill. (1) Ambient-VEV torsion from chiral Cooper-pair hypermomentum is 49 orders of magnitude too weak (Planck suppression). (2) The VEV suppression required to amplify torsion has no equilibrium condensed-matter state achieving the K7 threshold (69-order-of-magnitude deficit, per the CDW gateway kill). The chiral-hypermomentum selection rule (SO-SC2) survives as a qualitative structural observation only.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.f24-kagome-athe\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.bosonic-gateway-audit-march-2026"
+          ],
+          "cited_source": "corpus.bosonic-gateway-audit-march-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.f24-kagome-athe",
+      "kind": "mechanism",
+      "source_id": "corpus.bosonic-gateway-audit-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: geometric torsion in a Kagome-lattice system produces the F24 anomalous thermal Hall effect (ATHE)."
+    },
+    {
+      "ref": "ev.dead.coherent-state-n2-variance",
+      "kind": "computation",
+      "source_id": "corpus.cdw-qfi-audit-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.coherent-state-n2-variance\": A Glauber coherent state |alpha> with <n> = N has Var(n_hat) = N (Poissonian): a general result of quantum statistics. N^2 scaling requires phase estimation with maximally entangled states (GHZ/NOON), not number/energy estimation with coherent states; the claim conflates the two.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.coherent-state-n2-variance\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.cdw-qfi-audit-march-2026"
+          ],
+          "cited_source": "corpus.cdw-qfi-audit-march-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.coherent-state-n2-variance",
+      "kind": "mechanism",
+      "source_id": "corpus.cdw-qfi-audit-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: N bosons occupying a single coherent mode produce O(N^2) variance for number/energy-like operators, supplying the super-extensive QFI scaling the framework's activation threshold requires."
+    },
+    {
+      "ref": "ev.dead.edge-mode-l4-scaling",
+      "kind": "computation",
+      "source_id": "corpus.edge-mode-numerics-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.edge-mode-l4-scaling\": 2D lattice BdG and free-boson computations both give C_E ~ L^1.0 to L^1.3 (an area law). Phase rigidity correlates the mean phase across the boundary but fluctuations at different boundary points remain independent; GHZ-like N^2 scaling requires all edge modes to fluctuate in lockstep, which ODLRO's correlated means do not provide.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.edge-mode-l4-scaling\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.edge-mode-numerics-march-2026"
+          ],
+          "cited_source": "corpus.edge-mode-numerics-march-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.edge-mode-l4-scaling",
+      "kind": "mechanism",
+      "source_id": "corpus.edge-mode-numerics-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: collective edge-mode phase rigidity from off-diagonal long-range order (ODLRO) produces (L/epsilon)^4 super-extensive scaling of the boundary correlation C_E."
+    },
+    {
+      "ref": "ev.dead.lagrangian-uniqueness",
+      "kind": "computation",
+      "source_id": "corpus.gemini-coupling-uniqueness-audit-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.lagrangian-uniqueness\": The a_4 Seeley-DeWitt coefficient generates three independent competing operators at the same effective mass dimension 6 (eta_AB phi^A phi^B T^mu_mu; eta_AB phi^A phi^B C_{mu nu rho sigma}C^{mu nu rho sigma}; eta_AB phi^A phi^B Tr(F_{mu nu}F^{mu nu})); Lagrangian uniqueness is false as a matter of standard heat-kernel theory for any matter content, and the thermodynamic-dominance formulation replaces the uniqueness claim entirely.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.lagrangian-uniqueness\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-coupling-uniqueness-audit-april-2026"
+          ],
+          "cited_source": "corpus.gemini-coupling-uniqueness-audit-april-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.lagrangian-uniqueness",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-coupling-uniqueness-audit-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed uniqueness claim: gamma(eta_AB phi^A phi^B) f_Q is the unique lowest-dimension SO(1,4)-invariant operator generated at one loop by the coherent-matter coupling."
+    },
+    {
+      "ref": "ev.dead.er-q01-gauge-kk-species-lowering",
+      "kind": "computation",
+      "source_id": "corpus.dg-cft-053",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-q01-gauge-kk-species-lowering\": The correct gamma derivation (Paper 0 v10 Section IV.D, SF-D0) shows gamma already carries the 1/Lambda_s^2 suppression via the KK heat-kernel spectral trace; the 'two species counts' of v4.5 (one in gamma, one in f_Q,crit) collapse to one count double-counted. The v4.7 gamma derivation reaches phenomenological survival with a better margin (f_Q,crit at 10^12-10^13, 15 orders better) without an independent species-lowering step. The gauge KK tower on dP_3 remains relevant for GUT precision physics (K8, K10, K11, K14) but does not provide an independent species-lowering mechanism for f_Q,crit as v4.5 claimed.",
+      "checking_records": [
+        {
+          "checker_id": "checker:chatgpt-arb",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-q01-gauge-kk-species-lowering\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.dg-cft-053",
+            "corpus.dg-cft-052",
+            "corpus.dg-cft-051"
+          ],
+          "cited_source": "corpus.dg-cft-053"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-q01-gauge-kk-species-lowering",
+      "kind": "mechanism",
+      "source_id": "corpus.dg-cft-053",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-Q-01: proposed mechanism that the Pati-Salam gauge KK tower on dP_3 provides an independent species count (10^2 to 10^4 brane-localized vector-boson species) lowering f_Q,crit from 10^32 to 10^28-10^30 GeV^4 at the pole threshold, resolving OP-0."
+    },
+    {
+      "ref": "ev.dead.er-cc001-gamma-z0-stabilization",
+      "kind": "computation",
+      "source_id": "corpus.gemini-cc-run-1-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-cc001-gamma-z0-stabilization\": Two independent algebraic computations (Gemini CC Derivation Reports Run 1 and Run 2) show the (L/z_0)^4 measure factor combined with gamma(z_0) proportional to z_0^2 gives V_eff^phys proportional to z_0^-2 after phi-extremization; the z_0-gradient is strictly negative for all physical states, so the brane runs to the IR horizon (m_KK -> 0, Lambda_s -> 0, decompactification) rather than stabilizing. Block scope: any mechanism relying on the gamma(z_0) inheritance alone to stabilize the Karch-Randall radion is dead; combined mechanisms remain open as separate sorries.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-cc001-gamma-z0-stabilization\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-cc-run-1-april-2026"
+          ],
+          "cited_source": "corpus.gemini-cc-run-1-april-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-cc001-gamma-z0-stabilization",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-cc-run-1-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-CC-001: proposed mechanism that species-enhanced gamma(z_0) inheritance stabilizes the Karch-Randall brane radial position at a well, deriving the brane position and Dark Dimension scale from first principles."
+    },
+    {
+      "ref": "ev.dead.er-cc002-goldberger-wise",
+      "kind": "computation",
+      "source_id": "corpus.gemini-cc-run-1-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-cc002-goldberger-wise\": Killed by both Gemini CC Derivation reports and by independent structural argument: a propagating bulk scalar with kinetic terms violates the framework's Tier 4 commitment to a topological SO(2,4) Chern-Simons bulk with zero local degrees of freedom, destroying the topological purity that underwrites Israel junction protections, boundary induction, and ghost exclusion. Block scope: any mechanism relying on a propagating bulk scalar field with kinetic terms is forbidden by the topological-bulk axiom.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-cc002-goldberger-wise\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-cc-run-1-april-2026"
+          ],
+          "cited_source": "corpus.gemini-cc-run-1-april-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-cc002-goldberger-wise",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-cc-run-1-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-CC-002: proposed mechanism that a Goldberger-Wise bulk scalar stabilizes the Karch-Randall brane radial position, the canonical Randall-Sundrum-style radion-stabilization mechanism."
+    },
+    {
+      "ref": "ev.dead.er-cc003-shift-symmetry-protection",
+      "kind": "computation",
+      "source_id": "corpus.gemini-cc-radiative-stability-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-cc003-shift-symmetry-protection\": The gamma(phi^A phi_A) F_Q coupling is polynomial in phi = v + rho and explicitly breaks the discrete shift symmetry at tree level; the framework cannot rely on shift-symmetry protection. The kill is offset by a stronger surviving result: kinematic suppression via the trans-Planckian VEV (K18) provides protection without requiring the shift symmetry, with the barrier height overwhelming the aperiodic CW slope by 16 orders of magnitude. The kill of symmetry-protection is not a kill of the AM mechanism itself.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-cc003-shift-symmetry-protection\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-cc-radiative-stability-april-2026",
+            "corpus.gemini-cc-run-2-april-2026",
+            "corpus.gemini-cc-run-1-april-2026"
+          ],
+          "cited_source": "corpus.gemini-cc-radiative-stability-april-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-cc003-shift-symmetry-protection",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-cc-radiative-stability-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-CC-003: proposed protection mechanism that a discrete shift symmetry rho -> rho + 2pi/(c Y_MM) protects the AM potential's periodic structure against radiative degradation, analogous to Peccei-Quinn axion protection."
+    },
+    {
+      "ref": "ev.dead.er-mm001-antisymmetry-vanishing",
+      "kind": "computation",
+      "source_id": "corpus.gemini-dr-vi-rewrite-route-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-mm001-antisymmetry-vanishing\": Two independent explicit algebraic computations (Gemini DR Section VI Rewrite Route and DeepSeek Cross-Examination) reproduce the same nonvanishing leading term in the bracket, driven by v and spatial curvature through the BF-type pre-symplectic structure. The cancellation argument conflates antisymmetry of the full bracket (automatic under simultaneous coordinate-plus-index swap) with a symmetric-index cancellation, which is not forced. Block scope (Point Block): the specific cancellation argument is dead; the 44x44 block structure must be treated as pseudo-differential, not ultra-local. Structural origin: the argument was imported from pure BF theory where the analogous bracket vanishes because B is an independent configuration variable; in MM, B is replaced by F(A), which activates the bracket through connection dependence.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-mm001-antisymmetry-vanishing\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-dr-vi-rewrite-route-april-2026",
+            "corpus.addazi-capozziello-marciano-meluccio-2025b",
+            "corpus.dirac-constraint-report"
+          ],
+          "cited_source": "corpus.gemini-dr-vi-rewrite-route-april-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-mm001-antisymmetry-vanishing",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-dr-vi-rewrite-route-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-MM-001: proposed argument that antisymmetry of the Poisson bracket combined with index symmetry of Z^i_AB Z^j_CD forces {Z^i_AB(x), Z^j_CD(y)} to vanish identically, delivering an ultra-local 44x44 Dirac matrix amenable to pointwise Schur-complement factorization (Paper -1 Section VI D)."
+    },
+    {
+      "ref": "ev.dead.er-mm002-local-algebraic-redefinition",
+      "kind": "computation",
+      "source_id": "corpus.chatgpt-track-a-no-go-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-mm002-local-algebraic-redefinition\": The No-Go Lemma (ChatGPT Track A Construction, formalized in the Section VI obstruction lemma) shows that for local algebraic k, the four-term expansion reduces on the constraint surface to m{Z,Z}m^T with m = I + k; at the principal-symbol level local conjugation preserves operator order, so cancelling the derivative block would require m C^k m^T = 0, which for invertible m forces C^k = 0, contradicting ER-MM-001's established nonvanishing result. The only escapes are a singular m (not an admissible redefinition) or a non-local k (relocating rather than eliminating the non-locality). Structural origin (DeepSeek): the derivative index pattern is a spatial curl operator whose inverse is the non-local Biot-Savart kernel. Block scope (Class Block): any mechanism relying on local algebraic canonical transformations to achieve ultra-locality in the MM Dirac matrix is structurally obstructed.",
+      "checking_records": [
+        {
+          "checker_id": "checker:chatgpt-arb",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-mm002-local-algebraic-redefinition\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.chatgpt-track-a-no-go-april-2026",
+            "corpus.deepseek-track-a-construction-april-2026"
+          ],
+          "cited_source": "corpus.chatgpt-track-a-no-go-april-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-mm002-local-algebraic-redefinition",
+      "kind": "mechanism",
+      "source_id": "corpus.chatgpt-track-a-no-go-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-MM-002: proposed rescue that an invertible local algebraic field redefinition Z-tilde = Z + k*Z (k a pointwise polynomial function of A, phi, F) absorbs the derivative block established by ER-MM-001, restoring the Dirac matrix to ultra-local form."
+    },
+    {
+      "ref": "ev.dead.er-mm003-pointwise-schur",
+      "kind": "computation",
+      "source_id": "corpus.chatgpt-track-a-no-go-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-mm003-pointwise-schur\": When the upper-left 30x30 block A is a first-order differential operator with A^-1 a non-local Green's function (the Biot-Savart kernel per ER-MM-002's structural origin), the Schur complement D - C A^-1 B is an integro-differential operator in coordinate space; its determinant is not a pointwise algebraic function of the fields, so the clean factorization cannot be recovered in coordinate space, only at the principal-symbol level in Fourier space. Block scope (Point Block): the pointwise determinant route specifically is obstructed; the operator-theoretic reformulation via principal symbol survives as a separate sorry.",
+      "checking_records": [
+        {
+          "checker_id": "checker:chatgpt-arb",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-mm003-pointwise-schur\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.chatgpt-track-a-no-go-april-2026",
+            "corpus.deepseek-track-a-construction-april-2026"
+          ],
+          "cited_source": "corpus.chatgpt-track-a-no-go-april-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-mm003-pointwise-schur",
+      "kind": "mechanism",
+      "source_id": "corpus.chatgpt-track-a-no-go-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-MM-003: proposed rescue that a pointwise Schur-complement inversion of the full 44x44 Dirac matrix recovers the clean coordinate-space determinant factorization det Delta proportional to (det e)^k (v+rho)^m lambda^n, even with the derivative block treated honestly."
+    },
+    {
+      "ref": "ev.dead.er-mix001-dbi-pi-chi-mixing",
+      "kind": "computation",
+      "source_id": "corpus.chatgpt-s-mix-001-computation-report-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-mix001-dbi-pi-chi-mixing\": An explicit quadratic-action computation (ChatGPT S-MIX-001) shows sqrt(-g_ind) V_SSB(chi) generates chi^2, pi chi^2, pi^2 chi^2 terms but never a pi-chi bilinear; the DBI sector depends only on pi and the F_Q coupling only on chi, and the induced-metric matching is a kinematic identification, not a bilinear potential operator. Result: the tree-level mixing mass vanishes and the mixing angle is zero, so the effective F_Q-coupling threshold diverges. Block scope: any rescue requiring the radion's F_Q coupling to flow through the DBI brane-bending mode without an additional bilinear mixing source.",
+      "checking_records": [
+        {
+          "checker_id": "checker:chatgpt-arb",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-mix001-dbi-pi-chi-mixing\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.chatgpt-s-mix-001-computation-report-april-2026",
+            "corpus.chat-dirac-rescue-pdf-april-2026"
+          ],
+          "cited_source": "corpus.chatgpt-s-mix-001-computation-report-april-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-mix001-dbi-pi-chi-mixing",
+      "kind": "mechanism",
+      "source_id": "corpus.chatgpt-s-mix-001-computation-report-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-MIX-001: proposed tree-level rescue that the DBI brane-bending mode pi mixes with the MM Higgs radial mode chi via the induced-metric matching condition, producing a physical radion inheriting both a healthy kinetic term from DBI and an F_Q coupling from chi."
+    },
+    {
+      "ref": "ev.dead.er-mix002-einstein-cartan-torsion",
+      "kind": "computation",
+      "source_id": "corpus.chatgpt-s-mix-003-torsion-elimination-computation-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-mix002-einstein-cartan-torsion\": An explicit Levi-Civita contraction (ChatGPT S-MIX-003) gives beta' a_1 = -(4/3) alpha m^2/(v+rho), negative under standard sign conventions, failing the criterion by sign; cross-checked by an independent contraction route with a consistent result. The pure F R(omega) Palatini/Einstein-Cartan elimination produces a ghost-like kinetic term in mostly-plus signature, the well-known Palatini scalar-tensor ghost. Block scope: any rescue asserting the radion kinetic term in MMSW gravity emerges from torsion-induced Einstein-Cartan reduction of pure F R(omega) coupling; the Weyl-rescaling route to the Einstein frame gives the correct healthy sign and is the proper mechanism.",
+      "checking_records": [
+        {
+          "checker_id": "checker:chatgpt-arb",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-mix002-einstein-cartan-torsion\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.chatgpt-s-mix-003-torsion-elimination-computation-april-2026"
+          ],
+          "cited_source": "corpus.chatgpt-s-mix-003-torsion-elimination-computation-april-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-mix002-einstein-cartan-torsion",
+      "kind": "mechanism",
+      "source_id": "corpus.chatgpt-s-mix-003-torsion-elimination-computation-april-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-MIX-002: proposed rescue that algebraic elimination of the contortion in the broken-phase MM action with non-minimal coupling F(rho)R(omega) and a torsion-squared term produces a healthy radion kinetic term via the standard scalar-tensor mechanism, satisfying beta' a_1 > 2/3."
+    },
+    {
+      "ref": "ev.dead.er-mix003-naive-scalar-kinetic",
+      "kind": "computation",
+      "source_id": "corpus.langenscheidt-2019-arxiv-1907-10440",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-mix003-naive-scalar-kinetic\": The construction (D phi)^dagger(D phi) wedge star_int(D tau wedge D tau) in MMSW evaluates, in standard gauge, to an expression antisymmetric in mu nu, so it vanishes identically as a symmetric Klein-Gordon kinetic term (Langenscheidt 2019 Section 4.2). The principled resolution is the first-order auxiliary-field formulation. Block scope: any MMSW or related gauge-theoretic gravity construction asserting a propagating scalar via a direct (D phi)^2 operator without auxiliary-field structure or an alternative principled mechanism.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-mix003-naive-scalar-kinetic\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.langenscheidt-2019-arxiv-1907-10440"
+          ],
+          "cited_source": "corpus.langenscheidt-2019-arxiv-1907-10440"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-mix003-naive-scalar-kinetic",
+      "kind": "mechanism",
+      "source_id": "corpus.langenscheidt-2019-arxiv-1907-10440",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-MIX-003: proposed construction that scalar kinetic terms in MMSW gravity can be written as standard Klein-Gordon operators (D phi)^dagger(D phi), with the absence of such a term in the original construction treated as mere notational convenience."
+    },
+    {
+      "ref": "ev.dead.er-wd001-sub-chandra-wd-detonation",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-wd001-sub-chandra-wd-detonation\": Two-crux kill. Crux A (FDT ceiling): white-dwarf interiors are DLRO Coulomb crystals and hydrodynamic shocks, not ODLRO substrates; F_Q is pinned to the O(N) baseline by the fluctuation-dissipation theorem, 15 orders of magnitude below the activation threshold. Crux B (pole-binary locality): even if microscopic ODLRO patches formed, antinodal activation at the C13c standing-wave geometry produces only a ~7e-5 active volume fraction per unit cell and cannot bootstrap to macroscopic detonation in the surrounding non-activated bulk. Block scope: any sub-Chandrasekhar Type Ia trigger mechanism routing through framework-internal geometric catalysis; sub-Chandra phenomenology remains handled by standard double-detonation astrophysics.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-wd001-sub-chandra-wd-detonation\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+            "corpus.quantum-crystal-ext"
+          ],
+          "cited_source": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-wd001-sub-chandra-wd-detonation",
+      "kind": "mechanism",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-WD-001: proposed mechanism that the framework's coherent-matter geometric coupling triggers sub-Chandrasekhar Type Ia supernova detonation (helium-shell or analogous), supplementing or replacing the standard double-detonation channel."
+    },
+    {
+      "ref": "ev.dead.er-cosm001-integrated-f-buildup",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-cosm001-integrated-f-buildup\": Categorical error: classical structure formation produces DLRO density gradients and Bragg-peak ordering, not ODLRO long-range phase coherence of a complex order parameter. The coherence fraction f remains approximately zero at cosmological scales regardless of structure formation, so F_Q stays pinned to the extensive O(N) baseline by the fluctuation-dissipation theorem. Block scope: any cosmological mechanism conflating classical clustering with macroscopic ODLRO; codified into LINT-DLR-1.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-cosm001-integrated-f-buildup\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+            "corpus.quantum-crystal-ext"
+          ],
+          "cited_source": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-cosm001-integrated-f-buildup",
+      "kind": "mechanism",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-COSM-001: proposed mechanism that the integrated coherence fraction f increases monotonically as cosmic structure forms, driving F_Q above the pole threshold and producing the F12 dark-energy thawing trajectory."
+    },
+    {
+      "ref": "ev.dead.er-cosm002-trace-channel-gradient",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-cosm002-trace-channel-gradient\": The AM kinematic-dominance bound (SL-AM-1) shows the trace channel, suppressed by the gravitational coupling (m/M_Pl)^2 ~ 10^-67, is dominated by the AM potential barrier height (~10^32 GeV^4) by ~10^99; the trace gradient cannot displace the radion from its discrete minimum. Block scope: any cosmological mechanism using an extensively-scaling O(N) operator to bridge AM topological barriers; only super-extensive O(N^2) operators sourced by ODLRO can engage the pole structure.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-cosm002-trace-channel-gradient\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+            "corpus.quantum-crystal-ext"
+          ],
+          "cited_source": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-cosm002-trace-channel-gradient",
+      "kind": "mechanism",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-COSM-002: proposed mechanism that even with f approximately zero at cosmological scales, the O(N) trace channel produces a slow cosmological gradient sufficient to displace the radion from its discrete Lambda^(k) minimum, sourcing the F12 thawing trajectory."
+    },
+    {
+      "ref": "ev.dead.er-cosm003-cosmological-averaging",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-cosm003-cosmological-averaging\": ODLRO-supporting systems occupy ~10^-46 of the Hubble volume; macroscopic FLRW backreaction from such patches is identically zero to all practical orders. Predicted spatial inhomogeneities in w(z) correlated with structure environments are inconsistent with observational bounds, and F16 (Void Physics) already explains ISW-type local variations without invoking ODLRO patches. Block scope: any cosmological-averaging mechanism aggregating rare ODLRO domains into a cosmological-scale equation-of-state contribution.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-cosm003-cosmological-averaging\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+            "corpus.quantum-crystal-ext"
+          ],
+          "cited_source": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-cosm003-cosmological-averaging",
+      "kind": "mechanism",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-COSM-003: proposed mechanism that cosmological averaging of rare ODLRO patch activations (e.g. in neutron-star superfluid cores) produces a non-trivial dark-energy w(z) trajectory via FLRW backreaction."
+    },
+    {
+      "ref": "ev.dead.er-cosm004-intra-sector-slow-roll",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-cosm004-intra-sector-slow-roll\": Slow-roll quintessence requires m ~ H_0 ~ 10^-33 eV; the framework's radion is bounded m_rho in [1 meV, 100 GeV] by F13.2 (LUNA phenomenology requires MeV-scale mass) and K8 (adiabatic stability against matter loops), with the framework selecting m_rho ~ 1 MeV. The ratio is at least 10^30, falsifying slow-roll by 30 orders of magnitude; an ad-hoc additional scalar field is forbidden by the S-MM-CR DOF count (conditional). Block scope: any cosmological mechanism introducing or repurposing a slow-rolling scalar at m ~ H_0.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-cosm004-intra-sector-slow-roll\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+            "corpus.quantum-crystal-ext"
+          ],
+          "cited_source": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-cosm004-intra-sector-slow-roll",
+      "kind": "mechanism",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-COSM-004: proposed mechanism that the radion executes a slow-roll trajectory within a single AM topological sector, producing the F12 dark-energy thawing signature without inter-sector tunneling."
+    },
+    {
+      "ref": "ev.dead.er-wgc001-hydrodynamic-bkm",
+      "kind": "computation",
+      "source_id": "corpus.hsb-karch-randall-moduli-geometry-as-l-surrogate-scout-may-1",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-wgc001-hydrodynamic-bkm\": Substituting the L2 variance bound for the killed L^infinity amplitude bound fails by the same regularity obstruction that produced ER-NS-001: the Sobolev embedding H^1 does not embed in L^infinity in 3D is a structural fact, and L2 bounds cannot constrain pointwise suprema (SL-VC-1, LINT-L2-1). Block scope: any framework-internal mechanism proposing to recover the hydrodynamic C23-WGC derivation by substituting an L2 variance bound for the killed L^infinity amplitude bound; WGC compliance is preserved instead via the static F-theory dP_3 Pati-Salam spectrum (reformulated C23-WGC).",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-wgc001-hydrodynamic-bkm\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.hsb-karch-randall-moduli-geometry-as-l-surrogate-scout-may-1"
+          ],
+          "cited_source": "corpus.hsb-karch-randall-moduli-geometry-as-l-surrogate-scout-may-1"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-wgc001-hydrodynamic-bkm",
+      "kind": "mechanism",
+      "source_id": "corpus.hsb-karch-randall-moduli-geometry-as-l-surrogate-scout-may-1",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-WGC-001: proposed rescue that the gamma-activation mechanism's L2 variance bound on the modular Hamiltonian (built from Donnelly-Freidel edge modes) recovers the hydrodynamic C23-WGC derivation after its original BKM L^infinity amplitude-bound route was killed (cascading from the Navier-Stokes program's ER-NS-001)."
+    },
+    {
+      "ref": "ev.dead.er-de001-bh-mechanism-evolving-de",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.er-de001-bh-mechanism-evolving-de\": Black-hole bulk-routing is structurally cooling and stabilizing (SL-BR-1), not a source of cosmological-scale energy injection or radion displacement; per SL-AM-1 any O(N) channel's cosmological-scale gradient is suppressed against the AM topological barrier by ~10^99, and the BH population's effective contribution is O(N) in the cosmologically averaged sense. Block scope: any cosmological-evolution mechanism aggregating framework-internal degenerate-object bulk-exhaust channels into an effective Lambda(t).",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-de001-bh-mechanism-evolving-de\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+            "corpus.quantum-crystal-ext"
+          ],
+          "cited_source": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-de001-bh-mechanism-evolving-de",
+      "kind": "mechanism",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-DE-001: proposed mechanism that the framework's bulk-routing channel (F09, F19, B19), summed cosmologically over the black-hole population, sources an evolving cosmological term mimicking the DESI DR2 thawing signature without abandoning T3.6."
+    },
+    {
+      "ref": "ev.dead.er-ht001-nede-thermal-de",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.er-ht001-nede-thermal-de\": The v3.9 generalized cosmological plasma-exclusion structural lesson shows all unbound relativistic plasma environments thermalize at tau_th much less than t_s by 3 to 10 orders of magnitude, pinning the coherence fraction f approximately zero and rendering the gamma F_Q coupling dormant; the NEDE mechanism requires sustained thermal coherence in a regime the framework's own thermodynamics structurally excludes. Block scope: any cosmological-evolution mechanism requiring coherent thermal pumping of a hot sector at T >= MeV.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-ht001-nede-thermal-de\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+            "corpus.quantum-crystal-ext"
+          ],
+          "cited_source": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-ht001-nede-thermal-de",
+      "kind": "mechanism",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-HT-001: proposed mechanism that a New-Early-Dark-Energy-style thermal coupling to a hidden hot sector during recombination engineers an effective evolving-w trajectory at late times while retaining T3.6 statically."
+    },
+    {
+      "ref": "ev.dead.er-de002-vacuum-driven-reheating",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.er-de002-vacuum-driven-reheating\": Any mechanism reversing the brane-to-bulk exhaust direction violates the framework's mandatory topological-bulk K1/K6 structure and contradicts SL-BR-1 (bulk-routing is exhaust, not injection). Block scope: any cosmological mechanism operating by reversing the framework's brane-to-bulk exhaust direction.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-de002-vacuum-driven-reheating\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+            "corpus.quantum-crystal-ext"
+          ],
+          "cited_source": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-de002-vacuum-driven-reheating",
+      "kind": "mechanism",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-DE-002: proposed mechanism that reversing the bulk-routing direction (bulk back to brane) sources cosmological vacuum-driven reheating as an internal evolving dark-energy channel."
+    },
+    {
+      "ref": "ev.dead.er-de003-quantum-foam-de",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.er-de003-quantum-foam-de\": Trans-Planckian vacuum modes are kinematically protected per K18 (the trans-Planckian VEV v ~ 10^139 GeV produces a 16-order-of-magnitude kinematic suppression of aperiodic corrections); the proposal also violates T1.3 (no trans-Planckian energy from sub-Planckian inputs at the cosmological scale). Block scope: any cosmological evolving-DE mechanism deriving energy from trans-Planckian vacuum-mode dynamics.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-de003-quantum-foam-de\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+            "corpus.quantum-crystal-ext"
+          ],
+          "cited_source": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-de003-quantum-foam-de",
+      "kind": "mechanism",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-DE-003: proposed mechanism that trans-Planckian vacuum-mode dynamics sources an evolving dark-energy trajectory as an internal cosmological channel."
+    },
+    {
+      "ref": "ev.dead.er-de004-multi-modulus-slow-roll",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.er-de004-multi-modulus-slow-roll\": Distance-Conjecture confinement: with N ~ 10^120 light scalars, individual modulus excursions are confined to Delta-phi <~ M_P/sqrt(N) ~ 10^-60 M_P, far below the trans-Planckian field range slow-roll quintessence requires for observable w(z) not equal -1 at percent level; classical slow-roll quintessence is structurally impossible in the AM-locked branch's moduli space. Codified into LINT-DE-2. Block scope: any multi-field slow-roll proposal within the AM-locked branch on moduli spaces with N much greater than 1; the obstruction does not apply on Path B, where the active modulus is a single light scalar parametrically separated from the hairon condensate.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-de004-multi-modulus-slow-roll\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+            "corpus.quantum-crystal-ext"
+          ],
+          "cited_source": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-de004-multi-modulus-slow-roll",
+      "kind": "mechanism",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-DE-004: proposed mechanism that slow-roll across N much greater than 1 light moduli in the hairon construction (N ~ 10^120) within the AM-locked branch sources an evolving dark-energy trajectory."
+    },
+    {
+      "ref": "ev.dead.er-de005-hairon-quintessence",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.er-de005-hairon-quintessence\": Hairons are identified as the microscopic constituents of the topological vacuum substrate mediating the BCS-like neutrino superfluid condensation and the entropic accounting selecting k_phys ~ S_dS; promoting them to rolling fields mobilizes the same constituents that define the static vacuum identification, producing a structural conflict between serving as the BEC ground state of the de Sitter vacuum and as dynamical matter rolling under a quintessence potential. Codified into LINT-DE-3. Block scope: any mechanism promoting the microscopic constituents of a topological vacuum to additive dynamical matter while retaining the same vacuum identification.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-de005-hairon-quintessence\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+            "corpus.quantum-crystal-ext"
+          ],
+          "cited_source": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-de005-hairon-quintessence",
+      "kind": "mechanism",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-DE-005: proposed mechanism that promoting the hairon moduli (the microscopic constituents of the topological de Sitter vacuum substrate) to additive rolling fields sources dark-energy quintessence."
+    },
+    {
+      "ref": "ev.dead.er-de006-hairon-multi-field",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.er-de006-hairon-multi-field\": Killed for the same categorical reason as ER-DE-005, sharpened by multi-field destabilization analysis: cross-couplings between rolling hairons and the static-vacuum condensate produce non-perturbative destabilization of the topological substrate itself, falsifying the AM-locked k_phys selection on the same cosmic timescales the quintessence trajectory is supposed to drive. Block scope: any multi-field framework-internal hairon-quintessence proposal.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-de006-hairon-multi-field\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+            "corpus.quantum-crystal-ext"
+          ],
+          "cited_source": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.er-de006-hairon-multi-field",
+      "kind": "mechanism",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "ER-DE-006: proposed mechanism that a multi-field generalization of hairon-quintessence (ER-DE-005), with cross-couplings between rolling hairons and the static-vacuum condensate, produces a viable dark-energy evolution."
+    },
+    {
+      "ref": "ev.dead.pasta-inter-equilibrium-switching",
+      "kind": "computation",
+      "source_id": "corpus.gemini-inter-equilibrium-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.pasta-inter-equilibrium-switching\": Free-energy degeneracy (Delta F ~ keV) required for near-equal two-state occupation probabilities constrains the energy-density jump to ~1e-9 GeV^4, giving a variance ~1e-19 GeV^8; after proper-time reconciliation, the required scale is ~10^1 GeV^4, a 34-order-of-magnitude deficit. Large energy jumps and free-energy degeneracy are thermodynamically conjugate, so the mechanism cannot simultaneously satisfy both.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.pasta-inter-equilibrium-switching\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-inter-equilibrium-march-2026"
+          ],
+          "cited_source": "corpus.gemini-inter-equilibrium-march-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.pasta-inter-equilibrium-switching",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-inter-equilibrium-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: thermodynamically driven two-state switching between coexisting nuclear-pasta phases provides a coherent oscillator for radion activation (targeting OP-0)."
+    },
+    {
+      "ref": "ev.dead.pasta-parametric-driving",
+      "kind": "computation",
+      "source_id": "corpus.gemini-escape-routes-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.pasta-parametric-driving\": No candidate driver is coherent: neutrino flux is broadband thermal; magnetar fields show a 12-order-of-magnitude frequency mismatch with pasta phonons; vortex unpinning thermalizes stochastically; accretion heating is incoherent; and electron-phonon scattering (tau_ep ~ 1 ps) prevents coherence accumulation on any relevant timescale.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.pasta-parametric-driving\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-escape-routes-march-2026"
+          ],
+          "cited_source": "corpus.gemini-escape-routes-march-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.pasta-parametric-driving",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-escape-routes-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: a coherent parametric driver within the neutron-star interior (neutrino flux, magnetar field, vortex unpinning, accretion heating, or electron-phonon scattering) maintains phase-locked pasta-phonon oscillation for radion activation (targeting OP-0)."
+    },
+    {
+      "ref": "ev.dead.pasta-1s0-qcp",
+      "kind": "computation",
+      "source_id": "corpus.gemini-escape-routes-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.pasta-1s0-qcp\": Pasta structures dissolve at rho ~ 0.085 fm^-3 while the ^1S0 gap closes at rho ~ 0.16 fm^-3, a factor-of-2 density separation with no physical spatial overlap between the two phenomena.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.pasta-1s0-qcp\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-escape-routes-march-2026"
+          ],
+          "cited_source": "corpus.gemini-escape-routes-march-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.pasta-1s0-qcp",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-escape-routes-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: the ^1S0 neutron pairing quantum critical point spatially enhances pasta torsion for radion activation (targeting OP-0)."
+    },
+    {
+      "ref": "ev.dead.pasta-3p2-pairing",
+      "kind": "computation",
+      "source_id": "corpus.gemini-escape-routes-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.pasta-3p2-pairing\": ^3P2 pairing onset occurs at the crust-core boundary, exclusively in uniform core matter, which is mutually exclusive with the pasta structures the mechanism requires.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.pasta-3p2-pairing\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-escape-routes-march-2026"
+          ],
+          "cited_source": "corpus.gemini-escape-routes-march-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.pasta-3p2-pairing",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-escape-routes-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: the ^3P2 neutron pairing channel enhances pasta torsion for radion activation (targeting OP-0)."
+    },
+    {
+      "ref": "ev.dead.pasta-vortex-lattice-qfi",
+      "kind": "computation",
+      "source_id": "corpus.gemini-escape-routes-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.pasta-vortex-lattice-qfi\": The equilibrium vortex-core volume fraction is ~1e-17 in a millisecond pulsar, and Tkachenko modes are critically damped at high rotation rates; the resulting QFI scales O(N_vortices), extensively, not super-extensively.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.pasta-vortex-lattice-qfi\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-escape-routes-march-2026"
+          ],
+          "cited_source": "corpus.gemini-escape-routes-march-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.pasta-vortex-lattice-qfi",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-escape-routes-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: quantum Fisher information enhancement from the neutron-star vortex lattice provides the coherence needed for radion activation (targeting OP-0)."
+    },
+    {
+      "ref": "ev.dead.pasta-topological-entanglement",
+      "kind": "computation",
+      "source_id": "corpus.gemini-escape-routes-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.pasta-topological-entanglement\": The topological entanglement entropy gamma_topo is an O(1) correction to the entropy and does not alter the volumetric scaling of local operator variance; the global topological degeneracy is invisible to local T_{mu nu} measurement.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.pasta-topological-entanglement\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-escape-routes-march-2026"
+          ],
+          "cited_source": "corpus.gemini-escape-routes-march-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.pasta-topological-entanglement",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-escape-routes-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: topological entanglement entropy from the multiply-connected pasta geometry provides super-extensive QFI scaling for radion activation (targeting OP-0)."
+    },
+    {
+      "ref": "ev.dead.pasta-spinodal-compressibility",
+      "kind": "computation",
+      "source_id": "corpus.compressibility-calculation-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.pasta-spinodal-compressibility\": Neutron-rich matter (Y_p ~ 0.04) carries ~27 MeV of positive stiffness from the symmetry energy, removing the spinodal instability; the effective dP/dn is 1 to 22 MeV across the pasta region, within a factor of 3 of the dimensional estimate, not divergent.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.pasta-spinodal-compressibility\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.compressibility-calculation-march-2026"
+          ],
+          "cited_source": "corpus.compressibility-calculation-march-2026"
+        }
+      ]
+    },
+    {
+      "ref": "dead.pasta-spinodal-compressibility",
+      "kind": "mechanism",
+      "source_id": "corpus.compressibility-calculation-march-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: spinodal compressibility divergence in the pasta phase provides the enhanced susceptibility needed for radion activation (targeting OP-0)."
+    },
+    {
+      "ref": "ev.dead.kbc-void-hubble-tension",
+      "kind": "computation",
+      "source_id": "corpus.displacement-geometry-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.kbc-void-hubble-tension\": The KBC void mechanism overshoots: it produces a Hubble-constant enhancement of 11.8 to 25%, against the ~8.3% enhancement the tension actually requires; the mechanism fails quantitatively as computed.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.kbc-void-hubble-tension\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.displacement-geometry-report"
+          ],
+          "cited_source": "corpus.displacement-geometry-report"
+        }
+      ]
+    },
+    {
+      "ref": "dead.kbc-void-hubble-tension",
+      "kind": "mechanism",
+      "source_id": "corpus.displacement-geometry-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed mechanism: the KBC (Keenan-Barger-Cowie) local void's density profile resolves the Hubble tension via a local-underdensity Hubble-flow enhancement (targeting B10)."
+    },
+    {
+      "ref": "ev.c12a",
+      "kind": "computation",
+      "source_id": "corpus.paper-0",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"c12a\": Struck with the F12 retraction (v4.13): the cosmological-sector contraction shore (SF-DG-010) retracts F12 after three failed reconciliation hypotheses (ER-COSM-001/002/003) and a mass-window falsification (ER-COSM-004) exhaust the intra-sector evolution routes; the static Lambda^(k) tower (LINT-16) replaces the continuous-modulus reading the Bianchi-mandate argument required.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"c12a\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.paper-0"
+          ],
+          "cited_source": "corpus.paper-0"
+        }
+      ]
+    },
+    {
+      "ref": "c12a",
+      "kind": "mechanism",
+      "source_id": "corpus.paper-0",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C12a: Bianchi identity mandates dark-energy w(z) evolution, derived from the framework's mandatory NEC-preserving KK exhaust (parent: F12)."
+    },
+    {
+      "ref": "ev.c12b",
+      "kind": "computation",
+      "source_id": "corpus.braneworld-cosmology",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"c12b\": Struck with the F12 retraction: C12b's thawing-sign match depended on the C12a Bianchi-mandate derivation, which is struck; with F12 retracted the framework carries no thawing-trajectory prediction to compare against DESI.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"c12b\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.braneworld-cosmology"
+          ],
+          "cited_source": "corpus.braneworld-cosmology"
+        }
+      ]
+    },
+    {
+      "ref": "c12b",
+      "kind": "mechanism",
+      "source_id": "corpus.braneworld-cosmology",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C12b: the framework's thawing dark-energy prediction (dw/dt > 0) matches the DESI 2024 CPL sign and class (parent: F12, derived from C12a)."
+    },
+    {
+      "ref": "ev.c12c",
+      "kind": "computation",
+      "source_id": "corpus.braneworld-cosmology",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"c12c\": Struck with the F12 retraction: the modified-H(z) prediction relied on the thawing trajectory; with a static Lambda^(k) the optical-depth integral reduces to standard LambdaCDM, so the JWST early-reionization tension returns to standard astrophysics unaddressed by this channel.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"c12c\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.braneworld-cosmology"
+          ],
+          "cited_source": "corpus.braneworld-cosmology"
+        }
+      ]
+    },
+    {
+      "ref": "c12c",
+      "kind": "mechanism",
+      "source_id": "corpus.braneworld-cosmology",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C12c: modified H(z) from the F12 thawing trajectory suppresses the integrated optical depth tau during reionization, addressing the JWST early-reionization tension (parent: F12)."
+    },
+    {
+      "ref": "ev.c13a",
+      "kind": "computation",
+      "source_id": "corpus.luna-nonlinear-electron",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"c13a\": Struck (v4.15): the matter-sector exclusion record moves F13.2's entire contract chain to the exclusion reservoir; OP-0-ACTIVATION is dead per the Susceptibility Exclusion (SL-SUSC-1): a substrate cannot be rigid against the environment (to survive) and soft against itself (to activate) through the same response channel.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"c13a\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.luna-nonlinear-electron"
+          ],
+          "cited_source": "corpus.luna-nonlinear-electron"
+        }
+      ]
+    },
+    {
+      "ref": "c13a",
+      "kind": "mechanism",
+      "source_id": "corpus.luna-nonlinear-electron",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C13a: ponderomotive bunching and chi^(2) optical rectification provide the leading candidate mechanism for coherent radion activation in the LUNA screening context (parent: F13)."
+    },
+    {
+      "ref": "ev.c13b",
+      "kind": "computation",
+      "source_id": "corpus.luna-screening-v2",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"c13b\": Struck (v4.15) with the F13.2 reservoir: it composed with C13a's activation channel, which is dead per the matter-sector exclusion record and SL-SUSC-1.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"c13b\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.luna-screening-v2"
+          ],
+          "cited_source": "corpus.luna-screening-v2"
+        }
+      ]
+    },
+    {
+      "ref": "c13b",
+      "kind": "mechanism",
+      "source_id": "corpus.luna-screening-v2",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C13b: tree-level radion coupling to T^mu_mu stabilizes the driven lattice, composing with C13a's activation channel (parent: F13)."
+    },
+    {
+      "ref": "ev.c13c",
+      "kind": "computation",
+      "source_id": "corpus.resonant-localization-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"c13c\": Struck (v4.15): the matter-sector exclusion record moves F13.2 to the exclusion reservoir; OP-0-ACTIVATION is dead per SL-SUSC-1, since the standing-wave substrate cannot be simultaneously rigid enough to survive ambient decoherence and soft enough to respond to the driving field through the same coupling.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"c13c\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.resonant-localization-report"
+          ],
+          "cited_source": "corpus.resonant-localization-report"
+        }
+      ]
+    },
+    {
+      "ref": "c13c",
+      "kind": "mechanism",
+      "source_id": "corpus.resonant-localization-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C13c: resonant mode localization via a dual-laser THz standing wave produces geometric antinode VEV suppression at a localized site, the leading candidate mechanism for laboratory-scale coherent radion activation (parent: F13)."
+    },
+    {
+      "ref": "ev.c13d",
+      "kind": "computation",
+      "source_id": "corpus.heavy-fermion-stress-test",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"c13d\": Struck (v4.15) with the F13.2 reservoir: the Hyper-Kondo route is independently dead on its own terms (superfluid stiffness collapse at the required effective mass, see the Hyper-Kondo pathway kill above) and is further subsumed by OP-0-ACTIVATION's categorical exclusion.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"c13d\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.heavy-fermion-stress-test"
+          ],
+          "cited_source": "corpus.heavy-fermion-stress-test"
+        }
+      ]
+    },
+    {
+      "ref": "c13d",
+      "kind": "mechanism",
+      "source_id": "corpus.heavy-fermion-stress-test",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C13d: heavy-fermion scaling via lanthanide doping (a Hyper-Kondo state) amplifies the effective mass and enhances radion activation susceptibility (parent: F13)."
+    },
+    {
+      "ref": "ev.c13e",
+      "kind": "computation",
+      "source_id": "corpus.ni-h-li-stress-test",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"c13e\": Struck (v4.15) with the F13.2 reservoir: the aneutronic pumping route is independently dead on its own terms (thermodynamic-substrate absence, see the Li-7/Be-7 coherence pump kills above) and is further subsumed by OP-0-ACTIVATION's categorical exclusion.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"c13e\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.ni-h-li-stress-test"
+          ],
+          "cited_source": "corpus.ni-h-li-stress-test"
+        }
+      ]
+    },
+    {
+      "ref": "c13e",
+      "kind": "mechanism",
+      "source_id": "corpus.ni-h-li-stress-test",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C13e: aneutronic coherence pumping via ^7Li(p,alpha)^4He provides a nuclear-reaction-driven coherent activation channel (parent: F13)."
+    },
+    {
+      "ref": "ev.c13sub",
+      "kind": "computation",
+      "source_id": "corpus.luna-screening-v2",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"c13sub\": Struck (v4.15) with the F13.2 reservoir: as a sub-leading term within the reservoired F13.2 chain, it carries no independent standing once the leading activation mechanisms it corrects are themselves dead.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"c13sub\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.luna-screening-v2"
+          ],
+          "cited_source": "corpus.luna-screening-v2"
+        }
+      ]
+    },
+    {
+      "ref": "c13sub",
+      "kind": "mechanism",
+      "source_id": "corpus.luna-screening-v2",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C13sub: a sub-leading KK-tower vacuum-polarization correction (~0.3 eV) contributes an auxiliary term to the LUNA screening computation (parent: F13)."
+    },
+    {
+      "ref": "ev.c21a",
+      "kind": "computation",
+      "source_id": "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"c21a\": Struck (v4.15): F21 moves to the exclusion reservoir under the matter-sector exclusion record; OP-0-ACTIVATION is dead per SL-SUSC-1, and every examined force-carrier channel for F21 independently fails by 8 to 51 orders of magnitude (see the nuclear force-carrier kills above).",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"c21a\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive"
+          ],
+          "cited_source": "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive"
+        }
+      ]
+    },
+    {
+      "ref": "c21a",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C21a: topological torsion flux Phi_T ~ 0.05 rad from a coherent nuclear-pasta domain (via the Katanaev-Volovich / Bakke-Furtado formalism) provides the geometric channel for F21's nuclear-scale Gamow enhancement (parent: F21)."
+    },
+    {
+      "ref": "ev.c21b",
+      "kind": "computation",
+      "source_id": "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"c21b\": Struck (v4.15) with the F21 reservoir: it is multiplicative with C21a, which is dead; the composed channel inherits the same categorical exclusion.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"c21b\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive"
+          ],
+          "cited_source": "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive"
+        }
+      ]
+    },
+    {
+      "ref": "c21b",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C21b: ponderomotive electron screening in the degenerate stellar plasma, multiplicative with C21a's torsion-flux channel, completes the F21 Gamow-enhancement mechanism (parent: F21)."
+    },
+    {
+      "ref": "ev.c21c",
+      "kind": "computation",
+      "source_id": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"c21c\": Struck (v4.15) alongside the rest of the F21 chain: this row was itself a pass (the solar non-activation it verified holds), but with the parent F21 mechanism reservoired everywhere, the check it performed is rendered moot rather than falsified; it is entered into the reservoir as part of the F21 cascade rather than left as a standing verification of an active mechanism.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"c21c\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc"
+          ],
+          "cited_source": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc"
+        }
+      ]
+    },
+    {
+      "ref": "c21c",
+      "kind": "mechanism",
+      "source_id": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C21c: the solar constraint check confirms solar neutrino flux is completely unaffected by the F21 mechanism (Phi_T = 0 in the solar environment; standard Salpeter screening governs), verifying the mechanism does not overreach into observed solar phenomenology (parent: F21)."
+    },
+    {
+      "ref": "ev.c23-ds",
+      "kind": "computation",
+      "source_id": "corpus.braneworld-cosmology",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"c23-ds\": Retracted with the F12 retraction (v4.13): C23-dS's exclusion of w = -1 depended on the thawing trajectory that F12 asserted; with F12 retracted, the construction is replaced by the F-CC posture and the T3.6 static-Lambda(k) reading, under which inter-sector tunneling at e^{-S_dS} provides the dS-compliant decay channel instead.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"c23-ds\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.braneworld-cosmology"
+          ],
+          "cited_source": "corpus.braneworld-cosmology"
+        }
+      ]
+    },
+    {
+      "ref": "c23-ds",
+      "kind": "mechanism",
+      "source_id": "corpus.braneworld-cosmology",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "C23-dS: thawing dark energy (dw/dt > 0) from the framework's mandatory NEC-preserving KK exhaust structurally excludes a de Sitter (w = -1) vacuum (parent: F12 cosmology, the original C23-WGC discharge route)."
+    },
+    {
+      "ref": "ev.f05",
+      "kind": "computation",
+      "source_id": "corpus.torsion-dm-diagnostic",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"f05\": Moved to the exclusion reservoir (v4.15 matter-sector exclusion record) as part of the nuclear-pasta activation chain: OP-0-ACTIVATION is dead. Var(T) for equilibrium and driven laboratory/astrophysical substrates is volume-law O(N) by the fluctuation-dissipation theorem; super-extensive variance would require GHZ-class coherence that no warm substrate sustains, and the compound activation budget (10^27 to 10^29 GeV^4) is retracted, sitting 12 to 25 orders of magnitude above what any audited substrate supplies.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"f05\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.torsion-dm-diagnostic"
+          ],
+          "cited_source": "corpus.torsion-dm-diagnostic"
+        }
+      ]
+    },
+    {
+      "ref": "f05",
+      "kind": "function",
+      "source_id": "corpus.torsion-dm-diagnostic",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F05: Massive Neutron Stars Are Supported. Proposed that coherent nuclear-pasta domains in the neutron-star crust provide a torsion-mediated pressure contribution supporting neutron-star masses above the standard degeneracy-pressure ceiling."
+    },
+    {
+      "ref": "ev.f12",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"f12\": Struck from Tier 3 as of v4.13 (Cosmological-Sector Contraction Shore, SF-DG-010): three reconciliation hypotheses independently fail (ER-COSM-001 categorical DLRO/ODLRO conflation, ER-COSM-002 kinematic dominance at ~10^99, ER-COSM-003 volume-fraction suppression at ~10^-46) and the intra-sector slow-roll alternative fails the radion mass window by at least 30 orders of magnitude (ER-COSM-004); SL-AM-1 and LINT-DLR-1 codify the underlying obstruction.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"f12\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+            "corpus.quantum-crystal-ext"
+          ],
+          "cited_source": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026"
+        }
+      ]
+    },
+    {
+      "ref": "f12",
+      "kind": "function",
+      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F12: Dark Energy Evolves. Proposed that the framework's mandatory NEC-preserving KK exhaust channel produces a thawing dark-energy equation-of-state trajectory (dw/dt > 0), matching the DESI 2024 CPL-parameterized signature."
+    },
+    {
+      "ref": "ev.f13",
+      "kind": "computation",
+      "source_id": "corpus.luna-screening-v1",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"f13\": Superseded reading (v4.15 matter-sector exclusion record): every tree-level and perturbative mechanism examined for F13 independently fails (Higgs conflation, warp-factor cancellation, DBI radius inflation, T_3 rigidity, geometric truncation, perturbative torsion screening, Debye-coherence absence, WKB metric deformation; see the individual DEAD-table entries), and the remaining resonant-activation candidates move to the exclusion reservoir with F13.2 under OP-0-ACTIVATION's categorical exclusion (SL-SUSC-1).",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"f13\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.luna-screening-v1"
+          ],
+          "cited_source": "corpus.luna-screening-v1"
+        }
+      ]
+    },
+    {
+      "ref": "f13",
+      "kind": "function",
+      "source_id": "corpus.luna-screening-v1",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F13: LUNA Screening. Proposed that the framework's coherent-matter geometric coupling produces the anomalous electron-screening enhancement observed in the LUNA underground nuclear-astrophysics experiment."
+    },
+    {
+      "ref": "ev.f13-2",
+      "kind": "computation",
+      "source_id": "corpus.resonant-localization-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"f13-2\": Moved to the exclusion reservoir (v4.15, supersedes the earlier v4.7 reading): the matter-sector exclusion record and SL-SUSC-1 (the Susceptibility Exclusion) show the standing-wave substrate cannot be simultaneously rigid enough to survive ambient decoherence and soft enough to respond to the driving field through the same coupling channel; the entire C13a-e/C13sub contract chain is struck with it.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"f13-2\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.resonant-localization-report"
+          ],
+          "cited_source": "corpus.resonant-localization-report"
+        }
+      ]
+    },
+    {
+      "ref": "f13-2",
+      "kind": "function",
+      "source_id": "corpus.resonant-localization-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F13.2: Resonant Radion Catalysis. Proposed that a dual-laser THz standing-wave field drives resonant, laboratory-observable coherent radion activation (the C13 contract chain: ponderomotive bunching, lattice stabilization, resonant localization, Hyper-Kondo enhancement, aneutronic pumping, and the vacuum-polarization sub-correction)."
+    },
+    {
+      "ref": "ev.f19",
+      "kind": "computation",
+      "source_id": "corpus.displacement-geometry-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"f19\": Moved to the exclusion reservoir (v4.15 matter-sector exclusion record, supersedes the v4.7 reading): OP-0-ACTIVATION is dead per the FDT volume-law argument and the Susceptibility Exclusion (SL-SUSC-1); the stated surviving empirical face is a distinct gravitational-noise/stochastic-G channel (S-NOISE), not a reinstatement of the geometric-collapse mechanism itself.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"f19\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.displacement-geometry-report"
+          ],
+          "cited_source": "corpus.displacement-geometry-report"
+        }
+      ]
+    },
+    {
+      "ref": "f19",
+      "kind": "function",
+      "source_id": "corpus.displacement-geometry-report",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F19: Geometric Wavefunction Collapse. Proposed that the framework's coherent-matter coupling to gravity provides a physical mechanism for objective quantum-state collapse at a mass/coherence threshold set by the geometric construction."
+    },
+    {
+      "ref": "ev.f21",
+      "kind": "computation",
+      "source_id": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"f21\": Reservoired (v4.15, contracts C21a/b/c struck) under the matter-sector exclusion record: every examined force-carrier channel independently fails by 8 to 51 orders of magnitude (Hehl-Datta, radion Yukawa, ADD KK graviton, torsion-Dirac, radion BCS, Dicke superradiant, Species-Scale QCD; see the individual DEAD-table entries), and OP-0-ACTIVATION's categorical exclusion (SL-SUSC-1) subsumes the surviving proposed channels as well.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"f21\" against its cited source artifact",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc"
+          ],
+          "cited_source": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc"
+        }
+      ]
+    },
+    {
+      "ref": "f21",
+      "kind": "function",
+      "source_id": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "F21: Dual-Channel Gamow Enhancement. Proposed that the framework's coherent-matter geometric coupling enhances the nuclear Gamow tunneling factor through a torsion-flux channel (C21a) composed with ponderomotive electron screening (C21b), enhancing fusion/screening rates at nuclear scales."
     }
   ],
   "links": [
@@ -4335,6 +7586,1152 @@ const STORE = {
       "successor_ref": "cc1.v4-16",
       "at_state": "dg@stage-2-cc1",
       "reason": "CC-1 reidentified: geometry couples to the modular free energy W(epsilon), not to F_Q at first order. F_Q is the second cumulant (stiffness), not the source; the source is the first cumulant, modular energy. SF-DG-013 (June 2026), v4.16 cumulant reorganization."
+    }
+  ],
+  "withdrawals": [
+    {
+      "claim_ref": "dead.geff-amplification",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "G_eff amplification is absurd at ~10^40 G_N. The coherent-matter coupling enters the angular (torsion) channel, not the radial channel that sources G_eff; K2 forbids any channel from amplifying, modifying, or state-dependently varying the gravitational constant itself.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.geff-amplification",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.higgs-conflation",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The SO(1,4) Higgs is distinct from the electroweak Higgs (K4, T2.8). Conflating them produces white-dwarf mass-radius cliffs, spurious G_eff spikes, and premature pycnonuclear detonation not seen in any real degenerate star.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.higgs-conflation",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.warp-factor-alpha",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The Omega^4 factor from sqrt(-g) exactly cancels the Omega^-4 factor from F^{mu nu}F_{mu nu}; the tree-level warp-factor dependence vanishes identically, leaving no physical z_0-dependent coupling at this order.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.warp-factor-alpha",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.dbi-radius-inflation",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "r_BI is proportional to T_3^{-1/4}; inflating r_BI from 10^-33 to 10^-11 cm would require a T_3 suppression of 10^88, which is not physically available from any mechanism in the construction.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.dbi-radius-inflation",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.t3-variation-alpha",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "T_3 is held constant by the Israel junction conditions at the brane; there is no dynamical T_3 variation available to drive alpha proportional to T_3^{-1}.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.t3-variation-alpha",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.luna-geometric-truncation",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The geometric-truncation model overshoots the observed LUNA screening enhancement by a factor of 10^9, a Volume Bug class failure (a volumetric rather than surface/angular scaling was used where the mechanism requires the latter).",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.luna-geometric-truncation",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.luna-perturbative-torsion",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The perturbative torsion channel is G/c^4 suppressed, 10^40 times too weak to reproduce the observed LUNA screening enhancement.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.luna-perturbative-torsion",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.luna-debye-coherence",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "No correlation between the Debye temperature and the screening enhancement U_e is found in the data; diamond, which the mechanism predicts should show strong coherence, gives zero enhancement.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.luna-debye-coherence",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.torsion-dark-matter",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The torsion-as-dark-matter hypothesis is killed on five separate axes documented in the Torsion DM Diagnostic report (galactic rotation curve normalization, cluster lensing profile, structure-formation timing, torsion-sign consistency, and CMB power-spectrum compatibility all independently fail).",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.torsion-dark-matter",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.torsion-mond-a0",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The torsion-derived acceleration scale comes out at ~7e-23 cm/s^2, 14 orders of magnitude below the empirical MOND a_0 ~ 1.2e-8 cm/s^2.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.torsion-mond-a0",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.zero-point-cancellation",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The proposed pairwise cancellation violates the Reeh-Schlieder theorem's cluster/entanglement structure and would additionally require unbroken supersymmetry, which the framework does not have.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.zero-point-cancellation",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.dbi-mond",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The DBI action is linear precisely in the low-acceleration-gradient regime where MOND requires nonlinearity; the DBI nonlinear regime activates at high field strength, the exact inverse of the MOND transition's location.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.dbi-mond",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.esnap-3d-volume",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "3D volume scaling gives E_snap ~ 10^57 to 10^63 erg, a trans-Planckian energy scale with no physical referent.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.esnap-3d-volume",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.esnap-atomic-area-law",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Atomic area-law scaling gives E_snap ~ 10^38 erg, undershooting the observed transient energetics by 13 orders of magnitude.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.esnap-atomic-area-law",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.theal-naive-ml",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The naive M-L scaling is a category error, giving t_heal ~ 10^-81 s, many orders removed from any physically meaningful timescale.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.theal-naive-ml",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.theal-pixel-counting",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The pixel-counting estimate gives t_heal ~ 10^4 s, both numerically wrong and running in the wrong direction relative to the resolved t_heal = t_scrambling identification.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.theal-pixel-counting",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.transient-scrambling-identity",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The KK scrambling time (~4 ms) is distinct by many orders of magnitude from the observed transient timescales (seconds to months); the two cannot be identified.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.transient-scrambling-identity",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.lambda4min-universal",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "A universal scaling requires an independent coupling-constant input at each physical scale; no such universal law is available from dimensional analysis alone.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.lambda4min-universal",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.bosenova-all-variants",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Every examined bosenova variant gives F_Q = 2.56e8 against the required activation threshold of 10^32, a Volume Bug class deficit of 24 orders of magnitude.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.bosenova-all-variants",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.missing-bec-bulk-escape",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The proposed bulk-escape channel requires baryon-number violation, which is not available anywhere in the construction.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.missing-bec-bulk-escape",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.kr-brane-reeh-schlieder",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Donnelly-Freidel 4D edge modes replicate the same Reeh-Schlieder-preserving structure without requiring the KR brane; Occam's razor rules the brane not mandatory for this purpose.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.kr-brane-reeh-schlieder",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.route3-fixed-brane",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Fixing the brane position severs the T^(5)_mu flux channel that the construction otherwise requires, an unacceptable structural cost.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.route3-fixed-brane",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.conjugate-baryogenesis-all",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Five-axis kill. (1) Coset connectivity: pi_0 = pi_1 = pi_2 = 0 for the S^3 vacuum manifold, so no stable topological defect exists for the needed spatial isolation. (2) BD ghost resurrection: forcing CP-violating couplings degrades the Hamiltonian constraint to second-class, reviving the Boulware-Deser ghost. (3) Rank mismatch: SO(1,4) and SU(2)_L x U(1)_Y act on different internal spaces with no anomaly-free translation of torsion into electroweak Chern-Simons diffusion. (4) The QFI (Bures metric) is strictly positive-definite and cannot serve as a CP-odd source. (5) EWPT variant: a 100 GeV plasma thermalizes at ~1e-22 s, ten orders faster than the KK scrambling time, pinning the coherence fraction at f~0 so the VEV coupling never activates, and T2.8 forbids the gravitational VEV from modifying the electroweak sphaleron barrier in any case; even granting the conflation, VEV suppression drives E_sph toward zero, causing total baryon washout. B9 remains outside the framework's explanatory domain.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.conjugate-baryogenesis-all",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.wkb-metric-deformation",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The conformal factor in the proposed WKB deformation cancels identically, leaving no stable intermediate state.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.wkb-metric-deformation",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.quintessence-scalar-de",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "A genuine fourth propagating scalar DOF violates the Dirac-Bergmann constraint counting the construction establishes (P3); the quintessence-scalar route is structurally redundant with the framework's existing content. conditioned on the S-MM-CR DOF bound loosening to admit a fourth propagating scalar; ledgered, not typed with that specific content.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "dead.so14-higgs-inflaton",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The slow-roll parameters come out at eta ~ -4 and n_s ~ -7; v ~ M_Pl forces catastrophic fast-roll, incompatible with any viable inflationary trajectory.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.so14-higgs-inflaton",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.cdl-bubble-nucleation",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The CDL bounce action comes out at ~10^44 (infinite suppression); CDL assumes a canonical kinetic term that is absent in the BF (topological) phase the framework actually uses.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.cdl-bubble-nucleation",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.thooft-naturalness-lambda",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The shift symmetry rho -> rho + c is explicitly broken by the trace-anomaly coupling that K11 requires; the actual protection mechanism is gravitational-coupling suppression (K14), not 't Hooft naturalness via shift symmetry.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.thooft-naturalness-lambda",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.gisin-polchinski-signaling",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Gisin-Polchinski applies to nonlinear modifications of the Schrodinger evolution itself; matter in the framework evolves under standard linear quantum mechanics, so the no-signaling theorem guarantees the locally-defined F_Q is invariant under distant operations. No causality violation arises.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.gisin-polchinski-signaling",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.naive-kk-tower-sum",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The rigid-cutoff sum is an artifact of omitting holographic counterterms; the correctly holographically-regularized Casimir computation instead yields delta-lambda ~ 10^-60.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.naive-kk-tower-sum",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.gzk-species-scale",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The Species Scale modifies only the gravitational UV cutoff; photopion production is a Standard Model QCD process. K4 (purely gravitational framework) and T2.7 (conformal invariance) jointly forbid any geometric channel from modifying gauge-sector cross sections. The anomaly is outside the framework's domain.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.gzk-species-scale",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.ams02-kk-exhaust",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The KK exhaust channel exports energy from the brane into the bulk as massive spin-2 dark radiation; the exhaust direction is strictly away from the brane, so no brane-localized positron source is generated.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.ams02-kk-exhaust",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.nanograv-geometric-condensation",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The peak GW frequency from a first-order transition at T_* ~ 10^7 GeV falls at f_0 ~ 1 Hz (the LIGO/ET band), while the nanohertz band corresponds to transitions at T ~ MeV to GeV; additionally, the framework's own topological-phase percolation is instantaneous, suppressing bubble-collision GW production.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.nanograv-geometric-condensation",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.fqhe-so14-topology",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "No mechanism is specified for the claimed mapping; the assertion contains no derivation connecting FQHE topological invariants to the geometric-condensation construction.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.fqhe-so14-topology",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.planckian-dissipation-vev",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The framework preserves the KSS viscosity bound (F15), which is related to Planckian dissipation, but no derivation connects v(F_Q) to the universal scattering rate 1/tau = k_B T/hbar; the claim is suggestive at most and unwarranted as a contract without a derivation. an explicit derivation connecting v(F_Q) to the universal Planckian scattering rate is the named missing step; content not captured by the typed condition.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "dead.hehl-datta-nuclear",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "G_N^2 ~ 10^-76 GeV^-4 suppression is too brutal; even with M_Pl,eff = 10^14 GeV and N^2 coherent amplification at nuclear density, U_T ~ 10^-3 eV, 8 orders of magnitude below the 100 keV target.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.hehl-datta-nuclear",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.radion-yukawa-nuclear",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Tree-level scalar exchange gives V(1 fm) ~ 10^-8 MeV at M_Pl,eff = 10^14 GeV; reaching the 100 keV target would require M_Pl,eff ~ 12.6 GeV (electroweak scale), 13 orders of magnitude from the physical value.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.radion-yukawa-nuclear",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.add-kk-graviton-coulomb",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Summed KK-tower exchange at r = 1 fm with R_Dark = 10 micron gives V_KK ~ 2e-16 MeV, 15 orders of magnitude below the 100 keV target.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.add-kk-graviton-coulomb",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.torsion-dirac-axial",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The mechanism is mathematically homologous to the Hehl-Datta channel with the same G_N scaling, and comes out 8 orders of magnitude below the target.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.torsion-dirac-axial",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.radion-bcs-pairing",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "N(E_F) V_pair ~ 10^-38; the resulting gap is proportional to exp(-10^38), indistinguishable from zero, a 38-order-of-magnitude failure in the exponent.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.radion-bcs-pairing",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.dicke-superradiant-gap",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The single-mode Dicke condition requires all N particles to couple symmetrically to one bosonic mode; the radion Compton wavelength (~197 fm) gives a coherence volume containing only N_lambda ~ 10^6 nucleons, and the gap at that physical N_lambda is ~1e-20 eV, violating the single-mode condition by 51 orders of magnitude.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.dicke-superradiant-gap",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.species-scale-qcd",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The radion couples to the trace anomaly via <T^mu_mu> proportional to beta(alpha_s) G^a_{mu nu}G^{a mu nu}, requiring 0.2% precision tuning of alpha_s; a uniform modification at that precision would unbind nuclear matter via photodisintegration, and no mathematical protection against this runaway exists.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.species-scale-qcd",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.li7-coherence-pump",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Triple-axis kill. (1) Thermal incoherence: the BBN plasma at T ~ 50 keV is maximally mixed (f~0); 8.65 MeV alpha particles undergo immediate broadband Coulomb scattering, saturating the ~0.2 ps KK scrambling time and pinning the QFI at the standard quantum limit. (2) Abundance starvation: during the active BBN window, ~97% of mass-7 is locked as undecayed ^7Be (half-life ~53 days), leaving in-situ ^7Li fuel too scarce for the required reaction density. (3) The primordial plasma has no crystalline lattice, no acoustic deformation potential, and no interstitial sublattice; the radion catalysis mechanism has no mechanical substrate.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.li7-coherence-pump",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.be7-coherence-pump",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The (n,p) reaction produces a two-body final state of distinguishable fermions (spin-1/2 proton, spin-3/2 ^7Li) with extreme mass asymmetry; Bose enhancement, required for a coherent standing wave, is forbidden for fermions, and the mismatched kinetic-energy partition (~1.43 MeV proton vs ~0.21 MeV ^7Li) produces drastically mismatched de Broglie wavelengths, so chaotic thermalization saturates the KK scrambling time and the QFI remains at the standard quantum limit.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.be7-coherence-pump",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.radion-be7-electron-capture",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The ^7Be electron-capture rate is governed by the weak interaction and electromagnetic Coulomb attraction; K4 (purely gravitational framework) and T2.7 (conformal invariance of the 4D Maxwell action) structurally forbid the radion from modifying tree-level electroweak cross sections. The trace-anomaly coupling provides thermodynamic exhaust, not a fundamental force modification.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.radion-be7-electron-capture",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.sn2024afav-geff",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "This is the already-killed G_eff amplification mechanism applied to a new observational context; K2 (the gravitational constant is never amplified, modified, or state-dependent) and K16 (G_N is fixed, only Lambda_s runs) both forbid it. The torsion-mediated traceless-channel torque on the accretion disk from coherent nuclear pasta survives as a live mechanism; the trace-channel G_eff runaway feedback loop specifically is dead, and derivative documents describing it must be corrected.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.sn2024afav-geff",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.hyper-kondo-superconductivity",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Superfluid stiffness collapse: rho_s(0) = hbar^2 n_s/(4 m*); at the effective mass m* ~ 1000 m_e required for radion activation per C13d, the BKT transition temperature approaches zero. Phase stiffness and radion activation are structurally antagonistic in this channel.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.hyper-kondo-superconductivity",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.light-carrier-qfi-superconductivity",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The QFI of the BCS ground state with respect to T^mu_mu scales O(N) by Wick factorization across k-modes; for YBCO, f_Q^BCS ~ 3.1e-28 GeV^8, a 57-order-of-magnitude deficit against the K7 activation threshold. The trace-anomaly coupling channel is K4-compliant but numerically negligible.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.light-carrier-qfi-superconductivity",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.dynamic-ts-elevation",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "m_KK is a global bulk parameter set by R_Dark (K16); local VEV suppression changes the brane geometry but not R_Dark, so t_s = hbar/m_KK is fixed. If local VEV suppression affected brane geometry at all, it would lengthen t_s (the brane descends to larger z_0, giving smaller m_KK), the opposite of the intended effect.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.dynamic-ts-elevation",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.self-bootstrap-superconductivity",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Near T_c the coherent fraction f approaches zero; the two-fluid QFI F_Q = f^2 N^2 + (1-f)N collapses to O(N). A fluctuating condensate cannot satisfy the requirements of a coherent driver or a zero-entropy exhaust pathway.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.self-bootstrap-superconductivity",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.radion-superconductivity-summary",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Summary kill across all pathways: (1) Hyper-Kondo kills phase stiffness. (2) Light carriers lack QFI by 57 orders of magnitude. (3) Dynamic t_s elevation runs inverted. (4) Self-bootstrap fails near T_c. (5) At 300 K, Planckian dissipation (~0.025 ps) outpaces the fixed exhaust time (~0.2 ps).",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.radion-superconductivity-summary",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.vev-amplification-coherence",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "F_Q is positive-definite (Bures metric); the VEV shift v^2_eff = v_0^2 - (gamma/lambda) F_Q is strictly subtractive. No physical state amplifies the VEV above v_0.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.vev-amplification-coherence",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.cdw-bosonic-gateway",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The CDW ground state is an equilibrium symmetry-broken state with Poissonian/binomial number statistics; Var(T^mu_mu) scales O(N) by the fluctuation-dissipation theorem and area-law entanglement. CDW QFI density ~3.25e-40 GeV^8, a 69-order-of-magnitude deficit against K7. This kill applies to all equilibrium bosonic orders (CDW, SDW, structural distortion) proposed as gateways; the barrier is thermodynamic extensivity itself.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.cdw-bosonic-gateway",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.f24-kagome-athe",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Two-stage kill. (1) Ambient-VEV torsion from chiral Cooper-pair hypermomentum is 49 orders of magnitude too weak (Planck suppression). (2) The VEV suppression required to amplify torsion has no equilibrium condensed-matter state achieving the K7 threshold (69-order-of-magnitude deficit, per the CDW gateway kill). The chiral-hypermomentum selection rule (SO-SC2) survives as a qualitative structural observation only.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.f24-kagome-athe",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.coherent-state-n2-variance",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "A Glauber coherent state |alpha> with <n> = N has Var(n_hat) = N (Poissonian): a general result of quantum statistics. N^2 scaling requires phase estimation with maximally entangled states (GHZ/NOON), not number/energy estimation with coherent states; the claim conflates the two.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.coherent-state-n2-variance",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.edge-mode-l4-scaling",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "2D lattice BdG and free-boson computations both give C_E ~ L^1.0 to L^1.3 (an area law). Phase rigidity correlates the mean phase across the boundary but fluctuations at different boundary points remain independent; GHZ-like N^2 scaling requires all edge modes to fluctuate in lockstep, which ODLRO's correlated means do not provide.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.edge-mode-l4-scaling",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.lagrangian-uniqueness",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The a_4 Seeley-DeWitt coefficient generates three independent competing operators at the same effective mass dimension 6 (eta_AB phi^A phi^B T^mu_mu; eta_AB phi^A phi^B C_{mu nu rho sigma}C^{mu nu rho sigma}; eta_AB phi^A phi^B Tr(F_{mu nu}F^{mu nu})); Lagrangian uniqueness is false as a matter of standard heat-kernel theory for any matter content, and the thermodynamic-dominance formulation replaces the uniqueness claim entirely.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.lagrangian-uniqueness",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.er-q01-gauge-kk-species-lowering",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The correct gamma derivation (Paper 0 v10 Section IV.D, SF-D0) shows gamma already carries the 1/Lambda_s^2 suppression via the KK heat-kernel spectral trace; the 'two species counts' of v4.5 (one in gamma, one in f_Q,crit) collapse to one count double-counted. The v4.7 gamma derivation reaches phenomenological survival with a better margin (f_Q,crit at 10^12-10^13, 15 orders better) without an independent species-lowering step. The gauge KK tower on dP_3 remains relevant for GUT precision physics (K8, K10, K11, K14) but does not provide an independent species-lowering mechanism for f_Q,crit as v4.5 claimed. the trellis states the inverse condition (reactivation if the SF-D0 gamma derivation is shown wrong), which entry-at-grade cannot express forward; ledgered rather than force-typed.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.er-q01-gauge-kk-species-lowering",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.er-cc001-gamma-z0-stabilization",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Two independent algebraic computations (Gemini CC Derivation Reports Run 1 and Run 2) show the (L/z_0)^4 measure factor combined with gamma(z_0) proportional to z_0^2 gives V_eff^phys proportional to z_0^-2 after phi-extremization; the z_0-gradient is strictly negative for all physical states, so the brane runs to the IR horizon (m_KK -> 0, Lambda_s -> 0, decompactification) rather than stabilizing. Block scope: any mechanism relying on the gamma(z_0) inheritance alone to stabilize the Karch-Randall radion is dead; combined mechanisms remain open as separate sorries. discovery that the (L/z_0)^4 measure factor is incorrect, or an additional z_0-dependent bare-DBI contribution; both stated as unlikely on current evidence.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "dead.er-cc002-goldberger-wise",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Killed by both Gemini CC Derivation reports and by independent structural argument: a propagating bulk scalar with kinetic terms violates the framework's Tier 4 commitment to a topological SO(2,4) Chern-Simons bulk with zero local degrees of freedom, destroying the topological purity that underwrites Israel junction protections, boundary induction, and ghost exclusion. Block scope: any mechanism relying on a propagating bulk scalar field with kinetic terms is forbidden by the topological-bulk axiom.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.er-cc002-goldberger-wise",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.er-cc003-shift-symmetry-protection",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The gamma(phi^A phi_A) F_Q coupling is polynomial in phi = v + rho and explicitly breaks the discrete shift symmetry at tree level; the framework cannot rely on shift-symmetry protection. The kill is offset by a stronger surviving result: kinematic suppression via the trans-Planckian VEV (K18) provides protection without requiring the shift symmetry, with the barrier height overwhelming the aperiodic CW slope by 16 orders of magnitude. The kill of symmetry-protection is not a kill of the AM mechanism itself. a reformulated coupling simultaneously polynomial in phi and shift-symmetric is stated as appearing structurally near-impossible; ledgered as such rather than typed permanent, since the document does not foreclose it categorically.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "dead.er-mm001-antisymmetry-vanishing",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Two independent explicit algebraic computations (Gemini DR Section VI Rewrite Route and DeepSeek Cross-Examination) reproduce the same nonvanishing leading term in the bracket, driven by v and spatial curvature through the BF-type pre-symplectic structure. The cancellation argument conflates antisymmetry of the full bracket (automatic under simultaneous coordinate-plus-index swap) with a symmetric-index cancellation, which is not forced. Block scope (Point Block): the specific cancellation argument is dead; the 44x44 block structure must be treated as pseudo-differential, not ultra-local. Structural origin: the argument was imported from pure BF theory where the analogous bracket vanishes because B is an independent configuration variable; in MM, B is replaced by F(A), which activates the bracket through connection dependence. a different symmetry of the MM action (not present in pure BF theory) forcing the bracket to vanish is named as the only reactivation path and stated as unlikely on current evidence.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "dead.er-mm002-local-algebraic-redefinition",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The No-Go Lemma (ChatGPT Track A Construction, formalized in the Section VI obstruction lemma) shows that for local algebraic k, the four-term expansion reduces on the constraint surface to m{Z,Z}m^T with m = I + k; at the principal-symbol level local conjugation preserves operator order, so cancelling the derivative block would require m C^k m^T = 0, which for invertible m forces C^k = 0, contradicting ER-MM-001's established nonvanishing result. The only escapes are a singular m (not an admissible redefinition) or a non-local k (relocating rather than eliminating the non-locality). Structural origin (DeepSeek): the derivative index pattern is a spatial curl operator whose inverse is the non-local Biot-Savart kernel. Block scope (Class Block): any mechanism relying on local algebraic canonical transformations to achieve ultra-locality in the MM Dirac matrix is structurally obstructed. a non-algebraic canonical transformation framework avoiding the curl-operator obstruction, or a reformulation replacing the BF-type kinetic structure, are named as the only paths and stated as speculative and unlikely.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "dead.er-mm003-pointwise-schur",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "When the upper-left 30x30 block A is a first-order differential operator with A^-1 a non-local Green's function (the Biot-Savart kernel per ER-MM-002's structural origin), the Schur complement D - C A^-1 B is an integro-differential operator in coordinate space; its determinant is not a pointwise algebraic function of the fields, so the clean factorization cannot be recovered in coordinate space, only at the principal-symbol level in Fourier space. Block scope (Point Block): the pointwise determinant route specifically is obstructed; the operator-theoretic reformulation via principal symbol survives as a separate sorry. a coordinate-space regularization scheme rendering A^-1 effectively local is named as the only path, and none is currently known.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "dead.er-mix001-dbi-pi-chi-mixing",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "An explicit quadratic-action computation (ChatGPT S-MIX-001) shows sqrt(-g_ind) V_SSB(chi) generates chi^2, pi chi^2, pi^2 chi^2 terms but never a pi-chi bilinear; the DBI sector depends only on pi and the F_Q coupling only on chi, and the induced-metric matching is a kinematic identification, not a bilinear potential operator. Result: the tree-level mixing mass vanishes and the mixing angle is zero, so the effective F_Q-coupling threshold diverges. Block scope: any rescue requiring the radion's F_Q coupling to flow through the DBI brane-bending mode without an additional bilinear mixing source. an explicit non-vanishing d^2U_eff/dz dchi operator from a stabilization mechanism not present in the bare MM+DBI action is the named concrete condition.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "dead.er-mix002-einstein-cartan-torsion",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "An explicit Levi-Civita contraction (ChatGPT S-MIX-003) gives beta' a_1 = -(4/3) alpha m^2/(v+rho), negative under standard sign conventions, failing the criterion by sign; cross-checked by an independent contraction route with a consistent result. The pure F R(omega) Palatini/Einstein-Cartan elimination produces a ghost-like kinetic term in mostly-plus signature, the well-known Palatini scalar-tensor ghost. Block scope: any rescue asserting the radion kinetic term in MMSW gravity emerges from torsion-induced Einstein-Cartan reduction of pure F R(omega) coupling; the Weyl-rescaling route to the Einstein frame gives the correct healthy sign and is the proper mechanism. a non-pure-F R(omega) torsion mechanism producing the healthy sign is named as the only path.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "dead.er-mix003-naive-scalar-kinetic",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The construction (D phi)^dagger(D phi) wedge star_int(D tau wedge D tau) in MMSW evaluates, in standard gauge, to an expression antisymmetric in mu nu, so it vanishes identically as a symmetric Klein-Gordon kinetic term (Langenscheidt 2019 Section 4.2). The principled resolution is the first-order auxiliary-field formulation. Block scope: any MMSW or related gauge-theoretic gravity construction asserting a propagating scalar via a direct (D phi)^2 operator without auxiliary-field structure or an alternative principled mechanism. identification of a non-trivial Hodge structure on the MMSW gauge fiber converting the operator into a symmetric kinetic term is the named path, stated as highly speculative with no such structure known in the cited analysis.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "dead.er-wd001-sub-chandra-wd-detonation",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Two-crux kill. Crux A (FDT ceiling): white-dwarf interiors are DLRO Coulomb crystals and hydrodynamic shocks, not ODLRO substrates; F_Q is pinned to the O(N) baseline by the fluctuation-dissipation theorem, 15 orders of magnitude below the activation threshold. Crux B (pole-binary locality): even if microscopic ODLRO patches formed, antinodal activation at the C13c standing-wave geometry produces only a ~7e-5 active volume fraction per unit cell and cannot bootstrap to macroscopic detonation in the surrounding non-activated bulk. Block scope: any sub-Chandrasekhar Type Ia trigger mechanism routing through framework-internal geometric catalysis; sub-Chandra phenomenology remains handled by standard double-detonation astrophysics. a cosmologically or astrophysically accessible ODLRO substrate in WD interiors surviving thermal decoherence, plus resolution of the local-to-global propagation problem, are the two named conditions.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "dead.er-cosm001-integrated-f-buildup",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Categorical error: classical structure formation produces DLRO density gradients and Bragg-peak ordering, not ODLRO long-range phase coherence of a complex order parameter. The coherence fraction f remains approximately zero at cosmological scales regardless of structure formation, so F_Q stays pinned to the extensive O(N) baseline by the fluctuation-dissipation theorem. Block scope: any cosmological mechanism conflating classical clustering with macroscopic ODLRO; codified into LINT-DLR-1. identification of a cosmologically distributed ODLRO substrate (axion misalignment condensate, primordial BEC remnant, dark-sector superfluid) with the right density and cosmic-time evolution is the named condition.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "dead.er-cosm002-trace-channel-gradient",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The AM kinematic-dominance bound (SL-AM-1) shows the trace channel, suppressed by the gravitational coupling (m/M_Pl)^2 ~ 10^-67, is dominated by the AM potential barrier height (~10^32 GeV^4) by ~10^99; the trace gradient cannot displace the radion from its discrete minimum. Block scope: any cosmological mechanism using an extensively-scaling O(N) operator to bridge AM topological barriers; only super-extensive O(N^2) operators sourced by ODLRO can engage the pole structure.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.er-cosm002-trace-channel-gradient",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.er-cosm003-cosmological-averaging",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "ODLRO-supporting systems occupy ~10^-46 of the Hubble volume; macroscopic FLRW backreaction from such patches is identically zero to all practical orders. Predicted spatial inhomogeneities in w(z) correlated with structure environments are inconsistent with observational bounds, and F16 (Void Physics) already explains ISW-type local variations without invoking ODLRO patches. Block scope: any cosmological-averaging mechanism aggregating rare ODLRO domains into a cosmological-scale equation-of-state contribution. a cosmologically distributed ODLRO substrate occupying at least ~1e-4 of the Hubble volume, or a different averaging mechanism bypassing the volume-fraction obstruction, are the named conditions.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "dead.er-cosm004-intra-sector-slow-roll",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Slow-roll quintessence requires m ~ H_0 ~ 10^-33 eV; the framework's radion is bounded m_rho in [1 meV, 100 GeV] by F13.2 (LUNA phenomenology requires MeV-scale mass) and K8 (adiabatic stability against matter loops), with the framework selecting m_rho ~ 1 MeV. The ratio is at least 10^30, falsifying slow-roll by 30 orders of magnitude; an ad-hoc additional scalar field is forbidden by the S-MM-CR DOF count (conditional). Block scope: any cosmological mechanism introducing or repurposing a slow-rolling scalar at m ~ H_0. loosening the S-MM-CR DOF bound to admit a fourth propagating DOF, or extending the radion mass window below 1 meV, are the named conditions.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "dead.er-wgc001-hydrodynamic-bkm",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Substituting the L2 variance bound for the killed L^infinity amplitude bound fails by the same regularity obstruction that produced ER-NS-001: the Sobolev embedding H^1 does not embed in L^infinity in 3D is a structural fact, and L2 bounds cannot constrain pointwise suprema (SL-VC-1, LINT-L2-1). Block scope: any framework-internal mechanism proposing to recover the hydrodynamic C23-WGC derivation by substituting an L2 variance bound for the killed L^infinity amplitude bound; WGC compliance is preserved instead via the static F-theory dP_3 Pati-Salam spectrum (reformulated C23-WGC). cascades from ER-NS-001 (an external Navier-Stokes program kill, not itself entered in this corpus); the cascade dependency is named rather than modeled as a claim link since ER-NS-001 has no claim identity here.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.er-wgc001-hydrodynamic-bkm",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.er-de001-bh-mechanism-evolving-de",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Black-hole bulk-routing is structurally cooling and stabilizing (SL-BR-1), not a source of cosmological-scale energy injection or radion displacement; per SL-AM-1 any O(N) channel's cosmological-scale gradient is suppressed against the AM topological barrier by ~10^99, and the BH population's effective contribution is O(N) in the cosmologically averaged sense. Block scope: any cosmological-evolution mechanism aggregating framework-internal degenerate-object bulk-exhaust channels into an effective Lambda(t). identification of an ODLRO-active cosmologically distributed substrate connected to BH populations (no candidate known), or a non-kinematic mechanism circumventing SL-AM-1, are the named conditions.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "dead.er-ht001-nede-thermal-de",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The v3.9 generalized cosmological plasma-exclusion structural lesson shows all unbound relativistic plasma environments thermalize at tau_th much less than t_s by 3 to 10 orders of magnitude, pinning the coherence fraction f approximately zero and rendering the gamma F_Q coupling dormant; the NEDE mechanism requires sustained thermal coherence in a regime the framework's own thermodynamics structurally excludes. Block scope: any cosmological-evolution mechanism requiring coherent thermal pumping of a hot sector at T >= MeV.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.er-ht001-nede-thermal-de",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.er-de002-vacuum-driven-reheating",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Any mechanism reversing the brane-to-bulk exhaust direction violates the framework's mandatory topological-bulk K1/K6 structure and contradicts SL-BR-1 (bulk-routing is exhaust, not injection). Block scope: any cosmological mechanism operating by reversing the framework's brane-to-bulk exhaust direction.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.er-de002-vacuum-driven-reheating",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.er-de003-quantum-foam-de",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Trans-Planckian vacuum modes are kinematically protected per K18 (the trans-Planckian VEV v ~ 10^139 GeV produces a 16-order-of-magnitude kinematic suppression of aperiodic corrections); the proposal also violates T1.3 (no trans-Planckian energy from sub-Planckian inputs at the cosmological scale). Block scope: any cosmological evolving-DE mechanism deriving energy from trans-Planckian vacuum-mode dynamics.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.er-de003-quantum-foam-de",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.er-de004-multi-modulus-slow-roll",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Distance-Conjecture confinement: with N ~ 10^120 light scalars, individual modulus excursions are confined to Delta-phi <~ M_P/sqrt(N) ~ 10^-60 M_P, far below the trans-Planckian field range slow-roll quintessence requires for observable w(z) not equal -1 at percent level; classical slow-roll quintessence is structurally impossible in the AM-locked branch's moduli space. Codified into LINT-DE-2. Block scope: any multi-field slow-roll proposal within the AM-locked branch on moduli spaces with N much greater than 1; the obstruction does not apply on Path B, where the active modulus is a single light scalar parametrically separated from the hairon condensate. the obstruction is scoped to the AM-locked branch; Path B is explicitly carved out as not subject to this specific kill.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.er-de004-multi-modulus-slow-roll",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.er-de005-hairon-quintessence",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Hairons are identified as the microscopic constituents of the topological vacuum substrate mediating the BCS-like neutrino superfluid condensation and the entropic accounting selecting k_phys ~ S_dS; promoting them to rolling fields mobilizes the same constituents that define the static vacuum identification, producing a structural conflict between serving as the BEC ground state of the de Sitter vacuum and as dynamical matter rolling under a quintessence potential. Codified into LINT-DE-3. Block scope: any mechanism promoting the microscopic constituents of a topological vacuum to additive dynamical matter while retaining the same vacuum identification.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.er-de005-hairon-quintessence",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.er-de006-hairon-multi-field",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Killed for the same categorical reason as ER-DE-005, sharpened by multi-field destabilization analysis: cross-couplings between rolling hairons and the static-vacuum condensate produce non-perturbative destabilization of the topological substrate itself, falsifying the AM-locked k_phys selection on the same cosmic timescales the quintessence trajectory is supposed to drive. Block scope: any multi-field framework-internal hairon-quintessence proposal.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.er-de006-hairon-multi-field",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.pasta-inter-equilibrium-switching",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Free-energy degeneracy (Delta F ~ keV) required for near-equal two-state occupation probabilities constrains the energy-density jump to ~1e-9 GeV^4, giving a variance ~1e-19 GeV^8; after proper-time reconciliation, the required scale is ~10^1 GeV^4, a 34-order-of-magnitude deficit. Large energy jumps and free-energy degeneracy are thermodynamically conjugate, so the mechanism cannot simultaneously satisfy both.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.pasta-inter-equilibrium-switching",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.pasta-parametric-driving",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "No candidate driver is coherent: neutrino flux is broadband thermal; magnetar fields show a 12-order-of-magnitude frequency mismatch with pasta phonons; vortex unpinning thermalizes stochastically; accretion heating is incoherent; and electron-phonon scattering (tau_ep ~ 1 ps) prevents coherence accumulation on any relevant timescale.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.pasta-parametric-driving",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.pasta-1s0-qcp",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Pasta structures dissolve at rho ~ 0.085 fm^-3 while the ^1S0 gap closes at rho ~ 0.16 fm^-3, a factor-of-2 density separation with no physical spatial overlap between the two phenomena.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.pasta-1s0-qcp",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.pasta-3p2-pairing",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "^3P2 pairing onset occurs at the crust-core boundary, exclusively in uniform core matter, which is mutually exclusive with the pasta structures the mechanism requires.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.pasta-3p2-pairing",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.pasta-vortex-lattice-qfi",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The equilibrium vortex-core volume fraction is ~1e-17 in a millisecond pulsar, and Tkachenko modes are critically damped at high rotation rates; the resulting QFI scales O(N_vortices), extensively, not super-extensively.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.pasta-vortex-lattice-qfi",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.pasta-topological-entanglement",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The topological entanglement entropy gamma_topo is an O(1) correction to the entropy and does not alter the volumetric scaling of local operator variance; the global topological degeneracy is invisible to local T_{mu nu} measurement.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.pasta-topological-entanglement",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.pasta-spinodal-compressibility",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Neutron-rich matter (Y_p ~ 0.04) carries ~27 MeV of positive stiffness from the symmetry energy, removing the spinodal instability; the effective dP/dn is 1 to 22 MeV across the pasta region, within a factor of 3 of the dimensional estimate, not divergent.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.pasta-spinodal-compressibility",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "dead.kbc-void-hubble-tension",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "The KBC void mechanism overshoots: it produces a Hubble-constant enhancement of 11.8 to 25%, against the ~8.3% enhancement the tension actually requires; the mechanism fails quantitatively as computed.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "dead.kbc-void-hubble-tension",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "c12a",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Struck with the F12 retraction (v4.13): the cosmological-sector contraction shore (SF-DG-010) retracts F12 after three failed reconciliation hypotheses (ER-COSM-001/002/003) and a mass-window falsification (ER-COSM-004) exhaust the intra-sector evolution routes; the static Lambda^(k) tower (LINT-16) replaces the continuous-modulus reading the Bianchi-mandate argument required. identification of a cosmologically distributed ODLRO substrate with sufficient F_Q density and the right cosmic-time evolution, or loosening of the S-MM-CR DOF bound (Paper -1 patch v4 or later) permitting a fourth propagating scalar with m ~ H_0, per the F12 cascade's stated reinstatement text.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "c12b",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Struck with the F12 retraction: C12b's thawing-sign match depended on the C12a Bianchi-mandate derivation, which is struck; with F12 retracted the framework carries no thawing-trajectory prediction to compare against DESI. same cascade condition as C12a; ledgered once rather than duplicated per entry.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "c12c",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Struck with the F12 retraction: the modified-H(z) prediction relied on the thawing trajectory; with a static Lambda^(k) the optical-depth integral reduces to standard LambdaCDM, so the JWST early-reionization tension returns to standard astrophysics unaddressed by this channel. same cascade condition as C12a; ledgered once rather than duplicated per entry.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "c13a",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Struck (v4.15): the matter-sector exclusion record moves F13.2's entire contract chain to the exclusion reservoir; OP-0-ACTIVATION is dead per the Susceptibility Exclusion (SL-SUSC-1): a substrate cannot be rigid against the environment (to survive) and soft against itself (to activate) through the same response channel. the three-gate reactivation test: a coupling other than species-summed G_N, a real-observable vehicle, and substrate survival of the required coherence.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "c13b",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Struck (v4.15) with the F13.2 reservoir: it composed with C13a's activation channel, which is dead per the matter-sector exclusion record and SL-SUSC-1. the three-gate reactivation test (shared with C13a).",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "c13c",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Struck (v4.15): the matter-sector exclusion record moves F13.2 to the exclusion reservoir; OP-0-ACTIVATION is dead per SL-SUSC-1, since the standing-wave substrate cannot be simultaneously rigid enough to survive ambient decoherence and soft enough to respond to the driving field through the same coupling. the three-gate reactivation test (shared with C13a/b).",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "c13d",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Struck (v4.15) with the F13.2 reservoir: the Hyper-Kondo route is independently dead on its own terms (superfluid stiffness collapse at the required effective mass, see the Hyper-Kondo pathway kill above) and is further subsumed by OP-0-ACTIVATION's categorical exclusion. the three-gate reactivation test (shared with C13a/b/c).",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "c13e",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Struck (v4.15) with the F13.2 reservoir: the aneutronic pumping route is independently dead on its own terms (thermodynamic-substrate absence, see the Li-7/Be-7 coherence pump kills above) and is further subsumed by OP-0-ACTIVATION's categorical exclusion. the three-gate reactivation test (shared with C13a/b/c/d).",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "c13sub",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Struck (v4.15) with the F13.2 reservoir: as a sub-leading term within the reservoired F13.2 chain, it carries no independent standing once the leading activation mechanisms it corrects are themselves dead. the three-gate reactivation test (shared with the C13 family).",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "c21a",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Struck (v4.15): F21 moves to the exclusion reservoir under the matter-sector exclusion record; OP-0-ACTIVATION is dead per SL-SUSC-1, and every examined force-carrier channel for F21 independently fails by 8 to 51 orders of magnitude (see the nuclear force-carrier kills above). the three-gate reactivation test.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "c21b",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Struck (v4.15) with the F21 reservoir: it is multiplicative with C21a, which is dead; the composed channel inherits the same categorical exclusion. the three-gate reactivation test (shared with C21a).",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "c21c",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Struck (v4.15) alongside the rest of the F21 chain: this row was itself a pass (the solar non-activation it verified holds), but with the parent F21 mechanism reservoired everywhere, the check it performed is rendered moot rather than falsified; it is entered into the reservoir as part of the F21 cascade rather than left as a standing verification of an active mechanism. the three-gate reactivation test (shared with C21a/b); note this entry's own content was never falsified, only rendered moot by its parent's reservoir status.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "c23-ds",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Retracted with the F12 retraction (v4.13): C23-dS's exclusion of w = -1 depended on the thawing trajectory that F12 asserted; with F12 retracted, the construction is replaced by the F-CC posture and the T3.6 static-Lambda(k) reading, under which inter-sector tunneling at e^{-S_dS} provides the dS-compliant decay channel instead. same cascade condition as C12a: an ODLRO substrate with the right density and evolution, or a loosened S-MM-CR DOF bound.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "f05",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Moved to the exclusion reservoir (v4.15 matter-sector exclusion record) as part of the nuclear-pasta activation chain: OP-0-ACTIVATION is dead. Var(T) for equilibrium and driven laboratory/astrophysical substrates is volume-law O(N) by the fluctuation-dissipation theorem; super-extensive variance would require GHZ-class coherence that no warm substrate sustains, and the compound activation budget (10^27 to 10^29 GeV^4) is retracted, sitting 12 to 25 orders of magnitude above what any audited substrate supplies. the three-gate reactivation test (a coupling other than species-summed G_N, a real-observable vehicle, substrate survival of the required coherence); the stated surviving live route for the matter sector is the separate rescue-trellis torsion-Lagrangian calculation, not equilibrium superfluid activation, and is out of this corpus's scope.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "f12",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Struck from Tier 3 as of v4.13 (Cosmological-Sector Contraction Shore, SF-DG-010): three reconciliation hypotheses independently fail (ER-COSM-001 categorical DLRO/ODLRO conflation, ER-COSM-002 kinematic dominance at ~10^99, ER-COSM-003 volume-fraction suppression at ~10^-46) and the intra-sector slow-roll alternative fails the radion mass window by at least 30 orders of magnitude (ER-COSM-004); SL-AM-1 and LINT-DLR-1 codify the underlying obstruction. identification of a cosmologically distributed ODLRO substrate with sufficient F_Q density and the right cosmic-time evolution, or loosening of the S-MM-CR DOF bound (Paper -1 patch v4 or later) permitting an additional propagating scalar with m ~ H_0.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "f13",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Superseded reading (v4.15 matter-sector exclusion record): every tree-level and perturbative mechanism examined for F13 independently fails (Higgs conflation, warp-factor cancellation, DBI radius inflation, T_3 rigidity, geometric truncation, perturbative torsion screening, Debye-coherence absence, WKB metric deformation; see the individual DEAD-table entries), and the remaining resonant-activation candidates move to the exclusion reservoir with F13.2 under OP-0-ACTIVATION's categorical exclusion (SL-SUSC-1). the three-gate reactivation test.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "f13-2",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Moved to the exclusion reservoir (v4.15, supersedes the earlier v4.7 reading): the matter-sector exclusion record and SL-SUSC-1 (the Susceptibility Exclusion) show the standing-wave substrate cannot be simultaneously rigid enough to survive ambient decoherence and soft enough to respond to the driving field through the same coupling channel; the entire C13a-e/C13sub contract chain is struck with it. the three-gate reactivation test; a transient nuclear-de-excitation exhaust channel is left open as a distinct, non-reinstating possibility gated on S-EXHAUST-COHERENCE (v4.16, SF-DG-013), named here but out of this entry's own reinstatement condition.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "f19",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Moved to the exclusion reservoir (v4.15 matter-sector exclusion record, supersedes the v4.7 reading): OP-0-ACTIVATION is dead per the FDT volume-law argument and the Susceptibility Exclusion (SL-SUSC-1); the stated surviving empirical face is a distinct gravitational-noise/stochastic-G channel (S-NOISE), not a reinstatement of the geometric-collapse mechanism itself. no F19-specific reinstatement clause beyond the generic three-gate test is stated in the document; the surviving S-NOISE channel is named as a distinct mechanism, not a condition reinstating F19.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-at-grade",
+        "target_ref": "f19",
+        "minimum_grade": "checked"
+      }
+    },
+    {
+      "claim_ref": "f21",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Reservoired (v4.15, contracts C21a/b/c struck) under the matter-sector exclusion record: every examined force-carrier channel independently fails by 8 to 51 orders of magnitude (Hehl-Datta, radion Yukawa, ADD KK graviton, torsion-Dirac, radion BCS, Dicke superradiant, Species-Scale QCD; see the individual DEAD-table entries), and OP-0-ACTIVATION's categorical exclusion (SL-SUSC-1) subsumes the surviving proposed channels as well. the three-gate reactivation test; no F21-specific reinstatement clause beyond the generic test is stated.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
     }
   ]
 };

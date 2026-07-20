@@ -1,153 +1,1235 @@
 {
   "description": "Every trellis identifier Stage 2 and Stage 2.5 claim to have entered, mapped to the claim (or comment) ref that carries it in corpora/dg/dg-data.js. Authored data; build/check-dg-coverage.mjs verifies the graph against it mechanically, both ways: every manifest entry resolves to a real claim, and every Stage-2-or-later claim of a covered kind (derivation, function, mechanism, prediction, branch-commitment, comment kinds, plus B-NU-1) appears in the manifest, so nothing silently drops in either direction. Stage 2.5 Track 1 added the dispositioned stub rows and Bekenstein-Hawking sub-results (Section 4.5, 4.2); Track 2 added K18 and the GUT Box occupant and structural-findings material.",
   "entries": [
-    { "trellis_id": "CC-1 (v4.14 form)", "ref": "cc1.v4-14", "category": "core-claim" },
-    { "trellis_id": "CC-1 (v4.16 cumulant form)", "ref": "cc1.v4-16", "category": "core-claim" },
-
-    { "trellis_id": "K1", "ref": "k1", "category": "constraint" },
-    { "trellis_id": "K2", "ref": "k2", "category": "constraint" },
-    { "trellis_id": "K3", "ref": "k3", "category": "constraint" },
-    { "trellis_id": "K4", "ref": "k4", "category": "constraint" },
-    { "trellis_id": "K5", "ref": "k5", "category": "constraint" },
-    { "trellis_id": "K6", "ref": "k6", "category": "constraint" },
-    { "trellis_id": "K7", "ref": "k7", "category": "constraint" },
-    { "trellis_id": "K8", "ref": "k8", "category": "constraint" },
-    { "trellis_id": "K9", "ref": "k9", "category": "constraint" },
-    { "trellis_id": "K10", "ref": "k10", "category": "constraint" },
-    { "trellis_id": "K11", "ref": "k11", "category": "constraint" },
-    { "trellis_id": "K12", "ref": "k12", "category": "constraint" },
-    { "trellis_id": "K13", "ref": "k13", "category": "constraint" },
-    { "trellis_id": "K14", "ref": "k14", "category": "constraint" },
-    { "trellis_id": "K15", "ref": "k15", "category": "constraint" },
-    { "trellis_id": "K16", "ref": "k16", "category": "constraint" },
-    { "trellis_id": "K17", "ref": "k17", "category": "constraint" },
-    { "trellis_id": "P3", "ref": "p3", "category": "structural-proof" },
-    { "trellis_id": "P8", "ref": "p8", "category": "structural-proof" },
-    { "trellis_id": "P11", "ref": "p11", "category": "structural-proof" },
-
-    { "trellis_id": "F01", "ref": "f01", "category": "function" },
-    { "trellis_id": "F02", "ref": "f02", "category": "function" },
-    { "trellis_id": "F03", "ref": "f03", "category": "function" },
-    { "trellis_id": "F04", "ref": "f04", "category": "function" },
-    { "trellis_id": "F06", "ref": "f06", "category": "function" },
-    { "trellis_id": "F07", "ref": "f07", "category": "function" },
-    { "trellis_id": "F08", "ref": "f08", "category": "function" },
-    { "trellis_id": "F09", "ref": "f09", "category": "function" },
-    { "trellis_id": "F10", "ref": "f10", "category": "function" },
-    { "trellis_id": "F11", "ref": "f11", "category": "function" },
-    { "trellis_id": "F14", "ref": "f14", "category": "function" },
-    { "trellis_id": "F15", "ref": "f15", "category": "function" },
-    { "trellis_id": "F16", "ref": "f16", "category": "function" },
-    { "trellis_id": "F17", "ref": "f17", "category": "function" },
-    { "trellis_id": "F18", "ref": "f18", "category": "function" },
-    { "trellis_id": "F20", "ref": "f20", "category": "function" },
-    { "trellis_id": "F22", "ref": "f22", "category": "function" },
-    { "trellis_id": "F23", "ref": "f23", "category": "function" },
-    { "trellis_id": "F-CC", "ref": "f-cc", "category": "function" },
-
-    { "trellis_id": "C01", "ref": "c01", "category": "mechanism" },
-    { "trellis_id": "C02", "ref": "c02", "category": "mechanism" },
-    { "trellis_id": "C03", "ref": "c03", "category": "mechanism" },
-    { "trellis_id": "C04", "ref": "c04", "category": "mechanism" },
-    { "trellis_id": "C06a", "ref": "c06a", "category": "mechanism" },
-    { "trellis_id": "C06b", "ref": "c06b", "category": "mechanism" },
-    { "trellis_id": "C07a", "ref": "c07a", "category": "mechanism" },
-    { "trellis_id": "C07b", "ref": "c07b", "category": "mechanism" },
-    { "trellis_id": "C09", "ref": "c09", "category": "mechanism" },
-    { "trellis_id": "C10", "ref": "c10", "category": "mechanism" },
-    { "trellis_id": "C15", "ref": "c15", "category": "mechanism" },
-    { "trellis_id": "C18a", "ref": "c18a", "category": "mechanism" },
-    { "trellis_id": "C18b", "ref": "c18b", "category": "mechanism" },
-    { "trellis_id": "C20a", "ref": "c20a", "category": "mechanism" },
-    { "trellis_id": "C20b", "ref": "c20b", "category": "mechanism" },
-    { "trellis_id": "C20c", "ref": "c20c", "category": "mechanism" },
-    { "trellis_id": "C20d", "ref": "c20d", "category": "mechanism" },
-    { "trellis_id": "C20e", "ref": "c20e", "category": "mechanism" },
-    { "trellis_id": "C20g", "ref": "c20g", "category": "mechanism" },
-    { "trellis_id": "C23", "ref": "c23", "category": "mechanism" },
-    { "trellis_id": "C23-SDC", "ref": "c23-sdc", "category": "mechanism" },
-    { "trellis_id": "C23-WGC", "ref": "c23-wgc", "category": "mechanism" },
-    { "trellis_id": "Bekenstein-Hawking entropy from edge mode counting (4.2)", "ref": "mech.bh-entropy", "category": "mechanism" },
-    { "trellis_id": "C08", "ref": "c08", "category": "mechanism" },
-    { "trellis_id": "C11", "ref": "c11", "category": "mechanism" },
-    { "trellis_id": "C20f-i", "ref": "c20f-i", "category": "mechanism" },
-    { "trellis_id": "C20f-ii", "ref": "c20f-ii", "category": "mechanism" },
-    { "trellis_id": "C20f-iii", "ref": "c20f-iii", "category": "mechanism" },
-    { "trellis_id": "Cold Spot ISW amplification (4.5)", "ref": "mech.cold-spot-isw", "category": "mechanism" },
-    { "trellis_id": "Stellar cooling via KK graviton bulk emission (4.5)", "ref": "mech.stellar-cooling-kk", "category": "mechanism" },
-
-    { "trellis_id": "C-RD-1", "ref": "pred.c-rd-1", "category": "prediction" },
-    { "trellis_id": "Lambda_1.4 tidal deformability (4.3 Marginal Pass)", "ref": "pred.lambda-1-4", "category": "prediction" },
-    { "trellis_id": "F14 CANNEX prediction", "ref": "pred.f14-cannex", "category": "prediction" },
-
-    { "trellis_id": "Path A (6.3)", "ref": "path-a", "category": "branch" },
-    { "trellis_id": "Path B (6.4)", "ref": "path-b", "category": "branch" },
-    { "trellis_id": "B-NU-1", "ref": "b-nu-1", "category": "observation" },
-
-    { "trellis_id": "S-CUMULANT-DERIVE", "ref": "s-cumulant-derive", "category": "sorry" },
-    { "trellis_id": "S-EXHAUST-COHERENCE", "ref": "s-exhaust-coherence", "category": "sorry" },
-    { "trellis_id": "S-EXHAUST-COLOCATION", "ref": "s-exhaust-colocation", "category": "sorry" },
-    { "trellis_id": "S-SECOND-LIGHT-SCALAR", "ref": "s-second-light-scalar", "category": "sorry" },
-    { "trellis_id": "S-NOISE", "ref": "s-noise", "category": "sorry" },
-    { "trellis_id": "S-FRAME", "ref": "s-frame", "category": "sorry" },
-    { "trellis_id": "S-E1-AUDIT", "ref": "s-e1-audit", "category": "sorry" },
-    { "trellis_id": "S-CC-007", "ref": "s-cc-007", "category": "sorry" },
-    { "trellis_id": "S-DD-001", "ref": "s-dd-001", "category": "sorry" },
-    { "trellis_id": "S-DD-002", "ref": "s-dd-002", "category": "sorry" },
-    { "trellis_id": "S-DD-003", "ref": "s-dd-003", "category": "sorry" },
-    { "trellis_id": "S-DD-004", "ref": "s-dd-004", "category": "sorry" },
-    { "trellis_id": "S-CC-002'", "ref": "s-cc-002prime", "category": "sorry" },
-    { "trellis_id": "S-AM-008", "ref": "s-am-008", "category": "sorry" },
-    { "trellis_id": "S-AM-009", "ref": "s-am-009", "category": "sorry" },
-    { "trellis_id": "S-AM-010", "ref": "s-am-010", "category": "sorry" },
-    { "trellis_id": "S-HSB-002b", "ref": "s-hsb-002b", "category": "sorry" },
-    { "trellis_id": "S-CC-001", "ref": "s-cc-001", "category": "sorry" },
-    { "trellis_id": "S-CC-002", "ref": "s-cc-002", "category": "sorry" },
-    { "trellis_id": "S-CC-004", "ref": "s-cc-004", "category": "sorry" },
-    { "trellis_id": "S-CC-005", "ref": "s-cc-005", "category": "sorry" },
-    { "trellis_id": "S-MM-CR", "ref": "s-mm-cr", "category": "sorry" },
-    { "trellis_id": "S-MM-003", "ref": "s-mm-003", "category": "sorry" },
-    { "trellis_id": "S-NS-018", "ref": "s-ns-018", "category": "sorry" },
-    { "trellis_id": "S-MIX-006", "ref": "s-mix-006", "category": "sorry" },
-    { "trellis_id": "S-MIX-007", "ref": "s-mix-007", "category": "sorry" },
-    { "trellis_id": "S-MIX-008", "ref": "s-mix-008", "category": "sorry" },
-    { "trellis_id": "OP-CK", "ref": "op-ck", "category": "sorry" },
-
-    { "trellis_id": "S-LAM-IF-UP", "ref": "s-lam-if-up", "category": "speculation-comment" },
-    { "trellis_id": "S-LAM-IF-DOWN", "ref": "s-lam-if-down", "category": "speculation-comment" },
-    { "trellis_id": "S-QFI-DEATH", "ref": "s-qfi-death", "category": "speculation-comment" },
-    { "trellis_id": "S-DNA-DFS", "ref": "s-dna-dfs", "category": "speculation-comment" },
-    { "trellis_id": "S-PROTON-MAG", "ref": "s-proton-mag", "category": "speculation-comment" },
-
-    { "trellis_id": "Hemispherical power asymmetry (4.5)", "ref": "mech.hemispheric-power-asymmetry", "category": "mechanism" },
-    { "trellis_id": "Cusp-core resolution (4.5)", "ref": "mech.cusp-core-resolution", "category": "mechanism" },
-    { "trellis_id": "Tear vs puncture afterglow decay indices (4.5)", "ref": "mech.tear-puncture-afterglow", "category": "mechanism" },
-    { "trellis_id": "E_snap chain (4.5)", "ref": "mech.e-snap-chain", "category": "mechanism" },
-    { "trellis_id": "E_snap universality (4.5)", "ref": "mech.e-snap-universality", "category": "mechanism" },
-    { "trellis_id": "Pycnonuclear fusion rates (4.5)", "ref": "mech.pycnonuclear-fusion-rates", "category": "mechanism" },
-    { "trellis_id": "MOND a_0 (4.5)", "ref": "mech.mond-a0-leakage", "category": "mechanism" },
-    { "trellis_id": "Loop-level KK threshold corrections to alpha (4.5)", "ref": "mech.loop-kk-threshold-alpha", "category": "mechanism" },
-    { "trellis_id": "Torsional hair (4.5)", "ref": "s-torsional-hair", "category": "comment" },
-    { "trellis_id": "Muonic atom discrimination test (4.5)", "ref": "pred.muonic-atom-discrimination", "category": "prediction" },
-    { "trellis_id": "Bekenstein-Hawking sub-result: area law from edge mode counting (4.2)", "ref": "mech.bh-area-law-edge-modes", "category": "mechanism" },
-    { "trellis_id": "Bekenstein-Hawking sub-result: RT surface anchors to ETW brane (4.2)", "ref": "mech.bh-rt-surface-anchor", "category": "mechanism" },
-    { "trellis_id": "Bekenstein-Hawking sub-result: SO(1,4) phase space protected (4.2)", "ref": "mech.bh-so14-phase-space-protected", "category": "mechanism" },
-    { "trellis_id": "Bekenstein-Hawking sub-result: radion frozen out of boundary theory (4.2)", "ref": "mech.bh-radion-frozen-boundary", "category": "mechanism" },
-    { "trellis_id": "Bekenstein-Hawking sub-result: v(F_Q) dynamic invariance (4.2)", "ref": "mech.bh-quarter-prefactor-invariance", "category": "mechanism" },
-    { "trellis_id": "Bekenstein-Hawking sub-result: exact 1/4 prefactor from microcanonical count (4.2)", "ref": "mech.bh-quarter-prefactor-microcanonical", "category": "mechanism" },
-
-    { "trellis_id": "K18", "ref": "k18", "category": "constraint" },
-    { "trellis_id": "GUT Box occupant (v4.0)", "ref": "gut-box-occupant", "category": "gut-box-occupant" },
-    { "trellis_id": "SF-G1", "ref": "sf-g1", "category": "structural-finding" },
-    { "trellis_id": "SF-G2", "ref": "sf-g2", "category": "structural-finding" },
-    { "trellis_id": "SF-G3", "ref": "sf-g3", "category": "structural-finding" },
-    { "trellis_id": "SF-D0", "ref": "sf-d0", "category": "structural-finding" },
-    { "trellis_id": "SF-D1", "ref": "sf-d1", "category": "structural-finding" },
-    { "trellis_id": "SF-D2", "ref": "sf-d2", "category": "structural-finding" },
-    { "trellis_id": "SF-MIX-001", "ref": "sf-mix-001", "category": "structural-finding" },
-    { "trellis_id": "SF-MIX-002", "ref": "sf-mix-002", "category": "structural-finding" },
-    { "trellis_id": "SF-MIX-003", "ref": "sf-mix-003", "category": "structural-finding" },
-    { "trellis_id": "SF-MM-002", "ref": "sf-mm-002", "category": "structural-finding" },
-    { "trellis_id": "SF-MM-003", "ref": "sf-mm-003", "category": "structural-finding" }
+    {
+      "trellis_id": "CC-1 (v4.14 form)",
+      "ref": "cc1.v4-14",
+      "category": "core-claim"
+    },
+    {
+      "trellis_id": "CC-1 (v4.16 cumulant form)",
+      "ref": "cc1.v4-16",
+      "category": "core-claim"
+    },
+    {
+      "trellis_id": "K1",
+      "ref": "k1",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K2",
+      "ref": "k2",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K3",
+      "ref": "k3",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K4",
+      "ref": "k4",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K5",
+      "ref": "k5",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K6",
+      "ref": "k6",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K7",
+      "ref": "k7",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K8",
+      "ref": "k8",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K9",
+      "ref": "k9",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K10",
+      "ref": "k10",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K11",
+      "ref": "k11",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K12",
+      "ref": "k12",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K13",
+      "ref": "k13",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K14",
+      "ref": "k14",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K15",
+      "ref": "k15",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K16",
+      "ref": "k16",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "K17",
+      "ref": "k17",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "P3",
+      "ref": "p3",
+      "category": "structural-proof"
+    },
+    {
+      "trellis_id": "P8",
+      "ref": "p8",
+      "category": "structural-proof"
+    },
+    {
+      "trellis_id": "P11",
+      "ref": "p11",
+      "category": "structural-proof"
+    },
+    {
+      "trellis_id": "F01",
+      "ref": "f01",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F02",
+      "ref": "f02",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F03",
+      "ref": "f03",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F04",
+      "ref": "f04",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F06",
+      "ref": "f06",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F07",
+      "ref": "f07",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F08",
+      "ref": "f08",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F09",
+      "ref": "f09",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F10",
+      "ref": "f10",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F11",
+      "ref": "f11",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F14",
+      "ref": "f14",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F15",
+      "ref": "f15",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F16",
+      "ref": "f16",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F17",
+      "ref": "f17",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F18",
+      "ref": "f18",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F20",
+      "ref": "f20",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F22",
+      "ref": "f22",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F23",
+      "ref": "f23",
+      "category": "function"
+    },
+    {
+      "trellis_id": "F-CC",
+      "ref": "f-cc",
+      "category": "function"
+    },
+    {
+      "trellis_id": "C01",
+      "ref": "c01",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C02",
+      "ref": "c02",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C03",
+      "ref": "c03",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C04",
+      "ref": "c04",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C06a",
+      "ref": "c06a",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C06b",
+      "ref": "c06b",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C07a",
+      "ref": "c07a",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C07b",
+      "ref": "c07b",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C09",
+      "ref": "c09",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C10",
+      "ref": "c10",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C15",
+      "ref": "c15",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C18a",
+      "ref": "c18a",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C18b",
+      "ref": "c18b",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C20a",
+      "ref": "c20a",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C20b",
+      "ref": "c20b",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C20c",
+      "ref": "c20c",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C20d",
+      "ref": "c20d",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C20e",
+      "ref": "c20e",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C20g",
+      "ref": "c20g",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C23",
+      "ref": "c23",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C23-SDC",
+      "ref": "c23-sdc",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C23-WGC",
+      "ref": "c23-wgc",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "Bekenstein-Hawking entropy from edge mode counting (4.2)",
+      "ref": "mech.bh-entropy",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C08",
+      "ref": "c08",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C11",
+      "ref": "c11",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C20f-i",
+      "ref": "c20f-i",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C20f-ii",
+      "ref": "c20f-ii",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C20f-iii",
+      "ref": "c20f-iii",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "Cold Spot ISW amplification (4.5)",
+      "ref": "mech.cold-spot-isw",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "Stellar cooling via KK graviton bulk emission (4.5)",
+      "ref": "mech.stellar-cooling-kk",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "C-RD-1",
+      "ref": "pred.c-rd-1",
+      "category": "prediction"
+    },
+    {
+      "trellis_id": "Lambda_1.4 tidal deformability (4.3 Marginal Pass)",
+      "ref": "pred.lambda-1-4",
+      "category": "prediction"
+    },
+    {
+      "trellis_id": "F14 CANNEX prediction",
+      "ref": "pred.f14-cannex",
+      "category": "prediction"
+    },
+    {
+      "trellis_id": "Path A (6.3)",
+      "ref": "path-a",
+      "category": "branch"
+    },
+    {
+      "trellis_id": "Path B (6.4)",
+      "ref": "path-b",
+      "category": "branch"
+    },
+    {
+      "trellis_id": "B-NU-1",
+      "ref": "b-nu-1",
+      "category": "observation"
+    },
+    {
+      "trellis_id": "S-CUMULANT-DERIVE",
+      "ref": "s-cumulant-derive",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-EXHAUST-COHERENCE",
+      "ref": "s-exhaust-coherence",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-EXHAUST-COLOCATION",
+      "ref": "s-exhaust-colocation",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-SECOND-LIGHT-SCALAR",
+      "ref": "s-second-light-scalar",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-NOISE",
+      "ref": "s-noise",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-FRAME",
+      "ref": "s-frame",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-E1-AUDIT",
+      "ref": "s-e1-audit",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-CC-007",
+      "ref": "s-cc-007",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-DD-001",
+      "ref": "s-dd-001",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-DD-002",
+      "ref": "s-dd-002",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-DD-003",
+      "ref": "s-dd-003",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-DD-004",
+      "ref": "s-dd-004",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-CC-002'",
+      "ref": "s-cc-002prime",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-AM-008",
+      "ref": "s-am-008",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-AM-009",
+      "ref": "s-am-009",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-AM-010",
+      "ref": "s-am-010",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-HSB-002b",
+      "ref": "s-hsb-002b",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-CC-001",
+      "ref": "s-cc-001",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-CC-002",
+      "ref": "s-cc-002",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-CC-004",
+      "ref": "s-cc-004",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-CC-005",
+      "ref": "s-cc-005",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-MM-CR",
+      "ref": "s-mm-cr",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-MM-003",
+      "ref": "s-mm-003",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-NS-018",
+      "ref": "s-ns-018",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-MIX-006",
+      "ref": "s-mix-006",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-MIX-007",
+      "ref": "s-mix-007",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-MIX-008",
+      "ref": "s-mix-008",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "OP-CK",
+      "ref": "op-ck",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-LAM-IF-UP",
+      "ref": "s-lam-if-up",
+      "category": "speculation-comment"
+    },
+    {
+      "trellis_id": "S-LAM-IF-DOWN",
+      "ref": "s-lam-if-down",
+      "category": "speculation-comment"
+    },
+    {
+      "trellis_id": "S-QFI-DEATH",
+      "ref": "s-qfi-death",
+      "category": "speculation-comment"
+    },
+    {
+      "trellis_id": "S-DNA-DFS",
+      "ref": "s-dna-dfs",
+      "category": "speculation-comment"
+    },
+    {
+      "trellis_id": "S-PROTON-MAG",
+      "ref": "s-proton-mag",
+      "category": "speculation-comment"
+    },
+    {
+      "trellis_id": "Hemispherical power asymmetry (4.5)",
+      "ref": "mech.hemispheric-power-asymmetry",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "Cusp-core resolution (4.5)",
+      "ref": "mech.cusp-core-resolution",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "Tear vs puncture afterglow decay indices (4.5)",
+      "ref": "mech.tear-puncture-afterglow",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "E_snap chain (4.5)",
+      "ref": "mech.e-snap-chain",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "E_snap universality (4.5)",
+      "ref": "mech.e-snap-universality",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "Pycnonuclear fusion rates (4.5)",
+      "ref": "mech.pycnonuclear-fusion-rates",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "MOND a_0 (4.5)",
+      "ref": "mech.mond-a0-leakage",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "Loop-level KK threshold corrections to alpha (4.5)",
+      "ref": "mech.loop-kk-threshold-alpha",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "Torsional hair (4.5)",
+      "ref": "s-torsional-hair",
+      "category": "comment"
+    },
+    {
+      "trellis_id": "Muonic atom discrimination test (4.5)",
+      "ref": "pred.muonic-atom-discrimination",
+      "category": "prediction"
+    },
+    {
+      "trellis_id": "Bekenstein-Hawking sub-result: area law from edge mode counting (4.2)",
+      "ref": "mech.bh-area-law-edge-modes",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "Bekenstein-Hawking sub-result: RT surface anchors to ETW brane (4.2)",
+      "ref": "mech.bh-rt-surface-anchor",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "Bekenstein-Hawking sub-result: SO(1,4) phase space protected (4.2)",
+      "ref": "mech.bh-so14-phase-space-protected",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "Bekenstein-Hawking sub-result: radion frozen out of boundary theory (4.2)",
+      "ref": "mech.bh-radion-frozen-boundary",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "Bekenstein-Hawking sub-result: v(F_Q) dynamic invariance (4.2)",
+      "ref": "mech.bh-quarter-prefactor-invariance",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "Bekenstein-Hawking sub-result: exact 1/4 prefactor from microcanonical count (4.2)",
+      "ref": "mech.bh-quarter-prefactor-microcanonical",
+      "category": "mechanism"
+    },
+    {
+      "trellis_id": "K18",
+      "ref": "k18",
+      "category": "constraint"
+    },
+    {
+      "trellis_id": "GUT Box occupant (v4.0)",
+      "ref": "gut-box-occupant",
+      "category": "gut-box-occupant"
+    },
+    {
+      "trellis_id": "SF-G1",
+      "ref": "sf-g1",
+      "category": "structural-finding"
+    },
+    {
+      "trellis_id": "SF-G2",
+      "ref": "sf-g2",
+      "category": "structural-finding"
+    },
+    {
+      "trellis_id": "SF-G3",
+      "ref": "sf-g3",
+      "category": "structural-finding"
+    },
+    {
+      "trellis_id": "SF-D0",
+      "ref": "sf-d0",
+      "category": "structural-finding"
+    },
+    {
+      "trellis_id": "SF-D1",
+      "ref": "sf-d1",
+      "category": "structural-finding"
+    },
+    {
+      "trellis_id": "SF-D2",
+      "ref": "sf-d2",
+      "category": "structural-finding"
+    },
+    {
+      "trellis_id": "SF-MIX-001",
+      "ref": "sf-mix-001",
+      "category": "structural-finding"
+    },
+    {
+      "trellis_id": "SF-MIX-002",
+      "ref": "sf-mix-002",
+      "category": "structural-finding"
+    },
+    {
+      "trellis_id": "SF-MIX-003",
+      "ref": "sf-mix-003",
+      "category": "structural-finding"
+    },
+    {
+      "trellis_id": "SF-MM-002",
+      "ref": "sf-mm-002",
+      "category": "structural-finding"
+    },
+    {
+      "trellis_id": "SF-MM-003",
+      "ref": "sf-mm-003",
+      "category": "structural-finding"
+    },
+    {
+      "trellis_id": "Proposed mechanism: state-dependent VEV suppression amplifies the effective gravitational coupling G",
+      "ref": "dead.geff-amplification",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed identification: m_e = y_e v_eff, treating the framework's SO(1,4) symmetry-breaking Higgs a",
+      "ref": "dead.higgs-conflation",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a tree-level warp-factor alpha(z_0) dependence provides a physical z_0-dependent",
+      "ref": "dead.warp-factor-alpha",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: Born-Infeld radius inflation from a small brane tension shift provides the geome",
+      "ref": "dead.dbi-radius-inflation",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: T_3 variation produces alpha proportional to T_3^{-1}, giving a dynamical channe",
+      "ref": "dead.t3-variation-alpha",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: geometric truncation of the LUNA screening potential reproduces the observed ele",
+      "ref": "dead.luna-geometric-truncation",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: perturbative torsion screening at tree level reproduces the LUNA electron-screen",
+      "ref": "dead.luna-perturbative-torsion",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a Debye-temperature-correlated coherence channel explains the target-material de",
+      "ref": "dead.luna-debye-coherence",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: framework-generated torsion sources the dark-matter phenomenology directly, with",
+      "ref": "dead.torsion-dark-matter",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: torsion generated by the framework derives the MOND acceleration scale a_0 from ",
+      "ref": "dead.torsion-mond-a0",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: zero-point mode pairs cancel across the brane membrane, providing a natural cosm",
+      "ref": "dead.zero-point-cancellation",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: DBI (Born-Infeld) nonlinearity in the brane action reproduces the MOND force-law",
+      "ref": "dead.dbi-mond",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: the snapback energy E_snap scales with the coherence domain's 3D volume (targeti",
+      "ref": "dead.esnap-3d-volume",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: the snapback energy E_snap follows an atomic-scale area-law scaling (targeting F",
+      "ref": "dead.esnap-atomic-area-law",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: t_heal follows a naive mass-luminosity scaling relation (targeting F04).",
+      "ref": "dead.theal-naive-ml",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: t_heal is set by a pixel-counting (areal-resolution) estimate of the healing fro",
+      "ref": "dead.theal-pixel-counting",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed identification: the observed astrophysical transient timescale equals the KK scrambling tim",
+      "ref": "dead.transient-scrambling-identity",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a single universal scaling law for Lambda^4_min applies across all coherent-matt",
+      "ref": "dead.lambda4min-universal",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: coherent-matter bosenova collapse (in any of its examined variants) provides an ",
+      "ref": "dead.bosenova-all-variants",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a missing-BEC signature escapes detection by radiating into the 5D bulk (an auxi",
+      "ref": "dead.missing-bec-bulk-escape",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed necessity: the Karch-Randall brane itself is mandatory to preserve the Reeh-Schlieder prope",
+      "ref": "dead.kr-brane-reeh-schlieder",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: fixing the brane position by hand (Route 3) provides a stable resolution route f",
+      "ref": "dead.route3-fixed-brane",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a conjugate-orientation baryogenesis channel (including the electroweak-phase-tr",
+      "ref": "dead.conjugate-baryogenesis-all",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a WKB-computed metric deformation supplies a stable intermediate screening state",
+      "ref": "dead.wkb-metric-deformation",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: an explicit quintessence scalar field is added to source the framework's dark-en",
+      "ref": "dead.quintessence-scalar-de",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: the SO(1,4) symmetry-breaking Higgs itself serves as the slow-roll inflaton for ",
+      "ref": "dead.so14-higgs-inflaton",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: Coleman-De Luccia bubble nucleation drives the geometric phase transition at the",
+      "ref": "dead.cdl-bubble-nucleation",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed protection: 't Hooft technical naturalness for the tiny coupling lambda ~ 10^-44 via an app",
+      "ref": "dead.thooft-naturalness-lambda",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed failure mode: the state-dependent coupling v(F_Q) permits Gisin-Polchinski-type superlumina",
+      "ref": "dead.gisin-polchinski-signaling",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed computation: a naive additive sum over the KK tower with a rigid momentum cutoff gives the ",
+      "ref": "dead.naive-kk-tower-sum",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: sliding of the framework's Species Scale explains the observed GZK-violating ult",
+      "ref": "dead.gzk-species-scale",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: the framework's KK thermal-exhaust channel sources the AMS-02 cosmic-ray positro",
+      "ref": "dead.ams02-kk-exhaust",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a first-order geometric condensation phase transition at T_RH ~ 10^7 GeV sources",
+      "ref": "dead.nanograv-geometric-condensation",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed identification: fractional topological invariants observed in the fractional quantum Hall e",
+      "ref": "dead.fqhe-so14-topology",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: the state-dependent VEV v(F_Q) directly sources the universal Planckian-dissipat",
+      "ref": "dead.planckian-dissipation-vev",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a Hehl-Datta four-fermion contact interaction, amplified by the framework's cohe",
+      "ref": "dead.hehl-datta-nuclear",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: tree-level radion-mediated Yukawa exchange produces the nuclear-scale Gamow scre",
+      "ref": "dead.radion-yukawa-nuclear",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: an ADD-style summed extra-dimensional KK-graviton Coulomb modification produces ",
+      "ref": "dead.add-kk-graviton-coulomb",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a torsion-induced axial potential in the Dirac equation produces the nuclear-sca",
+      "ref": "dead.torsion-dirac-axial",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a radion-mediated BCS-style pairing gap produces the nuclear-scale Gamow screeni",
+      "ref": "dead.radion-bcs-pairing",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a Dicke superradiant enhancement across N ~ 10^57 nucleons produces the nuclear-",
+      "ref": "dead.dicke-superradiant-gap",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: Species-Scale modification of the running QCD coupling produces the nuclear-scal",
+      "ref": "dead.species-scale-qcd",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a cosmological lithium coherence pump via ^7Li(p,alpha)^4He resolves the primord",
+      "ref": "dead.li7-coherence-pump",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a cosmological beryllium coherence pump pivoting on ^7Be(n,p)^7Li resolves the p",
+      "ref": "dead.be7-coherence-pump",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: radion-mediated modification of the ^7Be electron-capture rate resolves the prim",
+      "ref": "dead.radion-be7-electron-capture",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: dynamically amplified local gravity (a G_eff amplification) in the SN 2024afav a",
+      "ref": "dead.sn2024afav-geff",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a Hyper-Kondo heavy-fermion pathway (via lanthanide doping) enables radion-assis",
+      "ref": "dead.hyper-kondo-superconductivity",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a light-carrier QFI pathway enables radion-assisted room-temperature superconduc",
+      "ref": "dead.light-carrier-qfi-superconductivity",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: dynamic elevation of the KK scrambling time t_s via local VEV suppression enable",
+      "ref": "dead.dynamic-ts-elevation",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a self-driven coherence bootstrap enables radion-assisted room-temperature super",
+      "ref": "dead.self-bootstrap-superconductivity",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: radion-mediated room-temperature superconductivity, taken across all examined pa",
+      "ref": "dead.radion-superconductivity-summary",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: quantum coherence amplifies the vacuum expectation value above its bare value v_",
+      "ref": "dead.vev-amplification-coherence",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a charge-density-wave bosonic gateway provides sufficient VEV suppression to ena",
+      "ref": "dead.cdw-bosonic-gateway",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: geometric torsion in a Kagome-lattice system produces the F24 anomalous thermal ",
+      "ref": "dead.f24-kagome-athe",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: N bosons occupying a single coherent mode produce O(N^2) variance for number/ene",
+      "ref": "dead.coherent-state-n2-variance",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: collective edge-mode phase rigidity from off-diagonal long-range order (ODLRO) p",
+      "ref": "dead.edge-mode-l4-scaling",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed uniqueness claim: gamma(eta_AB phi^A phi^B) f_Q is the unique lowest-dimension SO(1,4)-inva",
+      "ref": "dead.lagrangian-uniqueness",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-Q-01: proposed mechanism that the Pati-Salam gauge KK tower on dP_3 provides an independent speci",
+      "ref": "dead.er-q01-gauge-kk-species-lowering",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-CC-001: proposed mechanism that species-enhanced gamma(z_0) inheritance stabilizes the Karch-Rand",
+      "ref": "dead.er-cc001-gamma-z0-stabilization",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-CC-002: proposed mechanism that a Goldberger-Wise bulk scalar stabilizes the Karch-Randall brane ",
+      "ref": "dead.er-cc002-goldberger-wise",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-CC-003: proposed protection mechanism that a discrete shift symmetry rho -> rho + 2pi/(c Y_MM) pr",
+      "ref": "dead.er-cc003-shift-symmetry-protection",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-MM-001: proposed argument that antisymmetry of the Poisson bracket combined with index symmetry o",
+      "ref": "dead.er-mm001-antisymmetry-vanishing",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-MM-002: proposed rescue that an invertible local algebraic field redefinition Z-tilde = Z + k*Z (",
+      "ref": "dead.er-mm002-local-algebraic-redefinition",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-MM-003: proposed rescue that a pointwise Schur-complement inversion of the full 44x44 Dirac matri",
+      "ref": "dead.er-mm003-pointwise-schur",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-MIX-001: proposed tree-level rescue that the DBI brane-bending mode pi mixes with the MM Higgs ra",
+      "ref": "dead.er-mix001-dbi-pi-chi-mixing",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-MIX-002: proposed rescue that algebraic elimination of the contortion in the broken-phase MM acti",
+      "ref": "dead.er-mix002-einstein-cartan-torsion",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-MIX-003: proposed construction that scalar kinetic terms in MMSW gravity can be written as standa",
+      "ref": "dead.er-mix003-naive-scalar-kinetic",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-WD-001: proposed mechanism that the framework's coherent-matter geometric coupling triggers sub-C",
+      "ref": "dead.er-wd001-sub-chandra-wd-detonation",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-COSM-001: proposed mechanism that the integrated coherence fraction f increases monotonically as ",
+      "ref": "dead.er-cosm001-integrated-f-buildup",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-COSM-002: proposed mechanism that even with f approximately zero at cosmological scales, the O(N)",
+      "ref": "dead.er-cosm002-trace-channel-gradient",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-COSM-003: proposed mechanism that cosmological averaging of rare ODLRO patch activations (e.g.",
+      "ref": "dead.er-cosm003-cosmological-averaging",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-COSM-004: proposed mechanism that the radion executes a slow-roll trajectory within a single AM t",
+      "ref": "dead.er-cosm004-intra-sector-slow-roll",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-WGC-001: proposed rescue that the gamma-activation mechanism's L2 variance bound on the modular H",
+      "ref": "dead.er-wgc001-hydrodynamic-bkm",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-DE-001: proposed mechanism that the framework's bulk-routing channel (F09, F19, B19), summed cosm",
+      "ref": "dead.er-de001-bh-mechanism-evolving-de",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-HT-001: proposed mechanism that a New-Early-Dark-Energy-style thermal coupling to a hidden hot se",
+      "ref": "dead.er-ht001-nede-thermal-de",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-DE-002: proposed mechanism that reversing the bulk-routing direction (bulk back to brane) sources",
+      "ref": "dead.er-de002-vacuum-driven-reheating",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-DE-003: proposed mechanism that trans-Planckian vacuum-mode dynamics sources an evolving dark-ene",
+      "ref": "dead.er-de003-quantum-foam-de",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-DE-004: proposed mechanism that slow-roll across N much greater than 1 light moduli in the hairon",
+      "ref": "dead.er-de004-multi-modulus-slow-roll",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-DE-005: proposed mechanism that promoting the hairon moduli (the microscopic constituents of the ",
+      "ref": "dead.er-de005-hairon-quintessence",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "ER-DE-006: proposed mechanism that a multi-field generalization of hairon-quintessence (ER-DE-005), ",
+      "ref": "dead.er-de006-hairon-multi-field",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: thermodynamically driven two-state switching between coexisting nuclear-pasta ph",
+      "ref": "dead.pasta-inter-equilibrium-switching",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: a coherent parametric driver within the neutron-star interior (neutrino flux, ma",
+      "ref": "dead.pasta-parametric-driving",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: the ^1S0 neutron pairing quantum critical point spatially enhances pasta torsion",
+      "ref": "dead.pasta-1s0-qcp",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: the ^3P2 neutron pairing channel enhances pasta torsion for radion activation (t",
+      "ref": "dead.pasta-3p2-pairing",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: quantum Fisher information enhancement from the neutron-star vortex lattice prov",
+      "ref": "dead.pasta-vortex-lattice-qfi",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: topological entanglement entropy from the multiply-connected pasta geometry prov",
+      "ref": "dead.pasta-topological-entanglement",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: spinodal compressibility divergence in the pasta phase provides the enhanced sus",
+      "ref": "dead.pasta-spinodal-compressibility",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "Proposed mechanism: the KBC (Keenan-Barger-Cowie) local void's density profile resolves the Hubble t",
+      "ref": "dead.kbc-void-hubble-tension",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "C12a: Bianchi identity mandates dark-energy w(z) evolution, derived from the framework's mandatory N",
+      "ref": "c12a",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "C12b: the framework's thawing dark-energy prediction (dw/dt > 0) matches the DESI 2024 CPL sign and ",
+      "ref": "c12b",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "C12c: modified H(z) from the F12 thawing trajectory suppresses the integrated optical depth tau duri",
+      "ref": "c12c",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "C13a: ponderomotive bunching and chi^(2) optical rectification provide the leading candidate mechani",
+      "ref": "c13a",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "C13b: tree-level radion coupling to T^mu_mu stabilizes the driven lattice, composing with C13a's act",
+      "ref": "c13b",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "C13c: resonant mode localization via a dual-laser THz standing wave produces geometric antinode VEV ",
+      "ref": "c13c",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "C13d: heavy-fermion scaling via lanthanide doping (a Hyper-Kondo state) amplifies the effective mass",
+      "ref": "c13d",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "C13e: aneutronic coherence pumping via ^7Li(p,alpha)^4He provides a nuclear-reaction-driven coherent",
+      "ref": "c13e",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "C13sub: a sub-leading KK-tower vacuum-polarization correction (~0.3 eV) contributes an auxiliary ter",
+      "ref": "c13sub",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "C21a: topological torsion flux Phi_T ~ 0.05 rad from a coherent nuclear-pasta domain (via the Katana",
+      "ref": "c21a",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "C21b: ponderomotive electron screening in the degenerate stellar plasma, multiplicative with C21a's ",
+      "ref": "c21b",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "C21c: the solar constraint check confirms solar neutrino flux is completely unaffected by the F21 me",
+      "ref": "c21c",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "C23-dS: thawing dark energy (dw/dt > 0) from the framework's mandatory NEC-preserving KK exhaust str",
+      "ref": "c23-ds",
+      "category": "reservoir-mechanism"
+    },
+    {
+      "trellis_id": "F05: Massive Neutron Stars Are Supported.",
+      "ref": "f05",
+      "category": "reservoir-function"
+    },
+    {
+      "trellis_id": "F12: Dark Energy Evolves.",
+      "ref": "f12",
+      "category": "reservoir-function"
+    },
+    {
+      "trellis_id": "F13: LUNA Screening.",
+      "ref": "f13",
+      "category": "reservoir-function"
+    },
+    {
+      "trellis_id": "F13.2: Resonant Radion Catalysis.",
+      "ref": "f13-2",
+      "category": "reservoir-function"
+    },
+    {
+      "trellis_id": "F19: Geometric Wavefunction Collapse.",
+      "ref": "f19",
+      "category": "reservoir-function"
+    },
+    {
+      "trellis_id": "F21: Dual-Channel Gamow Enhancement.",
+      "ref": "f21",
+      "category": "reservoir-function"
+    }
   ]
 }

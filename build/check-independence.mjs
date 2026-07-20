@@ -34,7 +34,7 @@ const H = "=".repeat(80);
 console.log(H); console.log("CHECK-INDEPENDENCE: correct footprint-based independence, recomputed from first principles"); console.log(H);
 
 const built = buildKernel();
-const CEILING = { axiom: "constitutive", "standard-result": "checked", observation: "checked", "conjecture-adopted": "corroborated", derivation: "independently-rechecked", function: "corroborated", mechanism: "corroborated", prediction: "corroborated", "branch-commitment": "corroborated", comment: "ungraded" };
+const CEILING = { axiom: "constitutive", "standard-result": "checked", observation: "checked", "conjecture-adopted": "corroborated", derivation: "independently-rechecked", theorem: "constitutive", computation: "checked", function: "corroborated", mechanism: "corroborated", prediction: "corroborated", "branch-commitment": "corroborated", block: "corroborated", comment: "ungraded" };
 
 const specByRef = new Map(built.claims.map((c) => [c.spec.ref, c.spec]));
 const identityByRef = new Map(built.claims.map((c) => [c.spec.ref, c.rec.identity]));
