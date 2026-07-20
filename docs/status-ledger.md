@@ -2,7 +2,7 @@
 
 The single source of build truth from this commit forward. A stage is done when its ledger line moves, not before. Graded honestly: `built and verified` (with the check that verified it named), or `specified, not built` (named, never implied done).
 
-Stages 0 through 3a. Stage 3 is split into three sessions (3a supports, 3b checking records and independence lifts, 3c the reservoir), each with one cause of grade movement so the distribution reviews stay legible. Stages 3b onward, and Stages 4 through 6, are specified in `docs/physics-kernel-recon-report.md` Section 6 and are not yet begun.
+Stages 0 through 3b. Stage 3 is split into three sessions (3a supports, 3b checking records and independence lifts, 3c the reservoir), each with one cause of grade movement so the distribution reviews stay legible. Stage 3c, and Stages 4 through 6, are specified in `docs/physics-kernel-recon-report.md` Section 6 and are not yet begun.
 
 **Documentation landing (between Stage 3a and Stage 3b):** `docs/synthesis-backlog.md` (the operator-approved synthesis of six deep-research reports) and the six PK-DR report PDFs under `docs/research/` landed byte-identical, hash-verified against the operator's uploads (`docs/research/MANIFEST.md`). No kernel act: no claims, no source-table rows, no new checks. The reports enter the source table only when a later stage first cites them, expected at Stage 3c.
 
@@ -194,6 +194,68 @@ None in substance. Two interpretive choices, documented as judgment calls rather
 
 - **A supports link's own `declared_grade`.** The substrate does not police a link's declared grade against anything (only a claim's `declared_grade` is checked against its earned grade, via `GM-MODE`/`GM-ABOVE`); nothing stops a link from being declared arbitrarily high. This build declares every supports link at an honest snapshot of its source claim's real earned grade at the moment the link is wired (computed via the real `earnedGrade()`, in topological order within each region), never invented or inflated. Mechanically this is equivalent to declaring every link at a uniform high ceiling and letting `meet()` floor it to the truth regardless, but the chosen convention keeps the raw data self-explanatory without requiring a reader to trust that the floor operation saves an overclaim.
 - **Two predictions' producing claims are K-constraints, not C-numbered mechanisms.** C-RD-1 and Lambda_1.4 name no mechanism directly; C-RD-1's own text derives its result by equating a threshold to F_Q,crit (K7's own quantity), and Lambda_1.4's parent function F02 has exactly one mechanism, C02, whose two-channel physics the modified TOV solver runs on. Read "the mechanisms that produce them" to include the K-constraint or the parent function's sole mechanism where the prediction's own text names no C-numbered contract directly.
+
+## Stage 3b: checking records and lifts
+
+The second of three Stage 3 sessions. Where Stage 3a wired the dependency structure without moving a single grade, Stage 3b is where the corpus first earns above its floor: real checking records, cited to real artifacts, propagated through the existing supports structure to a fixed point.
+
+| Item | Status | Verified by |
+|---|---|---|
+| Track 0: three governing-conventions amendments landed from `docs/synthesis-backlog.md` (independence computed via footprint intersection, ordinal-only lattice discipline, crux resolution for held contradictions) | built and verified | `node build/check-substrate.mjs`, full suite unaffected (documentation only) |
+| Track 1: 4 new source rows (GRB 060614, Sukhbold et al. 2016, RHIC/LHC KSS data, Donnelly and Freidel 2016); 22 of the 37 Stage-3a-unwired mechanisms had their `source_id` corrected from the generic `trellis.v4-16` to the specific document their Evidence column names; 9 left uncorrected (no single-document citation available); 6 (the Bekenstein-Hawking sub-results) needed nothing further | built and verified | `node build/check-dg.mjs` |
+| Track 2: 40 checking records entered in two bands. Band 1: one real citation each for all 15 standard-results and all 20 observations (`checker:literature` or `checker:gemini-dr` for B12). Band 2: P3 (two audits, genuinely sharing ancestry), P8, P11, K1 (one real audit each) | built and verified | `node build/check-independence.mjs`; `node build/check-dg-tier1.mjs` section 3 (declared at or below the real gate's earned value, `leqWithinMode`) |
+| A corrected, externally-computed independence discipline, since the vendored `checkingRecord()` builder drops a hand-authored `footprint` field the real gate's `ownBasis()` would otherwise need; declared grades follow the correct computation, not the gate's over-permissive one | built and verified | `node build/check-independence.mjs` |
+| Track 3: `build/check-independence.mjs`, wired into CI as the ninth check; both required paths exercised | built and verified | the check itself, run green; the two scratch exercises below |
+| Track 4: the 12 dangling "Tier 4.X" provenance references reconciled (attempted); 0 resolve to a new confident link | built and verified (as an honest null result, not a failure) | manual read against `trellis/4_16_main.md` Section 1.6, recorded below |
+| `docs/status-ledger.md`, this section, the attributed distribution table, the under-claim ledger | built and verified | this file |
+
+### Earned-grade distribution, whole corpus, Stage 3b close
+
+184 claims total, unchanged (Stage 3b adds checking records and source-row corrections, no new claims). Before Stage 3b: 4 constitutive, 174 asserted, 6 ungraded (Stage 3a's flat floor). After: 4 constitutive, 118 asserted, 38 checked, 18 corroborated, 6 ungraded.
+
+**Every claim that moved, with the cause:**
+
+*Own-basis lift to `checked` (Band 1, one real citation each, no propagation needed):* all 15 standard-results (T1.1 through T2.9) and all 20 observations (B1 through B19, B-NU-1).
+
+*Own-basis lift to `checked` (Band 2, one real audit each):* P8 (P11/P8 Report), P11 (P11/P8 Report).
+
+*Own-basis capped at `checked`, not `independently-rechecked` (Band 2, two audits sharing ancestry):* P3 (Gemini's Dirac Constraint Report and DeepSeek's cross-examination of that same report; shared ancestor `corpus.dirac-constraint-report`).
+
+*Propagation to `corroborated` (a conjunctive group's weakest member reached `checked`, so the group's delivery, capped at `corroborated` absent a claim's own settled basis, cleared the kind ceiling):* K4 (supports T2.7, T2.8, both now checked), K6 (T1.5), K9 (T1.3), K11 (T2.7, K4), K12 (K6, T2.2), K14 (K4, T2.8), K5 (P3, now checked), C20a (P3), F06 (its alternative group containing C06a, itself lifted), F07 (C07b), F09 (C09), F11 (mech.stellar-cooling-kk), F16 (mech.cold-spot-isw), C06a and C09 (B15, Failed Supernovae, now checked), C07b (B14, Lower Mass Gap), mech.cold-spot-isw (B16, CMB Cold Spot), mech.stellar-cooling-kk (B19, Exotic Stellar Cooling).
+
+**A finding worth reporting rather than absorbing silently: K1 has a real checking record (Band 2, the Half-Sphere Report) but stays at `asserted`.** This is not a bug; it is the earned-grade rule's settled-not-inherited discipline, the same mechanism Stage 3a's contamination exercise demonstrated, now observed for real. K1 also has a real conjunctive support from K3 (K3 itself still unaudited, asserted); a settled own basis does not rescue a claim when a co-necessary premise stays weak and the support delivery has not itself reached `corroborated`. An audit of one part of a conjunctive derivation does not lift the whole conjunction while another necessary part is unaudited.
+
+### Verification exercises, planted and observed
+
+**Blocked path (real corpus data).** P3's two real checking records, Gemini's own audit of its Dirac Constraint Report and DeepSeek's cross-examination of that same report, have footprints `{corpus.dirac-constraint-report}` and `{corpus.deepseek-cross-examination-april-2026, corpus.dirac-constraint-report}`. The shared ancestor is named; the computation correctly caps P3 at `checked`, matching its actual declared grade.
+
+**Passing path (scratch, synthetic).** Two distinct-party records with footprints closing over `corpus.paper-0` and `corpus.half-sphere-report` respectively (both root, no `rests_on` between them) are genuinely disjoint; the same computation grants `independently-rechecked`, confirmed to flow correctly through the real `earnedGrade()` for a derivation-kind ceiling. No corpus file was touched; the synthetic footprints existed only in the exercise script's own memory.
+
+### Track 4: provenance reconciliation, the Tier 4.X references
+
+12 of the 21 K-constraint and structural-proof claims cite at least one "Tier 4.X" trellis construction section in their own provenance bracket (K1 Section 4.4, K3 Section 4.2, K5 Section 4.7, K6 a bare "Tier 4", K8 Section 4.7, K10 Section 4.5, K12 Section 4.1, K15 Section 4.7, K18 "Tier 4 Section 4.4", P3/P8/P11 Section 4.7). Attempted to map each to an entered claim by reading the actual section content (`trellis/4_16_main.md` Section 1.6, "Tier 4: The Specific Construction", subsections 4.1 The Arena, 4.2 The Brane, 4.3 The Brane Action, 4.4 Symmetry Breaking and the AM Potential, 4.5 Operator Uniqueness and the gamma Coefficient, 4.6 The KK Tower, 4.7 The Structural Proofs).
+
+**0 resolve to a new confident support link.** The reason is structural, not an oversight: Tier 4 was never atomized into its own claims at any stage (Stage 1 entered only Tier 0 through 3; the K-constraints and structural proofs themselves are Tier 4's atomization). Each of these 12 references is either self-referential (K3 cites Section 4.2, the very section K3 itself atomizes; P3/P8/P11 cite Section 4.7, the very section that enumerates them) or names a subsection whose content (checked directly, not assumed) does not match any other already-entered claim closely enough to cite without guessing: K1's citation of Section 4.4 (Symmetry Breaking and the AM Potential) does not obviously establish K1's own two-channel stress-energy decomposition, and CC-1's own statement (checked) does not mention a two-channel decomposition either, so no substitute was available. K6's bare "Tier 4" names the whole construction generically, too broad to pin to one subsection.
+
+**One case is resolved in substance without a new link.** K5 cites both "Tier 4.7" and "P3"; P3 is a specifically-named member of the very section 4.7 names generically, and K5's supports link to P3 (wired at Stage 3a) already carries the substantive content the section-level citation gestures at. No new link was added since P3 already represents it.
+
+All 12 stay named as trellis referential debt, not silently dropped: a future stage that decides to atomize Tier 4 itself (as its own claim set) would resolve most of these at once; short of that, they remain honest, permanent gaps in the provenance graph, exactly as before this track, now with the attempt and its reasoning on record rather than merely asserted absent.
+
+### The under-claim ledger
+
+Per the stage's own instruction: the honest gap between the trellis's confidence and the graph's evidence, read as the audit backlog, not a failure.
+
+**Plausible artifacts located but not entered this stage** (Band 2 focused on the four highest-confidence cases; this is not an exhaustive sweep of the corpus's ~120 AI-audit reports):
+- SF-D0 (species-enhanced heat-kernel coefficients): `corpus.dg-cft-053` (the Adjudication Document) genuinely resolves which of two competing gamma formulas is correct, and SF-D0's own statement matches its resolution. Not entered; a real candidate for a follow-up pass.
+- K18 (trans-Planckian VEV suppression): `corpus.gemini-cc-radiative-stability-april-2026` (Gemini CC Radiative Stability Report) explicitly establishes K18 by name in its own content. Not entered.
+- SF-G1, SF-G2, SF-G3 (GUT Box structural findings): the Torus Permutation Check, F-Theory Base Adaptation, and Avenue B Kill reports respectively are each the specific document that performed the finding, not merely background. Not entered.
+- C23-SDC, C23-WGC: the HSB Karch-Randall Moduli Geometry Scout and GUT Population Survey provide real evaluative content, but C23-SDC is explicitly conditional on S-CC-002 (an open sorry); entering a checking record ahead of that resolution was judged premature. Declined, not merely deferred by oversight.
+
+**Trellis-graded-highly claims that stay floored for lack of a locatable, entered artifact:** 20 claims carry a trellis verdict of Confirmed or Strongly Supported in their own `extensions.verdict` (C01 through C04, C06b, C07a, C10, C15, C18a, C18b, C20b through C20e, C20g, C23, C23-WGC, and the Bekenstein-Hawking parent plus three of its sub-results), yet remain `asserted` in this graph. Most now correctly cite their real source document (Track 1's corrections), but a claim's own source_id is not itself a checking record: a genuine audit artifact, distinct from the document that originated the claim, would still need to be located and entered. This list is exactly the backlog a dedicated audit pass should read from first.
+
+### Divergences from the Stage 3b prompt
+
+None in substance. The independence-computation correction (declaring below what the real gate's own `grade_table` would permit, per the `checkingRecord()` footprint-drop finding) is documented as a substrate finding in `docs/governing-conventions.md` Section 5 and the Track 2/3 commit messages, not treated as a divergence from the prompt's own instructions, since the prompt's own discipline ("when in doubt, floor and ledger") is exactly what this correction applies.
 
 ## Not built at Stage 1 (named, not implied done)
 
