@@ -1,4 +1,4 @@
-// Role: the dg kernel store: Stage 1 tier commitments, Stage 2 DG structure bare, Stage 2.5 patch and lineage, and Stage 3a supports (K/P region). Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2); the dispositioned stub rows, K18, the GUT Box occupant and structural-findings material, and source-table lineage/reclassification (Stage 2.5); supports links wiring K-constraints and structural proofs to tier commitments and each other, mechanisms to their evidence, and functions/predictions to their producing mechanisms (Stage 3a). Checking records, independence lifts, and the exclusion reservoir are Stage 3b/3c, not entered here.
+// Role: the dg kernel store: Stage 1 tier commitments, Stage 2 DG structure bare, Stage 2.5 patch and lineage, and Stage 3a supports (K/P region, mechanism region). Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2); the dispositioned stub rows, K18, the GUT Box occupant and structural-findings material, and source-table lineage/reclassification (Stage 2.5); supports links wiring K-constraints and structural proofs to tier commitments and each other, mechanisms to their evidence, and functions/predictions to their producing mechanisms (Stage 3a). Checking records, independence lifts, and the exclusion reservoir are Stage 3b/3c, not entered here.
 // Contract: exports STORE = { store_id, claims, links, supersessions }. Pure data; imports nothing.
 // Invariant: every claim is declared at or below what it earns; before Stage 3a this meant every non-axiom, non-comment claim floors at asserted with no support links. Stage 3a wires real supports links per the trellis provenance brackets and declares each claim at what it now earns via the real earnedGrade() computation, never above. A supports link's own declared_grade is the honest snapshot of its source claim's earned grade at the time the link was wired, in topological order within each region, never invented or inflated; meet() (weakest-of within a conjunctive support_group) then floors delivery to the true minimum regardless. depends-on links wire provenance brackets and parent relations to already-entered claims only; a stated parent that is itself excluded (reservoired or retracted) stays text-only, never a dangling link. Contract/mechanism verdicts ride in extensions.verdict, read by periphery, never the gate, per docs/governing-conventions.md. Sorry status, priority, and gating ride in extensions per the same rule.
 "use strict";
@@ -3284,6 +3284,114 @@ const STORE = {
       "from": "t2.7",
       "to": "k17",
       "support_group": "k17-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "b15",
+      "to": "c06a",
+      "support_group": "c06a-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "b15",
+      "to": "c09",
+      "support_group": "c09-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "b14",
+      "to": "c07b",
+      "support_group": "c07b-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "p3",
+      "to": "c20a",
+      "support_group": "c20a-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "b16",
+      "to": "mech.cold-spot-isw",
+      "support_group": "mech.cold-spot-isw-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "b19",
+      "to": "mech.stellar-cooling-kk",
+      "support_group": "mech.stellar-cooling-kk-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.bh-area-law-edge-modes",
+      "to": "mech.bh-entropy",
+      "support_group": "mech.bh-entropy-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.bh-rt-surface-anchor",
+      "to": "mech.bh-entropy",
+      "support_group": "mech.bh-entropy-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.bh-so14-phase-space-protected",
+      "to": "mech.bh-entropy",
+      "support_group": "mech.bh-entropy-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.bh-radion-frozen-boundary",
+      "to": "mech.bh-entropy",
+      "support_group": "mech.bh-entropy-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.bh-quarter-prefactor-invariance",
+      "to": "mech.bh-entropy",
+      "support_group": "mech.bh-entropy-basis",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "supports",
+      "from": "mech.bh-quarter-prefactor-microcanonical",
+      "to": "mech.bh-entropy",
+      "support_group": "mech.bh-entropy-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"
