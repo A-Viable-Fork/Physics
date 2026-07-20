@@ -1,5 +1,5 @@
-// Role: the dg kernel store: Stage 1 tier commitments, Stage 2 DG structure bare, Stage 2.5 patch and lineage, Stage 3a supports, and Stage 3b source-table completion, checking records, and independence lifts. Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2); the dispositioned stub rows, K18, the GUT Box occupant and structural-findings material, and source-table lineage/reclassification (Stage 2.5); supports links (Stage 3a); mechanism source_id corrections, checking records in three bands (tier claims, audited derivations, floored otherwise), and independence lifts (Stage 3b). The exclusion reservoir is Stage 3c, not entered here.
-// Contract: exports STORE = { store_id, claims, links, supersessions }. Pure data; imports nothing.
+// Role: the dg kernel store: Stage 1 tier commitments, Stage 2 DG structure bare, Stage 2.5 patch and lineage, Stage 3a supports, Stage 3b source-table completion, checking records, and independence lifts, and Stage 3c the exclusion reservoir. Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2); the dispositioned stub rows, K18, the GUT Box occupant and structural-findings material, and source-table lineage/reclassification (Stage 2.5); supports links (Stage 3a); mechanism source_id corrections, checking records in three bands (tier claims, audited derivations, floored otherwise), and independence lifts (Stage 3b). Every reservoir entry (THE DEAD table, ER entries, STRUCK contracts, dead functions, the KBC-void row), 21 class-level exclusion (block) claims, and the 5 synthesis-backlog methods kills, each as evidence claim, killed claim, and withdrawal record with a typed reinstatement condition (Stage 3c).
+// Contract: exports STORE = { store_id, claims, links, supersessions, withdrawals }. Pure data; imports nothing.
 // Invariant: every claim is declared at or below what it earns, via the real earnedGrade() computation over the real gate. A supports link's own declared_grade is an honest snapshot of its source claim's earned grade at wire time. A claim's source_id names the specific document its content actually comes from where determinable, the generic trellis.v4-16 otherwise. A checking record cites a real source-table row whose document actually performs the check named in its method text; its independence is computed externally against footprintClosure over rests_on (attached as this record's own footprint field, read from the pre-schema spec, never trusted from the vendored checkingRecord() builder, which drops this field from its returned object into canonical.extensions; see docs/governing-conventions.md Section 5). depends-on links wire provenance brackets and parent relations to already-entered claims only. Contract/mechanism verdicts ride in extensions.verdict, read by periphery, never the gate. Sorry status, priority, and gating ride in extensions per the same rule.
 "use strict";
 
@@ -5979,6 +5979,174 @@ const STORE = {
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "Class-level exclusion (multi-field-hairon-quintessence block, from the withdrawal of \"dead.er-de006-hairon-multi-field\"): any multi-field framework-internal hairon-quintessence proposal is dead for the same categorical reason as the single-field case (LINT-DE-3), sharpened by cross-coupling destabilization of the topological substrate itself."
+    },
+    {
+      "ref": "ev.mk1",
+      "kind": "computation",
+      "source_id": "corpus.pk-dr-005-physics-synthesis",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"mk1\": Killed by error correlation across LLM-generated content: the Birge-ratio machinery Particle-Data-Group-style averaging depends on assumes independent inter-laboratory errors, an assumption this kernel's own AI-audit-heavy corpus does not satisfy (docs/governing-conventions.md Section 1: two audits tracing to the same upstream report share a footprint and are not independent). This is the kill governing-conventions Section 7 already cites: 'accepted-with-disagreement' stands as the gate's own reading of a held contradiction, never smoothed by a numeric average.",
+      "checking_records": [
+        {
+          "checker_id": "checker:pk-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the methods-kill claim \"mk1\" against the PK-DR report it cites",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.pk-dr-005-physics-synthesis",
+            "corpus.pk-dr-research-session"
+          ],
+          "cited_source": "corpus.pk-dr-005-physics-synthesis"
+        }
+      ]
+    },
+    {
+      "ref": "mk1",
+      "kind": "mechanism",
+      "source_id": "corpus.pk-dr-005-physics-synthesis",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed method (synthesis backlog K1): adopt PDG-style scale-factor / statistical averaging over contradictory claims as this kernel's own reconciliation machinery for a held contradiction, treating disagreeing sources the way particle-data-group averaging treats disagreeing measurements."
+    },
+    {
+      "ref": "ev.mk2",
+      "kind": "computation",
+      "source_id": "corpus.pk-dr-006-graph-mathematics",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"mk2\": Killed by thermodynamic-limit preconditions vacuous at n in the hundreds, this corpus's actual claim count (398 claims at Stage 3c Track 1 close); exact fixpoint recomputation (the fixed-point refresh pattern this build already runs for supports-link declared_grade propagation) supersedes any asymptotic approximation at a scale this small.",
+      "checking_records": [
+        {
+          "checker_id": "checker:pk-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the methods-kill claim \"mk2\" against the PK-DR report it cites",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.pk-dr-006-graph-mathematics",
+            "corpus.pk-dr-research-session"
+          ],
+          "cited_source": "corpus.pk-dr-006-graph-mathematics"
+        }
+      ]
+    },
+    {
+      "ref": "mk2",
+      "kind": "mechanism",
+      "source_id": "corpus.pk-dr-006-graph-mathematics",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed method (synthesis backlog K2): a percolation / asymptotic robustness analysis of withdrawal cascades through this kernel's claim graph, treating cascade behavior in the thermodynamic (n approaching infinity) limit."
+    },
+    {
+      "ref": "ev.mk3",
+      "kind": "computation",
+      "source_id": "corpus.pk-dr-006-graph-mathematics",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"mk3\": Killed by the ordinal lattice with incomparable modes this kernel actually uses (docs/governing-conventions.md Section 6, amended Stage 3b): continuous-limit convergence proofs for gradual-argumentation semantics are invalid over a lattice whose settled tier's two modes (empirical, constitutive) are structurally incomparable, not points on one continuous scale a cardinal weight could interpolate across.",
+      "checking_records": [
+        {
+          "checker_id": "checker:pk-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the methods-kill claim \"mk3\" against the PK-DR report it cites",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.pk-dr-006-graph-mathematics",
+            "corpus.pk-dr-research-session"
+          ],
+          "cited_source": "corpus.pk-dr-006-graph-mathematics"
+        }
+      ]
+    },
+    {
+      "ref": "mk3",
+      "kind": "mechanism",
+      "source_id": "corpus.pk-dr-006-graph-mathematics",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed method (synthesis backlog K3): a cardinal gradual-argumentation semantics over the grade lattice, with compensation and [0,1]-weighted propagation of standing across supports and contradictions, in place of the kernel's ordinal meet/join machinery."
+    },
+    {
+      "ref": "ev.mk4",
+      "kind": "computation",
+      "source_id": "corpus.pk-dr-004-affordance-survey",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"mk4\": Killed by settlement latency: staking mechanisms degenerate under slow or ambiguous settlement (replication markets required funded guaranteed settlement; bug bounties require 24 to 48 hour resolution), a timescale this kernel's own audit cycles (derivation-audit and data-audit checking records, entered per stage over weeks) do not meet.",
+      "checking_records": [
+        {
+          "checker_id": "checker:pk-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the methods-kill claim \"mk4\" against the PK-DR report it cites",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.pk-dr-004-affordance-survey",
+            "corpus.pk-dr-research-session"
+          ],
+          "cited_source": "corpus.pk-dr-004-affordance-survey"
+        }
+      ]
+    },
+    {
+      "ref": "mk4",
+      "kind": "mechanism",
+      "source_id": "corpus.pk-dr-004-affordance-survey",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed method (synthesis backlog K4): market-style staked verification of claims, with calibration track records for checkers, as a grounding mechanism feeding this kernel's own checking-record discipline."
+    },
+    {
+      "ref": "ev.mk5",
+      "kind": "computation",
+      "source_id": "corpus.pk-dr-001-shore-pack-evidence",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"mk5\": Killed by negative-constraint activation (head-placed prohibition lists measurably increase the activation of what they prohibit) and the structured-format capacity tax (schema-native generation without a scratchpad phase measurably degrades reasoning capacity, since format compliance and reasoning compete for the same generation budget). Unlike K1 through K4, this kill's remedy is already applied in practice, not merely reinstatement-conditioned: the emitter spec (docs/synthesis-backlog.md Section 3) is already amended toward positive constraint geometry, kills entered as mid-context historical data rather than head-placed prohibitions, think-first-format-later ordering, and verbalized sampling, the same discipline this stage's own reservoir entries (Track 1) and this file's own entries follow.",
+      "checking_records": [
+        {
+          "checker_id": "checker:pk-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the methods-kill claim \"mk5\" against the PK-DR report it cites",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.pk-dr-001-shore-pack-evidence",
+            "corpus.pk-dr-research-session"
+          ],
+          "cited_source": "corpus.pk-dr-001-shore-pack-evidence"
+        },
+        {
+          "checker_id": "checker:pk-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the methods-kill claim \"mk5\" against the PK-DR report it cites",
+          "checked_at_state": "dg@stage-3c",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.pk-dr-003-grounded-generation",
+            "corpus.pk-dr-research-session"
+          ],
+          "cited_source": "corpus.pk-dr-003-grounded-generation"
+        }
+      ]
+    },
+    {
+      "ref": "mk5",
+      "kind": "mechanism",
+      "source_id": "corpus.pk-dr-001-shore-pack-evidence",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Proposed method (synthesis backlog K5, design-level, already applied): head-placed prohibition lists in generation context ('do not do X' instructions placed at the head of a prompt), and schema-native generation without a scratchpad phase, as this kernel's own future generation-time discipline for authoring claims and checking records."
     }
   ],
   "links": [
@@ -9085,6 +9253,56 @@ const STORE = {
       "withdrawn_at_state": "dg@stage-3c",
       "withdrawn_by": "author:dg-trellis",
       "reason": "Reservoired (v4.15, contracts C21a/b/c struck) under the matter-sector exclusion record: every examined force-carrier channel independently fails by 8 to 51 orders of magnitude (Hehl-Datta, radion Yukawa, ADD KK graviton, torsion-Dirac, radion BCS, Dicke superradiant, Species-Scale QCD; see the individual DEAD-table entries), and OP-0-ACTIVATION's categorical exclusion (SL-SUSC-1) subsumes the surviving proposed channels as well. the three-gate reactivation test; no F21-specific reinstatement clause beyond the generic test is stated.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "mk1",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Killed by error correlation across LLM-generated content: the Birge-ratio machinery Particle-Data-Group-style averaging depends on assumes independent inter-laboratory errors, an assumption this kernel's own AI-audit-heavy corpus does not satisfy (docs/governing-conventions.md Section 1: two audits tracing to the same upstream report share a footprint and are not independent). This is the kill governing-conventions Section 7 already cites: 'accepted-with-disagreement' stands as the gate's own reading of a held contradiction, never smoothed by a numeric average. demonstration that the relevant error sources are independent (e.g. genuinely independent human-community inputs, not multiple AI systems auditing the same underlying report).",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "mk2",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Killed by thermodynamic-limit preconditions vacuous at n in the hundreds, this corpus's actual claim count (398 claims at Stage 3c Track 1 close); exact fixpoint recomputation (the fixed-point refresh pattern this build already runs for supports-link declared_grade propagation) supersedes any asymptotic approximation at a scale this small. corpus scale where exact computation is infeasible (the exact fixed-point approach remains tractable at every scale this kernel has reached or is likely to reach soon).",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "mk3",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Killed by the ordinal lattice with incomparable modes this kernel actually uses (docs/governing-conventions.md Section 6, amended Stage 3b): continuous-limit convergence proofs for gradual-argumentation semantics are invalid over a lattice whose settled tier's two modes (empirical, constitutive) are structurally incomparable, not points on one continuous scale a cardinal weight could interpolate across. a principled cardinal refinement of standing (e.g. a future probabilistic extension), adopted deliberately at substrate level, not smuggled in as a convenience for one computation.",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "mk4",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Killed by settlement latency: staking mechanisms degenerate under slow or ambiguous settlement (replication markets required funded guaranteed settlement; bug bounties require 24 to 48 hour resolution), a timescale this kernel's own audit cycles (derivation-audit and data-audit checking records, entered per stage over weeks) do not meet. a claim class with fast unambiguous settlement carrying enough volume to matter (recomputations and formalizations qualify individually, as this kernel's own theorem-kind claims already show, but not yet at the volume a staking market would need).",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "theorem"
+      }
+    },
+    {
+      "claim_ref": "mk5",
+      "withdrawn_at_state": "dg@stage-3c",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Killed by negative-constraint activation (head-placed prohibition lists measurably increase the activation of what they prohibit) and the structured-format capacity tax (schema-native generation without a scratchpad phase measurably degrades reasoning capacity, since format compliance and reasoning compete for the same generation budget). Unlike K1 through K4, this kill's remedy is already applied in practice, not merely reinstatement-conditioned: the emitter spec (docs/synthesis-backlog.md Section 3) is already amended toward positive constraint geometry, kills entered as mid-context historical data rather than head-placed prohibitions, think-first-format-later ordering, and verbalized sampling, the same discipline this stage's own reservoir entries (Track 1) and this file's own entries follow. model-generation evidence that these effects no longer hold for the generation process this kernel's own build discipline depends on.",
       "reinstatement_condition": {
         "condition_kind": "entry-of-kind",
         "required_kind": "derivation"

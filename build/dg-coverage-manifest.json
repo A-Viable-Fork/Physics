@@ -1230,6 +1230,31 @@
       "trellis_id": "F21: Dual-Channel Gamow Enhancement.",
       "ref": "f21",
       "category": "reservoir-function"
+    },
+    {
+      "trellis_id": "Synthesis-backlog K1 (PDG-style averaging)",
+      "ref": "mk1",
+      "category": "methods-kill"
+    },
+    {
+      "trellis_id": "Synthesis-backlog K2 (percolation/asymptotic robustness)",
+      "ref": "mk2",
+      "category": "methods-kill"
+    },
+    {
+      "trellis_id": "Synthesis-backlog K3 (cardinal gradual-argumentation semantics)",
+      "ref": "mk3",
+      "category": "methods-kill"
+    },
+    {
+      "trellis_id": "Synthesis-backlog K4 (market-style staked verification)",
+      "ref": "mk4",
+      "category": "methods-kill"
+    },
+    {
+      "trellis_id": "Synthesis-backlog K5 (head-placed prohibition lists / no-scratchpad generation)",
+      "ref": "mk5",
+      "category": "methods-kill"
     }
   ]
 }
