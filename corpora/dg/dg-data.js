@@ -4656,7 +4656,7 @@ const STORE = {
     {
       "ref": "dead.er-cosm001-integrated-f-buildup",
       "kind": "mechanism",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.f12-reconciliation-scout-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "ER-COSM-001: proposed mechanism that the integrated coherence fraction f increases monotonically as cosmic structure forms, driving F_Q above the pole threshold and producing the F12 dark-energy thawing trajectory."
@@ -4687,7 +4687,7 @@ const STORE = {
     {
       "ref": "dead.er-cosm002-trace-channel-gradient",
       "kind": "mechanism",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.f12-reconciliation-scout-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "ER-COSM-002: proposed mechanism that even with f approximately zero at cosmological scales, the O(N) trace channel produces a slow cosmological gradient sufficient to displace the radion from its discrete Lambda^(k) minimum, sourcing the F12 thawing trajectory."
@@ -4718,7 +4718,7 @@ const STORE = {
     {
       "ref": "dead.er-cosm003-cosmological-averaging",
       "kind": "mechanism",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.f12-reconciliation-scout-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "ER-COSM-003: proposed mechanism that cosmological averaging of rare ODLRO patch activations (e.g. in neutron-star superfluid cores) produces a non-trivial dark-energy w(z) trajectory via FLRW backreaction."
@@ -4749,7 +4749,7 @@ const STORE = {
     {
       "ref": "dead.er-cosm004-intra-sector-slow-roll",
       "kind": "mechanism",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.f12-reconciliation-scout-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "ER-COSM-004: proposed mechanism that the radion executes a slow-roll trajectory within a single AM topological sector, producing the F12 dark-energy thawing signature without inter-sector tunneling."
@@ -4810,7 +4810,7 @@ const STORE = {
     {
       "ref": "dead.er-de001-bh-mechanism-evolving-de",
       "kind": "mechanism",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.framework-scout-1-bh-mechanism-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "ER-DE-001: proposed mechanism that the framework's bulk-routing channel (F09, F19, B19), summed cosmologically over the black-hole population, sources an evolving cosmological term mimicking the DESI DR2 thawing signature without abandoning T3.6."
@@ -4841,7 +4841,7 @@ const STORE = {
     {
       "ref": "dead.er-ht001-nede-thermal-de",
       "kind": "mechanism",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.framework-scout-3-nede-thermal-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "ER-HT-001: proposed mechanism that a New-Early-Dark-Energy-style thermal coupling to a hidden hot sector during recombination engineers an effective evolving-w trajectory at late times while retaining T3.6 statically."
@@ -4872,7 +4872,7 @@ const STORE = {
     {
       "ref": "dead.er-de002-vacuum-driven-reheating",
       "kind": "mechanism",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.framework-scout-1-bh-mechanism-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "ER-DE-002: proposed mechanism that reversing the bulk-routing direction (bulk back to brane) sources cosmological vacuum-driven reheating as an internal evolving dark-energy channel."
@@ -4903,7 +4903,7 @@ const STORE = {
     {
       "ref": "dead.er-de003-quantum-foam-de",
       "kind": "mechanism",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.framework-scout-1-bh-mechanism-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "ER-DE-003: proposed mechanism that trans-Planckian vacuum-mode dynamics sources an evolving dark-energy trajectory as an internal cosmological channel."
@@ -4934,7 +4934,7 @@ const STORE = {
     {
       "ref": "dead.er-de004-multi-modulus-slow-roll",
       "kind": "mechanism",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.framework-scout-4-multi-field-destabilization-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "ER-DE-004: proposed mechanism that slow-roll across N much greater than 1 light moduli in the hairon construction (N ~ 10^120) within the AM-locked branch sources an evolving dark-energy trajectory."
@@ -4965,7 +4965,7 @@ const STORE = {
     {
       "ref": "dead.er-de005-hairon-quintessence",
       "kind": "mechanism",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.framework-scout-4-multi-field-destabilization-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "ER-DE-005: proposed mechanism that promoting the hairon moduli (the microscopic constituents of the topological de Sitter vacuum substrate) to additive rolling fields sources dark-energy quintessence."
@@ -4996,7 +4996,7 @@ const STORE = {
     {
       "ref": "dead.er-de006-hairon-multi-field",
       "kind": "mechanism",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.framework-scout-4-multi-field-destabilization-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "ER-DE-006: proposed mechanism that a multi-field generalization of hairon-quintessence (ER-DE-005), with cross-couplings between rolling hairons and the static-vacuum condensate, produces a viable dark-energy evolution."
@@ -5687,7 +5687,7 @@ const STORE = {
     {
       "ref": "f12",
       "kind": "function",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.f12-reconciliation-scout-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "F12: Dark Energy Evolves. Proposed that the framework's mandatory NEC-preserving KK exhaust channel produces a thawing dark-energy equation-of-state trajectory (dw/dt > 0), matching the DESI 2024 CPL-parameterized signature."
@@ -6147,6 +6147,270 @@ const STORE = {
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted",
       "statement": "Proposed method (synthesis backlog K5, design-level, already applied): head-placed prohibition lists in generation context ('do not do X' instructions placed at the head of a prompt), and schema-native generation without a scratchpad phase, as this kernel's own future generation-time discipline for authoring claims and checking records."
+    },
+    {
+      "ref": "ev.dead.er-cosm001-integrated-f-buildup.recited",
+      "kind": "computation",
+      "source_id": "corpus.f12-reconciliation-scout-may-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-cosm001-integrated-f-buildup\": Categorical error: classical structure formation produces DLRO density gradients and Bragg-peak ordering, not ODLRO long-range phase coherence of a complex order parameter. The coherence fraction f remains approximately zero at cosmological scales regardless of structure formation, so F_Q stays pinned to the extensive O(N) baseline by the fluctuation-dissipation theorem. Block scope: any cosmological mechanism conflating classical clustering with macroscopic ODLRO; codified into LINT-DLR-1. Re-cited (audit-prep Track 1) to corpus.f12-reconciliation-scout-may-2026, the specific Framework Scout report the trellis's own Section 5 \"Source\" column names for this kill; the original citation at Stage 3c Track 1 mapped it to the generic sub-Chandrasekhar Type Ia scout row for lack of a catalogued source row of its own.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-cosm001-integrated-f-buildup\" against its cited source artifact (re-cited to the specific Scout report the trellis names, audit-prep Track 1)",
+          "checked_at_state": "dg@audit-prep",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.f12-reconciliation-scout-may-2026"
+          ],
+          "cited_source": "corpus.f12-reconciliation-scout-may-2026"
+        }
+      ]
+    },
+    {
+      "ref": "ev.dead.er-cosm002-trace-channel-gradient.recited",
+      "kind": "computation",
+      "source_id": "corpus.f12-reconciliation-scout-may-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-cosm002-trace-channel-gradient\": The AM kinematic-dominance bound (SL-AM-1) shows the trace channel, suppressed by the gravitational coupling (m/M_Pl)^2 ~ 10^-67, is dominated by the AM potential barrier height (~10^32 GeV^4) by ~10^99; the trace gradient cannot displace the radion from its discrete minimum. Block scope: any cosmological mechanism using an extensively-scaling O(N) operator to bridge AM topological barriers; only super-extensive O(N^2) operators sourced by ODLRO can engage the pole structure. Re-cited (audit-prep Track 1) to corpus.f12-reconciliation-scout-may-2026, the specific Framework Scout report the trellis's own Section 5 \"Source\" column names for this kill; the original citation at Stage 3c Track 1 mapped it to the generic sub-Chandrasekhar Type Ia scout row for lack of a catalogued source row of its own.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-cosm002-trace-channel-gradient\" against its cited source artifact (re-cited to the specific Scout report the trellis names, audit-prep Track 1)",
+          "checked_at_state": "dg@audit-prep",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.f12-reconciliation-scout-may-2026"
+          ],
+          "cited_source": "corpus.f12-reconciliation-scout-may-2026"
+        }
+      ]
+    },
+    {
+      "ref": "ev.dead.er-cosm003-cosmological-averaging.recited",
+      "kind": "computation",
+      "source_id": "corpus.f12-reconciliation-scout-may-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-cosm003-cosmological-averaging\": ODLRO-supporting systems occupy ~10^-46 of the Hubble volume; macroscopic FLRW backreaction from such patches is identically zero to all practical orders. Predicted spatial inhomogeneities in w(z) correlated with structure environments are inconsistent with observational bounds, and F16 (Void Physics) already explains ISW-type local variations without invoking ODLRO patches. Block scope: any cosmological-averaging mechanism aggregating rare ODLRO domains into a cosmological-scale equation-of-state contribution. Re-cited (audit-prep Track 1) to corpus.f12-reconciliation-scout-may-2026, the specific Framework Scout report the trellis's own Section 5 \"Source\" column names for this kill; the original citation at Stage 3c Track 1 mapped it to the generic sub-Chandrasekhar Type Ia scout row for lack of a catalogued source row of its own.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-cosm003-cosmological-averaging\" against its cited source artifact (re-cited to the specific Scout report the trellis names, audit-prep Track 1)",
+          "checked_at_state": "dg@audit-prep",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.f12-reconciliation-scout-may-2026"
+          ],
+          "cited_source": "corpus.f12-reconciliation-scout-may-2026"
+        }
+      ]
+    },
+    {
+      "ref": "ev.dead.er-cosm004-intra-sector-slow-roll.recited",
+      "kind": "computation",
+      "source_id": "corpus.f12-reconciliation-scout-may-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of \"dead.er-cosm004-intra-sector-slow-roll\": Slow-roll quintessence requires m ~ H_0 ~ 10^-33 eV; the framework's radion is bounded m_rho in [1 meV, 100 GeV] by F13.2 (LUNA phenomenology requires MeV-scale mass) and K8 (adiabatic stability against matter loops), with the framework selecting m_rho ~ 1 MeV. The ratio is at least 10^30, falsifying slow-roll by 30 orders of magnitude; an ad-hoc additional scalar field is forbidden by the S-MM-CR DOF count (conditional). Block scope: any cosmological mechanism introducing or repurposing a slow-rolling scalar at m ~ H_0. Re-cited (audit-prep Track 1) to corpus.f12-reconciliation-scout-may-2026, the specific Framework Scout report the trellis's own Section 5 \"Source\" column names for this kill; the original citation at Stage 3c Track 1 mapped it to the generic sub-Chandrasekhar Type Ia scout row for lack of a catalogued source row of its own.",
+      "checking_records": [
+        {
+          "checker_id": "checker:gemini-dr",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-cosm004-intra-sector-slow-roll\" against its cited source artifact (re-cited to the specific Scout report the trellis names, audit-prep Track 1)",
+          "checked_at_state": "dg@audit-prep",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.f12-reconciliation-scout-may-2026"
+          ],
+          "cited_source": "corpus.f12-reconciliation-scout-may-2026"
+        }
+      ]
+    },
+    {
+      "ref": "ev.f12.recited",
+      "kind": "computation",
+      "source_id": "corpus.f12-reconciliation-scout-may-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"f12\": Struck from Tier 3 as of v4.13 (Cosmological-Sector Contraction Shore, SF-DG-010): three reconciliation hypotheses independently fail (ER-COSM-001 categorical DLRO/ODLRO conflation, ER-COSM-002 kinematic dominance at ~10^99, ER-COSM-003 volume-fraction suppression at ~10^-46) and the intra-sector slow-roll alternative fails the radion mass window by at least 30 orders of magnitude (ER-COSM-004); SL-AM-1 and LINT-DLR-1 codify the underlying obstruction. Re-cited (audit-prep Track 1) to corpus.f12-reconciliation-scout-may-2026, the specific Framework Scout report the trellis's own Section 5 \"Source\" column names for this kill; the original citation at Stage 3c Track 1 mapped it to the generic sub-Chandrasekhar Type Ia scout row for lack of a catalogued source row of its own.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"f12\" against its cited source artifact (re-cited to the specific Scout report the trellis names, audit-prep Track 1)",
+          "checked_at_state": "dg@audit-prep",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.f12-reconciliation-scout-may-2026"
+          ],
+          "cited_source": "corpus.f12-reconciliation-scout-may-2026"
+        }
+      ]
+    },
+    {
+      "ref": "ev.dead.er-de001-bh-mechanism-evolving-de.recited",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-1-bh-mechanism-may-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.er-de001-bh-mechanism-evolving-de\": Black-hole bulk-routing is structurally cooling and stabilizing (SL-BR-1), not a source of cosmological-scale energy injection or radion displacement; per SL-AM-1 any O(N) channel's cosmological-scale gradient is suppressed against the AM topological barrier by ~10^99, and the BH population's effective contribution is O(N) in the cosmologically averaged sense. Block scope: any cosmological-evolution mechanism aggregating framework-internal degenerate-object bulk-exhaust channels into an effective Lambda(t). Re-cited (audit-prep Track 1) to corpus.framework-scout-1-bh-mechanism-may-2026, the specific Framework Scout report the trellis's own Section 5 \"Source\" column names for this kill; the original citation at Stage 3c Track 1 mapped it to the generic sub-Chandrasekhar Type Ia scout row for lack of a catalogued source row of its own.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-de001-bh-mechanism-evolving-de\" against its cited source artifact (re-cited to the specific Scout report the trellis names, audit-prep Track 1)",
+          "checked_at_state": "dg@audit-prep",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.framework-scout-1-bh-mechanism-may-2026"
+          ],
+          "cited_source": "corpus.framework-scout-1-bh-mechanism-may-2026"
+        }
+      ]
+    },
+    {
+      "ref": "ev.dead.er-de002-vacuum-driven-reheating.recited",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-1-bh-mechanism-may-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.er-de002-vacuum-driven-reheating\": Any mechanism reversing the brane-to-bulk exhaust direction violates the framework's mandatory topological-bulk K1/K6 structure and contradicts SL-BR-1 (bulk-routing is exhaust, not injection). Block scope: any cosmological mechanism operating by reversing the framework's brane-to-bulk exhaust direction. Re-cited (audit-prep Track 1) to corpus.framework-scout-1-bh-mechanism-may-2026, the specific Framework Scout report the trellis's own Section 5 \"Source\" column names for this kill; the original citation at Stage 3c Track 1 mapped it to the generic sub-Chandrasekhar Type Ia scout row for lack of a catalogued source row of its own.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-de002-vacuum-driven-reheating\" against its cited source artifact (re-cited to the specific Scout report the trellis names, audit-prep Track 1)",
+          "checked_at_state": "dg@audit-prep",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.framework-scout-1-bh-mechanism-may-2026"
+          ],
+          "cited_source": "corpus.framework-scout-1-bh-mechanism-may-2026"
+        }
+      ]
+    },
+    {
+      "ref": "ev.dead.er-de003-quantum-foam-de.recited",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-1-bh-mechanism-may-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.er-de003-quantum-foam-de\": Trans-Planckian vacuum modes are kinematically protected per K18 (the trans-Planckian VEV v ~ 10^139 GeV produces a 16-order-of-magnitude kinematic suppression of aperiodic corrections); the proposal also violates T1.3 (no trans-Planckian energy from sub-Planckian inputs at the cosmological scale). Block scope: any cosmological evolving-DE mechanism deriving energy from trans-Planckian vacuum-mode dynamics. Re-cited (audit-prep Track 1) to corpus.framework-scout-1-bh-mechanism-may-2026, the specific Framework Scout report the trellis's own Section 5 \"Source\" column names for this kill; the original citation at Stage 3c Track 1 mapped it to the generic sub-Chandrasekhar Type Ia scout row for lack of a catalogued source row of its own.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-de003-quantum-foam-de\" against its cited source artifact (re-cited to the specific Scout report the trellis names, audit-prep Track 1)",
+          "checked_at_state": "dg@audit-prep",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.framework-scout-1-bh-mechanism-may-2026"
+          ],
+          "cited_source": "corpus.framework-scout-1-bh-mechanism-may-2026"
+        }
+      ]
+    },
+    {
+      "ref": "ev.dead.er-ht001-nede-thermal-de.recited",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-3-nede-thermal-may-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.er-ht001-nede-thermal-de\": The v3.9 generalized cosmological plasma-exclusion structural lesson shows all unbound relativistic plasma environments thermalize at tau_th much less than t_s by 3 to 10 orders of magnitude, pinning the coherence fraction f approximately zero and rendering the gamma F_Q coupling dormant; the NEDE mechanism requires sustained thermal coherence in a regime the framework's own thermodynamics structurally excludes. Block scope: any cosmological-evolution mechanism requiring coherent thermal pumping of a hot sector at T >= MeV. Re-cited (audit-prep Track 1) to corpus.framework-scout-3-nede-thermal-may-2026, the specific Framework Scout report the trellis's own Section 5 \"Source\" column names for this kill; the original citation at Stage 3c Track 1 mapped it to the generic sub-Chandrasekhar Type Ia scout row for lack of a catalogued source row of its own.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-ht001-nede-thermal-de\" against its cited source artifact (re-cited to the specific Scout report the trellis names, audit-prep Track 1)",
+          "checked_at_state": "dg@audit-prep",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.framework-scout-3-nede-thermal-may-2026"
+          ],
+          "cited_source": "corpus.framework-scout-3-nede-thermal-may-2026"
+        }
+      ]
+    },
+    {
+      "ref": "ev.dead.er-de004-multi-modulus-slow-roll.recited",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-4-multi-field-destabilization-may-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.er-de004-multi-modulus-slow-roll\": Distance-Conjecture confinement: with N ~ 10^120 light scalars, individual modulus excursions are confined to Delta-phi <~ M_P/sqrt(N) ~ 10^-60 M_P, far below the trans-Planckian field range slow-roll quintessence requires for observable w(z) not equal -1 at percent level; classical slow-roll quintessence is structurally impossible in the AM-locked branch's moduli space. Codified into LINT-DE-2. Block scope: any multi-field slow-roll proposal within the AM-locked branch on moduli spaces with N much greater than 1; the obstruction does not apply on Path B, where the active modulus is a single light scalar parametrically separated from the hairon condensate. Re-cited (audit-prep Track 1) to corpus.framework-scout-4-multi-field-destabilization-may-2026, the specific Framework Scout report the trellis's own Section 5 \"Source\" column names for this kill; the original citation at Stage 3c Track 1 mapped it to the generic sub-Chandrasekhar Type Ia scout row for lack of a catalogued source row of its own.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-de004-multi-modulus-slow-roll\" against its cited source artifact (re-cited to the specific Scout report the trellis names, audit-prep Track 1)",
+          "checked_at_state": "dg@audit-prep",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.framework-scout-4-multi-field-destabilization-may-2026"
+          ],
+          "cited_source": "corpus.framework-scout-4-multi-field-destabilization-may-2026"
+        }
+      ]
+    },
+    {
+      "ref": "ev.dead.er-de005-hairon-quintessence.recited",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-4-multi-field-destabilization-may-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.er-de005-hairon-quintessence\": Hairons are identified as the microscopic constituents of the topological vacuum substrate mediating the BCS-like neutrino superfluid condensation and the entropic accounting selecting k_phys ~ S_dS; promoting them to rolling fields mobilizes the same constituents that define the static vacuum identification, producing a structural conflict between serving as the BEC ground state of the de Sitter vacuum and as dynamical matter rolling under a quintessence potential. Codified into LINT-DE-3. Block scope: any mechanism promoting the microscopic constituents of a topological vacuum to additive dynamical matter while retaining the same vacuum identification. Re-cited (audit-prep Track 1) to corpus.framework-scout-4-multi-field-destabilization-may-2026, the specific Framework Scout report the trellis's own Section 5 \"Source\" column names for this kill; the original citation at Stage 3c Track 1 mapped it to the generic sub-Chandrasekhar Type Ia scout row for lack of a catalogued source row of its own.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-de005-hairon-quintessence\" against its cited source artifact (re-cited to the specific Scout report the trellis names, audit-prep Track 1)",
+          "checked_at_state": "dg@audit-prep",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.framework-scout-4-multi-field-destabilization-may-2026"
+          ],
+          "cited_source": "corpus.framework-scout-4-multi-field-destabilization-may-2026"
+        }
+      ]
+    },
+    {
+      "ref": "ev.dead.er-de006-hairon-multi-field.recited",
+      "kind": "computation",
+      "source_id": "corpus.framework-scout-4-multi-field-destabilization-may-2026",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "Evidence for the withdrawal of \"dead.er-de006-hairon-multi-field\": Killed for the same categorical reason as ER-DE-005, sharpened by multi-field destabilization analysis: cross-couplings between rolling hairons and the static-vacuum condensate produce non-perturbative destabilization of the topological substrate itself, falsifying the AM-locked k_phys selection on the same cosmic timescales the quintessence trajectory is supposed to drive. Block scope: any multi-field framework-internal hairon-quintessence proposal. Re-cited (audit-prep Track 1) to corpus.framework-scout-4-multi-field-destabilization-may-2026, the specific Framework Scout report the trellis's own Section 5 \"Source\" column names for this kill; the original citation at Stage 3c Track 1 mapped it to the generic sub-Chandrasekhar Type Ia scout row for lack of a catalogued source row of its own.",
+      "checking_records": [
+        {
+          "checker_id": "checker:self",
+          "method_class": "derivation-audit",
+          "method": "audits the killed claim \"dead.er-de006-hairon-multi-field\" against its cited source artifact (re-cited to the specific Scout report the trellis names, audit-prep Track 1)",
+          "checked_at_state": "dg@audit-prep",
+          "outcome": "confirms",
+          "independence": "self",
+          "footprint": [
+            "corpus.framework-scout-4-multi-field-destabilization-may-2026"
+          ],
+          "cited_source": "corpus.framework-scout-4-multi-field-destabilization-may-2026"
+        }
+      ]
     }
   ],
   "links": [
@@ -7998,37 +8262,37 @@ const STORE = {
     },
     {
       "link_kind": "supports",
-      "from": "ev.dead.er-cosm001-integrated-f-buildup",
+      "from": "ev.dead.er-cosm001-integrated-f-buildup.recited",
       "to": "block.er-cosm001",
       "support_group": "block.er-cosm001-g0",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.f12-reconciliation-scout-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
-      "from": "ev.dead.er-cosm002-trace-channel-gradient",
+      "from": "ev.dead.er-cosm002-trace-channel-gradient.recited",
       "to": "block.er-cosm002",
       "support_group": "block.er-cosm002-g0",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.f12-reconciliation-scout-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
-      "from": "ev.dead.er-cosm003-cosmological-averaging",
+      "from": "ev.dead.er-cosm003-cosmological-averaging.recited",
       "to": "block.er-cosm003",
       "support_group": "block.er-cosm003-g0",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.f12-reconciliation-scout-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
-      "from": "ev.dead.er-cosm004-intra-sector-slow-roll",
+      "from": "ev.dead.er-cosm004-intra-sector-slow-roll.recited",
       "to": "block.er-cosm004",
       "support_group": "block.er-cosm004-g0",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.f12-reconciliation-scout-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "checked"
     },
@@ -8043,64 +8307,64 @@ const STORE = {
     },
     {
       "link_kind": "supports",
-      "from": "ev.dead.er-de001-bh-mechanism-evolving-de",
+      "from": "ev.dead.er-de001-bh-mechanism-evolving-de.recited",
       "to": "block.er-de001",
       "support_group": "block.er-de001-g0",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.framework-scout-1-bh-mechanism-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"
     },
     {
       "link_kind": "supports",
-      "from": "ev.dead.er-ht001-nede-thermal-de",
+      "from": "ev.dead.er-ht001-nede-thermal-de.recited",
       "to": "block.er-ht001",
       "support_group": "block.er-ht001-g0",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.framework-scout-3-nede-thermal-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"
     },
     {
       "link_kind": "supports",
-      "from": "ev.dead.er-de002-vacuum-driven-reheating",
+      "from": "ev.dead.er-de002-vacuum-driven-reheating.recited",
       "to": "block.er-de002",
       "support_group": "block.er-de002-g0",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.framework-scout-1-bh-mechanism-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"
     },
     {
       "link_kind": "supports",
-      "from": "ev.dead.er-de003-quantum-foam-de",
+      "from": "ev.dead.er-de003-quantum-foam-de.recited",
       "to": "block.er-de003",
       "support_group": "block.er-de003-g0",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.framework-scout-1-bh-mechanism-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"
     },
     {
       "link_kind": "supports",
-      "from": "ev.dead.er-de004-multi-modulus-slow-roll",
+      "from": "ev.dead.er-de004-multi-modulus-slow-roll.recited",
       "to": "block.er-de004",
       "support_group": "block.er-de004-g0",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.framework-scout-4-multi-field-destabilization-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"
     },
     {
       "link_kind": "supports",
-      "from": "ev.dead.er-de005-hairon-quintessence",
+      "from": "ev.dead.er-de005-hairon-quintessence.recited",
       "to": "block.er-de005",
       "support_group": "block.er-de005-g0",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.framework-scout-4-multi-field-destabilization-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"
     },
     {
       "link_kind": "supports",
-      "from": "ev.dead.er-de006-hairon-multi-field",
+      "from": "ev.dead.er-de006-hairon-multi-field.recited",
       "to": "block.er-de006",
       "support_group": "block.er-de006-g0",
-      "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
+      "source_id": "corpus.framework-scout-4-multi-field-destabilization-may-2026",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"
     }
@@ -8111,6 +8375,78 @@ const STORE = {
       "successor_ref": "cc1.v4-16",
       "at_state": "dg@stage-2-cc1",
       "reason": "CC-1 reidentified: geometry couples to the modular free energy W(epsilon), not to F_Q at first order. F_Q is the second cumulant (stiffness), not the source; the source is the first cumulant, modular energy. SF-DG-013 (June 2026), v4.16 cumulant reorganization."
+    },
+    {
+      "superseded_ref": "ev.dead.er-cosm001-integrated-f-buildup",
+      "successor_ref": "ev.dead.er-cosm001-integrated-f-buildup.recited",
+      "at_state": "dg@audit-prep",
+      "reason": "Citation granularity correction (audit-prep Track 1, following analysis-1 Read 2's contamination finding): the trellis's own \"Source\" column names a specific Framework Scout report (corpus.f12-reconciliation-scout-may-2026), not the generic sub-Chandrasekhar Type Ia scout this claim was originally mapped to at Stage 3c Track 1 for lack of a catalogued source row. Re-cited to the honest, specific artifact; the superseded claim's mis-citation stays in history, not deleted."
+    },
+    {
+      "superseded_ref": "ev.dead.er-cosm002-trace-channel-gradient",
+      "successor_ref": "ev.dead.er-cosm002-trace-channel-gradient.recited",
+      "at_state": "dg@audit-prep",
+      "reason": "Citation granularity correction (audit-prep Track 1, following analysis-1 Read 2's contamination finding): the trellis's own \"Source\" column names a specific Framework Scout report (corpus.f12-reconciliation-scout-may-2026), not the generic sub-Chandrasekhar Type Ia scout this claim was originally mapped to at Stage 3c Track 1 for lack of a catalogued source row. Re-cited to the honest, specific artifact; the superseded claim's mis-citation stays in history, not deleted."
+    },
+    {
+      "superseded_ref": "ev.dead.er-cosm003-cosmological-averaging",
+      "successor_ref": "ev.dead.er-cosm003-cosmological-averaging.recited",
+      "at_state": "dg@audit-prep",
+      "reason": "Citation granularity correction (audit-prep Track 1, following analysis-1 Read 2's contamination finding): the trellis's own \"Source\" column names a specific Framework Scout report (corpus.f12-reconciliation-scout-may-2026), not the generic sub-Chandrasekhar Type Ia scout this claim was originally mapped to at Stage 3c Track 1 for lack of a catalogued source row. Re-cited to the honest, specific artifact; the superseded claim's mis-citation stays in history, not deleted."
+    },
+    {
+      "superseded_ref": "ev.dead.er-cosm004-intra-sector-slow-roll",
+      "successor_ref": "ev.dead.er-cosm004-intra-sector-slow-roll.recited",
+      "at_state": "dg@audit-prep",
+      "reason": "Citation granularity correction (audit-prep Track 1, following analysis-1 Read 2's contamination finding): the trellis's own \"Source\" column names a specific Framework Scout report (corpus.f12-reconciliation-scout-may-2026), not the generic sub-Chandrasekhar Type Ia scout this claim was originally mapped to at Stage 3c Track 1 for lack of a catalogued source row. Re-cited to the honest, specific artifact; the superseded claim's mis-citation stays in history, not deleted."
+    },
+    {
+      "superseded_ref": "ev.f12",
+      "successor_ref": "ev.f12.recited",
+      "at_state": "dg@audit-prep",
+      "reason": "Citation granularity correction (audit-prep Track 1, following analysis-1 Read 2's contamination finding): the trellis's own \"Source\" column names a specific Framework Scout report (corpus.f12-reconciliation-scout-may-2026), not the generic sub-Chandrasekhar Type Ia scout this claim was originally mapped to at Stage 3c Track 1 for lack of a catalogued source row. Re-cited to the honest, specific artifact; the superseded claim's mis-citation stays in history, not deleted."
+    },
+    {
+      "superseded_ref": "ev.dead.er-de001-bh-mechanism-evolving-de",
+      "successor_ref": "ev.dead.er-de001-bh-mechanism-evolving-de.recited",
+      "at_state": "dg@audit-prep",
+      "reason": "Citation granularity correction (audit-prep Track 1, following analysis-1 Read 2's contamination finding): the trellis's own \"Source\" column names a specific Framework Scout report (corpus.framework-scout-1-bh-mechanism-may-2026), not the generic sub-Chandrasekhar Type Ia scout this claim was originally mapped to at Stage 3c Track 1 for lack of a catalogued source row. Re-cited to the honest, specific artifact; the superseded claim's mis-citation stays in history, not deleted."
+    },
+    {
+      "superseded_ref": "ev.dead.er-de002-vacuum-driven-reheating",
+      "successor_ref": "ev.dead.er-de002-vacuum-driven-reheating.recited",
+      "at_state": "dg@audit-prep",
+      "reason": "Citation granularity correction (audit-prep Track 1, following analysis-1 Read 2's contamination finding): the trellis's own \"Source\" column names a specific Framework Scout report (corpus.framework-scout-1-bh-mechanism-may-2026), not the generic sub-Chandrasekhar Type Ia scout this claim was originally mapped to at Stage 3c Track 1 for lack of a catalogued source row. Re-cited to the honest, specific artifact; the superseded claim's mis-citation stays in history, not deleted."
+    },
+    {
+      "superseded_ref": "ev.dead.er-de003-quantum-foam-de",
+      "successor_ref": "ev.dead.er-de003-quantum-foam-de.recited",
+      "at_state": "dg@audit-prep",
+      "reason": "Citation granularity correction (audit-prep Track 1, following analysis-1 Read 2's contamination finding): the trellis's own \"Source\" column names a specific Framework Scout report (corpus.framework-scout-1-bh-mechanism-may-2026), not the generic sub-Chandrasekhar Type Ia scout this claim was originally mapped to at Stage 3c Track 1 for lack of a catalogued source row. Re-cited to the honest, specific artifact; the superseded claim's mis-citation stays in history, not deleted."
+    },
+    {
+      "superseded_ref": "ev.dead.er-ht001-nede-thermal-de",
+      "successor_ref": "ev.dead.er-ht001-nede-thermal-de.recited",
+      "at_state": "dg@audit-prep",
+      "reason": "Citation granularity correction (audit-prep Track 1, following analysis-1 Read 2's contamination finding): the trellis's own \"Source\" column names a specific Framework Scout report (corpus.framework-scout-3-nede-thermal-may-2026), not the generic sub-Chandrasekhar Type Ia scout this claim was originally mapped to at Stage 3c Track 1 for lack of a catalogued source row. Re-cited to the honest, specific artifact; the superseded claim's mis-citation stays in history, not deleted."
+    },
+    {
+      "superseded_ref": "ev.dead.er-de004-multi-modulus-slow-roll",
+      "successor_ref": "ev.dead.er-de004-multi-modulus-slow-roll.recited",
+      "at_state": "dg@audit-prep",
+      "reason": "Citation granularity correction (audit-prep Track 1, following analysis-1 Read 2's contamination finding): the trellis's own \"Source\" column names a specific Framework Scout report (corpus.framework-scout-4-multi-field-destabilization-may-2026), not the generic sub-Chandrasekhar Type Ia scout this claim was originally mapped to at Stage 3c Track 1 for lack of a catalogued source row. Re-cited to the honest, specific artifact; the superseded claim's mis-citation stays in history, not deleted."
+    },
+    {
+      "superseded_ref": "ev.dead.er-de005-hairon-quintessence",
+      "successor_ref": "ev.dead.er-de005-hairon-quintessence.recited",
+      "at_state": "dg@audit-prep",
+      "reason": "Citation granularity correction (audit-prep Track 1, following analysis-1 Read 2's contamination finding): the trellis's own \"Source\" column names a specific Framework Scout report (corpus.framework-scout-4-multi-field-destabilization-may-2026), not the generic sub-Chandrasekhar Type Ia scout this claim was originally mapped to at Stage 3c Track 1 for lack of a catalogued source row. Re-cited to the honest, specific artifact; the superseded claim's mis-citation stays in history, not deleted."
+    },
+    {
+      "superseded_ref": "ev.dead.er-de006-hairon-multi-field",
+      "successor_ref": "ev.dead.er-de006-hairon-multi-field.recited",
+      "at_state": "dg@audit-prep",
+      "reason": "Citation granularity correction (audit-prep Track 1, following analysis-1 Read 2's contamination finding): the trellis's own \"Source\" column names a specific Framework Scout report (corpus.framework-scout-4-multi-field-destabilization-may-2026), not the generic sub-Chandrasekhar Type Ia scout this claim was originally mapped to at Stage 3c Track 1 for lack of a catalogued source row. Re-cited to the honest, specific artifact; the superseded claim's mis-citation stays in history, not deleted."
     }
   ],
   "withdrawals": [

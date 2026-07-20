@@ -7,6 +7,11 @@
 // Contract: `node build/check-imports.mjs` exits non-zero on any violation, naming the edge.
 // Invariant: layers are read from the file's path, not declared; the check derives the graph from
 //   the real relative-import statements, never from a hand-maintained manifest of edges.
+// DEPARTURE at audit-prep Track 0.1: `analysis/` is classified `periphery` (a fallible reader that
+//   reaches the kernel only through `api/dg-provider.mjs`, never vendor/kernel directly), closing
+//   the gap the analysis-1 session named (analysis-1 fell into the permissive "other" default,
+//   never a deliberate classification). `api/dg-provider.mjs` was added as this repository's own
+//   first api-layer module specifically to give `analysis/` a real read surface to go through.
 "use strict";
 import { readFileSync, existsSync, readdirSync, statSync } from "node:fs";
 import { dirname, join, relative, resolve } from "node:path";
@@ -33,14 +38,14 @@ const allFiles = walk("").filter((f) => /\.(js|mjs)$/.test(f));
 //   kernel   - vendor/kernel/** (trusted, vendored; never edited except the recorded divergences)
 //   api      - vendor/api/** and api/** (the membrane; may import kernel)
 //   corpora  - corpora/** and vendor/corpora/** (pure data; imports nothing of its own)
-//   periphery- periphery/** (fallible; reaches kernel only through api)
+//   periphery- periphery/** and analysis/** (fallible; reaches kernel only through api)
 //   build    - build/** (may reach any layer)
 //   other    - vendor/scaffolder, vendor/build, and anything else not yet load-bearing at Stage 0
 function layer(p) {
   if (p.startsWith("vendor/kernel/")) return "kernel";
   if (p.startsWith("vendor/api/") || p.startsWith("api/")) return "api";
   if (p.startsWith("vendor/corpora/") || p.startsWith("corpora/")) return "corpora";
-  if (p.startsWith("periphery/")) return "periphery";
+  if (p.startsWith("periphery/") || p.startsWith("analysis/")) return "periphery";
   if (p.startsWith("build/") || p.startsWith("vendor/build/")) return "build";
   return "other";
 }
