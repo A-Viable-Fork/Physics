@@ -2,7 +2,7 @@
 
 The single source of build truth from this commit forward. A stage is done when its ledger line moves, not before. Graded honestly: `built and verified` (with the check that verified it named), or `specified, not built` (named, never implied done).
 
-Stages 0 through 3c. Stage 3 is split into three sessions (3a supports, 3b checking records and independence lifts, 3c the reservoir), each with one cause of grade movement so the distribution reviews stay legible. Stages 4 through 6 are specified in `docs/physics-kernel-recon-report.md` Section 6 and not yet begun.
+Stages 0 through 3c, plus the analysis-1 session (the environments engine and its five reads, docs/synthesis-backlog.md Section 4.1). Stage 3 is split into three sessions (3a supports, 3b checking records and independence lifts, 3c the reservoir), each with one cause of grade movement so the distribution reviews stay legible. Stages 4 through 6 are specified in `docs/physics-kernel-recon-report.md` Section 6 and not yet begun.
 
 **Documentation landing (between Stage 3a and Stage 3b):** `docs/synthesis-backlog.md` (the operator-approved synthesis of six deep-research reports) and the six PK-DR report PDFs under `docs/research/` landed byte-identical, hash-verified against the operator's uploads (`docs/research/MANIFEST.md`). No kernel act at landing time: no claims, no source-table rows, no new checks. The reports entered the source table at Stage 3c Track 3, the first stage to cite them (the synthesis backlog's own methods kills).
 
@@ -346,6 +346,51 @@ None, across all of Stage 3c. Every Track 1 citation resolved to an existing sou
 ### Divergences from the Stage 3c prompt
 
 None in substance. Track 1's scope ("every row in THE DEAD table, every ER entry...") is read literally and completely (87 DEAD-table rows including all 22 ER-numbered entries, 13 STRUCK contracts, 6 dead functions, the Section 4.6 row: 107 reservoir entries, not a representative subset). Track 2's "kin" (naming two block examples and gesturing at more) is read as the full set of 21 entries carrying an explicit "Block scope:" sentence, not merely the two named. The prompt's own stop condition mentions "eleven checks (through check-reservoir)"; this build's own count, checked directly against `.github/workflows/ci.yml`, is ten (`check-substrate` through `check-reservoir`), and this ledger reports the real count rather than padding to a number this session cannot independently confirm from the original prompt text.
+
+## Analysis-1: minimal environments and the five reads
+
+The analysis-layer session `docs/synthesis-backlog.md` Section 4.1 specifies, run after Stage 3c. Changes nothing: no claims, no records, no grade movements, no gate or store edits. One engine, five pure reads over it, run against the real corpus.
+
+| Item | Status | Verified by |
+|---|---|---|
+| `analysis/environments.mjs`: the minimal-environments engine (ATMS-style label propagation, de Kleer 1986, per PK-DR-006's Free Experiment 3), respecting the gate's own AND-OR grouping exactly | built and verified | the planted-and-observed minimality exercise below |
+| Read 1: `analysis/independence-certificates.mjs` -> `docs/analysis/01-independence-certificates.md` | built and verified | run green, output reviewed |
+| Read 2: `analysis/contamination-audit.mjs` -> `docs/analysis/02-contamination-audit.md` | built and verified | run green, output reviewed |
+| Read 3: `analysis/shepardizing.mjs` -> `docs/analysis/03-shepardizing.md` | built and verified | run green, output reviewed |
+| Read 4: `analysis/crux.mjs` -> `docs/analysis/04-crux.md` | built and verified | run green, output reviewed |
+| Read 5: `analysis/materiality-queue.mjs` -> `docs/analysis/05-materiality-queue.md` | built and verified | run green, output reviewed |
+| CI unaffected | built and verified | all ten checks still green after every commit |
+| `docs/status-ledger.md`, this section | built and verified | this file |
+
+### The engine
+
+For every claim, `environmentsOf(identity)` returns its minimal environments: the minimal sufficient sets of base nodes (source rows and floor claims) under which the claim's grounding holds. Within one `support_group`, all members are jointly required (the cross-product union of each member's own alternative environments, since a group is an AND). Across distinct groups, and across a claim's own basis path if it has checking records, any one path suffices (accumulate, then minimize by Boolean absorption, a + ab = a, since these are alternatives, an OR). A checking record's footprint and a supports link's own citation both expand through `rests_on` via `footprintClosure`, so every environment bottoms out at a true root. A claim with neither a checking record nor any supports link is its own floor base node; a constitutive-kind claim is always its own single base node. Dependency edges (`depends-on`, `contradicts`) never enter an environment, only `supports` (and `restatement`, which merges identities into one closure exactly as `kernel/gate/gate.mjs`'s own `restatementClosure` does, before that closure's supports are read).
+
+### Verification: the planted-and-observed minimality exercise
+
+Three cases, run against the real gate in a scratch, in-memory copy of the corpus (no file touched):
+
+- **Own-basis, single-member environment (`t1.1`).** Removing the environment's sole member (its one checking record) drops the earned grade from `checked` to `asserted`. Clean confirmation.
+- **Conjunctive support, two-member environment (`k10`, members `t3.4` and `k6`).** A genuine, surprising finding surfaced here, not a bug: merely severing the link to the weaker member (`t3.4`, `asserted`) *raises* the observed grade (to `corroborated`), since `supportDelivery`'s weakest-of runs over whichever links currently exist, not a fixed arity; unlinking a weak conjunct releases a constraint rather than removing an assumption. The correct test of true necessity is removing the base claim's own entry: with `t3.4` genuinely absent, the real gate declines the whole contribution with `WF-UNRESOLVED`, naming the now-dangling reference, confirming `t3.4` is a real, necessary member of `k10`'s sole minimal environment exactly as the engine computed.
+- **Alternative (OR) groups (`f06`, three environments).** Removing the currently-strongest alternative group drops the grade to the next surviving alternative (`corroborated` to `asserted`), never to floor, since the other two environments are genuinely independent groundings.
+
+### The five findings, one page
+
+1. **Independence certificates: nothing to recompute.** Zero claims are currently `independently-rechecked` corpus-wide; Stage 3b's one candidate (P3) was correctly capped at `checked`. Both claims in the whole corpus with 2+ distinct-party checking records (`p3`, `ev.mk5`) are re-verified against full environment intersection and agree exactly with their existing declarations. Expected outcome held.
+2. **Contamination audit: a real, previously unreported gap.** `trellis.v4-16` and the standard-physics literature citation dominate the ranking, as expected. Surprising and real: 25 claims (13 Stage 3c Track 1 evidence claims and 12 class-level exclusion blocks, the entire dark-energy/hot-thermal reservoir family, ER-COSM-001 through 004, ER-DE-001 through 006, ER-HT-001, ER-WD-001, F12) quietly share one footprint through a single document, `corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026`, despite the trellis naming a distinct Framework Scout run per kill. None of these individual scout reports were ever catalogued as their own source row at Stage 3c Track 1; this is a citation-granularity gap in that track's own construction, not a grading error (nothing is declared above what it honestly earns), but a real risk for any future claim of independence among these 25.
+3. **Shepardizing: clean.** Zero live claims rest, at any environment depth, on anything withdrawn or superseded, confirming over the full support-and-provenance structure what the gate's own per-edge checks already enforce locally. One class-block-scope hit (`s-mix-006`) is the same already-reviewed benign vocabulary overlap `build/check-reservoir.mjs` surfaces on its own corpus-wide scan, not a new path.
+4. **The crux: no hidden discriminant, and an honest vacuity named.** Path A and Path B carry no `supports` links at all (a Stage 2 divergence), so the literal environment computation is trivially the two branch claims themselves; the substantive crux, computed from each branch's own named commitments (`t3.6`/`f-cc`/`s-cc-005` versus `t3.6prime`/`s-dd-001`/`s-dd-002`), lands exactly on the trellis's own stated selection criteria. No hidden discriminant found; the expected outcome held in full. Two named commitments (Path A's hairon-as-vacuum-substrate identification, Path B's F-DD-Evolve) were never atomized as their own claims, named as trellis referential debt alongside the existing Tier 4.X gap list.
+5. **Materiality queue: K3 ranks first, exactly the anticipated surprise.** By downstream dependency mass (7 claims), K3 tops the queue, generalizing Stage 3b's K1 finding precisely as the prompt anticipated: K1 has a real checking record but stays `asserted` because its conjunctive co-premise K3 is itself unaudited. An audit of K3 would clear this weak-link drag on every claim conjunctively depending on it, K1 foremost.
+
+**What the operator should look at first, across all five reads:** the Framework Scout citation-granularity gap (Read 2) and K3 (Read 5) are the two live, actionable items; everything else confirmed the expected, conservative outcome with no correction needed.
+
+### A gap named, not fixed, per this session's own scope
+
+`build/check-imports.mjs`'s trust-boundary classifier (`layer()`) has no case for the new `analysis/` directory; it falls into the permissive default ("other"), which may import anything, same as `build/`. This happens to be harmless today (`analysis/environments.mjs` legitimately needs `vendor/kernel` directly, the same access `build/` has), but it was never a deliberate classification decision the way `build`, `api`, `periphery`, and `corpora` each are. Left unfixed: this session's own scope is "no writes to corpus, store, conventions, or checks beyond adding the `analysis/` scripts and their emitted docs," and `check-imports.mjs` is a check. Named here for a future session to decide whether `analysis/` deserves its own explicit trust-layer entry.
+
+### Divergences from the analysis-1 prompt
+
+None in substance. Two reads (independence certificates, the crux) turned out substantively vacuous at this corpus's current shape when read at the most literal level; both are reported as such per the prompt's own "honest maturity" instruction, then extended to the substantive check each read's purpose actually calls for (re-verifying the two real 2-record candidates; computing the crux from each branch's own named commitments) rather than left as a bare empty result.
 
 ## Not built at Stage 1 (named, not implied done)
 
