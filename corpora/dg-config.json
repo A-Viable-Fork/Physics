@@ -133,7 +133,9 @@
       "source_id": "corpus.tov-results",
       "source_class": "preprint",
       "description": "TOV Results: Modified TOV Output (March 2026) -- M-R curves, $\\Lambda_{1.4}$, torsion sensitivity",
-      "rests_on": []
+      "rests_on": [
+        "corpus.tov-solver-prompt"
+      ]
     },
     {
       "source_id": "corpus.task-2-3-results",
@@ -163,7 +165,9 @@
       "source_id": "corpus.route-1-report",
       "source_class": "ai-audit",
       "description": "Route 1 Report: Radion Tachyonic Threshold (Gemini, March 2026) -- Kill REFUTED: $T_3$ $z_0$-independent; Higgs stabilization",
-      "rests_on": []
+      "rests_on": [
+        "corpus.kk-propagator-report"
+      ]
     },
     {
       "source_id": "corpus.dirac-constraint-report",
@@ -181,7 +185,9 @@
       "source_id": "corpus.resolution",
       "source_class": "ai-audit",
       "description": "$t_{\\text{heal}}$ Resolution: Resolving $t_{\\text{heal}}$ Bug (Gemini, March 2026) -- $t_{\\text{heal}} \\equiv t_{\\text{scrambling}}$. Tear ratio $\\Theta$.",
-      "rests_on": []
+      "rests_on": [
+        "corpus.task-2-3-results"
+      ]
     },
     {
       "source_id": "corpus.transient-energetics-failure",
@@ -193,13 +199,17 @@
       "source_id": "corpus.shear-zone-report",
       "source_class": "ai-audit",
       "description": "Shear Zone Report: Correcting Energetics (Gemini, March 2026) -- Macroscopic $\\Delta r \\approx 0.16\\,\\text{cm}$. Thermal core insight.",
-      "rests_on": []
+      "rests_on": [
+        "corpus.transient-energetics-failure"
+      ]
     },
     {
       "source_id": "corpus.dark-dimension-shear-zone",
       "source_class": "ai-audit",
       "description": "Dark Dimension Shear Zone: DD Origin (Gemini, March 2026) -- $\\Delta r = \\lambda_{\\text{KK}} \\approx 0.02\\,\\text{cm}$. $E_{\\text{snap}} \\sim 10^{50}$.",
-      "rests_on": []
+      "rests_on": [
+        "corpus.shear-zone-report"
+      ]
     },
     {
       "source_id": "corpus.ontological-assessment",
@@ -271,7 +281,9 @@
       "source_id": "corpus.bosenova-density-spike",
       "source_class": "ai-audit",
       "description": "Bosenova Density Spike: Density Spikes (Gemini, March 2026) -- $\\rho_Q$ reaches $10^{32}$ at $R_{\\text{crit}} \\sim 0.725\\,\\mu\\text{m}$. Volume Bug.",
-      "rests_on": []
+      "rests_on": [
+        "corpus.bosenova-falsification"
+      ]
     },
     {
       "source_id": "corpus.5d-escape-hatch-report",
@@ -436,13 +448,17 @@
       "source_id": "corpus.cross-exam-of-four-computations",
       "source_class": "ai-audit",
       "description": "Cross-Exam of Four Computations: Claude Opus Analysis of Gemini Four Computations (March 2026) -- Computation 1 (Casimir): use it. Computation 2 (SM Higgs): F-theory fix is overreaction; three-sentence quantitative paragraph suffices. Computation 3 (kinetic mixing): QFI amplification scenario contains structural error. Computation 4 (causality): discard bulk retardation proposal; it concedes nonex",
-      "rests_on": []
+      "rests_on": [
+        "corpus.four-computations-report"
+      ]
     },
     {
       "source_id": "corpus.graceful-exit-report",
       "source_class": "ai-audit",
       "description": "Graceful Exit Report: Graceful Exit from Pre-Geometric SO(1,4) Phase via Topological Nucleation (Gemini Deep Research, March 2026) -- CDL dead ($S_E \\sim 10^{44}$). Three $\\lambda$-independent mechanisms: gauge instanton ($S = 4\\pi^2/g^2$), thermal KK daisy ($N \\sim 10^{32}$), dynamical cobordism. Percolation dissolved by BF gauge equivalence. $T_{\\text{RH}} \\sim 10^7\\,\\text{GeV}$ preserved. Dark ",
-      "rests_on": []
+      "rests_on": [
+        "corpus.pre-geometric-inflation"
+      ]
     },
     {
       "source_id": "corpus.anomaly-audit",
@@ -460,7 +476,10 @@
       "source_id": "corpus.grb-111005a-resolution-paper-v3",
       "source_class": "testimony",
       "description": "GRB 111005A Resolution Paper v3: Three-anomaly resolution via 5D Einstein-Cartan framework. Part A: KK thermal exhaust (SN suppression). Part B: Dual-channel Gamow enhancement (geometric torsion phase and ponderomotive electron screening). Part C: Alfven-bounded torsion snapback (radio afterglow). Channel orthogonality decoherence defense. Solar constraint verified for both mechanisms. -- March 20",
-      "rests_on": []
+      "rests_on": [
+        "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
+        "corpus.gemini-deep-research-report-2-geometric-phases-ponderomotive"
+      ]
     },
     {
       "source_id": "corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc",
@@ -478,13 +497,18 @@
       "source_id": "corpus.red-team-review-1-grb-paper-without-paper-0",
       "source_class": "testimony",
       "description": "Red-Team Review 1 (GRB paper, without Paper 0): Five major concerns: QFI motivation, Gamow enhancement specificity, topological protection analogy underdeveloped, Alfven speed justification, parameter counting. Recommended discussion/limitations section. Verdict: not ready for submission, needs quantitative backing. -- March 2026",
-      "rests_on": []
+      "rests_on": [
+        "corpus.grb-111005a-resolution-paper-v3"
+      ]
     },
     {
       "source_id": "corpus.red-team-review-2-grb-paper-with-paper-0",
       "source_class": "testimony",
       "description": "Red-Team Review 2 (GRB paper, with Paper 0): Citation chain audit. Identified: Gamow enhancement not derived in Paper 0 (critical gap), misplaced citations in Sections 5.3, 5.4, 5.5, missing coherent exhaust distinction from Paper 0 Section 5.3. Parts A and C well-supported. Part B citation chain broken. Recommended: derive Gamow mechanism or reframe as conjecture. -- March 2026",
-      "rests_on": []
+      "rests_on": [
+        "corpus.grb-111005a-resolution-paper-v3",
+        "corpus.paper-0"
+      ]
     },
     {
       "source_id": "corpus.white-et-al-2026-phys-rev-research-8-013264",
@@ -582,7 +606,9 @@
       "source_id": "corpus.lean-4-phase-2-red-team",
       "source_class": "testimony",
       "description": "Lean 4 Phase 2 Red Team: Phase 2 Red Team Audit Report: SDVG Framework Lean 4 Codebase (March 2026) -- Four-vector audit across six modules. Two Principle of Explosion vulnerabilities (DiracConstraints.lean, QFI_Coupling.lean). Missing measurability hypotheses. Vortex stretching lobotomy (spatially homogeneous holographic dictionary). Boolean Swampland linter vacuity. Corrected Lean 4 signatures p",
-      "rests_on": []
+      "rests_on": [
+        "corpus.lean-4-formalization"
+      ]
     },
     {
       "source_id": "corpus.lean-4-dirac-bergmann-feasibility",
@@ -618,7 +644,9 @@
       "source_id": "corpus.paper-1-draft-1",
       "source_class": "preprint",
       "description": "Paper -1 Draft 1: The Pre-Geometric Dynamical Principle for Asymptotically Hyperbolic Emergence: Metric Condensation from Boundary Modular Flow in a Topological SO(2,4) Chern-Simons Bulk (March 2026) -- Publication draft. Eight sections covering topological phase, cobordism nucleation, modular flow, entanglement variational principle, heat kernel uniqueness, Dirac-Bergmann analysis, BKM regularity",
-      "rests_on": []
+      "rests_on": [
+        "corpus.dynamical-emergence-report"
+      ]
     },
     {
       "source_id": "corpus.gut-population-survey-v1-7",
@@ -666,7 +694,9 @@
       "source_id": "corpus.f-theory-base-adaptation",
       "source_class": "ai-audit",
       "description": "F-Theory Base Adaptation: F-Theory X_{F13} Base Geometry Adaptation for the Dark Dimension (Gemini, March 2026) -- Recommended base: $\\mathbb{P}(\\mathcal{O}_{dP_3} \\oplus L) \\to dP_3$. Divisor transversality verified (SF-G2). K10/K11/K12 compliance confirmed. LVS standard. Sen limit check passed. Single gate: anti-canonical effectiveness.",
-      "rests_on": []
+      "rests_on": [
+        "corpus.torus-permutation-check"
+      ]
     },
     {
       "source_id": "corpus.avenue-b-kill",
@@ -678,19 +708,26 @@
       "source_id": "corpus.cy4-euler-and-flux",
       "source_class": "ai-audit",
       "description": "CY4 Euler and Flux: CY4 Euler Characteristic and $G_4$ Flux Construction for X_{F13} over $dP_3$ (Gemini, March 2026) -- $\\chi(Y_4) = 5448$, $N_{\\text{geometric}} = 227$. Explicit flux $F = 3H - 5\\sum E_i$ gives three chiral families. $N_{D3} \\sim 95$. Witten quantization satisfied. D-term flat direction $t_H = 5\\,t_E$.",
-      "rests_on": []
+      "rests_on": [
+        "corpus.f-theory-base-adaptation"
+      ]
     },
     {
       "source_id": "corpus.yukawa-rank-analysis",
       "source_class": "ai-audit",
       "description": "Yukawa Rank Analysis: Yukawa Rank Analysis for X_{F13} PS on $dP_3$ (Gemini, March 2026) -- RANK-3 GEOMETRIC. 87 Yukawa points. Matter curve genera: $g = 96$ and $g = 10$. Rank lift is structural consequence of $dP_3$ base change. Mass hierarchy: T-brane (primary) + D3-instantons (secondary). Dark Dimension localization constraint cured the rank-1 defect of the original X_{F13} model.",
-      "rests_on": []
+      "rests_on": [
+        "corpus.cy4-euler-and-flux"
+      ]
     },
     {
       "source_id": "corpus.f-theory-ps-model-spec",
       "source_class": "testimony",
       "description": "F-Theory PS Model Spec: F-Theory Dark Dimension Pati-Salam Model: Complete Specification (March 2026) -- Full geometric and topological data for the confirmed GUT Box occupant. Appendix A.1 of the child trellis.",
-      "rests_on": []
+      "rests_on": [
+        "corpus.cy4-euler-and-flux",
+        "corpus.yukawa-rank-analysis"
+      ]
     },
     {
       "source_id": "corpus.gauge-sector-derivation-report",
@@ -702,7 +739,9 @@
       "source_id": "corpus.del-pezzo-exclusion-sweep",
       "source_class": "ai-audit",
       "description": "Del Pezzo Exclusion Sweep: Exhaustive Del Pezzo Exclusion Sweep for X_{F13} Pati-Salam Architectures in the Dark Dimension (Gemini Deep Research, March 2026) -- Eight bases killed, three survive ($dP_3$, $dP_5$, $dP_7$). Even-degree parity kill (SF-D1) eliminates $dP_2$/$dP_4$/$dP_6$/$dP_8$ unconditionally. $dP_0$ killed by Diophantine impossibility (no exceptional divisors). $dP_1$ killed by nega",
-      "rests_on": []
+      "rests_on": [
+        "corpus.cy4-euler-and-flux"
+      ]
     },
     {
       "source_id": "corpus.fiber-exclusion-sweep",
@@ -714,7 +753,9 @@
       "source_id": "corpus.ftheorytools-computational-protocol",
       "source_class": "ai-audit",
       "description": "FTheoryTools Computational Protocol: Computational Protocol for Resolving Seven Indeterminate F-Theory Fiber Candidates (Gemini Deep Research, March 2026) -- Identified FTheoryTools (Julia/OSCAR, arXiv:2506.13849) as the required software. CAUTION: Report produced zero runnable code despite explicit instructions. Confirmed: FTheoryTools runs on Julia 1.11.6 / OSCAR 1.5.0, has literature_model() fu",
-      "rests_on": []
+      "rests_on": [
+        "corpus.fiber-exclusion-sweep"
+      ]
     },
     {
       "source_id": "corpus.qg-funnel-analysis",
@@ -738,7 +779,10 @@
       "source_id": "corpus.toric-fiber-sweep-execution-plan",
       "source_class": "ai-audit",
       "description": "Toric Fiber Sweep Execution Plan: Toric Fiber Sweep Execution Plan: Resolving Indeterminate F-Theory Architectures in the Dark Dimension (Gemini Deep Research, March 2026) -- Detailed computational protocol for S-D1 through S-D7 (21 FTheoryTools evaluations on 7 fibers $\\times$ 3 bases). Eight-step pipeline specified: CY4 construction, Euler characteristic, matter curves, $G_4$ flux, Diophantine s",
-      "rests_on": []
+      "rests_on": [
+        "corpus.ftheorytools-computational-protocol",
+        "corpus.fiber-exclusion-sweep"
+      ]
     },
     {
       "source_id": "corpus.empirical-anomaly-survey-march-2026",
@@ -927,13 +971,17 @@
       "source_id": "corpus.dg-cft-054",
       "source_class": "testimony",
       "description": "DG-CFT-054: Paper 0 v9-to-v10 Update Module (April 2026) -- Integration of the explicit $\\gamma$ derivation into Section IV.D, revision of Section III.F, new Section IV.F on species enhancement of brane-localized Wilsonian coefficients, bibliography additions (Georgi-Grant-Hailu, von Gersdorff-Irges-Quiros, Fabinger-Horava, Dvali-Gomez species identity references). Source for the Paper 0 v10 conte",
-      "rests_on": []
+      "rests_on": [
+        "corpus.dg-cft-053"
+      ]
     },
     {
       "source_id": "corpus.addazi-meluccio-2026",
       "source_class": "preprint",
       "description": "Addazi-Meluccio (2026): Solution to the Cosmological Constant Problem from Pre-Geometric Gravity (arXiv:2602.16840, February 2026) -- Master paper for T3.6 topological quantization of $\\Lambda$. Gauss-Bonnet $\\theta$-angle argument, periodic potential structure, $\\Lambda^{(k)} = 3cM_P^2/[32(-\\theta^{(0)} + 2\\pi k)]$ tower, $k \\sim S_{\\mathrm{dS}}$ selection, entropic protection $e^{-S_{\\mathrm{dS}",
-      "rests_on": []
+      "rests_on": [
+        "corpus.addazi-capozziello-marciano-meluccio-2025a"
+      ]
     },
     {
       "source_id": "corpus.meluccio-2025",
@@ -951,7 +999,9 @@
       "source_id": "corpus.addazi-capozziello-marciano-meluccio-2025b",
       "source_class": "peer-reviewed",
       "description": "Addazi-Capozziello-Marciano-Meluccio (2025b): Hamiltonian Analysis of Pre-Geometric Gravity (PRD 112, 064058, arXiv:2505.01272, September 2025) -- Hamiltonian formulation of MM SSB with 3 propagating DOF (matches Paper -1 §6 result of 2 graviton + 1 radion). Direct cross-validation of the framework's Dirac-Bergmann constraint analysis. Review pending for second-class constraint structure (relevant",
-      "rests_on": []
+      "rests_on": [
+        "corpus.dirac-constraint-report"
+      ]
     },
     {
       "source_id": "corpus.gemini-cc-run-1-april-2026",
@@ -963,13 +1013,17 @@
       "source_id": "corpus.gemini-cc-run-2-april-2026",
       "source_class": "ai-audit",
       "description": "Gemini CC Run 2 (April 2026): Gemini Deep Research Report 2: CC Derivation Re-Run (April 2026) -- Independent confirmation of the $\\gamma$ runaway kill via different algebraic path. Promoted holographic Casimir backreaction (S-CC-004) to leading rescue candidate. Surfaced the Addazi-Meluccio pre-geometric gravity literature as candidate resolution to the MM intrinsic $\\Lambda$ problem. Source for ",
-      "rests_on": []
+      "rests_on": [
+        "corpus.gemini-cc-run-1-april-2026"
+      ]
     },
     {
       "source_id": "corpus.gemini-cc-radiative-stability-april-2026",
       "source_class": "ai-audit",
       "description": "Gemini CC Radiative Stability (April 2026): Gemini Deep Research Report 3: Radiative Stability of the AM Potential at MeV Radion (April 2026) -- Discharge of S-CC-003. Establishment of K18 (kinematic dominance by trans-Planckian VEV, 16 OoM margin). Derivation of mass window $\\mu_\\rho \\in [1\\,\\mathrm{meV}, 100\\,\\mathrm{GeV}]$. Confirmation of two-regime behavior as derived consequence of AM period",
-      "rests_on": []
+      "rests_on": [
+        "corpus.gemini-cc-run-2-april-2026"
+      ]
     },
     {
       "source_id": "corpus.paper-1-patch-v1-april-2026",
@@ -981,7 +1035,9 @@
       "source_id": "corpus.gemini-dr-vi-rewrite-route-april-2026",
       "source_class": "ai-audit",
       "description": "Gemini DR §VI Rewrite Route (April 2026): Gemini Deep Research Report: Paper -1 §VI Rewrite Route (Canonical Reduction of Broken SO(1,4) MacDowell-Mansouri Gravity) (April 2026) -- Source for ER-MM-001 (§VI D kill via Q2 bracket computation), identification of the principal symbol pivot as candidate rescue, Q1 literature cross-check against 2505.01272, Q3 block decomposition. Contains unsupported ",
-      "rests_on": []
+      "rests_on": [
+        "corpus.addazi-capozziello-marciano-meluccio-2025b"
+      ]
     },
     {
       "source_id": "corpus.deepseek-cross-examination-april-2026",
@@ -1023,13 +1079,17 @@
       "source_id": "corpus.chatgpt-s-mix-001-computation-report-april-2026",
       "source_class": "ai-audit",
       "description": "ChatGPT S-MIX-001 Computation Report (April 2026): ChatGPT computational report: S-MIX-001 DBI tree-level $\\pi$-$\\chi$ mixing (April 2026) -- DEAD verdict on $\\pi\\chi$ tree-level mixing. Explicit quadratic action expansion showed $m_{\\text{mix}}^2 = 0$ at tree level; $\\sin(\\theta) = 0$; $F_{Q,\\text{crit}}^{\\text{eff}} \\to \\infty$. ER-MIX-001 discharge.",
-      "rests_on": []
+      "rests_on": [
+        "corpus.chat-dirac-rescue-pdf-april-2026"
+      ]
     },
     {
       "source_id": "corpus.chatgpt-s-mix-002-path-b-survey-april-2026",
       "source_class": "ai-audit",
       "description": "ChatGPT S-MIX-002 Path B Survey (April 2026): ChatGPT computational report: S-MIX-002 candidate enumeration for $Z_\\chi$ origin (April 2026) -- Five-candidate enumeration for $Z_\\chi$ origin. Killed Candidates A and B by explicit $\\epsilon$-index gymnastics. Identified Path B-B (torsion elimination) as the only intrinsic candidate worth quantitative testing, with Path B-A (add by hand) as fallback",
-      "rests_on": []
+      "rests_on": [
+        "corpus.chatgpt-s-mix-001-computation-report-april-2026"
+      ]
     },
     {
       "source_id": "corpus.chatgpt-s-mix-003-torsion-elimination-computation-april-2026",
@@ -1053,7 +1113,9 @@
       "source_id": "corpus.path-b-b-partial-derivation-april-2026",
       "source_class": "ai-audit",
       "description": "Path B-B Partial Derivation (April 2026): Internal computational note: setup of EC scalar-tensor torsion-elimination calculation (Claude, April 2026) -- Setup of the EC scalar-tensor torsion-elimination calculation and derivation of the criterion $\\beta'\\cdot a_1 > 2/3$ for healthy kinetic term. Reduced the rescue question to a single sharp criterion. Source for ER-MIX-002.",
-      "rests_on": []
+      "rests_on": [
+        "corpus.chatgpt-s-mix-002-path-b-survey-april-2026"
+      ]
     },
     {
       "source_id": "corpus.path-b-resolution-synthesis-april-2026",
@@ -1069,13 +1131,17 @@
       "source_id": "corpus.s-mix-prompt-drafts-april-2026",
       "source_class": "ai-audit",
       "description": "S-MIX Prompt Drafts (April 2026): Prompt artifacts: S-MIX-001 / S-MIX-002 / S-MIX-003 / S-MIX-004 prompt drafts (Claude, April 2026) -- Four focused-computation prompts driving the shore's parallel investigation of Higgs kinetic-term origins. S-MIX-001 prompt was drafted but superseded by ChatGPT's unprompted DBI rescue patch; cataloged for completeness.",
-      "rests_on": []
+      "rests_on": [
+        "corpus.chat-dirac-rescue-pdf-april-2026"
+      ]
     },
     {
       "source_id": "corpus.stelle-west-1980-re-read-context-april-2026",
       "source_class": "ai-audit",
       "description": "Stelle-West (1980) re-read context (April 2026): Internal note: Stelle-West nonlinear realization with director field $\\tau$ (Claude, April 2026) -- Web-search confirmation that Stelle-West's nonlinear realization of broken SO(1,4) used a director field $\\tau$ with implicit auxiliary-field structure analogous to Langenscheidt's explicit construction. Paper -1's §II B inherited the implicit form fr",
-      "rests_on": []
+      "rests_on": [
+        "corpus.langenscheidt-2019-arxiv-1907-10440"
+      ]
     },
     {
       "source_id": "corpus.chatgpt-s-mix-005-report-april-2026",
@@ -1117,7 +1183,9 @@
       "source_id": "corpus.chatgpt-s-mm-002-report-april-2026",
       "source_class": "ai-audit",
       "description": "ChatGPT S-MM-002α Report (April 2026): ChatGPT S-MM-002α Computation Report: Derivation Audit for $\\mathcal{F}_i$ from Preservation of $Z^i_{AB}$ (April 2026) -- Direct Hamiltonian preservation analysis. Refused to confabulate $\\mathcal{F}_i$ by assumption-laundering; produced explicit Frechet variation, principal multiplier block, torsion principal symbol, and conditional candidate $\\mathcal{F}_i",
-      "rests_on": []
+      "rests_on": [
+        "corpus.chatgpt-s-mm-002a-b-combined-report-april-2026"
+      ]
     },
     {
       "source_id": "corpus.chatgpt-s-mm-002-report-april-2026-2",
@@ -1140,7 +1208,9 @@
       "source_id": "corpus.framework-scout-sub-chandrasekhar-type-ia-may-12-2026",
       "source_class": "ai-audit",
       "description": "Framework Scout: Sub-Chandrasekhar Type Ia (May 12, 2026): Framework Scout: Sub-Chandrasekhar Type Ia (port from external Quantum Crystal mechanism, internal candidates) (Gemini Deep Research, May 12, 2026) -- Verdict DEAD, outside explanatory domain. Two cruxes: (A) FDT constraint on DLRO Coulomb crystals and hydrodynamic shocks pins $\\mathcal{f}_Q$ to O(N) baseline, 15 OoM below threshold; (B) p",
-      "rests_on": []
+      "rests_on": [
+        "corpus.quantum-crystal-ext"
+      ]
     },
     {
       "source_id": "corpus.f12-cosmological-dark-energy-thawing-vs-pole-structure-recon",
@@ -1158,7 +1228,9 @@
       "source_id": "corpus.s-cc-002-instanton-generated-karch-randall-moduli-stabilizat",
       "source_class": "ai-audit",
       "description": "S-CC-002 Instanton-Generated Karch-Randall Moduli Stabilization Scout (May 12, 2026): S-CC-002 Instanton-Generated Karch-Randall Moduli Stabilization Scout (Gemini Deep Research, May 12, 2026) -- Verdict MARGINAL going on NEEDS REFINEMENT. Conditional on $b > 1/(4\\pi^2) \\approx 0.0253$ for the one-loop beta function coefficient of the $X_{F13}$ Pati-Salam KK tower on $dP_3$ Laplacian. Source for S",
-      "rests_on": []
+      "rests_on": [
+        "corpus.hsb-karch-randall-moduli-geometry-as-l-surrogate-scout-may-1"
+      ]
     },
     {
       "source_id": "corpus.dg-cft-055",
@@ -1208,7 +1280,10 @@
       "source_id": "corpus.dg-cft-061",
       "source_class": "testimony",
       "description": "DG-CFT-061: SF-DG-011 Refresh Duality and Matter-Sector Contraction Shore (Architect, June 12, 2026; internal CE-DG-011-a / CE-DG-011-d) -- The trellis-update record advancing parent v4.14 to v4.15. Splits OP-0: OP-0-COUPLING ($\\gamma$ derivation, pole form, threshold $F_{Q,\\text{crit}} = 16\\pi^2 m_\\rho^2 \\Lambda_s^2/c_{\\text{KK}} \\sim 10^{12}$ to $10^{13}$ GeV$^4$) stands; OP-0-ACTIVATION dead pe",
-      "rests_on": []
+      "rests_on": [
+        "corpus.dg-cft-062",
+        "corpus.dg-cft-063"
+      ]
     },
     {
       "source_id": "corpus.dg-cft-062",
@@ -1226,7 +1301,9 @@
       "source_id": "corpus.dg-cft-064",
       "source_class": "testimony",
       "description": "DG-CFT-064: SF-DG-012 Ontology Exploration / Laminar Timescale Companion Shore (Architect, June 13, 2026; internal CE-DG-012-a) -- Speculation-quarantine companion shore, no parent advance. Records Speculation Ledger SL-EXP-01 through SL-EXP-10 (Unverified, non-citable). Single promotable item: torsion-timescale status DEAD to QUARANTINED via laminar clock-quarantine (AVF Grid-OS isomorphism), app",
-      "rests_on": []
+      "rests_on": [
+        "corpus.dg-cft-065"
+      ]
     },
     {
       "source_id": "corpus.dg-cft-065",
@@ -1238,7 +1315,11 @@
       "source_id": "corpus.dg-cft-066",
       "source_class": "testimony",
       "description": "DG-CFT-066: SF-DG-013 Cumulant Reorganization Shore (Architect, June 13, 2026; internal CE-DG-013-a) -- The trellis-update record advancing parent v4.15 to v4.16. Verified reorganization: $F_Q$ is the second cumulant (stiffness, controls the pole), the source is the first cumulant (modular energy, stress-energy coupled by Bisognano-Wichmann), the generator gap was an order error rather than a miss",
-      "rests_on": []
+      "rests_on": [
+        "corpus.dg-cft-067",
+        "corpus.dg-cft-068",
+        "corpus.dg-cft-069"
+      ]
     },
     {
       "source_id": "corpus.dg-cft-067",
