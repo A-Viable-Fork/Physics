@@ -49,7 +49,7 @@
     "kernel/schema/registry.js": "1190867cc4fdfab6b449c7646d460542a3852c5fd14b85d92126e74c163ab2a7",
     "kernel/schema/schema.js": "ef4a02368bc2794683d8a86c44154d97956b9b88014a3430f7ad6c400dbb5a29",
     "kernel/schema/sha256.mjs": "fc0fda5a26ec35251a301b2f1c76333d544cdb2c551e4c769704808e8e63bf25",
-    "kernel/schema/tables.mjs": "7d0f6f13cbc71189a3de54cfe339d6b78b44f7288c085986e9cc7a373058997f",
+    "kernel/schema/tables.mjs": "dc91974b41050624e7101510e8f4ca1a33df58a3c14904f3dd2b558a2608807f",
     "kernel/schema/type-hash.mjs": "c2b8b791ba09c5cbd03b2540c816f1d1ecf4224ae713827ed9f4192f2914f715",
     "kernel/store/apply.mjs": "076373a54fe3c8e99e0d14c29acc9311577a35040358efc1d29f6d6eeba5e23d",
     "kernel/store/decay.mjs": "268fff69f3b2e6ae8940ea490e302c6fa514111c4230688fa4d5aa5cae28b0f1",
@@ -85,6 +85,11 @@
       "file": "kernel/compute/transforms.mjs",
       "change": "PACKS gains one member, \"computation\": [\"graph\", \"algebra\", \"statistics\", \"computation\"]. The no-standing rule (never emits \"kernel\", must consume \"values\") and the runtime no-grade-field guard, both previously keyed to pack === \"statistics\", are keyed to a NO_STANDING_PACKS = [\"statistics\", \"computation\"] set instead, so a computation entry obeys the statistics-pack constraints verbatim. No other behavior changes; a statistics entry is affected in no way.",
       "rationale": "Physics numeric transforms (heat-kernel traces, exhaust races, OoM deficits) fit the statistics shape mechanically but are not honestly statistics; a one-line, hash-tracked fork, per docs/physics-kernel-recon-report.md Section 3, seam 3 (\"the compute pack taxonomy\")."
+    },
+    {
+      "file": "kernel/schema/tables.mjs",
+      "change": "SOURCE_CLASSES gains one member, \"formal-artifact\", appended after \"ai-audit\": [\"primary-measurement\", \"peer-reviewed\", \"preprint\", \"dataset\", \"institutional-report\", \"testimony\", \"ai-audit\", \"formal-artifact\"].",
+      "rationale": "Machine-checked artifacts (compiled Lean modules and kin) are a grounding source distinct in kind from testimony about such an artifact: a proof file is an artifact, not testimony about one. A one-line, hash-tracked fork, per docs/status-ledger.md Stage 3a Track 0 (operator ruling 1), the same pattern as the ai-audit and computation-pack divergences."
     }
   ],
   "license": "AGPL-3.0 (GNU Affero General Public License v3, per upstream LICENSE; CITATION.cff leaves or-later versus only as an authoring choice, not resolved upstream at the pin)",
