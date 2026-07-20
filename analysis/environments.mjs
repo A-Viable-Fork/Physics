@@ -4,28 +4,28 @@
 //   of base nodes (source rows and floor claims) under which the claim's grounding holds. This is
 //   ATMS-style label propagation (de Kleer 1986) over the real support structure, minimized by
 //   Boolean absorption (a + ab = a), never plain reachability.
-// Contract: computeEnvironments(built) -> { environmentsOf(identity) -> [Set<string>], ... }.
-//   `built` is buildKernel()'s return value (build/dg-build.mjs). Pure read: no claim, link, or
-//   record is created or mutated. `environmentsOf` is memoized per identity.
+// Contract: computeEnvironments(provider) -> { environmentsOf(identity) -> [Set<string>], ... }.
+//   `provider` is api/dg-provider.mjs's createDgProvider(built) return value: a plain-data read
+//   surface, never a live kernel object. Pure read: no claim, link, or record is created or
+//   mutated. `environmentsOf` is memoized per identity.
 // Invariant: respects the gate's own AND-OR grouping exactly. Within one `support_group`, all
 //   members are jointly required (AND: the group's environments are the cross-product union of
 //   each member's own environments). Across distinct groups (and across a claim's own basis path,
 //   if it has checking records), any one path suffices (OR: environments simply accumulate, then
 //   minimize). A `depends-on`, `contradicts`, or `restatement` link never contributes an
 //   environment; only `supports` links do (restatement links still enter the restatement closure,
-//   exactly as `kernel/gate/gate.mjs`'s own `restatementClosure` uses them, so a merged claim's
-//   supports are read the same way the real gate reads them). A checking record's footprint and a
-//   supports link's own citation both expand through `rests_on` via `footprintClosure`
-//   (`kernel/schema/tables.mjs`), so every environment bottoms out at true roots, never at an
-//   intermediate document that itself rests on something earlier.
+//   exactly as `kernel/gate/gate.mjs`'s own `restatementClosure` uses them, resolved once inside
+//   the provider). A checking record's footprint and a supports link's own citation both arrive
+//   already expanded through `rests_on` (`provider`'s own construction over `footprintClosure`),
+//   so every environment bottoms out at true roots, never at an intermediate document that itself
+//   rests on something earlier. This file touches only the plain data `provider` exposes; it never
+//   imports vendor/kernel directly (audit-prep Track 0.1: analysis/ is classified periphery in
+//   build/check-imports.mjs, and reads the kernel only through api/dg-provider.mjs).
 // A claim with neither a checking record nor any supports link is a floor claim: its own identity
 //   is a base node, exactly as a source row is. A constitutive-kind claim (axiom, theorem) is
 //   always its own single base node: its ceiling's mode makes it foundational by kind, not by
 //   basis or support, so it does not recurse into either.
 "use strict";
-import { footprintClosure } from "../vendor/kernel/schema/tables.mjs";
-import { restatementClosure } from "../vendor/kernel/gate/gate.mjs";
-import { ceilingFor } from "../vendor/kernel/schema/tables.mjs";
 
 function isSubsetOf(small, big) {
   for (const x of small) if (!big.has(x)) return false;
@@ -68,17 +68,9 @@ function crossUnion(perMemberAlternatives) {
   return acc;
 }
 
-export function computeEnvironments(built) {
-  const { claims, links, tables } = built;
-  const specByIdentity = new Map(claims.map((c) => [c.rec.identity, c.spec]));
-  const refByIdentity = new Map(claims.map((c) => [c.rec.identity, c.spec.ref]));
-  const identityByRef = new Map(claims.map((c) => [c.spec.ref, c.rec.identity]));
-
-  const supportsLinks = (links || []).filter((l) => l.link_kind === "supports");
-  const restPairs = (links || [])
-    .filter((l) => l.link_kind === "restatement")
-    .map((l) => ({ from_identity: l.from_identity, to_identity: l.to_identity }));
-  const closureOf = restatementClosure(restPairs);
+export function computeEnvironments(provider) {
+  const { claims, supports, closureOf, refByIdentity, identityByRef } = provider;
+  const claimByIdentity = new Map(claims.map((c) => [c.identity, c]));
 
   const cache = new Map();
 
@@ -89,9 +81,9 @@ export function computeEnvironments(built) {
     // topological order), so this guard is defensive, not load-bearing in practice.
     cache.set(identity, [new Set()]);
 
-    const spec = specByIdentity.get(identity);
-    if (!spec) {
-      // an identity the built claim set does not resolve (should not occur: the gate's own
+    const claim = claimByIdentity.get(identity);
+    if (!claim) {
+      // an identity the provider's claim set does not resolve (should not occur: the gate's own
       // WF-UNRESOLVED check would have declined any link naming it); treat conservatively as its
       // own base node rather than silently vanishing from the environment.
       const trivial = [new Set([identity])];
@@ -99,23 +91,17 @@ export function computeEnvironments(built) {
       return trivial;
     }
 
-    const ceiling = ceilingFor(tables.kindTable, spec.kind);
-    const isConstitutive = !!(ceiling && ceiling.mode === "constitutive");
-
     let envs;
-    if (isConstitutive) {
+    if (claim.is_constitutive) {
       envs = [new Set([identity])];
     } else {
-      const basisEnvs = (spec.checking_records || []).map((rec) => {
-        const fp = footprintClosure(tables.sourceTable, rec.footprint || []);
-        return new Set(fp);
-      });
+      const basisEnvs = claim.checking_records.map((rec) => new Set(rec.footprint));
 
       const members = closureOf(identity);
       const grouped = new Map();
-      for (const l of supportsLinks) {
+      for (const l of supports) {
         if (!members.has(l.to_identity)) continue;
-        const g = l.support_group || l.identity;
+        const g = l.support_group;
         if (!grouped.has(g)) grouped.set(g, []);
         grouped.get(g).push(l);
       }
@@ -123,8 +109,7 @@ export function computeEnvironments(built) {
       for (const groupLinks of grouped.values()) {
         const perMemberAlternatives = groupLinks.map((l) => {
           const fromEnvs = environmentsOf(l.from_identity);
-          const linkFp = footprintClosure(tables.sourceTable, [l.source_id]);
-          return fromEnvs.map((e) => unionSets(e, linkFp));
+          return fromEnvs.map((e) => unionSets(e, new Set(l.citation_footprint)));
         });
         groupEnvs.push(...crossUnion(perMemberAlternatives));
       }
@@ -138,5 +123,5 @@ export function computeEnvironments(built) {
     return minimized;
   }
 
-  return { environmentsOf, identityByRef, refByIdentity, specByIdentity, closureOf };
+  return { environmentsOf, identityByRef, refByIdentity, closureOf };
 }

@@ -18,24 +18,23 @@
 "use strict";
 import { writeFileSync } from "node:fs";
 import { buildKernel } from "../build/dg-build.mjs";
+import { createDgProvider } from "../api/dg-provider.mjs";
 import { computeEnvironments } from "./environments.mjs";
-import { collapsedRank } from "../vendor/kernel/schema/confidence.mjs";
-import { ceilingFor } from "../vendor/kernel/schema/tables.mjs";
 
-const built = buildKernel();
-const { environmentsOf, refByIdentity } = computeEnvironments(built);
-const specByRef = new Map(built.claims.map((c) => [c.spec.ref, c.spec]));
+const provider = createDgProvider(buildKernel());
+const { environmentsOf, refByIdentity } = computeEnvironments(provider);
+const specByRef = new Map(provider.claims.map((c) => [c.ref, c]));
 
 // downstream mass: reuse the exact "touching" computation Read 2 performs.
 const touching = new Map();
-for (const c of built.claims) {
-  const envs = environmentsOf(c.rec.identity);
+for (const c of provider.claims) {
+  const envs = environmentsOf(c.identity);
   const seen = new Set();
   for (const e of envs) for (const x of e) seen.add(x);
   for (const x of seen) {
     const key = refByIdentity.get(x) || x;
     if (!touching.has(key)) touching.set(key, new Set());
-    touching.get(key).add(c.spec.ref);
+    touching.get(key).add(c.ref);
   }
 }
 
@@ -43,11 +42,10 @@ for (const c of built.claims) {
 const UNDER_CLAIM_LEDGER = ["c01", "c02", "c03", "c04", "c06b", "c07a", "c10", "c15", "c18a", "c18b", "c20b", "c20c", "c20d", "c20e", "c20g", "c23", "c23-wgc", "mech.bh-entropy", "mech.bh-area-law-edge-modes", "mech.bh-rt-surface-anchor"];
 
 const gapRows = [];
-for (const c of built.claims) {
-  const ceil = ceilingFor(built.tables.kindTable, c.spec.kind);
-  if (!ceil) continue;
-  const gap = collapsedRank(ceil.position) - collapsedRank(c.spec.declared_grade);
-  gapRows.push({ ref: c.spec.ref, kind: c.spec.kind, ceiling: ceil.position, declared: c.spec.declared_grade, gap });
+for (const c of provider.claims) {
+  if (!c.ceiling) continue;
+  const gap = provider.collapsedRankOf(c.ceiling) - provider.collapsedRankOf(c.declared_grade);
+  gapRows.push({ ref: c.ref, kind: c.kind, ceiling: c.ceiling, declared: c.declared_grade, gap });
 }
 const gapByRef = new Map(gapRows.map((r) => [r.ref, r]));
 

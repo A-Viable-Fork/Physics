@@ -19,26 +19,26 @@
 "use strict";
 import { writeFileSync } from "node:fs";
 import { buildKernel } from "../build/dg-build.mjs";
+import { createDgProvider } from "../api/dg-provider.mjs";
 import { computeEnvironments } from "./environments.mjs";
 import { BLOCKS } from "../build/reservoir-blocks.mjs";
-import { inForce } from "../vendor/kernel/store/apply.mjs";
 
-const built = buildKernel();
-const { environmentsOf, refByIdentity, specByIdentity } = computeEnvironments(built);
+const provider = createDgProvider(buildKernel());
+const { environmentsOf, refByIdentity } = computeEnvironments(provider);
+const specByIdentity = new Map(provider.claims.map((c) => [c.identity, c]));
 
-const withdrawnIdentities = new Set((built.state.withdrawn_records || []).map((w) => w.claim_identity));
-const supersededIdentities = new Set((built.state.supersession_records || []).map((s) => s.superseded_identity));
+const { withdrawnIdentities, supersededIdentities } = provider;
 
-const liveClaims = built.claims.filter((c) => inForce(built.state, c.rec.identity));
-const withdrawnOrSupersededClaims = built.claims.filter((c) => !inForce(built.state, c.rec.identity));
+const liveClaims = provider.claims.filter((c) => c.in_force);
+const withdrawnOrSupersededClaims = provider.claims.filter((c) => !c.in_force);
 
 const hits = [];
 for (const c of liveClaims) {
-  const envs = environmentsOf(c.rec.identity);
+  const envs = environmentsOf(c.identity);
   for (const e of envs) {
     for (const node of e) {
-      if (withdrawnIdentities.has(node)) hits.push({ claim: c.spec.ref, kind: "withdrawn", member: refByIdentity.get(node) || node, env: [...e].map((x) => refByIdentity.get(x) || x) });
-      if (supersededIdentities.has(node)) hits.push({ claim: c.spec.ref, kind: "superseded", member: refByIdentity.get(node) || node, env: [...e].map((x) => refByIdentity.get(x) || x) });
+      if (withdrawnIdentities.has(node)) hits.push({ claim: c.ref, kind: "withdrawn", member: refByIdentity.get(node) || node, env: [...e].map((x) => refByIdentity.get(x) || x) });
+      if (supersededIdentities.has(node)) hits.push({ claim: c.ref, kind: "superseded", member: refByIdentity.get(node) || node, env: [...e].map((x) => refByIdentity.get(x) || x) });
     }
   }
 }
@@ -48,7 +48,7 @@ for (const c of liveClaims) {
 // environment membership rather than the whole corpus scan.
 const blockHits = [];
 for (const c of liveClaims) {
-  const envs = environmentsOf(c.rec.identity);
+  const envs = environmentsOf(c.identity);
   const seenMembers = new Set();
   for (const e of envs) for (const x of e) seenMembers.add(x);
   for (const node of seenMembers) {
@@ -58,7 +58,7 @@ for (const c of liveClaims) {
     for (const [blockRef, killedRef, label, , triggers] of BLOCKS) {
       if (spec.ref === blockRef || spec.ref === killedRef || spec.ref === "ev." + killedRef) continue;
       const hit = triggers.find((t) => hay.includes(t.toLowerCase()));
-      if (hit) blockHits.push({ claim: c.spec.ref, member: spec.ref, blockRef, label, trigger: hit });
+      if (hit) blockHits.push({ claim: c.ref, member: spec.ref, blockRef, label, trigger: hit });
     }
   }
 }

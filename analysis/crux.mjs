@@ -11,11 +11,12 @@
 "use strict";
 import { writeFileSync } from "node:fs";
 import { buildKernel } from "../build/dg-build.mjs";
+import { createDgProvider } from "../api/dg-provider.mjs";
 import { computeEnvironments } from "./environments.mjs";
 
-const built = buildKernel();
-const { environmentsOf, identityByRef, refByIdentity } = computeEnvironments(built);
-const specByRef = new Map(built.claims.map((c) => [c.spec.ref, c.spec]));
+const provider = createDgProvider(buildKernel());
+const { environmentsOf, identityByRef, refByIdentity } = computeEnvironments(provider);
+const specByRef = new Map(provider.claims.map((c) => [c.ref, c]));
 
 function unionOfEnvs(ref) {
   const id = identityByRef.get(ref);

@@ -14,24 +14,25 @@
 "use strict";
 import { writeFileSync } from "node:fs";
 import { buildKernel } from "../build/dg-build.mjs";
+import { createDgProvider } from "../api/dg-provider.mjs";
 import { computeEnvironments } from "./environments.mjs";
 
-const built = buildKernel();
-const { environmentsOf, refByIdentity } = computeEnvironments(built);
+const provider = createDgProvider(buildKernel());
+const { environmentsOf, refByIdentity } = computeEnvironments(provider);
 
-const specByRef = new Map(built.claims.map((c) => [c.spec.ref, c.spec]));
+const specByRef = new Map(provider.claims.map((c) => [c.ref, c]));
 const KIND_TIER = new Set(["axiom", "standard-result", "observation", "conjecture-adopted"]);
 
 // count: for every base node, the set of distinct claim refs whose environments touch it.
 const touching = new Map();
-for (const c of built.claims) {
-  const envs = environmentsOf(c.rec.identity);
+for (const c of provider.claims) {
+  const envs = environmentsOf(c.identity);
   const seen = new Set();
   for (const e of envs) for (const x of e) seen.add(x);
   for (const x of seen) {
     const key = refByIdentity.get(x) || x;
     if (!touching.has(key)) touching.set(key, new Set());
-    touching.get(key).add(c.spec.ref);
+    touching.get(key).add(c.ref);
   }
 }
 const ranked = [...touching.entries()].sort((a, b) => b[1].size - a[1].size);

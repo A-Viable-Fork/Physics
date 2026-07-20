@@ -17,21 +17,21 @@
 "use strict";
 import { writeFileSync } from "node:fs";
 import { buildKernel } from "../build/dg-build.mjs";
+import { createDgProvider } from "../api/dg-provider.mjs";
 import { computeEnvironments } from "./environments.mjs";
-import { footprintClosure } from "../vendor/kernel/schema/tables.mjs";
 
-const built = buildKernel();
-const { environmentsOf, refByIdentity } = computeEnvironments(built);
+const provider = createDgProvider(buildKernel());
+const { environmentsOf, refByIdentity } = computeEnvironments(provider);
 
 function disjoint(a, b) { for (const x of a) if (b.has(x)) return false; return true; }
 
 // every claim currently declared independently-rechecked (a real, already-granted lift).
-const grantedLifts = built.claims.filter((c) => c.spec.declared_grade === "independently-rechecked");
+const grantedLifts = provider.claims.filter((c) => c.declared_grade === "independently-rechecked");
 
 // every candidate: 2+ distinct-party checking records on one claim (the only shape from which an
 // own-basis independently-rechecked lift could ever be earned, per kernel/grounding/earned-grade
 // .mjs's ownBasis: distinct.length >= 2 and a disjoint pair).
-const candidates = built.claims.filter((c) => (c.spec.checking_records || []).filter((r) => r.independence === "distinct-party").length >= 2);
+const candidates = provider.claims.filter((c) => c.checking_records.filter((r) => r.independence === "distinct-party").length >= 2);
 
 const md = [];
 md.push("# Read 1: Independence Certificates");
@@ -52,22 +52,22 @@ md.push(`${candidates.length} claims in the whole corpus carry 2 or more distinc
 md.push("");
 
 for (const c of candidates) {
-  const ref = c.spec.ref;
-  const distinct = c.spec.checking_records.filter((r) => r.independence === "distinct-party");
-  const envs = environmentsOf(c.rec.identity);
-  md.push(`### \`${ref}\` (declared \`${c.spec.declared_grade}\`)`);
+  const ref = c.ref;
+  const distinct = c.checking_records.filter((r) => r.independence === "distinct-party");
+  const envs = environmentsOf(c.identity);
+  md.push(`### \`${ref}\` (declared \`${c.declared_grade}\`)`);
   md.push("");
   md.push(`${distinct.length} distinct-party checking records: ${distinct.map((r) => r.checker_id).join(", ")}.`);
   md.push("");
   md.push(`Computed environment(s), full support-and-provenance closure: ${envs.length}`);
   for (const e of envs) md.push(`- { ${[...e].map((x) => refByIdentity.get(x) || x).join(", ")} }`);
   md.push("");
-  // the basis comparison 3b's policy actually governs is each record's own footprint closure,
-  // independent of the claim's merged environments (which may also carry support-path
-  // alternatives unrelated to the own-basis question); recompute it directly.
+  // the basis comparison 3b's policy actually governs is each record's own footprint closure
+  // (already resolved by api/dg-provider.mjs), independent of the claim's merged environments
+  // (which may also carry support-path alternatives unrelated to the own-basis question).
   let anyDisjoint = false;
   let sharedNamed = null;
-  const recordFootprints = distinct.map((r) => footprintClosure(built.tables.sourceTable, r.footprint || []));
+  const recordFootprints = distinct.map((r) => new Set(r.footprint));
   outer: for (let i = 0; i < recordFootprints.length; i++) {
     for (let j = i + 1; j < recordFootprints.length; j++) {
       if (disjoint(recordFootprints[i], recordFootprints[j])) { anyDisjoint = true; break outer; }
@@ -76,8 +76,8 @@ for (const c of candidates) {
     }
   }
   md.push(anyDisjoint
-    ? `**Result: genuinely disjoint.** The deeper computation confirms these two records' footprints do not collapse into one under any shared ancestor; an independently-rechecked lift would be justified. ${c.spec.declared_grade === "independently-rechecked" ? "This matches its current declaration." : "This is the surprising case: currently capped at " + c.spec.declared_grade + " despite a genuinely available lift, for operator decision, not automatic promotion, since this session changes nothing."}`
-    : `**Result: not disjoint, capped correctly.** Shared ancestor(s) named: ${sharedNamed.join(", ")}. The deeper support-and-provenance computation agrees with the shallower rests_on-only check: this pair does not justify an independently-rechecked lift. Held at \`${c.spec.declared_grade}\`, which matches.`);
+    ? `**Result: genuinely disjoint.** The deeper computation confirms these two records' footprints do not collapse into one under any shared ancestor; an independently-rechecked lift would be justified. ${c.declared_grade === "independently-rechecked" ? "This matches its current declaration." : "This is the surprising case: currently capped at " + c.declared_grade + " despite a genuinely available lift, for operator decision, not automatic promotion, since this session changes nothing."}`
+    : `**Result: not disjoint, capped correctly.** Shared ancestor(s) named: ${sharedNamed.join(", ")}. The deeper support-and-provenance computation agrees with the shallower rests_on-only check: this pair does not justify an independently-rechecked lift. Held at \`${c.declared_grade}\`, which matches.`);
   md.push("");
 }
 
