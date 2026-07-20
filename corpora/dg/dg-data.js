@@ -1,6 +1,6 @@
 // Role: the dg kernel store: Stage 1 tier commitments plus Stage 2 structure, bare. Tier 0 axioms, Tier 1-2 standard results, Tier 2.5 observations, Tier 3 adopted conjectures (Stage 1); CC-1 with its v4.14-to-v4.16 supersession, K-constraints, structural proofs, functions, contracts, predictions, the branch fork, and the sorry ledger (Stage 2), atomized one commitment per claim from the trellis. The exclusion reservoir, all grounding supports, and all checking records are Stage 3, not entered here.
 // Contract: exports STORE = { store_id, claims, links, supersessions }. Pure data; imports nothing.
-// Invariant: every claim is declared at or below what it earns with no support links or checking records: everything floors at asserted except axioms (self-grounding constitutive by kind ceiling) and the two branch commitments (self-grounding corroborated, see their own claim comment). Statement text is the trellis own prose, atomized to one commitment per claim; where atomization forced a judgment call the full trellis context is quoted in extensions.trellis_context.
+// Invariant: every claim is declared at or below what it earns with no support links or checking records: everything floors at asserted except axioms (self-grounding constitutive by kind ceiling) and the two branch commitments (self-grounding corroborated, see their own claim comment). Statement text is the trellis own prose, atomized to one commitment per claim; where atomization forced a judgment call the full trellis context is quoted in extensions.trellis_context. depends-on links wire provenance brackets to already-entered claims only; brackets naming un-entered material (Tier 4 construction sections, un-entered functions, un-entered contracts) stay as text in the statement, for Stage 3 to wire when those claims exist.
 "use strict";
 
 const STORE = {
@@ -390,9 +390,362 @@ const STORE = {
         "trellis_version": "v4.16",
         "supersedes": "cc1.v4-14"
       }
+    },
+    {
+      "ref": "k1",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K1: Two-Channel Decomposition [from Tier 4.4 + positivity of T_3]. The brane stress-energy decomposes exactly into: (i) Trace channel (radial/curvature), which scales as N, sources Ricci curvature, and IS gravity; (ii) Traceless antisymmetric channel (angular/torsion), which scales as f^2 N^2 for coherent matter and sources torsion via the Cartan equation. This decomposition is an algebraic theorem of the SO(1,4) to SO(1,3) breaking pattern."
+    },
+    {
+      "ref": "k2",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K2: G = G_N Always [from K1 + T2.5]. The radial channel couples to all mass-energy with constant G = G_N = 1/(8 pi v^2). Coherence (F_Q ~ N^2) enters only the angular channel, sourcing torsion. The gravitational constant is never amplified, modified, or state-dependent. Any analysis routing F_Q through G_eff is using the wrong channel."
+    },
+    {
+      "ref": "k3",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K3: T_3 is Constant [from Tier 4.2]. The DBI brane tension T_3 = 6/(kappa_5^2 L) is fixed by the Israel junction conditions, independent of brane position z_0. State-dependence lives in the Higgs VEV v(F_Q), not in T_3."
+    },
+    {
+      "ref": "k4",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K4: The Framework is Purely Gravitational [from T2.7 + T2.8]. Torsion enters through Einstein-Cartan gravity at coupling G/c^4 (hierarchy of 10^40 below electromagnetic). The conformal invariance of F^2 in 4D prevents any tree-level geometric channel from modifying electromagnetic couplings. The SO(1,4) Higgs is the gravitational Higgs, fully distinct from the electroweak Higgs. The framework cannot modify fermion masses, Bohr radii, or pycnonuclear screening through its own geometry. Clarificatory clause (tree-level vs one-loop): K4 prohibits direct tree-level couplings between the radion/torsion sector and the Standard Model gauge fields in the fundamental Lagrangian. It does not prohibit, and cannot prevent, loop-induced couplings arising from the quantum conformal trace anomaly. The heat kernel integration that derives the state-dependent coupling gamma (phi^A phi_A) f_Q necessarily generates terms proportional to beta(g) F_mu_nu F^mu_nu through the a_4(x) coefficient. These are manifestations of dimensional transmutation and constitute mathematically inevitable one-loop anomaly couplings rather than fundamental force modifications."
+    },
+    {
+      "ref": "k5",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K5: Torsion is Non-Propagating [from Tier 4.7, P3]. Torsion carries zero independent propagating degrees of freedom. The Cartan equation is algebraic (no Box T kinetic operator). Torsion vanishes instantaneously when sources vanish."
+    },
+    {
+      "ref": "k6",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K6: Bulk is Mandatory [from T1.5 + Tier 4]. The 5D bulk is mathematically required on three independent axes: Pillar 1 (NEC): 4D cannot balance steep QFI gradients without driving w < -1. The bulk absorbs gradients via T^(5)_M_nu n^M flux. Pillar 2 (Scrambling): 4D has no intrinsic geometric spectrum to derive t_s. The KK tower provides it. Pillar 3 (KSS): The viscosity bound eta/s = 1/(4 pi) requires the (d+1)-dimensional fluid-gravity dictionary."
+    },
+    {
+      "ref": "k7",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K7: Activation Threshold [from K1 + T3.4 + SF-D0]. The angular channel activates when the matter quantum Fisher information density f_Q approaches the critical value F_Q,crit derived from the pole condition of the one-loop effective potential: F_Q,crit = m_rho^2/(8 gamma), where gamma = c_KK/(128 pi^2 Lambda_s^2) is the variance coupling coefficient. For the Dark Dimension parameters (m_rho ~ 1 MeV, Lambda_s ~ 2.6e8 GeV), the threshold evaluates to F_Q,crit ~ (10^12 to 10^13 GeV^4)/c_KK, where c_KK is an O(1) dimensionless prefactor from the massive Fierz-Pauli trace anomaly (open problem OP-CK). The threshold discriminates between extensive and super-extensive scaling regimes. Operators (i), (ii), (iii) are locked to extensive O(N) scaling by the Fluctuation-Dissipation Theorem; only operator (iv), the variance coupling, accesses super-extensive scaling through Donnelly-Freidel edge modes in ODLRO states."
+    },
+    {
+      "ref": "k8",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K8: Adiabatic Tracking [from Tier 4.7]. The radion tracks the moving Higgs minimum adiabatically: |dv/dt| << m_rho v. Satisfied by >= 24 orders for neutron star formation, ~10^4 for QGP. Requires m_rho >~ MeV (lambda >~ 10^-44). Radiative stability is quantified by the one-loop Coleman-Weinberg mass shift: the dominant top-loop contribution yields delta m^2_1-loop ~ 10^-18 GeV^2, suppressed by geometric Planck-scale Yukawa scaling. Against the bare radion mass m^2_rho ~ 10^-6 GeV^2, the ratio is delta m^2/m^2_rho ~ 10^-12: twelve orders of magnitude of margin, without fine-tuning."
+    },
+    {
+      "ref": "k9",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K9: Lambda^4_min is Dimensional Analysis [from T1.3]. The saturation floor Lambda_min = hbar c/a correctly sets the UV cutoff scale. It does not set the energy budget independently of the coupling constant at each scale (alpha_s, alpha_EM, alpha_G). Works at nuclear scale (alpha_s ~ 1), fails at atomic (off by 274 = 2/alpha_EM), fails at gravitational (off by ~10^47)."
+    },
+    {
+      "ref": "k10",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K10: Sliding Unification Bound [from T3.4 + Tier 4.5 + K6 (Pillar 2)]. The effective UV cutoff of quantum gravity on the brane is the dynamical Species Scale Lambda_s ~ (L/z_0) M_5. Under macroscopic quantum coherence (F_Q ~ N^2), the suppressed VEV displaces the brane deeper into the AdS_5 bulk, driving Lambda_s below the conventional GUT energy of 10^16 GeV. When Lambda_s(F_Q) < M_GUT, the Wilsonian energy domain in which gauge couplings are to unify ceases to exist within the physical geometry. A GUT that insists on a static unification scale above the local cutoff predicts physics in a trans-cutoff regime and is placed in the Swampland by T3.2. A viable GUT must possess a dynamically sliding unification scale M_GUT(F_Q): M_GUT(F_Q) <= Lambda_s(F_Q) for all physically realizable macroscopic coherent states."
+    },
+    {
+      "ref": "k11",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K11: Trace Anomaly Dependence and Beta Function Non-Vanishing [from T2.7 + K4 + F13]. The conformal invariance of the 4D gauge kinetic terms (T2.7) forbids the massive scalar radion from coupling to the gauge sector at tree level. General covariance requires the radion to couple universally to T^mu_mu of the matter sector. For classically massless gauge bosons, T^mu_mu = 0 at tree level. The interaction proceeds exclusively through the quantum conformal trace anomaly: T^mu_mu = sum_i beta(g_i)/(2 g_i) F^(i)_mu_nu F^(i)mu_nu. This coupling is a phenomenological requirement: resolution of the LUNA screening anomaly demands that the radion export chaotic thermal noise from driven lattice states into the bulk via the KK tower. Any viable GUT must be strictly non-conformal: beta(g_i) != 0 across all physical energy scales relevant to macroscopic coherence and structure formation."
+    },
+    {
+      "ref": "k12",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K12: Topological Dirichlet Confinement [from Tier 4.1 + K6 + T2.2]. The 5D bulk is governed by a topological Chern-Simons action for SO(2,4) with zero local propagating degrees of freedom. This topological purity eliminates Ostrogradsky ghosts from the bulk interior (T2.2) and preserves the Israel junction conditions governing the bulk-brane energy exchange (K6, Pillar 1). A GUT constructed from closed strings carries gauge degrees of freedom on strings that propagate freely through the bulk, converting the topological bulk into a dynamically active gauge manifold and destroying the thermodynamic isolation NEC protection, scrambling, and the KSS bound depend on. A viable GUT must be topologically confined to the 4D ETW brane via Dirichlet boundary conditions."
+    },
+    {
+      "ref": "k13",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K13: Holographic Casimir Regularization [from K6 + T3.4 + T1.1]. The cumulative one-loop correction from the ~10^32 KK graviton modes to the radion quartic coupling must be computed via holographic renormalization, not naive additive summation. Under standard additive EFT, the KK tower generates delta lambda ~ 10^-35, which violates the required lambda >= 10^-44. Hamilton-Jacobi boundary counterterms constructed from intrinsic and extrinsic curvatures of the brane absorb power-law divergences into renormalization of T_3. The finite Casimir remainder, computed via zeta-function regularization, scales as delta lambda_finite ~ m^4_KK/M^2_Pl,eff ~ 10^-60 under maximal QFI loading."
+    },
+    {
+      "ref": "k14",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K14: Gravitational Coupling Suppression [from K4 + T2.8]. The radion couples to all Standard Model fields with gravitational strength: y_rho ~ m/M_Pl. For the top quark, y_rho_tt ~ 7e-17. One-loop corrections to lambda from boundary matter fields are delta lambda ~ y^4/(16 pi^2) ~ 10^-67, negligible against 10^-44. The gravitational gauge sector contributes zero at one loop (first-order BF structure, 44 second-class constraints freeze propagating gauge DOF). The hierarchy lambda ~ 10^-44 is radiatively stable in the Dirac sense: corrections are smaller than the parameter. The protection mechanism is gravitational coupling suppression (K14)."
+    },
+    {
+      "ref": "k15",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K15: Pre-Geometric Phase Constraint [from Tier 4.7 + F20]. The radion rho(x) exists only in the broken SO(1,3) phase. In the unbroken SO(1,4) phase, the Higgs momentum satisfies Pi_A ~ 0 (primary constraint), and no scalar mode propagates. Analyses that assume the radion propagates during inflation or during the pre-geometric epoch are applying the broken-phase field content to the unbroken-phase dynamics. The adiabatic tracking condition |dv/dt| << m_rho v applies only post-SSB."
+    },
+    {
+      "ref": "k16",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K16: Species Scale Running Clarification [from K2 + Hydrodynamic Swampland Bounds v3]. The fundamental Planck mass M_Pl and Newton constant G_N = 1/(8 pi M_Pl^2) are fixed throughout. The quantity that runs is the effective Species Scale Lambda_s = M_Pl/sqrt(N_eff), where N_eff counts the Kaluza-Klein species accessible at a given point in the fluid thermodynamic phase space. The VEV shift v_eff^2 = v_0^2 - (gamma/lambda) f_Q is standard EFT threshold bookkeeping. Newton constant G_N = 1/(8 pi v_0^2) is untouched throughout. Any analysis describing local G_eff amplification via VEV suppression from coherence loading is routing f_Q through the wrong channel and applying the killed mechanism."
+    },
+    {
+      "ref": "k17",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "K17: BBN Structural Immunity [from K7 + K4 + T2.7 + C13e (domain restriction)]. The framework preserves standard Big Bang Nucleosynthesis. During the BBN epoch (T ~ 30 to 100 keV, t ~ 1 to 20 minutes), the primordial plasma is a maximally incoherent, radiation-dominated thermal fluid (f ~ 0, f_Q ~ N). Three structural barriers prevent radion activation: (i) the plasma is unbound, possessing no crystalline lattice or interstitial sublattice to support coherent phonon modes; (ii) the coherence fraction is zero, pinning the VEV at ambient Planck-scale values; (iii) K4 and T2.7 prohibit the radion from modifying tree-level electroweak cross-sections. The Cosmological Lithium-7 deficit is outside the framework explanatory domain."
+    },
+    {
+      "ref": "p3",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "P3: DOF count [Structural Proof, Tier 4.7]. Result: 3 (2 graviton + 1 scalar). Method: Dirac-Bergmann. 90-dim phase space, 20 first-class, 44 second-class. Source: Dirac Constraint Report."
+    },
+    {
+      "ref": "p8",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "P8: KSS bound [Structural Proof, Tier 4.7]. Result: eta/s = 1/(4 pi) exactly. Method: Graviton-radion decoupling, G_eff cancellation, 4D GB topological. Source: P11/P8 Report."
+    },
+    {
+      "ref": "p11",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "P11: Diffeomorphism invariance [Structural Proof, Tier 4.7]. Result: Perturbatively covariant. Method: QFI scalar via <TT>. Edge modes for foliation independence. Source: P11/P8 Report."
     }
   ],
-  "links": [],
+  "links": [
+    {
+      "link_kind": "depends-on",
+      "from": "k2",
+      "to": "k1",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k2",
+      "to": "t2.5",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k4",
+      "to": "t2.7",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k4",
+      "to": "t2.8",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k5",
+      "to": "p3",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k6",
+      "to": "t1.5",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k7",
+      "to": "k1",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k7",
+      "to": "t3.4",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k9",
+      "to": "t1.3",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k10",
+      "to": "t3.4",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k10",
+      "to": "k6",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k11",
+      "to": "t2.7",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k11",
+      "to": "k4",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k12",
+      "to": "k6",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k12",
+      "to": "t2.2",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k13",
+      "to": "k6",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k13",
+      "to": "t3.4",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k13",
+      "to": "t1.1",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k14",
+      "to": "k4",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k14",
+      "to": "t2.8",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k16",
+      "to": "k2",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k17",
+      "to": "k7",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k17",
+      "to": "k4",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    },
+    {
+      "link_kind": "depends-on",
+      "from": "k17",
+      "to": "t2.7",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted"
+    }
+  ],
   "supersessions": [
     {
       "superseded_ref": "cc1.v4-14",
