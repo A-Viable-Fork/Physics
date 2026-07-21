@@ -49,15 +49,15 @@
       "section_id": "II.B",
       "title": "The End-of-the-World Brane",
       "claim_refs": [
-        "k3",
-        "k3-prime",
+        "k3-prime2",
+        "k3b-coordinate-dictionary",
         "im.israel-1966-junction",
         "im.rs1999-critical-tension",
         "im.karch-randall-2001-tension-position",
         "im.goldberger-wise-effective-tension"
       ],
       "bound": true,
-      "note": "confirmed by direct read: eq. (2) is the flat-sliced Poincare metric (operator ruling R1's 'stated background'), eq. (4) the Israel junction condition, eq. (5) T3 = 6/(kappa5^2 L) stated 'independent of z0', word for word the claim K3-prime's part (i) reads correctly and K3's own flat text states without the KR/dS distinction. Bound to both K3 (superseded, historical) and K3-prime (successor) plus the four Track 2 imports whose locators cite the audit artifacts that rederive this same eq. (4)/(5) pair."
+      "note": "P0-DECOMP II.B re-grounding (landing-2 aftermath): rebound from the superseded k3/k3-prime pair to the single head k3-prime2, plus k3b-coordinate-dictionary. Confirmed by direct read: eq. (2) is the flat-sliced Poincare metric, eq. (4) the Israel junction condition, eq. (5) T3 = 6/(kappa5^2 L) stated 'independent of z0'. This is k3-prime2 part (i) only, the flat-sliced special case, and nothing more; II.B's own prose stops at eq. (10) and states no dS-sliced result and no state dependence. The physical background the framework actually works in is dS-sliced (k3-prime2 part (ii)): T_eff = (6/kappa5^2 L) coth(z0/L), supercritical, deviating from critical by order (L/l_dS)^2, about 10^-64. The state-dependent tension law (k3-prime2 part (iii), corrected landing-2 Track B) is T_eff = T3 + V(v(F_Q)), response coefficient sinh^2(u_b). Neither the dS-sliced result nor the state-dependent law is written into this section's own text; both are carried only in k3-prime2's own statement. The bridge between II.B's flat-sliced z0 coordinate and the dS-sliced u_b coordinate that parts (ii) and (iii) use is k3b-coordinate-dictionary's exact identity ln(z0/L) = u_b. A reader of this note should take away that II.B presents a special case; the general result lives in the graph, not in the section's prose. The four imports are unchanged, their locators still citing the audit artifacts that rederive this same eq. (4)/(5) pair."
     },
     {
       "section_id": "II.C",
