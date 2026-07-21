@@ -647,6 +647,11 @@
       "category": "comment"
     },
     {
+      "trellis_id": "S-K3B-ESNAP-SHAPE (landing-2 Track D, not a trellis identifier)",
+      "ref": "s-k3b-esnap-shape",
+      "category": "comment"
+    },
+    {
       "trellis_id": "S-K3-KILL-REARG (landing-1 Track 4, not a trellis identifier)",
       "ref": "s-k3-kill-rearg",
       "category": "sorry"

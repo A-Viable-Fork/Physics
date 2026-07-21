@@ -1856,6 +1856,14 @@ const STORE = {
       }
     },
     {
+      "ref": "s-k3b-esnap-shape",
+      "kind": "comment",
+      "source_id": "corpus.sf-k3b-001",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "ungraded",
+      "statement": "The negative-shift boundary at V = -rho_Lambda, where the modulus diverges logarithmically toward the infinite-distance flat-brane limit and the dS branch ends, is shaped like the framework's E_snap tear-versus-puncture sector, and infinite distance is the regime of the framework's C23-SDC mechanism. Whether the corrected channel is the snap mechanism's origin is undetermined; promotion to a sorry awaits an operator ruling. Attached to c23-sdc-prime2's superseding trigger statement (landing-2 Track D, OPERATOR-RULED at charter default: speculation tier, not a sorry). Entered as a comment per the quarantine rule, mechanically non-citable. Source: docs/shores/SF-K3B-001.md; docs/audits/PK-AUD-K3B-002.pdf, PK-AUD-K3B-003.md."
+    },
+    {
       "ref": "c23-wgc",
       "kind": "mechanism",
       "source_id": "corpus.gut-population-survey-v1-7",
