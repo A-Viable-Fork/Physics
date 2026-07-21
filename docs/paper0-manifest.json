@@ -358,9 +358,12 @@
     {
       "section_id": "VIII.F",
       "title": "Categorical Exclusions",
-      "claim_refs": [],
-      "bound": false,
-      "note": "not evaluated this pass"
+      "claim_refs": [
+        "k3b-reconciliation2",
+        "c23-sdc-prime2"
+      ],
+      "bound": true,
+      "note": "Body now hosts the Karch-Randall moduli-geodesic Swampland Distance Conjecture result: the distance d = M_Pl ln(z_0/L) + c_0, the exact response law delta d(V) = -(M_Pl/2) ln(1 + V/rho_tilde), the Kaluza-Klein descent m_KK ~ exp(-d/M_Pl), and the finite excursion (|delta d| = 0.347 M_Pl at |V| = rho_Lambda, infinite only as V -> -rho_Lambda). k3b-reconciliation2 (the distance composition, independently-rechecked) and the k3b-coordinate-dictionary identity it rests on are firm; c23-sdc-prime2 (SDC compliance and KK descent, asserted) is stated conditional on S-CC-002 closure (b > 1/(4 pi^2) for the X_F13 Pati-Salam tower on dP_3). Executes the P0-DECOMP II.B operator ruling that parked these two claims against a future track writing the hosting body text."
     },
     {
       "section_id": "IX",
