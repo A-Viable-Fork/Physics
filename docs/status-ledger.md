@@ -548,3 +548,15 @@ After: "reconcile the Israel-junction backreaction channel k3-prime2 part (iii) 
 Everything else in the statement is byte-identical. `s-k3-backreact` stays declared and earned `asserted`, `extensions.status` still `"OPEN, landing-1"`, unchanged. Identity collisions: 0, unchanged (460 claims before and after; a statement edit recomputes the claim's own identity hash, but no other structure references it by raw hash, only by ref, so nothing downstream broke). CI: 10/10 green, `check-gate.mjs` and `check-substrate.mjs` both confirmed green directly.
 
 **Prompt contradiction found and flagged, not acted on beyond scope.** The prompt asserted `s-k3-backreact` "has no closing_condition field in the built store." This is false: the claim carries a `closing_condition` (`condition_kind: "proof"`) whose own `target` field separately quotes the identical stale `cosh^2(z0/L)` coefficient this session corrected in the statement. Per this session's strict scope, statement clause only, surgical, nothing else moved, the `closing_condition` was left untouched; it is real remaining backlog, not silently fixed and not silently ignored. `s-k3-kill-rearg` was not touched, confirmed by the diff (this session's entire change is one line in `corpora/dg/dg-data.js`).
+
+## s-k3-backreact closing_condition.target correction, companion to b9363e4
+
+The stale `cosh^2` coefficient flagged above as remaining backlog, inside `s-k3-backreact`'s `closing_condition.target`, is corrected. The sorry stays OPEN, declared and earned `asserted`, `condition_kind` still `"proof"`, `system` field untouched. This is the discharge spec, the acceptance criterion the sorry's own closing condition names, live in `characterizedGaps()` (one of 34 characterized gaps in the corpus, unchanged in count after the fix); a wrong coefficient there is a wrong criterion for what would close the gap, distinct from the statement field b9363e4 already corrected.
+
+The clause was verified this session, through `buildKernel().claims` and `characterizedGaps()`, never through `api/dg-provider.mjs`'s stripped `provider.claims` surface, to be the sorry's own plain, unquoted, unattributed assertion, the same defect class the statement clause had before b9363e4.
+
+Before: "state what the cosh^2(z0/L) position-sensitivity enhancement implies for C23-SDC's own SDC exponential-decay trigger if they are the same channel"
+
+After: "state what the sinh^2(z0/L) position-sensitivity enhancement (corrected from the pre-landing-2 cosh^2 label, per k3-prime2 part (iii)) implies for C23-SDC's own SDC exponential-decay trigger if they are the same channel"
+
+The field's own `z0/L` coordinate convention is kept, not replaced with the statement field's `u_b` notation: `u_b = z0/L` by definition (`k3-prime2` part (i)), the same object, each field internally consistent in its own notation. Everything else in `closing_condition`, and the rest of the claim, is byte-identical. Identity collisions: 0, unchanged (460 claims). CI: 10/10 green. `s-k3-kill-rearg` and the statement field were not touched, confirmed by the diff (one line changed in the whole session).
