@@ -21,7 +21,21 @@ checking record is real but permanently capped at `asserted` because its conjunc
 K3 is itself unaudited; auditing K3 is the one action in this queue that clears a stuck grade on a
 second claim as a side effect, not just its own.
 
-## 1. `k3`, leads
+**Status (this regeneration).** That exception is now spent. K3 (item 1) was audited at Landing-1
+and refined through the K3B shore; `k3-prime2` earned `independently-rechecked` on five
+distinct-party adversarial records (`corpus.pk-aud-k3-001`, `corpus.pk-aud-k3-002`,
+`corpus.pk-aud-k3b-001`, `corpus.pk-aud-k3b-002`, `corpus.pk-aud-k3b-003`), and K1's `asserted`
+cap lifted as the predicted side effect. Item 1 is discharged. With its raw-mass exception removed
+the queue reverts to pure downstream-mass order, so item 2 (`corpus.f12-reconciliation-scout-may-2026`,
+9 claims) is the effective lead. Items 2 through 18 stand unchanged: no external adversarial audit
+was run against any of them in the intervening sessions, verified against the built corpus (only the
+K3 family carries adversarial-pipeline checking records). This is a factual discharge, not a
+re-prioritization: the numbering below is left as-is, item 1's original work-order text kept as
+historical record, and nothing beyond the queue's own downstream-mass ranking is applied. The
+feeding contamination read (`docs/analysis/02-contamination-audit.md`) was regenerated in the same
+pass and its ranking is current.
+
+## 1. `k3`: DISCHARGED (audited Landing-1, refined K3B; see the Status note above)
 
 - **Claim.** "T_3 is Constant [from Tier 4.2]. The DBI brane tension T_3 = 6/(kappa_5^2 L) is
   fixed by the Israel junction conditions, independent of brane position z_0. State-dependence
