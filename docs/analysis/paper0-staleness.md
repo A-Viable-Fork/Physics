@@ -4,17 +4,12 @@ Emitted by `analysis/paper-staleness.mjs` against `docs/paper0-manifest.json` (5
 
 **Expected first output, this is the demonstration this track exists for:** II.B should flag stale by the K3 supersession (landing-1 Track 3): its bound claim_refs include `k3`, now superseded by `k3-prime`.
 
-## 1 section(s) flagged
-
-### II.B: The End-of-the-World Brane
-
-- `k3`: superseded
-
+No bound section currently flags stale. (This would itself be a surprising result immediately after a K3-style supersession; verify the manifest actually binds the superseded ref before trusting a clean report.)
 ## Every bound section, for completeness
 
 | Section | Title | Claim refs | Status |
 |---|---|---|---|
-| II.B | The End-of-the-World Brane | k3, k3-prime, im.israel-1966-junction, im.rs1999-critical-tension, im.karch-randall-2001-tension-position, im.goldberger-wise-effective-tension | STALE (k3) |
+| II.B | The End-of-the-World Brane | k3-prime2, k3b-coordinate-dictionary, im.israel-1966-junction, im.rs1999-critical-tension, im.karch-randall-2001-tension-position, im.goldberger-wise-effective-tension | current |
 | III.C | The Two-Channel Decomposition | k1 | current |
 | III.D | Constraint Analysis | p3, p8, p11 | current |
 | VI.C | Boulware-Deser Ghost Freedom | p3 | current |
