@@ -8,26 +8,26 @@ Ranked by plain count of distinct claims whose minimal environments touch the no
 
 | Rank | Node | Claims touching it | Classification |
 |---|---|---|---|
-| 1 | `trellis.v4-16` | 41 | the generic authoring-source citation |
+| 1 | `trellis.v4-16` | 42 | the generic authoring-source citation |
 | 2 | `lit.standard-physics-t1t2` | 25 | a source-table document |
-| 3 | `lit.standard-open-problems-physics` | 15 | a source-table document |
-| 4 | `corpus.gemini-cc-run-1-april-2026` | 10 | a source-table document |
-| 5 | `corpus.f12-reconciliation-scout-may-2026` | 9 | a source-table document |
-| 6 | `corpus.half-sphere-report` | 7 | a source-table document |
-| 7 | `k3` | 7 | a mid-graph claim (derivation) |
-| 8 | `corpus.dirac-constraint-report` | 7 | a source-table document |
-| 9 | `corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc` | 7 | a source-table document |
-| 10 | `t3.4` | 6 | a Tier 0-3 commitment (conjecture-adopted) |
-| 11 | `corpus.gemini-cc-run-2-april-2026` | 6 | a source-table document |
-| 12 | `corpus.gemini-cc-radiative-stability-april-2026` | 6 | a source-table document |
-| 13 | `corpus.framework-scout-1-bh-mechanism-may-2026` | 6 | a source-table document |
-| 14 | `corpus.framework-scout-4-multi-field-destabilization-may-2026` | 6 | a source-table document |
-| 15 | `corpus.dg-cft-051` | 5 | a source-table document |
-| 16 | `corpus.dg-cft-052` | 5 | a source-table document |
-| 17 | `corpus.dg-cft-053` | 5 | a source-table document |
-| 18 | `corpus.anomaly-audit` | 5 | a source-table document |
-| 19 | `corpus.gemini-escape-routes-march-2026` | 5 | a source-table document |
-| 20 | `corpus.pk-dr-research-session` | 5 | a source-table document |
+| 3 | `lit.goldberger-wise-1999` | 17 | a source-table document |
+| 4 | `lit.karch-randall-2001` | 17 | a source-table document |
+| 5 | `lit.randall-sundrum-1999` | 17 | a source-table document |
+| 6 | `lit.standard-open-problems-physics` | 15 | a source-table document |
+| 7 | `lit.israel-1966` | 14 | a source-table document |
+| 8 | `corpus.pk-aud-k3-001` | 14 | a source-table document |
+| 9 | `lit.dewolfe-et-al-2000` | 14 | a source-table document |
+| 10 | `corpus.pk-aud-k3-002` | 14 | a source-table document |
+| 11 | `lit.shiromizu-maeda-sasaki-2000` | 12 | a source-table document |
+| 12 | `corpus.pk-aud-k3b-002` | 12 | a source-table document |
+| 13 | `corpus.pk-aud-k3b-003` | 12 | a source-table document |
+| 14 | `corpus.pk-aud-k3b-001` | 11 | a source-table document |
+| 15 | `corpus.gemini-cc-run-1-april-2026` | 10 | a source-table document |
+| 16 | `corpus.f12-reconciliation-scout-may-2026` | 9 | a source-table document |
+| 17 | `corpus.half-sphere-report` | 7 | a source-table document |
+| 18 | `corpus.dirac-constraint-report` | 7 | a source-table document |
+| 19 | `corpus.gemini-deep-research-report-1-gravitational-tunneling-enhanc` | 7 | a source-table document |
+| 20 | `t3.4` | 6 | a Tier 0-3 commitment (conjecture-adopted) |
 
 ## What happened: the expected part held
 
