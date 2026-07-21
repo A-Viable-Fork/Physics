@@ -1027,6 +1027,64 @@ const STORE = {
       }
     },
     {
+      "ref": "k3-prime2",
+      "kind": "derivation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "independently-rechecked",
+      "statement": "K3-prime2: brane tension, criticality, and the modulus, part (iii) corrected (landing-2 Track B). (i) In the flat-sliced Poincare background of Paper 0 eq. 2, the Israel junction conditions pin the tension to the critical value T3 = 6/(kappa5^2 L), independent of z0; the content of that independence is that z0 is a modulus, a flat direction the junction conditions do not lift, which is why the radion exists and is stabilized by other sectors of the framework. (ii) In the physical dS-sliced background (static positive Lambda^(k)), the effective tension is locked to the position as T_eff = (6/kappa5^2 L) coth(z0/L), supercritical, with relative deviation from critical of order (L/l_dS)^2, approximately 10^-64; z0's flat direction is tilted at that scale. (iii, corrected) The bare T3 is a fixed parameter of the brane action and no dynamical field varies it; state-dependence enters the embedding only through T_eff = T3 + V(v(F_Q)). The response coefficient is sinh^2(u_b), the arccoth derivative, with sign delta u_b = -(kappa_5^2 L / 6) sinh^2(u_b) delta V for delta V added to the brane tension: the identically equal form (kappa_5^2 L / 6)(T_c / T_eff)^2 cosh^2(u_b) shows the bare cosh^2 label was a 10^-64 relative discrepancy with an untracked sign. Significant at the vacuum-energy scale |V| ~ 3L/(kappa5^2 l^2). Supersedes K3-prime (landing-2 Track B, three convergent adversarial audits, docs/audits/PK-AUD-K3B-001.md, PK-AUD-K3B-002.pdf, PK-AUD-K3B-003.md): K3-prime's own part (iii) used cosh^2(z0/L) with an unstated sign; the correct coefficient for the supercritical dS-sliced branch (part ii's own coth junction law) is sinh^2(u_b), not cosh^2(u_b), a 10^-64 relative discrepancy at the framework's own working point but an untracked sign, not a rounding matter. Parts (i) and (ii) are unchanged from K3-prime; their own checking records carry forward.",
+      "checking_records": [
+        {
+          "checker_id": "checker:deepseek-expert",
+          "method_class": "derivation-audit",
+          "method": "adversarial audit of K3 as stated (PK-AUD-K3-001): rederives the flat-sliced (Q1a) and Karch-Randall (Q1b) junction-condition tension relations, the position-independence assessment (Q2), the corollary-kill assessment (Q3), and the state-dependence partition (Q4); verdict NEEDS REFINEMENT, surviving reformulation supplied",
+          "checked_at_state": "dg@landing-1",
+          "outcome": "confirms-with-noted-limits: K3 as stated NEEDS REFINEMENT (verdict), K3-prime is the audit's own surviving reformulation, not K3 unchanged",
+          "independence": "distinct-party",
+          "footprint": ["corpus.pk-aud-k3-001", "lit.israel-1966", "lit.randall-sundrum-1999", "lit.karch-randall-2001"]
+        },
+        {
+          "checker_id": "checker:kimi-k3",
+          "method_class": "derivation-audit",
+          "method": "adversarial audit of K3 as stated (PK-AUD-K3-002): rederives the flat, AdS4-sliced, and dS4-sliced junction-condition tension relations from one master warped-product equation (Q1), the position-independence assessment (Q2), the corollary-kill assessment (Q3), and the state-dependence partition with the cosh^2(z0/L) enhancement (Q4); verdict NEEDS REFINEMENT leaning DEAD for K3 as literally stated, surviving reformulation supplied",
+          "checked_at_state": "dg@landing-1",
+          "outcome": "confirms-with-noted-limits: K3 as stated NEEDS REFINEMENT leaning DEAD in the genuinely-KR regime (verdict), K3-prime is the audit's own surviving reformulation, not K3 unchanged",
+          "independence": "distinct-party",
+          "footprint": ["corpus.pk-aud-k3-002", "lit.israel-1966", "lit.randall-sundrum-1999", "lit.karch-randall-2001", "lit.goldberger-wise-1999", "lit.dewolfe-et-al-2000"]
+        },
+        {
+          "checker_id": "checker:deepseek-expert",
+          "method_class": "derivation-audit",
+          "method": "adversarial audit of the backreaction reconciliation SF-K3B-001 (PK-AUD-K3B-001, run 001, Q1): differentiates the stated coth u_b junction law directly, finds delta u_b = -(kappa_5^2 L/6) sinh^2(u_b) delta V, and finds the shore's stated cosh^2(u_b) coefficient algebraically incompatible with the coth junction law as an internal inconsistency",
+          "checked_at_state": "dg@landing-2",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": ["corpus.pk-aud-k3b-001", "lit.randall-sundrum-1999", "lit.shiromizu-maeda-sasaki-2000", "lit.goldberger-wise-1999"]
+        },
+        {
+          "checker_id": "checker:gpt-5.6-thinking",
+          "method_class": "derivation-audit",
+          "method": "adversarial audit of the backreaction reconciliation SF-K3B-001 (PK-AUD-K3B-002, run 002, Q1.4): derives the standard dS-brane relations q = coth u_b, differentiates T_eff = T_c coth u_b directly to delta u_b = -(kappa_5^2 L/6) sinh^2(u_b) delta V (eq. 20), and shows the claimed cosh^2(u_b) form is mathematically associated with q = tanh u_b, the subcritical AdS4-brane form, not the stated supercritical dS4 relation",
+          "checked_at_state": "dg@landing-2",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": ["corpus.pk-aud-k3b-002", "lit.shiromizu-maeda-sasaki-2000", "lit.goldberger-wise-1999"]
+        },
+        {
+          "checker_id": "checker:kimi-k3",
+          "method_class": "derivation-audit",
+          "method": "adversarial audit of the backreaction reconciliation SF-K3B-001 (PK-AUD-K3B-003, run 003, S0.3): re-derives the response law from T = T_c coth u_b, obtains du_b/dT = -(kappa_5^2 L/6) sinh^2 u_b, and exhibits the identically equal form -(kappa_5^2 L/6)(T_c/T)^2 cosh^2 u_b, showing the bare cosh^2 label is a 10^-64 relative discrepancy with an untracked sign, not a magnitude error",
+          "checked_at_state": "dg@landing-2",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": ["corpus.pk-aud-k3b-003", "lit.shiromizu-maeda-sasaki-2000", "lit.karch-randall-2001", "lit.randall-sundrum-1999", "lit.goldberger-wise-1999"]
+        }
+      ],
+      "extensions": {
+        "locator": "PK-AUD-K3-001/002 Sections Q1-Q4 for parts (i)-(ii); PK-AUD-K3B-001 Q1, PK-AUD-K3B-002 Q1.4, PK-AUD-K3B-003 S0.3 for the corrected part (iii)."
+      }
+    },
+    {
       "ref": "departure.k3-prime-idealization",
       "kind": "departure",
       "source_id": "trellis.v4-16",
@@ -7776,7 +7834,7 @@ const STORE = {
     },
     {
       "link_kind": "supports",
-      "from": "k3-prime",
+      "from": "k3-prime2",
       "to": "k1",
       "support_group": "k1-basis",
       "source_id": "trellis.v4-16",
@@ -7786,8 +7844,8 @@ const STORE = {
     {
       "link_kind": "supports",
       "from": "im.israel-1966-junction",
-      "to": "k3-prime",
-      "support_group": "k3-prime-basis",
+      "to": "k3-prime2",
+      "support_group": "k3-prime2-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "checked"
@@ -7795,8 +7853,8 @@ const STORE = {
     {
       "link_kind": "supports",
       "from": "im.rs1999-critical-tension",
-      "to": "k3-prime",
-      "support_group": "k3-prime-basis",
+      "to": "k3-prime2",
+      "support_group": "k3-prime2-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "checked"
@@ -7804,8 +7862,8 @@ const STORE = {
     {
       "link_kind": "supports",
       "from": "im.karch-randall-2001-tension-position",
-      "to": "k3-prime",
-      "support_group": "k3-prime-basis",
+      "to": "k3-prime2",
+      "support_group": "k3-prime2-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "checked"
@@ -7813,15 +7871,15 @@ const STORE = {
     {
       "link_kind": "supports",
       "from": "im.goldberger-wise-effective-tension",
-      "to": "k3-prime",
-      "support_group": "k3-prime-basis",
+      "to": "k3-prime2",
+      "support_group": "k3-prime2-basis",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "checked"
     },
     {
       "link_kind": "supports",
-      "from": "k3-prime",
+      "from": "k3-prime2",
       "to": "departure.k3-prime-idealization",
       "support_group": "departure-basis",
       "source_id": "trellis.v4-16",
@@ -8451,7 +8509,7 @@ const STORE = {
     },
     {
       "link_kind": "supports",
-      "from": "k3-prime",
+      "from": "k3-prime2",
       "to": "k3b-reconciliation",
       "support_group": "k3b-reconciliation-basis",
       "source_id": "corpus.sf-k3b-001",
@@ -8810,6 +8868,12 @@ const STORE = {
       "successor_ref": "c23-sdc-prime",
       "at_state": "dg@shore-k3b",
       "reason": "C23-SDC refined by this shore's reconciliation of the characterized gap s-k3-backreact (docs/shores/SF-K3B-001.md). C23-SDC's own geodesic-distance/SDC-decay content stands unchanged; c23-sdc-prime adds the trigger law this shore derives (a brane-localized vacuum-energy perturbation delta V drives z0 via the K3 audits' own backreaction relation, composing with the geodesic-distance formula by the chain rule to give delta d directly in terms of delta V), sharpening C23-SDC's own S-CC-002 conditionality without restructuring it. The superseded claim's original text stays in history, not deleted; both links previously citing it (the depends-on and supports links into F23) are rewired to c23-sdc-prime, per the K3/K3-prime zero-dangling-links precedent."
+    },
+    {
+      "superseded_ref": "k3-prime",
+      "successor_ref": "k3-prime2",
+      "at_state": "dg@landing-2",
+      "reason": "K3-prime's part (iii) textually corrected (landing-2 Track B), following three convergent adversarial audits of the shore derivation SF-K3B-001 that independently re-derived K3-prime's own response coefficient while checking the shore's composition (PK-AUD-K3B-001, PK-AUD-K3B-002, PK-AUD-K3B-003; docs/audits/). K3-prime's part (iii) stated the position-sensitivity enhancement as cosh^2(z0/L); the correct coefficient, differentiating the same part (ii) coth junction law K3-prime itself states, is sinh^2(u_b), with an explicit sign for delta V added to the brane tension: delta u_b = -(kappa_5^2 L/6) sinh^2(u_b) delta V. All three audits converge on this correction independently; Kimi's run (PK-AUD-K3B-003, S0.3) additionally exhibits the identically-equal form (kappa_5^2 L/6)(T_c/T_eff)^2 cosh^2(u_b), showing the original cosh^2 label was a 10^-64 relative discrepancy at the framework's own working point with an untracked sign, not a rounding matter. Parts (i) and (ii) are unchanged; k3-prime2 carries forward the same checking records for those parts and adds three new ones for the corrected part (iii). The superseded claim's original text stays in history, not deleted; every link previously citing it (the k1-basis supports link, the k3-prime-basis group of four supports links now k3-prime2-basis, the departure-basis and k3b-reconciliation-basis supports links) rewired to k3-prime2, per the K3/K3-prime zero-dangling-links precedent."
     }
   ],
   "withdrawals": [

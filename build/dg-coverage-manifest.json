@@ -32,6 +32,11 @@
       "category": "constraint"
     },
     {
+      "trellis_id": "K3-prime2 (landing-2 Track B, part (iii) coefficient correction)",
+      "ref": "k3-prime2",
+      "category": "constraint"
+    },
+    {
       "trellis_id": "K4",
       "ref": "k4",
       "category": "constraint"
