@@ -25,6 +25,28 @@
 //   mirrored here by hand, same discipline.
 // Config revision (landing-2 Track A): 6 new source rows (1 canonical literature root, SMS 2000;
 //   3 K3B audit artifacts; 1 cross-exam record) mirrored here by hand, same discipline.
+// Config revision (full drift close + F12 dedup): this file is brought fully back into sync with
+//   corpora/dg-config.json's sources array; after this revision the two match exactly. Two things
+//   were reconciled. (1) Dedup: corpus.f12-cosmological-dark-energy-thawing-vs-pole-structure-recon,
+//   a second row for the same F12 report, present both here and in the config but cited by no claim,
+//   is removed from both files; the cited row corpus.f12-reconciliation-scout-may-2026 is canonical.
+//   (2) Drift close: the 16-row config-ahead gap named in the landing-1 Track 1/2 note above is
+//   closed in full. Four Framework Scout rows (F12 Reconciliation Scout, Framework Scouts 1/3/4),
+//   added to the config by audit-prep Track 1's citation-granularity re-citation and cited there by
+//   the re-cited evidence, dead-mechanism, and block claims of the dark-energy/hot-thermal reservoir
+//   family, plus the twelve older drifted rows (seven PK-DR reports, corpus.warp-factor-calc, four
+//   literature/dataset rows), are all mirrored here by hand, same discipline as every revision above.
+//   Correction to the landing-1 Track 1/2 note's rationale: the drift was NOT harmless-because-every-
+//   row-carries-rests_on-[]. The seven PK-DR rows carry rests_on: ["corpus.pk-dr-research-session"],
+//   so while they were absent from this table a footprint closure over a PK-DR-citing claim fell back
+//   to seed-inclusion and silently dropped the shared pk-dr-research-session root, a latent false-
+//   independence risk among PK-DR-citing claims. Verified before landing that the risk was latent and
+//   not active: closing the full drift is grade-neutral (buildKernel + gate replicated over the
+//   augmented table, all six grade buckets identical, zero claims move). The two peer-reviewed
+//   literature rows (Sukhbold 2016, Donnelly-Freidel 2016) are class-based canonical roots per
+//   docs/governing-conventions.md Section 10 (peer-reviewed with an all-peer-reviewed rests_on
+//   closure); check-independence's class test classifies them automatically, so no companion
+//   canonical-root registration is needed. The two dataset rows are ordinary shared sources.
 "use strict";
 
 const KINDS = [
@@ -1185,9 +1207,99 @@ const SOURCES = [
     "rests_on": []
   },
   {
-    "source_id": "corpus.f12-cosmological-dark-energy-thawing-vs-pole-structure-recon",
+    "source_id": "corpus.f12-reconciliation-scout-may-2026",
     "source_class": "ai-audit",
-    "description": "F12 Cosmological Dark Energy Thawing vs. Pole Structure Reconciliation Scout (May 12, 2026): F12 Cosmological Dark Energy Thawing vs. Pole Structure Reconciliation Scout (Gemini Deep Research, May 12, 2026) -- Verdict DEAD, F12 retraction. All three reconciliation hypotheses (channel separation via integrated $f$ buildup, cosmological averaging of binary pole activations, intra-sector radion slow-",
+    "description": "F12 Reconciliation Scout (May 12, 2026): the Gemini Deep Research scout report evaluating candidate reconciliations of the F12 dark-energy thawing trajectory against the AM-locked branch (ER-COSM-001 categorical DLRO/ODLRO conflation, ER-COSM-002 SL-AM-1 kinematic dominance, ER-COSM-003 volume-fraction suppression, ER-COSM-004 radion mass-window mismatch), all four killed May 12, 2026.",
+    "rests_on": []
+  },
+  {
+    "source_id": "corpus.framework-scout-1-bh-mechanism-may-2026",
+    "source_class": "ai-audit",
+    "description": "Framework Scout 1: BH Mechanism (May 2026): the Gemini Deep Research scout report evaluating internal evolving-dark-energy candidates within the AM-locked branch (S-DE-001): ER-DE-001 (black-hole bulk-routing evolving-DE, primary finding), ER-DE-002 (vacuum-driven reheating, ancillary candidate within the same scout), ER-DE-003 (trans-Planckian quantum-foam evolving-DE, candidate within the same scout).",
+    "rests_on": []
+  },
+  {
+    "source_id": "corpus.framework-scout-3-nede-thermal-may-2026",
+    "source_class": "ai-audit",
+    "description": "Framework Scout 3: NEDE Thermal (May 2026): the Gemini Deep Research scout report evaluating a New-Early-Dark-Energy-style thermal-pump evolving-DE candidate within the AM-locked branch (S-HT-001), killed by the v3.9 generalized cosmological plasma exclusion (ER-HT-001).",
+    "rests_on": []
+  },
+  {
+    "source_id": "corpus.framework-scout-4-multi-field-destabilization-may-2026",
+    "source_class": "ai-audit",
+    "description": "Framework Scout 4: Multi-Field Destabilization (May 2026): the Gemini Deep Research scout report evaluating multi-field slow-roll and hairon-quintessence evolving-DE candidates within the AM-locked branch (S-DE-002): ER-DE-004 (multi-modulus slow-roll, primary finding), ER-DE-005 (hairon-sourced quintessence, candidate within the same scout), ER-DE-006 (multi-field hairon-quintessence destabilization, candidate within the same scout).",
+    "rests_on": []
+  },
+  {
+    "source_id": "corpus.pk-dr-research-session",
+    "source_class": "ai-audit",
+    "description": "PK-DR Research Session: the single prompt-author, single research-tool session that produced all six PK-DR deep-research reports informing docs/synthesis-backlog.md (docs/research/README.md: 'they share one provenance footprint'). A synthetic root, not a document of its own, standing for the shared footprint every PK-DR-00X source row rests on.",
+    "rests_on": []
+  },
+  {
+    "source_id": "corpus.pk-dr-001-shore-pack-evidence",
+    "source_class": "ai-audit",
+    "description": "PK-DR-001: Shore Pack Design Evaluation (docs/research/PK-DR-001-shore-pack-evidence.pdf). Landed docs/research/MANIFEST.md, hash-verified.",
+    "rests_on": ["corpus.pk-dr-research-session"]
+  },
+  {
+    "source_id": "corpus.pk-dr-002-gate-as-verifier",
+    "source_class": "ai-audit",
+    "description": "PK-DR-002: LLM Epistemic Gate Verification (docs/research/PK-DR-002-gate-as-verifier.pdf). Landed docs/research/MANIFEST.md, hash-verified.",
+    "rests_on": ["corpus.pk-dr-research-session"]
+  },
+  {
+    "source_id": "corpus.pk-dr-003-grounded-generation",
+    "source_class": "ai-audit",
+    "description": "PK-DR-003: LLM Structured Creativity Research (docs/research/PK-DR-003-grounded-generation.pdf). Landed docs/research/MANIFEST.md, hash-verified.",
+    "rests_on": ["corpus.pk-dr-research-session"]
+  },
+  {
+    "source_id": "corpus.pk-dr-004-affordance-survey",
+    "source_class": "ai-audit",
+    "description": "PK-DR-004: System Affordances and Precedent Analysis (docs/research/PK-DR-004-affordance-survey.pdf). Landed docs/research/MANIFEST.md, hash-verified.",
+    "rests_on": ["corpus.pk-dr-research-session"]
+  },
+  {
+    "source_id": "corpus.pk-dr-005-physics-synthesis",
+    "source_class": "ai-audit",
+    "description": "PK-DR-005: Physics Knowledge Synthesis Mechanisms (docs/research/PK-DR-005-physics-synthesis.pdf). Landed docs/research/MANIFEST.md, hash-verified.",
+    "rests_on": ["corpus.pk-dr-research-session"]
+  },
+  {
+    "source_id": "corpus.pk-dr-006-graph-mathematics",
+    "source_class": "ai-audit",
+    "description": "PK-DR-006: Claim Graph Mathematical Structure (docs/research/PK-DR-006-graph-mathematics.pdf). Landed docs/research/MANIFEST.md, hash-verified.",
+    "rests_on": ["corpus.pk-dr-research-session"]
+  },
+  {
+    "source_id": "corpus.warp-factor-calc",
+    "source_class": "ai-audit",
+    "description": "Warp-factor Calc: Tree-Level Warp-Factor Alpha(z_0) Cancellation (Gemini, March 2026) -- explicit computation showing the Omega^4 factor from sqrt(-g) exactly cancels the Omega^-4 factor from F_{mu nu}F^{mu nu}, killing the tree-level warp-factor route to F13.",
+    "rests_on": []
+  },
+  {
+    "source_id": "lit.grb-060614",
+    "source_class": "dataset",
+    "description": "GRB 060614 (2006). A long-duration gamma-ray burst with no associated supernova despite its long duration and proximity, an anomaly for the standard collapsar model. Cited by C06b as evidence for the puncture (no envelope recruitment) failure mode.",
+    "rests_on": []
+  },
+  {
+    "source_id": "lit.sukhbold-et-al-2016",
+    "source_class": "peer-reviewed",
+    "description": "Sukhbold, Ertl, Woosley, Brown, Janka, Astrophysical Journal 821, 38 (2016). Core-collapse supernova outcomes (explosion versus failed explosion, remnant compactness) from neutrino-powered explosion models across a 9 to 120 solar mass progenitor grid. Cited by C07a (compactness-mass-gap correlation) and C10 (progenitor compactness profiles).",
+    "rests_on": []
+  },
+  {
+    "source_id": "lit.rhic-lhc-kss-bound",
+    "source_class": "dataset",
+    "description": "RHIC and LHC heavy-ion collision elliptic-flow measurements, consistent with the Kovtun-Son-Starinets shear-viscosity-to-entropy-density bound eta/s = 1/(4 pi). Cited by C15 as the experimental correspondence for the fluid-gravity dictionary result.",
+    "rests_on": []
+  },
+  {
+    "source_id": "lit.donnelly-freidel-2016",
+    "source_class": "peer-reviewed",
+    "description": "Donnelly, Freidel, JHEP 09 (2016) 102, arXiv:1601.04744. Local subsystems in gauge theory and gravity. The edge-mode construction underlying the framework's Donnelly-Freidel edge-mode mechanism for Hilbert-space factorization. Cited by C18a.",
     "rests_on": []
   },
   {
