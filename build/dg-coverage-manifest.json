@@ -327,13 +327,38 @@
       "category": "mechanism"
     },
     {
+      "trellis_id": "C23-SDC-prime2 (landing-2 Track C-2, exact trigger law)",
+      "ref": "c23-sdc-prime2",
+      "category": "mechanism"
+    },
+    {
       "trellis_id": "K3B-RECONCILIATION (shore-k3b, not a trellis identifier)",
       "ref": "k3b-reconciliation",
       "category": "derivation"
     },
     {
+      "trellis_id": "K3B-RECONCILIATION2 (landing-2 Track C-1, corrected composition)",
+      "ref": "k3b-reconciliation2",
+      "category": "derivation"
+    },
+    {
+      "trellis_id": "K3B-COORDINATE-DICTIONARY (landing-2 Track C-3, not a trellis identifier)",
+      "ref": "k3b-coordinate-dictionary",
+      "category": "derivation"
+    },
+    {
+      "trellis_id": "dead.c23b-trigger-rate-not-threshold (landing-2 Track C-2 kill)",
+      "ref": "dead.c23b-trigger-rate-not-threshold",
+      "category": "mechanism"
+    },
+    {
       "trellis_id": "S-K3B-VEV-DOUBLE-COUNT (shore-k3b, not a trellis identifier)",
       "ref": "s-k3b-vev-double-count",
+      "category": "sorry"
+    },
+    {
+      "trellis_id": "S-K3B-EXACT-REGIME-GAP (landing-2 Track C-2, not a trellis identifier)",
+      "ref": "s-k3b-exact-regime-gap",
       "category": "sorry"
     },
     {
