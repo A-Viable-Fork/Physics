@@ -1688,6 +1688,48 @@
       "source_class": "testimony",
       "description": "SF-K3B-001 (docs/shores/SF-K3B-001.md): this session's own derivation reconciling the K3 audits' junction-condition backreaction (delta u_b = (kappa5^2 L/6) cosh^2(u_b) delta V) with C23-SDC's geodesic-distance SDC mechanism (d ~ M_Pl ln(z0/L)) by composing them via the chain rule in the shared variable u_b = z0/L. No adversarial audit; self-authored physics, not yet independently checked.",
       "rests_on": []
+    },
+    {
+      "source_id": "lit.shiromizu-maeda-sasaki-2000",
+      "source_class": "peer-reviewed",
+      "description": "Shiromizu, Maeda, Sasaki, Phys. Rev. D 62, 024012 (2000), arXiv:gr-qc/9910076 (\"The Einstein Equations on the 3-Brane World\"). The effective 4D Einstein equations on a Z2 brane (SMS split of the total brane stress tensor into tension and matter pieces), the standard treatment all three PK-AUD-K3B audits cite for the double-count closure criterion (Q3). A canonical literature root per docs/governing-conventions.md Section 10: peer-reviewed, rests on nothing else.",
+      "rests_on": []
+    },
+    {
+      "source_id": "corpus.pk-aud-k3b-001",
+      "source_class": "ai-audit",
+      "description": "PK-AUD-K3B-001 (docs/audits/PK-AUD-K3B-001.md, docs/audits/ATTESTATION-K3B.md): adversarial audit of the backreaction reconciliation SF-K3B-001, run by DeepSeek Expert per the operator's assigned run order (self-labeled PK-AUD-K3B-002 in its own header). Overall verdict DEAD as submitted; C3 finding (sign-inverted coordinate identification) superseded by the arbitrated exact dictionary, not adopted as stated.",
+      "rests_on": [
+        "lit.randall-sundrum-1999",
+        "lit.shiromizu-maeda-sasaki-2000",
+        "lit.goldberger-wise-1999"
+      ]
+    },
+    {
+      "source_id": "corpus.pk-aud-k3b-002",
+      "source_class": "ai-audit",
+      "description": "PK-AUD-K3B-002 (docs/audits/PK-AUD-K3B-002.pdf, docs/audits/ATTESTATION-K3B.md): adversarial audit of the backreaction reconciliation SF-K3B-001, run by GPT-5.6 Thinking (OpenAI ChatGPT) per the operator's assigned run order (self-labeled PK-AUD-K3B-001 in its own header). Overall verdict DEAD as submitted, arbitrated to superseded (not killed) for C3 per PK-XEXAM-K3B-001; convergent with the other two runs on the sinh^2(u_b) response law and the exact response's order-one departure from the linearized C2 framing.",
+      "rests_on": [
+        "lit.shiromizu-maeda-sasaki-2000",
+        "lit.goldberger-wise-1999"
+      ]
+    },
+    {
+      "source_id": "corpus.pk-aud-k3b-003",
+      "source_class": "ai-audit",
+      "description": "PK-AUD-K3B-003 (docs/audits/PK-AUD-K3B-003.md, docs/audits/ATTESTATION-K3B.md): adversarial audit of the backreaction reconciliation SF-K3B-001, run by Kimi K3 (Moonshot AI) per the operator's assigned run order (self-labeled PK-AUD-K3B-002 with an explicit relabel provision in its own header). Verdicts: C3 CONFIRMED qualified (exact axis-crossing dictionary), C1 NEEDS REFINEMENT (corrected composed response), C2 numerics CONFIRMED / framing NEEDS REFINEMENT (exact logarithmic law replaces the linearization), Q3 criterion DELIVERED (K1-K4), framework compliance UNVERIFIED.",
+      "rests_on": [
+        "lit.shiromizu-maeda-sasaki-2000",
+        "lit.karch-randall-2001",
+        "lit.randall-sundrum-1999",
+        "lit.goldberger-wise-1999"
+      ]
+    },
+    {
+      "source_id": "corpus.pk-xexam-k3b-001",
+      "source_class": "testimony",
+      "description": "PK-XEXAM-K3B-001 (docs/audits/PK-XEXAM-K3B-001.md, docs/audits/ATTESTATION-K3B.md): architect cross-examination and arbitration record over the three PK-AUD-K3B audits, same-family with SF-K3B-001's own generation pipeline per its own header. Non-authoritative: lifts no standing for any claim, contributes to no checking record's basis or independence lift, per the fabrication rule and docs/governing-conventions.md Section 1. Landed as the locatable rationale for the arbitrated dispositions in landing-2 Track C, never cited as an audit.",
+      "rests_on": []
     }
   ],
   "time_lock": {
