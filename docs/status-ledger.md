@@ -534,3 +534,17 @@ Scoped to one manifest section, post-landing-2. Track 1 (no writes) produced a s
 **Parked, not this session's to bind.** `k3b-reconciliation2` and `c23-sdc-prime2` stay unbound to any Paper 0 section, per the operator's ruling above.
 
 **Flagged, not this session's to fix.** `s-k3-backreact` and `s-k3-kill-rearg` still carry stale `cosh^2` text (statement, and for `s-k3-backreact` also `closing_condition.target`) against `k3-prime2`'s corrected `sinh^2(u_b)`; both are landing-1 sorries whose correction is its own typed act, scheduled for a separate future session.
+
+## s-k3-backreact statement correction
+
+One clause inside `s-k3-backreact`'s own statement corrected, the sorry left OPEN and asserted, no other field touched. The clause was wrong on three counts: the coefficient (`cosh^2(u_b)`, corrected to `sinh^2(u_b)` with sign in landing-2 Track B); the attribution (PK-AUD-K3-002's own Section 3.2 derives the tension law `T_3 = (6/kappa5^2 L) tanh(u_b)` and its dS continuation `coth(u_b)`, not a `delta u_b`/`delta V` response coefficient, which is a differentiation the K3B audits perform and `k3-prime2` part (iii) carries); and the stale claim reference ("K3-prime part (iii)" pointing at a superseded identity, the carrier now `k3-prime2` part (iii)).
+
+Operator-ruled option c: reference the in-graph claim `k3-prime2` part (iii) as carrier, keep the corrected formula with sign inline, drop the raw audit-section locator, no fresh raw citation re-pinned, single-source-of-truth provenance through the claim that already grounds it.
+
+Before: "reconcile the Israel-junction backreaction channel the K3 audits derive (PK-AUD-K3-002 Section 6: delta u_b = (kappa5^2 L/6) cosh^2(u_b) delta V, the position-sensitivity enhancement K3-prime part (iii) carries)"
+
+After: "reconcile the Israel-junction backreaction channel k3-prime2 part (iii) carries (the state-dependent response delta u_b = -(kappa5^2 L/6) sinh^2(u_b) delta V for delta V added to the brane tension, corrected from the pre-landing-2 cosh^2 label)"
+
+Everything else in the statement is byte-identical. `s-k3-backreact` stays declared and earned `asserted`, `extensions.status` still `"OPEN, landing-1"`, unchanged. Identity collisions: 0, unchanged (460 claims before and after; a statement edit recomputes the claim's own identity hash, but no other structure references it by raw hash, only by ref, so nothing downstream broke). CI: 10/10 green, `check-gate.mjs` and `check-substrate.mjs` both confirmed green directly.
+
+**Prompt contradiction found and flagged, not acted on beyond scope.** The prompt asserted `s-k3-backreact` "has no closing_condition field in the built store." This is false: the claim carries a `closing_condition` (`condition_kind: "proof"`) whose own `target` field separately quotes the identical stale `cosh^2(z0/L)` coefficient this session corrected in the statement. Per this session's strict scope, statement clause only, surgical, nothing else moved, the `closing_condition` was left untouched; it is real remaining backlog, not silently fixed and not silently ignored. `s-k3-kill-rearg` was not touched, confirmed by the diff (this session's entire change is one line in `corpora/dg/dg-data.js`).
