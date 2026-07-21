@@ -33,10 +33,13 @@ const PRESENTATION_TYPES = [
   "claim",
 ];
 
-// The chosen entry point: a real characterized gap, well exercised across this build's own
-// sessions, its own closing_condition already carrying real content to render. Overridable by
-// editing this one constant; DG has no designated case-entry claim of its own.
-const ENTRY_REF = "s-k3-backreact";
+// The chosen entry point. DG has no designated case-entry claim of its own; overridable by
+// editing this one constant. f20 has real decompose children (9, confirmed), so the default
+// view exercises the "made of" children section visibly; the prior choice, s-k3-backreact, is
+// a real characterized gap with genuinely zero children (a floored, own-basis-none sorry), which
+// is honest but left the children path unexercised by default and was mistaken, while this
+// render-fix session's diagnosis was underway, for a rendering bug.
+const ENTRY_REF = "f20";
 
 // a short label from a DG statement: most DG statements open "REF: Title. Body...";
 // take through the first period after a leading short colon-title, else truncate.
