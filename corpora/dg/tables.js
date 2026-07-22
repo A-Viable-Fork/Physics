@@ -1691,6 +1691,24 @@ const SOURCES = [
     "source_class": "testimony",
     "description": "PK-XEXAM-K3B-001 (docs/audits/PK-XEXAM-K3B-001.md, docs/audits/ATTESTATION-K3B.md): architect cross-examination and arbitration record over the three PK-AUD-K3B audits, same-family with SF-K3B-001's own generation pipeline per its own header. Non-authoritative: lifts no standing for any claim, contributes to no checking record's basis or independence lift, per the fabrication rule and docs/governing-conventions.md Section 1. Landed as the locatable rationale for the arbitrated dispositions in landing-2 Track C, never cited as an audit.",
     "rests_on": []
+  },
+  {
+    "source_id": "corpus.cumulant-blind-chatgpt",
+    "source_class": "ai-audit",
+    "description": "S-CUMULANT-DERIVE blind independent derivation, run by ChatGPT per the operator's blind-derivation task (uploads/S-CUMULANT-DERIVE.md). Verdict DEAD: the DG variance coupling reads the second cumulant Var(K) = W''(epsilon) only, order-shifted by two orders from W(epsilon); the first cumulant <K> is absent and shift-ambiguous under K -> K + c; the third-cumulant discriminator fails, the coupling's epsilon^3 coefficient being kappa_5 under the modular tilt or kappa_2^3 in the pole expansion, never <delta K^3>_c. The narrow statement that the pole is controlled by Var(K) = QFI survives.",
+    "rests_on": []
+  },
+  {
+    "source_id": "corpus.cumulant-blind-kimi",
+    "source_class": "ai-audit",
+    "description": "S-CUMULANT-DERIVE blind independent derivation, run by Kimi k3 per the operator's blind-derivation task (uploads/S-CUMULANT-DERIVE-blind-derivation.md). Verdict DEAD, converging with the ChatGPT and DeepSeek runs on the same mechanism: the coupling's derivatives are C^(n)(0) = gamma Sigma_phi (-1)^n kappa_{n+2}, the second-cumulant Hessian W''(epsilon), against W^(n)(0) = (-1)^n kappa_n; first-order response kappa_3 not <K>; third-order kappa_5 not kappa_3. Pole controlled by Var(K) survives.",
+    "rests_on": []
+  },
+  {
+    "source_id": "corpus.cumulant-blind-deepseek",
+    "source_class": "ai-audit",
+    "description": "S-CUMULANT-DERIVE blind independent derivation, run by DeepSeek per the operator's blind-derivation task. Verdict DEAD, converging with the ChatGPT and Kimi k3 runs: the geometric functional is S_eff(epsilon) proportional to 1 - W''(epsilon)/F_Q,crit, whose cumulant expansion involves kappa_3, kappa_4, kappa_5, not <K>, Var(K), kappa_3; earliest failure at first order, the linear term being kappa_3 rather than the stress-energy integral. Pole anchored to the second cumulant survives.",
+    "rests_on": []
   }
 ];
 
