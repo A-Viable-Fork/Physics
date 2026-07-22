@@ -893,6 +893,52 @@ const STORE = {
       ]
     },
     {
+      "ref": "ev.s-noise-refuted",
+      "kind": "computation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the withdrawal of s-noise: three independent blind derivations converge that the DG matter-geometry coupling gamma (eta_AB phi^A phi^B) F_Q, with F_Q = Var(K) read as the second cumulant, cannot generate a decoherence spectrum. Var(K) is a functional of the whole state (a c-number), not an operator on the system Hilbert space, so the interaction is identity-proportional: the system-radion unitary factorizes as U_S tensor U_R, the GKSL dissipator D[1] vanishes, and the closed-time-path influence functional has equal forward and backward branch sources (Delta J = 0). Both branches of a superposition source the same value, storing no which-path information; this is the semiclassical-gravity situation (Page-Geilker, Schrodinger-Newton), which does not decohere. The kill is upstream of cumulant order, and all three runs agree the kappa_2-only restriction is not the fatal step. Independent reinforcements: Var(K) = 0 identically for pure states (W(epsilon) = log Tr rho^(1+epsilon) = 0 on a projector) and reduces to the branch-independent heat capacity C_V for thermal states, so the coupling is blind to the pure or same-object spatial superpositions of the named lab systems; the written coupling is dimensionally incomplete ([gamma phi^2 kappa_2] = M^0, not M^4); and QFI monotonicity gives decoherence implies loss of QFI but not the converse, so the surviving cc1.v4-17 content that geometry responds to Var(K) = QFI is a mean-field response with no laboratory decoherence signature. Under a (delta K)^2 operator completion the noise necessarily involves the fourth cumulant, Var((delta K)^2) = kappa_4 + 2 kappa_2^2, and the pointer basis is the energy basis, not the spatial basis, with the rate about 9 orders of magnitude below the environmental floor. S-NOISE was the item deciding whether DG has a laboratory signature; per all three runs it has none in any regime, not a channel merely displaced to cosmological scale.",
+      "checking_records": [
+        {
+          "checker_id": "checker:chatgpt",
+          "method_class": "derivation-audit",
+          "method": "independent blind derivation; showed the interaction is identity-proportional (kappa_2 times 1_S) via exact unitary factorization, the vanishing GKSL dissipator D[1], and the influence functional Delta J = 0; flagged the dimensional incompleteness and the one-directional QFI monotonicity",
+          "checked_at_state": "dg@snoise-kill",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.snoise-blind-chatgpt"
+          ],
+          "cited_source": "corpus.snoise-blind-chatgpt"
+        },
+        {
+          "checker_id": "checker:kimi-k3",
+          "method_class": "derivation-audit",
+          "method": "independent blind derivation; reached the mean-field kill (Var(K) a nonlinear c-number functional of rho, Schrodinger-Newton/Moller-Rosenfeld) and added that Var(K) = 0 for pure states and = C_V (branch-independent) for thermal states, with Gamma_max ~ 2e-4/s about 9 orders below the floor under the (delta K)^2 completion",
+          "checked_at_state": "dg@snoise-kill",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.snoise-blind-kimi"
+          ],
+          "cited_source": "corpus.snoise-blind-kimi"
+        },
+        {
+          "checker_id": "checker:deepseek",
+          "method_class": "derivation-audit",
+          "method": "independent blind derivation; showed a c-number coupling admits no tensor-product interaction A tensor B, hence no entanglement and no Lindblad dissipator (semiclassical gravity), and that a (delta K)^2 completion drags in kappa_4 = kappa_4 + 2 kappa_2^2",
+          "checked_at_state": "dg@snoise-kill",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.snoise-blind-deepseek"
+          ],
+          "cited_source": "corpus.snoise-blind-deepseek"
+        }
+      ]
+    },
+    {
       "ref": "k1",
       "kind": "derivation",
       "source_id": "trellis.v4-16",
@@ -9110,6 +9156,16 @@ const STORE = {
       "withdrawn_at_state": "dg@cumulant-kill",
       "withdrawn_by": "author:dg-trellis",
       "reason": "Discharged DEAD. S-CUMULANT-DERIVE sought a derivation that the DG matter-geometry coupling assembles into the modular free energy W(epsilon) = log<e^(-epsilon K)> with the first cumulant as source and the second as stiffness. Three independent blind derivations (checker:chatgpt, checker:kimi-k3, checker:deepseek; ev.cumulant-assembly-refuted) converge that no such assembly exists: the coupling reads the second cumulant Var(K) = W''(epsilon) only, order-shifted by two orders from W; the first cumulant <K> is absent from the variance coupling and shift-ambiguous under K -> K + c (it is the ordinary stress-energy coupling, separate); the third-cumulant discriminator fails, the coupling's third-order coefficient being kappa_5 under the modular tilt or kappa_2^3 in the pole expansion, never <delta K^3>_c. The surviving narrow statement (the pole is controlled by Var(K) = QFI = canonical energy) is retained in the superseding function claim cc1.v4-17 and keeps C-RD-1 intact. Typed reinstatement condition (entry-of-kind derivation is the nearest available typed approximation; the full condition is carried verbatim here per docs/governing-conventions.md Section 8's precedent): reinstated only on an external derivation establishing that the coupling's third-order coefficient equals the connected third cumulant <delta K^3>_c rather than kappa_5 or kappa_2^3, i.e. that the coupling is the full generating functional W(epsilon) and not its Hessian W''(epsilon).",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
+    {
+      "claim_ref": "s-noise",
+      "withdrawn_at_state": "dg@snoise-kill",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Discharged DEAD. S-NOISE sought a parameter-free radion-mediated decoherence spectrum in a laboratory-accessible system, gated on the generator identity S-CUMULANT-DERIVE was to establish. Three independent blind derivations (checker:chatgpt, checker:kimi-k3, checker:deepseek; ev.s-noise-refuted) converge that no such spectrum exists: the coupling reads F_Q = Var(K), a functional of the whole state, not an operator, so it is identity-proportional and mean-field, both branches of a superposition sourcing the same value with no which-path information, and the semiclassical-gravity situation does not decohere (shown via exact unitary factorization, the vanishing GKSL dissipator D[1], and the influence-functional identity Delta J = 0). The kill is upstream of the cumulant-order discriminator; all three agree the kappa_2-only restriction is not the fatal step. Reinforcements: Var(K) = 0 for pure states and = the branch-independent heat capacity C_V for thermal states, so the coupling is blind to the lab superpositions; the written coupling is dimensionally incomplete; and nonzero QFI does not imply a decoherence rate (QFI monotonicity is one-directional). The surviving content cc1.v4-17 (geometry responds to Var(K) = QFI) is a mean-field response with no laboratory decoherence signature; per all three runs this is an absence in any regime tested, not a channel displaced to cosmological scale. Typed reinstatement condition (entry-of-kind derivation is the nearest available typed approximation; the full condition is carried verbatim here per docs/governing-conventions.md Section 8's precedent): reinstated only on a derivation from a coupling that reads a branch-distinguishing operator, a local modular-density operator q_K(x) with position resolution below the superposition separation Delta x rather than the state functional Var(K), together with a demonstration that the resulting spectrum is parameter-free and laboratory-accessible, since the converged reformulation requires more than one additional structural input and is not parameter-free under the present coupling.",
       "reinstatement_condition": {
         "condition_kind": "entry-of-kind",
         "required_kind": "derivation"

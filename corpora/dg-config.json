@@ -1742,6 +1742,24 @@
       "source_class": "ai-audit",
       "description": "S-CUMULANT-DERIVE blind independent derivation, run by DeepSeek per the operator's blind-derivation task. Verdict DEAD, converging with the ChatGPT and Kimi k3 runs: the geometric functional is S_eff(epsilon) proportional to 1 - W''(epsilon)/F_Q,crit, whose cumulant expansion involves kappa_3, kappa_4, kappa_5, not <K>, Var(K), kappa_3; earliest failure at first order, the linear term being kappa_3 rather than the stress-energy integral. Pole anchored to the second cumulant survives.",
       "rests_on": []
+    },
+    {
+      "source_id": "corpus.snoise-blind-chatgpt",
+      "source_class": "ai-audit",
+      "description": "S-NOISE blind independent derivation, run by ChatGPT. Verdict DEAD at D1: F_Q = Var(K) is a state-dependent scalar, not an operator, so the interaction is identity-proportional (kappa_2 times 1_S tensor B_R); the system-radion unitary factorizes as U_S tensor U_R, the GKSL dissipator D[1] vanishes, and the closed-time-path influence functional has Delta J = 0 since both branches source the same kappa_2, giving Gamma = 0. Reinforcements: the written coupling is dimensionally incomplete ([gamma phi^2 kappa_2] = M^0, not M^4), and QFI monotonicity runs one way only (decoherence implies loss of QFI, but nonzero QFI does not imply a decoherence rate). The kappa_2-only restriction is not the fatal step.",
+      "rests_on": []
+    },
+    {
+      "source_id": "corpus.snoise-blind-kimi",
+      "source_class": "ai-audit",
+      "description": "S-NOISE blind independent derivation, run by Kimi k3. Verdict DEAD at D1, converging with the ChatGPT and DeepSeek runs on the mean-field kill: Var(K) is a nonlinear c-number functional of rho, not an operator, so the coupling is a classical state-dependent source (Schrodinger-Newton / Moller-Rosenfeld) that decoheres nothing. Independent reinforcements: for any pure state W(epsilon) = log Tr rho^(1+epsilon) = 0 identically, so Var(K) = 0 for the pure superpositions of every named lab system, while for thermal states Var(K) = C_V (heat capacity), identical on both branches of a same-object spatial superposition; and even under the most charitable (delta K)^2 operator completion the pointer basis is the energy basis, not position, with Gamma_max ~ 2e-4/s, about 9 orders below the environmental floor.",
+      "rests_on": []
+    },
+    {
+      "source_id": "corpus.snoise-blind-deepseek",
+      "source_class": "ai-audit",
+      "description": "S-NOISE blind independent derivation, run by DeepSeek. Verdict DEAD at D1: the coupling depends only on the expectation value Var(K), a c-number, so no tensor-product interaction A tensor B entangles the system with the radion (semiclassical gravity, Page-Geilker / Diosi); tracing out the radion leaves nonlinear-but-unitary evolution, no Lindblad dissipator, Gamma = 0. Under a (delta K)^2 operator completion the noise is Var((delta K)^2) = kappa_4 + 2 kappa_2^2, dragging in kappa_4 and destroying the parameter-free-from-kappa_2 claim.",
+      "rests_on": []
     }
   ],
   "time_lock": {
