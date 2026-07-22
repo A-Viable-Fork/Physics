@@ -12,6 +12,11 @@
       "category": "core-claim"
     },
     {
+      "trellis_id": "CC-1 (v4.17 function re-typing, S-CUMULANT-DERIVE kill)",
+      "ref": "cc1.v4-17",
+      "category": "core-claim"
+    },
+    {
       "trellis_id": "K1",
       "ref": "k1",
       "category": "constraint"

@@ -834,6 +834,65 @@ const STORE = {
       }
     },
     {
+      "ref": "cc1.v4-17",
+      "kind": "function",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "asserted",
+      "statement": "CC-1 (Core Claim, v4.17, supersedes the v4.16 cumulant-form statement; re-typed from derivation to function). The matter-sector coupling is a capability the framework performs, not a delivered contract: gravity couples to the matter sector through the state-dependent SO(1,4) Higgs VEV v(F_Q). Surviving, confirmed content: the pole and its stiffness are controlled by the second cumulant Var(K) = F_Q = quantum Fisher information = canonical energy; the pole is real, dormant in every known matter environment, with its confirmed activation domain horizon-scale physics. A first-principles mechanism delivering the coupling functional (the matter-sector contract) is not established: the v4.16 attempt to derive it as the modular free energy W(epsilon) = log<e^(-epsilon K)>, with the first cumulant <K> as source and the second cumulant as stiffness, is refuted (ev.cumulant-assembly-refuted, three convergent independent blind derivations); the coupling reads the second cumulant only, which is W''(epsilon), the Hessian, order-shifted by two orders from W; the source <K> is the ordinary stress-energy coupling, separate. The surviving pole-stiffness identification keeps C-RD-1 intact.",
+      "extensions": {
+        "trellis_context": "Re-typed from derivation (cc1.v4-16, which asserted the coupling is derived as W(epsilon)) to function, following the S-CUMULANT-DERIVE kill (dg@cumulant-kill). The matter-sector coupling is retained as an asserted capability with no delivering mechanism; a mechanism-kind contract discharging it remains the open matter-sector target. Downstream trellis-prose corrections deferred to the identity-rework pass: the S-GEN dissolution (cc1.v4-16's claim that S-GEN becomes the output of S-CUMULANT-DERIVE is void, the generator being ordinary stress-energy), LINT-CONVEX-1's justification (the softening sign follows from the pole and F_Q >= 0, not from W convexity, and convexity does not forbid stiffening along a state family), and SL-RANK-1 gains a new instance (reading the second-cumulant Hessian as if it were the full generating functional).",
+        "trellis_version": "v4.17",
+        "supersedes": "cc1.v4-16"
+      }
+    },
+    {
+      "ref": "ev.cumulant-assembly-refuted",
+      "kind": "computation",
+      "source_id": "trellis.v4-16",
+      "contributor_id": "author:dg-trellis",
+      "declared_grade": "checked",
+      "statement": "Evidence for the supersession of cc1.v4-16 and the withdrawal of s-cumulant-derive: three independent blind derivations, each expanding the DG matter-geometry coupling in the modular deformation epsilon, converge that the coupling reads the second cumulant Var(K) = W''(epsilon), the second derivative of the modular free energy, order-shifted by two orders from W(epsilon) = log<e^(-epsilon K)>. The first-order term is the third cumulant kappa_3 (or, in the fixed-state pole expansion, powers kappa_2^m), not the stress-energy source <K>; the first cumulant is absent from the variance coupling and is shift-ambiguous under K -> K + c. The third-cumulant discriminator fails: the coupling's epsilon^3 coefficient is kappa_5 under the modular tilt or kappa_2^3 in the pole expansion, never the connected third cumulant <delta K^3>_c. The narrow statement that the pole is controlled by Var(K) = QFI = canonical energy survives on all three runs, preserving C-RD-1.",
+      "checking_records": [
+        {
+          "checker_id": "checker:chatgpt",
+          "method_class": "derivation-audit",
+          "method": "independent blind derivation expanding the DG coupling in the modular deformation; found the coupling reads only the second cumulant Var(K) = W''(epsilon), order-shifted by two from W, the first cumulant absent, the kappa_3 discriminator failing as kappa_5 or kappa_2^3",
+          "checked_at_state": "dg@cumulant-kill",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.cumulant-blind-chatgpt"
+          ],
+          "cited_source": "corpus.cumulant-blind-chatgpt"
+        },
+        {
+          "checker_id": "checker:kimi-k3",
+          "method_class": "derivation-audit",
+          "method": "independent blind derivation; derived C^(n)(0) = gamma Sigma_phi (-1)^n kappa_(n+2), confirming the two-order shift, first-order response kappa_3, third-order kappa_5, pole controlled by Var(K)",
+          "checked_at_state": "dg@cumulant-kill",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.cumulant-blind-kimi"
+          ],
+          "cited_source": "corpus.cumulant-blind-kimi"
+        },
+        {
+          "checker_id": "checker:deepseek",
+          "method_class": "derivation-audit",
+          "method": "independent blind derivation; derived the geometric functional S_eff(epsilon) proportional to 1 - W''(epsilon)/F_Q,crit, cumulant expansion in kappa_3/kappa_4/kappa_5, earliest failure first order",
+          "checked_at_state": "dg@cumulant-kill",
+          "outcome": "confirms",
+          "independence": "distinct-party",
+          "footprint": [
+            "corpus.cumulant-blind-deepseek"
+          ],
+          "cited_source": "corpus.cumulant-blind-deepseek"
+        }
+      ]
+    },
+    {
       "ref": "k1",
       "kind": "derivation",
       "source_id": "trellis.v4-16",
@@ -7613,7 +7672,7 @@ const STORE = {
     {
       "link_kind": "depends-on",
       "from": "path-a",
-      "to": "cc1.v4-16",
+      "to": "cc1.v4-17",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"
@@ -7637,7 +7696,7 @@ const STORE = {
     {
       "link_kind": "depends-on",
       "from": "path-b",
-      "to": "cc1.v4-16",
+      "to": "cc1.v4-17",
       "source_id": "trellis.v4-16",
       "contributor_id": "author:dg-trellis",
       "declared_grade": "asserted"
@@ -8937,6 +8996,12 @@ const STORE = {
       "reason": "CC-1 reidentified: geometry couples to the modular free energy W(epsilon), not to F_Q at first order. F_Q is the second cumulant (stiffness), not the source; the source is the first cumulant, modular energy. SF-DG-013 (June 2026), v4.16 cumulant reorganization."
     },
     {
+      "superseded_ref": "cc1.v4-16",
+      "successor_ref": "cc1.v4-17",
+      "at_state": "dg@cumulant-kill",
+      "reason": "The v4.16 CC-1 statement asserts that geometry reads the modular free energy W(epsilon) with the first cumulant as source and the second as stiffness. Three independent blind derivations (checker:chatgpt, checker:kimi-k3, checker:deepseek; ev.cumulant-assembly-refuted) converge that the DG variance coupling reads the second cumulant Var(K) = W''(epsilon) only, order-shifted by two orders from W; the first cumulant <K> is absent from the variance coupling and shift-ambiguous under K -> K + c (it is the ordinary stress-energy coupling, separate); the third-cumulant discriminator fails, the coupling's third-order coefficient being kappa_5 under the modular tilt or kappa_2^3 in the pole expansion, never <delta K^3>_c. CC-1 is therefore re-typed from derivation to function (an asserted capability with no delivering mechanism), retaining the surviving pole-stiffness content (Var(K) = QFI = canonical energy controls the pole, C-RD-1 intact) and the horizon-scale demotion. The matter-sector contract, a mechanism delivering the coupling functional, remains open. Trellis-prose corrections (S-GEN dissolution void, LINT-CONVEX-1 rejustification, SL-RANK-1 new instance) deferred to the identity-rework pass."
+    },
+    {
       "superseded_ref": "ev.dead.er-cosm001-integrated-f-buildup",
       "successor_ref": "ev.dead.er-cosm001-integrated-f-buildup.recited",
       "at_state": "dg@audit-prep",
@@ -9040,6 +9105,16 @@ const STORE = {
     }
   ],
   "withdrawals": [
+    {
+      "claim_ref": "s-cumulant-derive",
+      "withdrawn_at_state": "dg@cumulant-kill",
+      "withdrawn_by": "author:dg-trellis",
+      "reason": "Discharged DEAD. S-CUMULANT-DERIVE sought a derivation that the DG matter-geometry coupling assembles into the modular free energy W(epsilon) = log<e^(-epsilon K)> with the first cumulant as source and the second as stiffness. Three independent blind derivations (checker:chatgpt, checker:kimi-k3, checker:deepseek; ev.cumulant-assembly-refuted) converge that no such assembly exists: the coupling reads the second cumulant Var(K) = W''(epsilon) only, order-shifted by two orders from W; the first cumulant <K> is absent from the variance coupling and shift-ambiguous under K -> K + c (it is the ordinary stress-energy coupling, separate); the third-cumulant discriminator fails, the coupling's third-order coefficient being kappa_5 under the modular tilt or kappa_2^3 in the pole expansion, never <delta K^3>_c. The surviving narrow statement (the pole is controlled by Var(K) = QFI = canonical energy) is retained in the superseding function claim cc1.v4-17 and keeps C-RD-1 intact. Typed reinstatement condition (entry-of-kind derivation is the nearest available typed approximation; the full condition is carried verbatim here per docs/governing-conventions.md Section 8's precedent): reinstated only on an external derivation establishing that the coupling's third-order coefficient equals the connected third cumulant <delta K^3>_c rather than kappa_5 or kappa_2^3, i.e. that the coupling is the full generating functional W(epsilon) and not its Hessian W''(epsilon).",
+      "reinstatement_condition": {
+        "condition_kind": "entry-of-kind",
+        "required_kind": "derivation"
+      }
+    },
     {
       "claim_ref": "dead.geff-amplification",
       "withdrawn_at_state": "dg@stage-3c",
