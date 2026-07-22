@@ -1,10 +1,5 @@
 {
   "description": "Acknowledged stale dependency edges: in-force claims that carry a depends-on edge into an out-of-force (superseded or withdrawn) claim, each with the reason it is parked rather than resolved. build/check-dg-staleness.mjs verifies this manifest against the live graph both ways: every acknowledged edge is still stale in the current graph (no obsolete acknowledgments), and every stale edge in the graph is acknowledged here (no silent staleness). A depends-on edge is documentary and does not enter the gate's grade fold, so a dead input does not fail the gate; this check is the separate discipline that a dead input never silently leaves a dependent standing without review. Parking a stale edge with a reason is permitted; leaving one unnamed is not. Resolving a stale edge (re-deriving the dependent against the changed input, or withdrawing the dependent) removes its entry here.",
   "acknowledged_stale_edges": [
-    {
-      "from": "s-noise",
-      "to": "s-cumulant-derive",
-      "reason": "s-noise's premise s-cumulant-derive was discharged DEAD at dg@cumulant-kill: three convergent blind derivations established that the DG coupling reads the second cumulant Var(K) = W''(epsilon), not the full modular free energy W(epsilon) with the first cumulant as source (see ev.cumulant-assembly-refuted and cc1.v4-17). s-noise has not yet been re-derived against the surviving second-cumulant-only reading. Parked, not resolved: the dependent stands under review pending its own re-derivation or the reinstatement of s-cumulant-derive under its typed condition. Deferred to the matter-sector pass."
-    }
   ]
 }
