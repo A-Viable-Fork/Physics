@@ -36,3 +36,5 @@ jobs:
         run: node build/check-independence.mjs
       - name: check-reservoir
         run: node build/check-reservoir.mjs
+      - name: check-dg-staleness
+        run: node build/check-dg-staleness.mjs
